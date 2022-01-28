@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@waweb/api.cms": ["libs/api/cms/src/index.ts"],
       "@waweb/model": ["libs/model/src/index.ts"]
     }
   },

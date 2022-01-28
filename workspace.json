@@ -5,6 +5,7 @@
     "api-cms": "libs/api/cms",
     "home": "apps/home",
     "home-e2e": "apps/home-e2e",
-    "model": "libs/model"
+    "model": "libs/model",
+    "theme": "libs/theme"
   }
 }

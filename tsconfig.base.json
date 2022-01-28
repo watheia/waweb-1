@@ -10,15 +10,33 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@waweb/api.auth": ["libs/api/auth/src/index.ts"],
-      "@waweb/api.cms": ["libs/api/cms/src/index.ts"],
-      "@waweb/model": ["libs/model/src/index.ts"]
+      "@waweb/api.auth": [
+        "libs/api/auth/src/index.ts"
+      ],
+      "@waweb/api.cms": [
+        "libs/api/cms/src/index.ts"
+      ],
+      "@waweb/model": [
+        "libs/model/src/index.ts"
+      ],
+      "@waweb/theme": [
+        "libs/theme/src/index.ts"
+      ],
+      "@waweb/theme.styles/*": [
+        "libs/theme/src/styles/*"
+      ]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }

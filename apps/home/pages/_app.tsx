@@ -1,3 +1,5 @@
+import Theme from '@waweb/theme';
+import '@waweb/theme.styles/index.css';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import './styles.css';
@@ -8,9 +10,11 @@ function CustomApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>Welcome to home!</title>
       </Head>
-      <main className="app">
-        <Component {...pageProps} />
-      </main>
+      <Theme>
+        <main className="app">
+          <Component {...pageProps} />
+        </main>
+      </Theme>
     </>
   );
 }

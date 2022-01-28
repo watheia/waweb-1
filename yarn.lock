@@ -2184,7 +2184,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jest/create-cache-key-function@npm:^27.3.1":
+"@jest/create-cache-key-function@npm:^27.4.2":
   version: 27.4.2
   resolution: "@jest/create-cache-key-function@npm:27.4.2"
   dependencies:
@@ -2616,7 +2616,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/testing@npm:^8.2.5":
+"@nestjs/testing@npm:^8.2.6":
   version: 8.2.6
   resolution: "@nestjs/testing@npm:8.2.6"
   dependencies:
@@ -5355,14 +5355,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/jest@npm:0.2.15":
-  version: 0.2.15
-  resolution: "@swc/jest@npm:0.2.15"
+"@swc/jest@npm:0.2.17":
+  version: 0.2.17
+  resolution: "@swc/jest@npm:0.2.17"
   dependencies:
-    "@jest/create-cache-key-function": ^27.3.1
+    "@jest/create-cache-key-function": ^27.4.2
   peerDependencies:
     "@swc/core": "*"
-  checksum: 37cc4012df91fbcb583131c0c8b399475c3bb6d85a4328bf5ac4207fa94d7b5a172347d038911d28655de23038ee3c566f9d392382bd8c837706a0dc62262be8
+  checksum: 33e08c71adaa3d46f47b888b954c8f61513804a1b3ee24fdc13ccbbb89ca6c96b474eef4002b96edcd6090a308a1aafd313073ae4bcd6339fcc3a22e2f29f1b7
   languageName: node
   linkType: hard
 
@@ -19041,7 +19041,7 @@ __metadata:
     "@mui/icons-material": ^5.3.1
     "@mui/material": ^5.3.1
     "@nestjs/schematics": ^8.0.5
-    "@nestjs/testing": ^8.2.5
+    "@nestjs/testing": ^8.2.6
     "@nrwl/cli": 13.6.1
     "@nrwl/cypress": 13.6.1
     "@nrwl/eslint-plugin-nx": 13.6.1
@@ -19062,7 +19062,7 @@ __metadata:
     "@swc/cli": ~0.1.55
     "@swc/core": 1.2.135
     "@swc/helpers": ~0.3.2
-    "@swc/jest": 0.2.15
+    "@swc/jest": 0.2.17
     "@testing-library/react": 12.1.2
     "@testing-library/react-hooks": 7.0.2
     "@theme-ui/prism": ^0.13.1

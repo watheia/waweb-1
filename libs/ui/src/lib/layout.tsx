@@ -18,10 +18,10 @@ import { SkipNavContent } from '@reach/skip-nav';
 import cn from 'classnames';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import Footer, { HostedByVercel } from './footer';
+import Footer from './footer';
 import useConfig from './hooks/use-config';
-import Logo from './icons/icon-logo';
 import styles from './layout.module.css';
+import Logo from './logo';
 import MobileMenu from './mobile-menu';
 import ViewSource from './view-source';
 
@@ -72,7 +72,7 @@ export default function Layout({
               ))}
             </div>
             <div className={cn(styles['header-right'])}>
-              <HostedByVercel />
+              <Logo />
             </div>
           </header>
         )}

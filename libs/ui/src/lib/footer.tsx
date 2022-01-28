@@ -17,21 +17,21 @@
 import cn from 'classnames';
 import styles from './footer.module.css';
 import useConfig from './hooks/use-config';
-import VercelLogo from './icons/icon-platform';
+import Logo from './logo';
 
-export function HostedByVercel() {
-  return (
-    <a
-      href="https://vercel.com"
-      className={cn(styles['footer-link'], styles['footer-logo'])}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <div className={styles['secondary-text']}>Created by </div>
-      <VercelLogo color="white" />
-    </a>
-  );
-}
+// export function HostedByVercel() {
+//   return (
+//     <a
+//       href="https://vercel.com"
+//       className={cn(styles['footer-link'], styles['footer-logo'])}
+//       target="_blank"
+//       rel="noopener noreferrer"
+//     >
+//       <div className={styles['secondary-text']}>Created by </div>
+//       <VercelLogo color="white" />
+//     </a>
+//   );
+// }
 
 export default function Footer() {
   const config = useConfig();
@@ -39,7 +39,7 @@ export default function Footer() {
     <footer className={cn(styles['footer'])}>
       <div className={styles['footer-legal']}>
         <div className={styles['footer-hostedby']}>
-          <HostedByVercel />
+          <Logo width={'100%'} />
           <div className={styles['footer-separator']} />
         </div>
         <div className={styles['footer-copyright']}>

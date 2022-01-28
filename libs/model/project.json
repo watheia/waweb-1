@@ -33,6 +33,20 @@
       "options": {
         "schema": "libs/model/schema.prisma"
       }
+    },
+    "migrate": {
+      "builder": "@nx-tools/nx-prisma:migrate",
+      "options": {
+        "schema": "libs/model/schema.prisma"
+      }
+    },
+    "seed": {
+      "builder": "@nx-tools/nx-prisma:seed",
+      "options": {
+        "script": "libs/model/src/seed.ts",
+        "tsConfig": "libs/model/tsconfig.lib.json",
+        "schema": "libs/model/schema.prisma"
+      }
     }
   },
   "tags": []

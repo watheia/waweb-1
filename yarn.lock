@@ -2184,6 +2184,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@jest/create-cache-key-function@npm:^27.3.1":
+  version: 27.4.2
+  resolution: "@jest/create-cache-key-function@npm:27.4.2"
+  dependencies:
+    "@jest/types": ^27.4.2
+  checksum: 46eeb4460798c6bba9da5bba6d07030012a9290ee6d2e3537e49110e57e6bcb118d9075a942ec3c1b1a2eebb50746d231bc9b15749980dd3817c41db3179c27a
+  languageName: node
+  linkType: hard
+
 "@jest/environment@npm:^27.4.6":
   version: 27.4.6
   resolution: "@jest/environment@npm:27.4.6"
@@ -5343,6 +5352,17 @@ __metadata:
   version: 0.3.2
   resolution: "@swc/helpers@npm:0.3.2"
   checksum: ab0ed08c234eaae108ba241e3c73212062cc0533e4f6e5e37e17343fbf3da13b60a63109bcd052dd937072e6f290cda76fb74ccb7bfd632e3f85a51b0acea7fd
+  languageName: node
+  linkType: hard
+
+"@swc/jest@npm:0.2.15":
+  version: 0.2.15
+  resolution: "@swc/jest@npm:0.2.15"
+  dependencies:
+    "@jest/create-cache-key-function": ^27.3.1
+  peerDependencies:
+    "@swc/core": "*"
+  checksum: 37cc4012df91fbcb583131c0c8b399475c3bb6d85a4328bf5ac4207fa94d7b5a172347d038911d28655de23038ee3c566f9d392382bd8c837706a0dc62262be8
   languageName: node
   linkType: hard
 
@@ -9345,6 +9365,13 @@ __metadata:
     domelementtype: ^2.2.0
     domhandler: ^4.2.0
   checksum: abf7434315283e9aadc2a24bac0e00eab07ae4313b40cc239f89d84d7315ebdfd2fb1b5bf750a96bc1b4403d7237c7b2ebf60459be394d625ead4ca89b934391
+  languageName: node
+  linkType: hard
+
+"dotenv@npm:^14.3.2":
+  version: 14.3.2
+  resolution: "dotenv@npm:14.3.2"
+  checksum: 86c06758915d6facc35275f4a7fafc16705b6f3b44befaa8abca91367991efc8ff8db5437d3cc14778231d19fb97610fe82d60f8a53ba723cdb69fe4171439aa
   languageName: node
   linkType: hard
 
@@ -19035,6 +19062,7 @@ __metadata:
     "@swc/cli": ~0.1.55
     "@swc/core": 1.2.135
     "@swc/helpers": ~0.3.2
+    "@swc/jest": 0.2.15
     "@testing-library/react": 12.1.2
     "@testing-library/react-hooks": 7.0.2
     "@theme-ui/prism": ^0.13.1
@@ -19067,6 +19095,7 @@ __metadata:
     cypress: ^9.3.1
     date-fns: 2.28.0
     dependency-cruiser: ^11.3.0
+    dotenv: ^14.3.2
     eslint: 8.7.0
     eslint-config-next: 12.0.9
     eslint-config-prettier: 8.3.0

@@ -15,13 +15,13 @@
  */
 
 import { login } from '@waweb/api.auth';
-import useConfData from '@waweb/ui.hooks.use-conf-data';
-import useEmailQueryParam from '@waweb/ui.hooks.use-email-query-param';
 import cn from 'classnames';
 import { useRouter } from 'next/router';
 import { useCallback, useState } from 'react';
 import Captcha, { useCaptcha } from './captcha';
 import styles from './form.module.css';
+import useAuthContext from './hooks/use-auth-context';
+import useEmailQueryParam from './hooks/use-email-query-param';
 import LoadingDots from './loading-dots';
 import styleUtils from './utils.module.css';
 
@@ -43,7 +43,7 @@ export default function Form({ sharePage }: Props) {
   const [errorTryAgain, setErrorTryAgain] = useState(false);
   const [focused, setFocused] = useState(false);
   const [formState, setFormState] = useState<FormState>('default');
-  const { setPageState, setUserData } = useConfData();
+  const { setPageState, setUserData } = useAuthContext();
   const router = useRouter();
   const {
     ref: captchaRef,
@@ -80,7 +80,7 @@ export default function Form({ sharePage }: Props) {
             await router.replace(`/?${queryString}`, '/');
           } else {
             setUserData(params);
-            setPageState('ticket');
+            setPageState('online');
           }
         })
         .catch(async (err: Error) => {

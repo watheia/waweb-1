@@ -16,7 +16,7 @@
 
 import { saveGithubToken } from '@waweb/api.auth';
 import { GitHubOAuthData, TicketGenerationState } from '@waweb/model';
-import useConfData from '@waweb/ui.hooks.use-conf-data';
+import useAuthContext from '@waweb/ui.hooks/use-auth-context';
 import isMobileOrTablet from '@waweb/util.is-mobile-or-tablet';
 import { scrollTo } from '@waweb/util.smooth-scroll';
 import cn from 'classnames';
@@ -48,7 +48,7 @@ export default function Form({
   const [username, setUsername] = useState(defaultUsername);
   const [formState, setFormState] = useState<FormState>('default');
   const [errorMsg, setErrorMsg] = useState('');
-  const { userData, setUserData } = useConfData();
+  const { userData, setUserData } = useAuthContext();
   const config = useConfig();
   const formRef = useRef<HTMLFormElement>(null);
 

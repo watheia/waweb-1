@@ -14,15 +14,11 @@
  * limitations under the License.
  */
 
-import {
-  ConfDataContext,
-  PageState,
-  UserData,
-} from '@waweb/ui.hooks.use-conf-data';
 import { useState } from 'react';
 import ConfContainer from './conf-container';
 import Form from './form';
 import Hero from './hero';
+import { AuthContext, PageState, UserData } from './hooks/use-auth-context';
 import Layout from './layout';
 import LearnMore from './learn-more';
 import Ticket from './ticket';
@@ -36,13 +32,13 @@ type Props = {
 export default function Conf({
   defaultUserData,
   sharePage,
-  defaultPageState = 'registration',
+  defaultPageState = 'offline',
 }: Props) {
   const [userData, setUserData] = useState<UserData>(defaultUserData);
   const [pageState, setPageState] = useState<PageState>(defaultPageState);
 
   return (
-    <ConfDataContext.Provider
+    <AuthContext.Provider
       value={{
         userData,
         setUserData,
@@ -51,7 +47,7 @@ export default function Conf({
     >
       <Layout>
         <ConfContainer>
-          {pageState === 'registration' && !sharePage ? (
+          {pageState === 'offline' && !sharePage ? (
             <>
               <Hero />
               <Form />
@@ -67,6 +63,6 @@ export default function Conf({
           )}
         </ConfContainer>
       </Layout>
-    </ConfDataContext.Provider>
+    </AuthContext.Provider>
   );
 }

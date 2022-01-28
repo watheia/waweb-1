@@ -16,7 +16,7 @@
 
 import { createContext, useContext } from 'react';
 
-export type PageState = 'registration' | 'ticket';
+export type PageState = 'offline' | 'online';
 
 export type UserData = {
   id?: string;
@@ -25,16 +25,16 @@ export type UserData = {
   name?: string;
 };
 
-type ConfDataContextType = {
+type AuthContextType = {
   userData: UserData;
   setUserData: React.Dispatch<React.SetStateAction<UserData>>;
   setPageState: React.Dispatch<React.SetStateAction<PageState>>;
 };
 
-export const ConfDataContext = createContext<ConfDataContextType | null>(null);
+export const AuthContext = createContext<AuthContextType | null>(null);
 
-export default function useConfData() {
-  const result = useContext(ConfDataContext);
+export default function useAuthContext() {
+  const result = useContext(AuthContext);
   if (!result) {
     throw new Error();
   }

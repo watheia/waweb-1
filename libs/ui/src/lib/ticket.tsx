@@ -15,7 +15,7 @@
  */
 
 import { TicketGenerationState } from '@waweb/model';
-import { UserData } from '@waweb/ui.hooks.use-conf-data';
+import { UserData } from '@waweb/ui.hooks/use-auth-context';
 import isMobileOrTablet from '@waweb/util.is-mobile-or-tablet';
 import { scrollTo } from '@waweb/util.smooth-scroll';
 import cn from 'classnames';

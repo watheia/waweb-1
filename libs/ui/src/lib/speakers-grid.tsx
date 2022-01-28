@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { Speaker } from '@waweb/model';
+import { Speaker } from 'model/src';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './speakers-grid.module.css';

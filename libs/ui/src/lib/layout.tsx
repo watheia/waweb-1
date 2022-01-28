@@ -15,7 +15,7 @@
  */
 
 import { SkipNavContent } from '@reach/skip-nav';
-import cn from 'classnames';
+import cn from 'clsx';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Footer from './footer';
@@ -53,7 +53,7 @@ export default function Layout({
               <Link href="/">
                 {/* eslint-disable-next-line */}
                 <a className={styles['logo']}>
-                  <Logo />
+                  <Logo height="100%" />
                 </a>
               </Link>
             </div>

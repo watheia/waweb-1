@@ -16,7 +16,7 @@
 
 import { login } from '@waweb/api.auth';
 import useEmailQueryParam from '@waweb/ui.hooks.use-email-query-param';
-import cn from 'classnames';
+import cn from 'clsx';
 import { useCallback, useState } from 'react';
 import Captcha, { useCaptcha } from './captcha';
 import styles from './conf-entry.module.css';

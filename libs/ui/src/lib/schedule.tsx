@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import { Stage, Talk } from '@waweb/model';
-import cn from 'classnames';
+import cn from 'clsx';
+import { Stage, Talk } from 'model/src';
 import styles from './schedule.module.css';
 import TalkCard from './talk-card';
 

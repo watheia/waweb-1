@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import cn from 'classnames';
+import cn from 'clsx';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import useConfig from './hooks/use-config';

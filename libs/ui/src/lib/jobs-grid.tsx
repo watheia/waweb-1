@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { Job } from '@waweb/model';
+import { Job } from 'model/src';
 import styles from './jobs-grid.module.css';
 
 type Props = {

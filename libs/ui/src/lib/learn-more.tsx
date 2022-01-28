@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import cn from 'classnames';
+import cn from 'clsx';
 import styles from './contact.module.css';
 import useConfig from './hooks/use-config';
 import styleUtils from './utils.module.css';

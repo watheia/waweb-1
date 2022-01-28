@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import cn from 'classnames';
+import cn from 'clsx';
 import { useEffect, useRef, useState } from 'react';
 import useConfig from './hooks/use-config';
 import IconCopy from './icons/icon-copy';

@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import { TicketGenerationState } from '@waweb/model';
-import cn from 'classnames';
+import cn from 'clsx';
+import { TicketGenerationState } from 'model/src';
 import IconAvatar from './icons/icon-avatar';
 import GithubIcon from './icons/icon-github';
 import styles from './ticket-profile.module.css';

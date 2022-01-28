@@ -24,7 +24,7 @@ import {
   usePreventScroll,
 } from '@react-aria/overlays';
 import { useOverlayTriggerState } from '@react-stately/overlays';
-import cn from 'classnames';
+import cn from 'clsx';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useRef } from 'react';

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-import { Stage } from '@waweb/model';
 import useLoginStatus from '@waweb/ui.hooks.use-login-status';
-import cn from 'classnames';
+import cn from 'clsx';
+import { Stage } from 'model/src';
 import useSWR from 'swr';
 import ConfEntry from './conf-entry';
 import ScheduleSidebar from './schedule-sidebar';

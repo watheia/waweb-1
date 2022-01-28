@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import { Sponsor } from '@waweb/model';
-import cn from 'classnames';
+import cn from 'clsx';
+import { Sponsor } from 'model/src';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './sponsors-grid.module.css';

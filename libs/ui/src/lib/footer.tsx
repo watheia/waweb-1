@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import cn from 'classnames';
+import cn from 'clsx';
 import styles from './footer.module.css';
 import useConfig from './hooks/use-config';
 import Logo from './logo';

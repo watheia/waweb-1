@@ -15,13 +15,13 @@
  */
 
 import { TicketGenerationState } from '@waweb/model';
-import { UserData } from '@waweb/ui.hooks/use-auth-context';
 import isMobileOrTablet from '@waweb/util.is-mobile-or-tablet';
 import { scrollTo } from '@waweb/util.smooth-scroll';
-import cn from 'classnames';
+import cn from 'clsx';
 import { useEffect, useRef, useState } from 'react';
 import Tilt from 'vanilla-tilt';
 import Form from './form';
+import { UserData } from './hooks/use-auth-context';
 import useConfig from './hooks/use-config';
 import TicketActions from './ticket-actions';
 import TicketCopy from './ticket-copy';

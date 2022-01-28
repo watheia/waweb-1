@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-import { Talk } from '@waweb/model';
-import cn from 'classnames';
+import cn from 'clsx';
 import { format, isAfter, isBefore, parseISO } from 'date-fns';
+import { Talk } from 'model/src';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';

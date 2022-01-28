@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { Stage } from '@waweb/model';
+import { Stage } from 'model/src';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import styles from './schedule-sidebar.module.css';

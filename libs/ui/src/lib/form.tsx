@@ -15,7 +15,7 @@
  */
 
 import { login } from '@waweb/api.auth';
-import cn from 'classnames';
+import cn from 'clsx';
 import { useRouter } from 'next/router';
 import { useCallback, useState } from 'react';
 import Captcha, { useCaptcha } from './captcha';

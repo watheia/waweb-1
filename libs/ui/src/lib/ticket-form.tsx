@@ -15,11 +15,11 @@
  */
 
 import { saveGithubToken } from '@waweb/api.auth';
-import { GitHubOAuthData, TicketGenerationState } from '@waweb/model';
 import useAuthContext from '@waweb/ui.hooks/use-auth-context';
 import isMobileOrTablet from '@waweb/util.is-mobile-or-tablet';
 import { scrollTo } from '@waweb/util.smooth-scroll';
-import cn from 'classnames';
+import cn from 'clsx';
+import { GitHubOAuthData, TicketGenerationState } from 'model/src';
 import { useRef, useState } from 'react';
 import formStyles from './form.module.css';
 import useConfig from './hooks/use-config';

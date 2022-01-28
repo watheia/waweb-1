@@ -6,6 +6,8 @@
     "home": "apps/home",
     "home-e2e": "apps/home-e2e",
     "model": "libs/model",
-    "theme": "libs/theme"
+    "theme": "libs/theme",
+    "ui": "libs/ui",
+    "util": "libs/util"
   }
 }

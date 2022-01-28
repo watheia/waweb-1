@@ -2063,6 +2063,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@hcaptcha/react-hcaptcha@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@hcaptcha/react-hcaptcha@npm:1.1.0"
+  peerDependencies:
+    react: ">= 16.3.0"
+    react-dom: ">= 16.3.0"
+  checksum: 818267a04b73adeb8b86a1e78256ca48786d2ea02fda0c719a5f4f62514700d2f4abbbf16a362bd432867506b5a26e6e99be4d561afcda21f0561331b0c2dbed
+  languageName: node
+  linkType: hard
+
 "@humanwhocodes/config-array@npm:^0.9.2":
   version: 0.9.3
   resolution: "@humanwhocodes/config-array@npm:0.9.3"
@@ -19036,6 +19046,7 @@ __metadata:
     "@emotion/react": 11.7.1
     "@emotion/server": 11.4.0
     "@emotion/styled": 11.6.0
+    "@hcaptcha/react-hcaptcha": ^1.1.0
     "@mdx-js/mdx": ^1.6.22
     "@mdx-js/react": ^1.6.22
     "@mui/icons-material": ^5.3.1

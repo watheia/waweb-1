@@ -1,1 +1,2 @@
-export * from './lib/api-auth';
+export { default as saveGithubToken } from './lib/ save-github-token';
+export { default as login } from './lib/login';

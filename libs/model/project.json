@@ -5,37 +5,33 @@
   "targets": {
     "build": {
       "executor": "@nrwl/js:swc",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/libs/model",
         "main": "libs/model/src/index.ts",
         "tsConfig": "libs/model/tsconfig.lib.json",
-        "assets": [
-          "libs/model/*.md"
-        ]
+        "assets": ["libs/model/*.md"]
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
+      "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "libs/model/**/*.ts"
-        ]
+        "lintFilePatterns": ["libs/model/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/libs/model"
-      ],
+      "outputs": ["coverage/libs/model"],
       "options": {
         "jestConfig": "libs/model/jest.config.js",
         "passWithNoTests": true
+      }
+    },
+    "generate": {
+      "builder": "@nx-tools/nx-prisma:generate",
+      "options": {
+        "schema": "libs/model/schema.prisma"
       }
     }
   },

@@ -58,3 +58,5 @@ Thumbs.db
 /apps/gatsby-theme-document/node_modules
 /apps/gatsby-theme-document/public
 /apps/gatsby-theme-document/.cache
+libs/model/dev.db-journal
+libs/model/dev.db

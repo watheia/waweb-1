@@ -1,3 +1,4 @@
+export { default as prisma } from './lib/prisma';
 export type { AuthUser } from './types/AuthUser';
 export type { GitHubOAuthData } from './types/GitHubOAuthData';
 export type { Image } from './types/Image';

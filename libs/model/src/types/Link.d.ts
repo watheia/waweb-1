@@ -1,3 +1,3 @@
 export interface Link {
-  url: string;
+  uri: string;
 }

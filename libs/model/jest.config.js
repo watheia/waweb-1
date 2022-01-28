@@ -1,9 +1,15 @@
 module.exports = {
   displayName: 'model',
   preset: '../../jest.preset.js',
-  transform: {
-    '^.+\\.[tj]s$': '@swc/jest',
+  globals: {
+    'ts-jest': {
+      tsconfig: '<rootDir>/tsconfig.spec.json',
+    },
   },
-  moduleFileExtensions: ['ts', 'js', 'html'],
+  testEnvironment: 'node',
+  transform: {
+    '^.+\\.[tj]sx?$': 'ts-jest',
+  },
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   coverageDirectory: '../../coverage/libs/model',
 };

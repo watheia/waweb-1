@@ -4,12 +4,13 @@
   "projectType": "library",
   "targets": {
     "build": {
-      "executor": "@nrwl/js:swc",
+      "executor": "@nrwl/node:package",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/libs/model",
-        "main": "libs/model/src/index.ts",
         "tsConfig": "libs/model/tsconfig.lib.json",
+        "packageJson": "libs/model/package.json",
+        "main": "libs/model/src/index.ts",
         "assets": ["libs/model/*.md"]
       }
     },
@@ -26,26 +27,6 @@
       "options": {
         "jestConfig": "libs/model/jest.config.js",
         "passWithNoTests": true
-      }
-    },
-    "generate": {
-      "builder": "@nx-tools/nx-prisma:generate",
-      "options": {
-        "schema": "libs/model/schema.prisma"
-      }
-    },
-    "migrate": {
-      "builder": "@nx-tools/nx-prisma:migrate",
-      "options": {
-        "schema": "libs/model/schema.prisma"
-      }
-    },
-    "seed": {
-      "builder": "@nx-tools/nx-prisma:seed",
-      "options": {
-        "script": "libs/model/src/seed.ts",
-        "tsConfig": "libs/model/tsconfig.lib.json",
-        "schema": "libs/model/schema.prisma"
       }
     }
   },

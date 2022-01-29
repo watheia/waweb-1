@@ -24,7 +24,7 @@ export default function IndexPage() {
   const config = useConfig();
   const { query } = useRouter();
   const meta = {
-    title: 'Demo - Virtual Event Starter Kit',
+    title: 'Watheia Labs | Gatekeeper',
     description: config.metaDescription,
   };
   const ticketNumber = query.ticketNumber?.toString();

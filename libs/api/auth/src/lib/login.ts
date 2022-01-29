@@ -1,5 +1,5 @@
 export default async function login(email: string, token?: string) {
-  return await fetch('/api/login', {
+  return await fetch('/api/auth', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

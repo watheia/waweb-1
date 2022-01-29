@@ -16,7 +16,7 @@ setup:
 	bvm install latest
 
 	@echo "~~~> Setup local workspace..."
-	bit config set analytics_reporting false
+	bit config set analytics_reporting true
 	bit init --harmony
 
 	@echo "~~~> Install dependencies..."

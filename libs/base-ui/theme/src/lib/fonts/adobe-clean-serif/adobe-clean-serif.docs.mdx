@@ -1,0 +1,62 @@
+---
+description: 'Adobe Clean Serif Fonts'
+labels: ['spectrum', 'typography', 'webfonts']
+---
+
+import {
+  AdobeCleanSerif,
+  AdobeCleanSerifIt,
+  AdobeCleanSerifBold,
+  AdobeCleanSerifBoldIt,
+  AdobeCleanSerifBlack,
+  AdobeCleanSerifBlackIt,
+  adobeCleanSerif,
+} from '.';
+
+Provides individual font faces for the `Adobe Clean` font family.
+
+### Component usage
+
+Font faces are loaded on demand. Each font class needs to be added somewhere
+in the entry point in order to use a specific variant. Use the `Adobe Clean Serif`
+font family, or any of the exported class names to style text blocks
+
+```jsx live
+<div>
+  <AdobeCleanSerif />
+  <AdobeCleanSerifIt />
+  <AdobeCleanSerifBold />
+  <AdobeCleanSerifBoldIt />
+  <AdobeCleanSerifBlack />
+  <AdobeCleanSerifBlackIt />
+  <div style={{ fontFamily: 'Adobe Clean Serif' }}>
+    <p>
+      <strong>abcdefghijklmnopqrstuvwxyz</strong>
+      <br />
+      <em>ABCDEFGHIJKLMNOPQRSTUVWXYZ</em>
+      <br />
+      <span style={{ fontWeight: 300 }}>
+        0123456789.:,;()*!?'@#&lt;&gt;$%&amp;^+-=~
+      </span>
+    </p>
+    <p className={adobeCleanSerif.regular}>
+      The quick brown fox jumps over the lazy dog.
+    </p>
+    <p className={adobeCleanSerif.it}>
+      The quick brown fox jumps over the lazy dog.
+    </p>
+    <p className={adobeCleanSerif.bold}>
+      The quick brown fox jumps over the lazy dog.
+    </p>
+    <p className={adobeCleanSerif.boldIt}>
+      The quick brown fox jumps over the lazy dog.
+    </p>
+    <p className={adobeCleanSerif.black}>
+      The quick brown fox jumps over the lazy dog.
+    </p>
+    <p className={adobeCleanSerif.blackIt}>
+      The quick brown fox jumps over the lazy dog.
+    </p>
+  </div>
+</div>
+```

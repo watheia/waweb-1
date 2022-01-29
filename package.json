@@ -104,8 +104,6 @@
   },
   "devDependencies": {
     "@emotion/babel-plugin": "11.7.2",
-    "@nestjs/schematics": "^8.0.5",
-    "@nestjs/testing": "^8.2.6",
     "@nrwl/cli": "13.7.0",
     "@nrwl/cypress": "13.7.0",
     "@nrwl/eslint-plugin-nx": "13.7.0",
@@ -118,6 +116,7 @@
     "@nrwl/tao": "13.7.0",
     "@nrwl/web": "13.7.0",
     "@nrwl/workspace": "13.7.0",
+    "@nx-plus/docusaurus": "^12.2.0",
     "@nx-tools/nx-docker": "^2.2.0",
     "@nx-tools/nx-prisma": "^2.0.0-alpha.4",
     "@swc/cli": "~0.1.55",

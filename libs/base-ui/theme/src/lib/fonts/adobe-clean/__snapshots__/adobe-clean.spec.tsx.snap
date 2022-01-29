@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render with the correct font 1`] = `
+<div
+  data-testid="waweb.spectrum/theme/fonts/adobe-clean"
+>
+  <p>
+    <strong>
+      abcdefghijklmnopqrstuvwxyz
+    </strong>
+    <br />
+    <em>
+      ABCDEFGHIJKLMNOPQRSTUVWXYZ
+    </em>
+    <br />
+    <span
+      style="font-weight: 300;"
+    >
+      0123456789.:,;()*!?'@#&lt;&gt;$%&^+-=~
+    </span>
+  </p>
+  <p
+    style="font-size: 10px;"
+  >
+    The quick brown fox jumps over the lazy dog.
+  </p>
+  <p
+    style="font-size: 11px;"
+  >
+    The quick brown fox jumps over the lazy dog.
+  </p>
+  <p
+    style="font-size: 12px;"
+  >
+    The quick brown fox jumps over the lazy dog.
+  </p>
+  <p
+    style="font-size: 14px;"
+  >
+    The quick brown fox jumps over the lazy dog.
+  </p>
+  <p
+    style="font-size: 18px;"
+  >
+    The quick brown fox jumps over the lazy dog.
+  </p>
+  <p
+    style="font-size: 24px;"
+  >
+    The quick brown fox jumps over the lazy dog.
+  </p>
+  <p
+    style="font-size: 30px;"
+  >
+    The quick brown fox jumps over the lazy dog.
+  </p>
+  <p
+    style="font-size: 36px;"
+  >
+    The quick brown fox jumps over the lazy dog.
+  </p>
+  <p
+    style="font-size: 48px;"
+  >
+    The quick brown fox jumps over the lazy dog.
+  </p>
+  <p
+    style="font-size: 60px;"
+  >
+    The quick brown fox jumps over the lazy dog.
+  </p>
+  <p
+    style="font-size: 72px;"
+  >
+    The quick brown fox jumps over the lazy dog.
+  </p>
+</div>
+`;

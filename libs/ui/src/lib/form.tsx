@@ -52,7 +52,7 @@ export default function Form({ sharePage }: Props) {
     isEnabled: isCaptchaEnabled,
   } = useCaptcha();
 
-  const handleRegister = useCallback(
+  const handleLogin = useCallback(
     (token?: string) => {
       login(email, token)
         .then(async (res: Response) => {
@@ -61,27 +61,28 @@ export default function Form({ sharePage }: Props) {
           }
 
           const data = await res.json();
-          const params = {
+          setUserData({
             id: data.id,
             ticketNumber: data.ticketNumber,
             name: data.name,
             username: data.username,
-          };
+          });
+          setPageState('online');
 
-          if (sharePage) {
-            const queryString = Object.keys(params)
-              .map(
-                (key) =>
-                  `${encodeURIComponent(key)}=${encodeURIComponent(
-                    params[key as keyof typeof params] || ''
-                  )}`
-              )
-              .join('&');
-            await router.replace(`/?${queryString}`, '/');
-          } else {
-            setUserData(params);
-            setPageState('online');
-          }
+          // if (sharePage) {
+          //   const queryString = Object.keys(params)
+          //     .map(
+          //       (key) =>
+          //         `${encodeURIComponent(key)}=${encodeURIComponent(
+          //           params[key as keyof typeof params] || ''
+          //         )}`
+          //     )
+          //     .join('&');
+          //   await router.replace(`/?${queryString}`, '/');
+          // } else {
+          // setUserData(params);
+          // setPageState('online');
+          // }
         })
         .catch(async (err: Error) => {
           let message = 'Error! Please try again.';
@@ -117,12 +118,12 @@ export default function Form({ sharePage }: Props) {
           return executeCaptcha();
         }
 
-        return handleRegister();
+        return handleLogin();
       } else {
         setFormState('default');
       }
     },
-    [executeCaptcha, formState, isCaptchaEnabled, handleRegister]
+    [executeCaptcha, formState, isCaptchaEnabled, handleLogin]
   );
 
   const onTryAgainClick = useCallback(
@@ -185,7 +186,7 @@ export default function Form({ sharePage }: Props) {
             onChange={(e) => setEmail(e.target.value)}
             onFocus={() => setFocused(true)}
             onBlur={() => setFocused(false)}
-            placeholder="Enter email to login free"
+            placeholder="Enter email to get login url"
             aria-label="Your email address"
             required
           />
@@ -195,10 +196,10 @@ export default function Form({ sharePage }: Props) {
           className={cn(styles['submit'], styles['login'], styles[formState])}
           disabled={formState === 'loading'}
         >
-          {formState === 'loading' ? <LoadingDots size={4} /> : <>Register</>}
+          {formState === 'loading' ? <LoadingDots size={4} /> : <>Login</>}
         </button>
       </div>
-      <Captcha ref={captchaRef} onVerify={handleRegister} />
+      <Captcha ref={captchaRef} onVerify={handleLogin} />
     </form>
   );
 }

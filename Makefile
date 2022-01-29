@@ -4,7 +4,9 @@ SHELL := /bin/bash
 PATH := ./node_modules/.bin:$(HOME)/bin:$(PATH)
 
 clean:
-	rm -rf yarn.lock coverage dist public node_modules **/__snapshots__
+	rm -rf yarn.lock coverage/ dist/ public/ node_modules/ **/__snapshots__/ apps/**/.cache/
+	bit clear-cache
+	yarn cache clean
 
 setup:
 	@echo "~~~> Set up bit installer..."

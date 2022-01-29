@@ -1,1 +1,1 @@
-export * from './lib/api-cms';
+export * from './lib/cms-api';

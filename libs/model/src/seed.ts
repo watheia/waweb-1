@@ -55,12 +55,12 @@ const userData = [
 
 export default async function main() {
   console.log(`Start seeding ...`);
-  for (const u of userData) {
-    const user = await prisma.authUser.create({
-      data: { ...u, createdAt: new Date().toLocaleDateString() },
-    });
-    console.log(`Created user with id: ${user.id}`);
-  }
+  // for (const u of userData) {
+  //   const user = await prisma.authUser.create({
+  //     data: { ...u, createdAt: new Date().toLocaleDateString() },
+  //   });
+  //   console.log(`Created user with id: ${user.id}`);
+  // }
   console.log(`Seeding finished.`);
 }
 

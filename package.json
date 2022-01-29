@@ -50,6 +50,7 @@
     "@spectrum-css/typography": "^4.0.10",
     "@spectrum-css/vars": "^6.1.0",
     "@spectrum-css/well": "^3.0.12",
+    "@supabase/supabase-js": "^1.29.4",
     "@theme-ui/prism": "^0.13.1",
     "apollo-server-core": "^3.6.2",
     "apollo-server-express": "^3.6.2",

@@ -38,6 +38,11 @@
   color: var(--brand);
 }
 
+.info .offline {
+  font-weight: 300;
+  color: var(--secondary-color);
+}
+
 .description {
   font-weight: 400;
   font-size: 20px;

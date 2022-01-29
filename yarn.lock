@@ -5166,6 +5166,55 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@supabase/gotrue-js@npm:^1.22.0":
+  version: 1.22.0
+  resolution: "@supabase/gotrue-js@npm:1.22.0"
+  dependencies:
+    cross-fetch: ^3.0.6
+  checksum: 50cddd3db6c986188aaede2783b4959b326062aa0adca64fcb0bf82dd9a03e46e891d3d45d843b0f6967da10b4fad0ec62a1fddb61d96e255d8de52ebfbc3ddc
+  languageName: node
+  linkType: hard
+
+"@supabase/postgrest-js@npm:^0.36.0":
+  version: 0.36.0
+  resolution: "@supabase/postgrest-js@npm:0.36.0"
+  dependencies:
+    cross-fetch: ^3.0.6
+  checksum: 01ea639747c6cb3110b646ac4d2adc152ce4592e6cca7ac8137d91578cdcc760408ae6d7a1417439b0100e3069235e2c5132babc6681bfeb3e225eab14c107f0
+  languageName: node
+  linkType: hard
+
+"@supabase/realtime-js@npm:^1.3.5":
+  version: 1.3.5
+  resolution: "@supabase/realtime-js@npm:1.3.5"
+  dependencies:
+    "@types/websocket": ^1.0.3
+    websocket: ^1.0.34
+  checksum: 44f4487b3a6b89ff9ce16bc4e9f8c7f17b00aaebdbd011efc99c9fa63c0bf476f795955f0efc2aeb58ba946b3800952d33de21e6b5142f00cd9439f62af0e7a2
+  languageName: node
+  linkType: hard
+
+"@supabase/storage-js@npm:^1.5.1":
+  version: 1.5.1
+  resolution: "@supabase/storage-js@npm:1.5.1"
+  dependencies:
+    cross-fetch: ^3.1.0
+  checksum: 810279490f04f0b4ae92653329cd961e0412db004bbedbd175132928541f64d00916705d1d1711608bea22648e05c898976526e05533bcf790aa315e576fc0e0
+  languageName: node
+  linkType: hard
+
+"@supabase/supabase-js@npm:^1.29.4":
+  version: 1.29.4
+  resolution: "@supabase/supabase-js@npm:1.29.4"
+  dependencies:
+    "@supabase/gotrue-js": ^1.22.0
+    "@supabase/postgrest-js": ^0.36.0
+    "@supabase/realtime-js": ^1.3.5
+    "@supabase/storage-js": ^1.5.1
+  checksum: 25f9d97392ba7d786d69878fe7397f2a4908dc1b57651b726069ab2c465776505da417646cbbb73d4939c69ddd000df1fc468df2c358a1d114e52112744f150b
+  languageName: node
+  linkType: hard
+
 "@surma/rollup-plugin-off-main-thread@npm:^2.2.3":
   version: 2.2.3
   resolution: "@surma/rollup-plugin-off-main-thread@npm:2.2.3::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40surma%2Frollup-plugin-off-main-thread%2F-%2Frollup-plugin-off-main-thread-2.2.3.tgz"
@@ -6367,6 +6416,15 @@ __metadata:
   version: 13.7.1
   resolution: "@types/validator@npm:13.7.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40types%2Fvalidator%2F-%2Fvalidator-13.7.1.tgz"
   checksum: 810649a23bc46928c85d933be73b106bacb651a412c4172e30a70e84c63cada595d391042274b16e1c05b391af3a4f157b360890fbc5462ee347275222d59b64
+  languageName: node
+  linkType: hard
+
+"@types/websocket@npm:^1.0.3":
+  version: 1.0.5
+  resolution: "@types/websocket@npm:1.0.5"
+  dependencies:
+    "@types/node": "*"
+  checksum: 41c7a620f877a0165ff36e713455d888b7f5df9c51e71b5d0f47994f98cf22ccd339b8c6cfdc6bb417e950d40f405693974d393bd916971490553cc5e9e67a9d
   languageName: node
   linkType: hard
 
@@ -7933,6 +7991,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bufferutil@npm:^4.0.1":
+  version: 4.0.6
+  resolution: "bufferutil@npm:4.0.6"
+  dependencies:
+    node-gyp: latest
+    node-gyp-build: ^4.3.0
+  checksum: dd107560947445280af7820c3d0534127b911577d85d537e1d7e0aa30fd634853cef8a994d6e8aed3d81388ab1a20257de776164afe6a6af8e78f5f17968ebd6
+  languageName: node
+  linkType: hard
+
 "builtin-modules@npm:^3.1.0":
   version: 3.2.0
   resolution: "builtin-modules@npm:3.2.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fbuiltin-modules%2F-%2Fbuiltin-modules-3.2.0.tgz"
@@ -8706,6 +8774,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cross-fetch@npm:^3.0.6, cross-fetch@npm:^3.1.0":
+  version: 3.1.5
+  resolution: "cross-fetch@npm:3.1.5"
+  dependencies:
+    node-fetch: 2.6.7
+  checksum: f6b8c6ee3ef993ace6277fd789c71b6acf1b504fd5f5c7128df4ef2f125a429e29cd62dc8c127523f04a5f2fa4771ed80e3f3d9695617f441425045f505cf3bb
+  languageName: node
+  linkType: hard
+
 "cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.2, cross-spawn@npm:^7.0.3":
   version: 7.0.3
   resolution: "cross-spawn@npm:7.0.3::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fcross-spawn%2F-%2Fcross-spawn-7.0.3.tgz"
@@ -9038,6 +9115,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"d@npm:1, d@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "d@npm:1.0.1"
+  dependencies:
+    es5-ext: ^0.10.50
+    type: ^1.0.1
+  checksum: 49ca0639c7b822db670de93d4fbce44b4aa072cd848c76292c9978a8cd0fff1028763020ff4b0f147bd77bfe29b4c7f82e0f71ade76b2a06100543cdfd948d19
+  languageName: node
+  linkType: hard
+
 "damerau-levenshtein@npm:^1.0.7":
   version: 1.0.8
   resolution: "damerau-levenshtein@npm:1.0.8::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fdamerau-levenshtein%2F-%2Fdamerau-levenshtein-1.0.8.tgz"
@@ -9109,6 +9196,15 @@ __metadata:
     supports-color:
       optional: true
   checksum: 820ea160e267e23c953c9ed87e7ad93494d8cda2f7349af5e7e3bb236d23707ee3022f477d5a7d2ee86ef2bf7d60aa9ab22d1f58080d7deb9dccd073585e1e43
+  languageName: node
+  linkType: hard
+
+"debug@npm:^2.2.0":
+  version: 2.6.9
+  resolution: "debug@npm:2.6.9"
+  dependencies:
+    ms: 2.0.0
+  checksum: d2f51589ca66df60bf36e1fa6e4386b318c3f1e06772280eea5b1ae9fd3d05e9c2b7fd8a7d862457d00853c75b00451aa2d7459b924629ee385287a650f58fe6
   languageName: node
   linkType: hard
 
@@ -9785,6 +9881,38 @@ __metadata:
   languageName: node
   linkType: hard
 
+"es5-ext@npm:^0.10.35, es5-ext@npm:^0.10.50":
+  version: 0.10.53
+  resolution: "es5-ext@npm:0.10.53"
+  dependencies:
+    es6-iterator: ~2.0.3
+    es6-symbol: ~3.1.3
+    next-tick: ~1.0.0
+  checksum: 24ec22369260cf98605cb2f51eae9d7df5dc621bc5d3b311f6f5c3d0fcdb7bafae888270f3083ee6e9af27350a5ea49f1fe2dd6406a9017247ca40f091f529b2
+  languageName: node
+  linkType: hard
+
+"es6-iterator@npm:~2.0.3":
+  version: 2.0.3
+  resolution: "es6-iterator@npm:2.0.3"
+  dependencies:
+    d: 1
+    es5-ext: ^0.10.35
+    es6-symbol: ^3.1.1
+  checksum: 6e48b1c2d962c21dee604b3d9f0bc3889f11ed5a8b33689155a2065d20e3107e2a69cc63a71bd125aeee3a589182f8bbcb5c8a05b6a8f38fa4205671b6d09697
+  languageName: node
+  linkType: hard
+
+"es6-symbol@npm:^3.1.1, es6-symbol@npm:~3.1.3":
+  version: 3.1.3
+  resolution: "es6-symbol@npm:3.1.3"
+  dependencies:
+    d: ^1.0.1
+    ext: ^1.1.2
+  checksum: cd49722c2a70f011eb02143ef1c8c70658d2660dead6641e160b94619f408b9cf66425515787ffe338affdf0285ad54f4eae30ea5bd510e33f8659ec53bcaa70
+  languageName: node
+  linkType: hard
+
 "escalade@npm:^3.1.1":
   version: 3.1.1
   resolution: "escalade@npm:3.1.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fescalade%2F-%2Fescalade-3.1.1.tgz"
@@ -10328,6 +10456,15 @@ __metadata:
     utils-merge: 1.0.1
     vary: ~1.1.2
   checksum: 1535d56d20e65a1a39b5f056c025dd635290a744478ac69cc47633aeb4b2ce51458f8eb4080cfb7ba47c853ba5cfd794d404cff822a25127f1556b726ec3914a
+  languageName: node
+  linkType: hard
+
+"ext@npm:^1.1.2":
+  version: 1.6.0
+  resolution: "ext@npm:1.6.0"
+  dependencies:
+    type: ^2.5.0
+  checksum: ca3ef4619e838f441a92238a98b77ac873da2175ace746c64303ffe2c3208e79a3acf3bf7004e40b720f3c2a83bf0143e6dd4a7cdfae6e73f54a3bfc7a14b5c2
   languageName: node
   linkType: hard
 
@@ -14190,6 +14327,13 @@ __metadata:
   peerDependencies:
     next: ">=9.0.0"
   checksum: 868e7b4222ce7d5a9de93f083d23726a1062305aa34cbf2443892d66777bb30486a7cebd2d6f023da3d4ceb5e6b998bcf419353c5d7ab5c8bdb1f16b7660f0d8
+  languageName: node
+  linkType: hard
+
+"next-tick@npm:~1.0.0":
+  version: 1.0.0
+  resolution: "next-tick@npm:1.0.0"
+  checksum: 83fcb3d4f8d9380210b1c2b8a610463602d80283f0c0c8571c1688e1ad6cbf3a16b345f5bb7212617d4898bedcfa10dff327dc09ec20a112a5bf43a0271375fb
   languageName: node
   linkType: hard
 
@@ -18943,6 +19087,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"type@npm:^1.0.1":
+  version: 1.2.0
+  resolution: "type@npm:1.2.0"
+  checksum: dae8c64f82c648b985caf321e9dd6e8b7f4f2e2d4f846fc6fd2c8e9dc7769382d8a52369ddbaccd59aeeceb0df7f52fb339c465be5f2e543e81e810e413451ee
+  languageName: node
+  linkType: hard
+
+"type@npm:^2.5.0":
+  version: 2.5.0
+  resolution: "type@npm:2.5.0"
+  checksum: 0fe1bb4e8ba298b2b245fdc6bca6178887e29e2134d231e468366615b3adffd651d464eb51d8b15f8cfd168577c282a17e19bf80f036a60d4df16308a83a93c4
+  languageName: node
+  linkType: hard
+
 "typedarray-dts@npm:^1.0.0":
   version: 1.0.0
   resolution: "typedarray-dts@npm:1.0.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Ftypedarray-dts%2F-%2Ftypedarray-dts-1.0.0.tgz"
@@ -19303,6 +19461,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"utf-8-validate@npm:^5.0.2":
+  version: 5.0.8
+  resolution: "utf-8-validate@npm:5.0.8"
+  dependencies:
+    node-gyp: latest
+    node-gyp-build: ^4.3.0
+  checksum: cb1be3fa4eb896be17945a2e46c25f47ef9344d5955703a09d9d831efef681ce120bddfe02a8ebf3a96580ffa8f70edda55623e4d021adff70cb81cd0c8a885e
+  languageName: node
+  linkType: hard
+
 "util-deprecate@npm:^1.0.1, util-deprecate@npm:^1.0.2, util-deprecate@npm:~1.0.1":
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Futil-deprecate%2F-%2Futil-deprecate-1.0.2.tgz"
@@ -19513,6 +19681,7 @@ __metadata:
     "@spectrum-css/typography": ^4.0.10
     "@spectrum-css/vars": ^6.1.0
     "@spectrum-css/well": ^3.0.12
+    "@supabase/supabase-js": ^1.29.4
     "@swc/cli": ~0.1.55
     "@swc/core": 1.2.135
     "@swc/helpers": ~0.3.2
@@ -19824,6 +19993,20 @@ __metadata:
   version: 0.1.4
   resolution: "websocket-extensions@npm:0.1.4::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fwebsocket-extensions%2F-%2Fwebsocket-extensions-0.1.4.tgz"
   checksum: 5976835e68a86afcd64c7a9762ed85f2f27d48c488c707e67ba85e717b90fa066b98ab33c744d64255c9622d349eedecf728e65a5f921da71b58d0e9591b9038
+  languageName: node
+  linkType: hard
+
+"websocket@npm:^1.0.34":
+  version: 1.0.34
+  resolution: "websocket@npm:1.0.34"
+  dependencies:
+    bufferutil: ^4.0.1
+    debug: ^2.2.0
+    es5-ext: ^0.10.50
+    typedarray-to-buffer: ^3.1.5
+    utf-8-validate: ^5.0.2
+    yaeti: ^0.0.6
+  checksum: 8a0ce6d79cc1334bb6ea0d607f0092f3d32700b4dd19e4d5540f2a85f3b50e1f8110da0e4716737056584dde70bbebcb40bbd94bbb437d7468c71abfbfa077d8
   languageName: node
   linkType: hard
 
@@ -20323,6 +20506,13 @@ __metadata:
   version: 5.0.8
   resolution: "y18n@npm:5.0.8::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fy18n%2F-%2Fy18n-5.0.8.tgz"
   checksum: 54f0fb95621ee60898a38c572c515659e51cc9d9f787fb109cef6fde4befbe1c4602dc999d30110feee37456ad0f1660fa2edcfde6a9a740f86a290999550d30
+  languageName: node
+  linkType: hard
+
+"yaeti@npm:^0.0.6":
+  version: 0.0.6
+  resolution: "yaeti@npm:0.0.6"
+  checksum: 6db12c152f7c363b80071086a3ebf5032e03332604eeda988872be50d6c8469e1f13316175544fa320f72edad696c2d83843ad0ff370659045c1a68bcecfcfea
   languageName: node
   linkType: hard
 

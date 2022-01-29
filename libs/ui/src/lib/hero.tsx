@@ -40,8 +40,8 @@ export default function Hero() {
           styles['hero']
         )}
       >
-        The first {config.brandName}
-        <br className={styleUtils['show-on-desktop']} /> global user conference
+        {config.brandName}
+        <br className={styleUtils['show-on-desktop']} /> Gatekeeper
       </h1>
       <h2
         className={cn(
@@ -60,11 +60,9 @@ export default function Hero() {
           styles['info']
         )}
       >
-        <p>Jan 1st, 2022</p>
+        <p>guest</p>
         <div className={styles['description-separator']} />
-        <p>
-          <strong>Online</strong>
-        </p>
+        <p className={styles['offline']}>offline</p>
       </div>
     </div>
   );

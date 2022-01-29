@@ -1,0 +1,151 @@
+/**
+ * this is the main configuration file of your bit workspace.
+ * for full documentation, please see: https://harmony-docs.bit.dev/workspace/configurations
+ **/{
+  "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
+  /**
+   * main configuration of the Bit workspace.
+   **/
+  "teambit.workspace/workspace": {
+    /**
+     * the name of the component workspace. used for development purposes.
+     **/
+    "name": "components",
+    /**
+     * set the icon to be shown on the Bit server.
+     **/
+    "icon": "https://static.bit.dev/bit-logo.svg",
+    /**
+     * default directory to place a component during `bit import` and `bit create`.
+     * the following placeholders are available:
+     * name - component name includes namespace, e.g. 'ui/button'.
+     * scopeId - full scope-id includes the owner, e.g. 'teambit.compilation'.
+     * scope - scope name only, e.g. 'compilation'.
+     * owner - owner name in bit.dev, e.g. 'teambit'.
+     **/
+    "defaultDirectory": "{scope}/{name}",
+    /**
+     * default scope for all components in workspace.
+     **/
+    "defaultScope": "waweb.demo"
+  },
+  /**
+   * main configuration for component dependency resolution.
+   **/
+  "teambit.dependencies/dependency-resolver": {
+    /**
+     * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
+     */
+    "packageManager": "teambit.dependencies/yarn",
+    "policy": {
+      "dependencies": {},
+      "peerDependencies": {}
+    }
+  },
+  /**
+   * Add an aditional bundler for pure html
+   */
+  "teambit.compilation/bundler": {
+    "dedicatedEnvDevServers": [
+      "teambit.html/html"
+    ]
+  },
+  /**
+   * workspace variants allow to set different subsets of configuration for components in your
+   * workspace. this is extremely useful for upgrading, aligning and building components with a new
+   * set of dependencies. a rule can be a directory or a component-id/namespace, in which case,
+   * wrap the rule with curly brackets (e.g. `"{ui/*}": {}`)
+   * see https://harmony-docs.bit.dev/aspects/variants for more info.
+   **/
+  "teambit.workspace/variants": {
+    "*": {
+      "teambit.pkg/pkg": {
+        "packageManagerPublishArgs": [
+          "--access public"
+        ],
+        "packageJson": {
+          "name": "@waweb/{scope}.{name}",
+          "private": false,
+          "author": {
+            "name": "Aaron R Miller",
+            "email": "amiller@watheia.org"
+          },
+          "repository": {
+            "url": "https://bit.dev",
+            "directory": "{scope}"
+          },
+          "homepage": "https://github.com/watheia/components",
+          "keywords": [
+            "micro",
+            "microcomponent",
+            "microfrontend",
+            "bit",
+            "harmony"
+          ]
+        },
+        "license": "MIT"
+      }
+    },
+    "base-ui": {
+      "defaultScope": "waweb.base-ui"
+    },
+    "envs": {
+      "defaultScope": "waweb.envs"
+    },
+    "content": {
+      "defaultScope": "waweb.content"
+    },
+    "demo": {
+      "defaultScope": "waweb.demo"
+    },
+    "docs": {
+      "defaultScope": "waweb.docs"
+    },
+    "mdx": {
+      "defaultScope": "waweb.mdx"
+    },
+    "spectrum": {
+      "defaultScope": "waweb.spectrum"
+    },
+    "theme": {
+      "defaultScope": "waweb.theme"
+    },
+    "tools": {
+      "defaultScope": "waweb.tools"
+    },
+    /**
+     * configures all components with the appropritate build environment
+     *
+     */
+    "base-ui/theme, docs/theme": {
+      "teambit.react/react": {}
+    },
+    /**
+     * configures components with namespaces 'entities', 'modules' and 'functions' to use the
+     * default NodeJS dev environment.
+     */
+    "{elements/**}, {ui/**}, {text/*}": {
+      "waweb.envs/wa-react": {},
+      "teambit.react/react": "-"
+    },
+    /**
+     * configures components with namespace 'content' to use the MDX dev environment.
+     */
+    "{content/**}": {
+      "teambit.mdx/mdx": {}
+    },
+    /**
+     * configures components with namespaces 'envs' and 'aspects' to use the default Aspect development environment.
+     */
+    "{wa-react}": {
+      "teambit.harmony/aspect": {}
+    },
+    "spectrum/design/typography": {
+      // e.g. apply the env to all components under the some/path directory
+      "teambit.html/html": {}
+    }
+    // "spectrum/theme": {
+    //   "teambit.react/react": {}
+    // }
+  }
+}

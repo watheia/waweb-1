@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
+import { Speaker } from '@waweb/model';
 import cn from 'clsx';
-import { Speaker } from 'model/src';
 import Image from 'next/image';
 import Link from 'next/link';
 import GithubIcon from './icons/icon-github';

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { TicketGenerationState } from 'model/src';
+import { TicketGenerationState } from '@waweb/model';
 import TicketColored from './ticket-colored';
 import TicketColoredMobile from './ticket-colored-mobile';
 import TicketInfo from './ticket-info';

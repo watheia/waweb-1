@@ -3,31 +3,30 @@
 SHELL := /bin/bash
 PATH := ./node_modules/.bin:$(HOME)/bin:$(PATH)
 
-# clean:
-# 	rm -rf yarn.lock dist public node_modules apps/web/public apps/web/.cache
+clean:
+	rm -rf yarn.lock coverage dist public node_modules **/__snapshots__
 
-# bit-init:
-# 	yarn install
-# 	npm install --global @teambit/bvm
-# 	bvm install latest
-# 	bit config set analytics_reporting false
-# 	bit init --harmony
+setup:
+	@echo "~~~> Set up bit installer..."
+	npm install --global @teambit/bvm
 
-# assemble:
-# 	nx affected --target assemble
+	@echo "~~~> Install bit..."
+	bvm install latest
 
-# build:
-# 	nx run-many --all --target build --prod --verbose
+	@echo "~~~> Setup local workspace..."
+	bit config set analytics_reporting false
+	bit init --harmony
 
-# test:
-# 	nx run-many --all --target test
+	@echo "~~~> Install dependencies..."
+	bit install
 
-# lint:
-# 	nx run-many --all --target lint --fix
+	@echo "Setup complete."
+	@echo "Be sure to add the ${HOME}/bin dir to your system path."
 
-# start-bit:
-# 	bit ui-build
-# 	bit start --dev --log info
+
+build:
+	@echo "~~~> Build home bundle..."
+	nx build home --prod
 
 docs:
 	yarn depcruise --output-type dot --output-to docs/depgraph.dot --prefix "https://github.com/watheia/next-mfe-starter/blob/main/"

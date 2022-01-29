@@ -40,7 +40,7 @@ export default function TicketInfo({
   return (
     <div className={styles['info']}>
       <div className={styles['logo']}>
-        <Logo textSecondaryColor={logoTextSecondaryColor} />
+        <Logo />
       </div>
       <div className={styles['date']}>
         <div>Jan 1st, 2022</div>

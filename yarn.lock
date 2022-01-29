@@ -2,7 +2,7 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 5
+  version: 6
   cacheKey: 8
 
 "@actions/exec@npm:^1.1.0":
@@ -6539,6 +6539,146 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@waweb/base-ui.theme.brand-definition@npm:0.1.0":
+  version: 0.1.0
+  resolution: "@waweb/base-ui.theme.brand-definition@npm:0.1.0::__archiveUrl=https%3A%2F%2Fnode.bit.dev%2F%40waweb%2Fbase-ui.theme.brand-definition%2F-%2F%40waweb-base-ui.theme.brand-definition-0.1.0.tgz"
+  dependencies:
+    core-js: ^3.0.0
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  checksum: fc6ce9bbb4e85503fb476ffe71f4e4e3b5478c76bf6cca2b1374a40065ab751afa22dc95c9fe3ce10151c8fa997d7165e98b3226fb6b8dd145bf4ef8f3d818b4
+  languageName: node
+  linkType: hard
+
+"@waweb/base-ui.theme.color-definition@npm:0.1.0, @waweb/base-ui.theme.color-definition@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@waweb/base-ui.theme.color-definition@npm:0.1.0::__archiveUrl=https%3A%2F%2Fnode.bit.dev%2F%40waweb%2Fbase-ui.theme.color-definition%2F-%2F%40waweb-base-ui.theme.color-definition-0.1.0.tgz"
+  dependencies:
+    "@waweb/base-ui.theme.colors": 0.1.0
+    core-js: ^3.0.0
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  checksum: 15f201eb391a86d865ce9d8589884bd0b4b58f0c9f06cec34c059da0e8aa20bc33033bc0cec7af5e5f529d69a9e820d834b38adcf26efbcc86ef3e294f6203f9
+  languageName: node
+  linkType: hard
+
+"@waweb/base-ui.theme.colors@npm:0.1.0, @waweb/base-ui.theme.colors@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@waweb/base-ui.theme.colors@npm:0.1.0::__archiveUrl=https%3A%2F%2Fnode.bit.dev%2F%40waweb%2Fbase-ui.theme.colors%2F-%2F%40waweb-base-ui.theme.colors-0.1.0.tgz"
+  dependencies:
+    core-js: ^3.0.0
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  checksum: 0ed451051a93a31620a21a0d19d281e8a0fa71d30745ba86b806b93d18f1f387e1c64e5a533559385af9c4211ca9b6f68fbd223f574fcd40f745c88127b51616
+  languageName: node
+  linkType: hard
+
+"@waweb/base-ui.theme.fonts.adobe-clean-serif@npm:2.0.1":
+  version: 2.0.1
+  resolution: "@waweb/base-ui.theme.fonts.adobe-clean-serif@npm:2.0.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40waweb%2Fbase-ui.theme.fonts.adobe-clean-serif%2F-%2Fbase-ui.theme.fonts.adobe-clean-serif-2.0.1.tgz"
+  dependencies:
+    "@waweb/base-ui.theme.fonts.adobe-clean": 2.0.1
+    clsx: 1.1.1
+    core-js: ^3.0.0
+  peerDependencies:
+    "@emotion/react": ^11.7.1
+    "@testing-library/react": ^12.0.0
+    "@types/lodash": ^4.14.178
+    lodash: ^4.17.21
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  checksum: 8b426558f64acfa1d6298a451dafd1ef800a9403fc5985f5da0f65f3339de37d764aa84fe683385117646f1209ac317494092da1bb13c6c41e20589b94db7d11
+  languageName: node
+  linkType: hard
+
+"@waweb/base-ui.theme.fonts.adobe-clean@npm:2.0.1":
+  version: 2.0.1
+  resolution: "@waweb/base-ui.theme.fonts.adobe-clean@npm:2.0.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40waweb%2Fbase-ui.theme.fonts.adobe-clean%2F-%2Fbase-ui.theme.fonts.adobe-clean-2.0.1.tgz"
+  dependencies:
+    core-js: ^3.0.0
+  peerDependencies:
+    "@emotion/react": ^11.7.1
+    "@testing-library/react": ^12.0.0
+    "@types/lodash": ^4.14.178
+    lodash: ^4.17.21
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  checksum: afd3a395bdcaaa87076d91be0ab7d9f69ce3229bbf5aa8e6cee8303b9191f7a0fa539ce05945bb2e72720568aa610ce45ec34e91d8f5ad53def1b88308bfecca
+  languageName: node
+  linkType: hard
+
+"@waweb/base-ui.theme.heading-margin-definition@npm:0.1.0":
+  version: 0.1.0
+  resolution: "@waweb/base-ui.theme.heading-margin-definition@npm:0.1.0::__archiveUrl=https%3A%2F%2Fnode.bit.dev%2F%40waweb%2Fbase-ui.theme.heading-margin-definition%2F-%2F%40waweb-base-ui.theme.heading-margin-definition-0.1.0.tgz"
+  dependencies:
+    core-js: ^3.0.0
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  checksum: 426781a5dfcc552c4c7f2102ccffd38e18e81cc379e237e64455db834b7a3f19bbc8c457a57a3bf8b1a8983eb6fd8925a29b6d76da459238d455e91da82f5ef8
+  languageName: node
+  linkType: hard
+
+"@waweb/base-ui.theme.icons-font@npm:0.2.0":
+  version: 0.2.0
+  resolution: "@waweb/base-ui.theme.icons-font@npm:0.2.0::__archiveUrl=https%3A%2F%2Fnode.bit.dev%2F%40waweb%2Fbase-ui.theme.icons-font%2F-%2F%40waweb-base-ui.theme.icons-font-0.2.0.tgz"
+  dependencies:
+    core-js: ^3.0.0
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  checksum: ba8ef4d36c26e2d977cdb3a9053eda8ec960feff19cc6f4d196756ac24d732a451a9d89de55911923687c01897066834aab6314d74aecada2f060525f6e675e0
+  languageName: node
+  linkType: hard
+
+"@waweb/base-ui.theme.shadow-definition@npm:0.1.0, @waweb/base-ui.theme.shadow-definition@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@waweb/base-ui.theme.shadow-definition@npm:0.1.0::__archiveUrl=https%3A%2F%2Fnode.bit.dev%2F%40waweb%2Fbase-ui.theme.shadow-definition%2F-%2F%40waweb-base-ui.theme.shadow-definition-0.1.0.tgz"
+  dependencies:
+    core-js: ^3.0.0
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  checksum: 1064d5d151edfd36e47aa214feff4c94dbc4b6e59e611aeea2fb8075c202ff4097ba3c91b56771bdb6633405a8fe5985d59b4ed4888050bbd9231a62ea3e0be6
+  languageName: node
+  linkType: hard
+
+"@waweb/base-ui.theme.size-definition@npm:0.1.0, @waweb/base-ui.theme.size-definition@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@waweb/base-ui.theme.size-definition@npm:0.1.0::__archiveUrl=https%3A%2F%2Fnode.bit.dev%2F%40waweb%2Fbase-ui.theme.size-definition%2F-%2F%40waweb-base-ui.theme.size-definition-0.1.0.tgz"
+  dependencies:
+    core-js: ^3.0.0
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  checksum: a7f1d2bae91aefb4e8dc44d44d41dcc0165d82288824b6cb7675e4ce54161dd5633a9489dbbadafde2f21ccbf3d5a401ba1432016c35b623b065830a3951c8b7
+  languageName: node
+  linkType: hard
+
+"@waweb/base-ui.theme.theme-provider@npm:^2.0.0":
+  version: 2.0.1
+  resolution: "@waweb/base-ui.theme.theme-provider@npm:2.0.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40waweb%2Fbase-ui.theme.theme-provider%2F-%2Fbase-ui.theme.theme-provider-2.0.1.tgz"
+  dependencies:
+    "@waweb/base-ui.theme.brand-definition": 0.1.0
+    "@waweb/base-ui.theme.color-definition": 0.1.0
+    "@waweb/base-ui.theme.fonts.adobe-clean": 2.0.1
+    "@waweb/base-ui.theme.fonts.adobe-clean-serif": 2.0.1
+    "@waweb/base-ui.theme.heading-margin-definition": 0.1.0
+    "@waweb/base-ui.theme.icons-font": 0.2.0
+    "@waweb/base-ui.theme.shadow-definition": 0.1.0
+    "@waweb/base-ui.theme.size-definition": 0.1.0
+    clsx: 1.1.1
+    core-js: ^3.0.0
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  checksum: ae827ceb82674687d3440aa38a7b8229585e89febc05973a85a10f3ad23b218de6691d7c588a12bc977aed5cb50acf2dc73e77f3a4e1cf0dc01c912f2576a4ba
+  languageName: node
+  linkType: hard
+
 "@webassemblyjs/ast@npm:1.11.1":
   version: 1.11.1
   resolution: "@webassemblyjs/ast@npm:1.11.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40webassemblyjs%2Fast%2F-%2Fast-1.11.1.tgz"
@@ -8326,7 +8466,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clsx@npm:^1.1.1":
+"clsx@npm:1.1.1, clsx@npm:^1.1.1":
   version: 1.1.1
   resolution: "clsx@npm:1.1.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fclsx%2F-%2Fclsx-1.1.1.tgz"
   checksum: ff052650329773b9b245177305fc4c4dc3129f7b2be84af4f58dc5defa99538c61d4207be7419405a5f8f3d92007c954f4daba5a7b74e563d5de71c28c830063
@@ -8635,7 +8775,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:^3.0.1, core-js@npm:^3.20.3, core-js@npm:^3.6.5":
+"core-js@npm:^3.0.0, core-js@npm:^3.0.1, core-js@npm:^3.20.3, core-js@npm:^3.6.5":
   version: 3.20.3
   resolution: "core-js@npm:3.20.3::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fcore-js%2F-%2Fcore-js-3.20.3.tgz"
   checksum: 2106cdfb1330abf9e27d577666fc0421feafe8c39bb5af90a63af16e9706c767a7e3a82edc21ce3ed6b9d806f3200d1cf6cc3d0597a8c0af12dbec287c781d65
@@ -9863,9 +10003,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:8.3.0":
+"eslint-config-prettier@npm:^8.3.0":
   version: 8.3.0
-  resolution: "eslint-config-prettier@npm:8.3.0"
+  resolution: "eslint-config-prettier@npm:8.3.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Feslint-config-prettier%2F-%2Feslint-config-prettier-8.3.0.tgz"
   peerDependencies:
     eslint: ">=7.0.0"
   bin:
@@ -9981,15 +10121,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react-hooks@npm:4.3.0":
-  version: 4.3.0
-  resolution: "eslint-plugin-react-hooks@npm:4.3.0"
-  peerDependencies:
-    eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0
-  checksum: 0ba1566ba0780bbc75a5921f49188edf232db2085ab32c8d3889592f0db9d6fadc97fcf639775e0101dec6b5409ca3c803ec44213b90c8bacaf0bdf921871c2e
-  languageName: node
-  linkType: hard
-
 "eslint-plugin-react-hooks@npm:^4.3.0":
   version: 4.3.0
   resolution: "eslint-plugin-react-hooks@npm:4.3.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Feslint-plugin-react-hooks%2F-%2Feslint-plugin-react-hooks-4.3.0.tgz"
@@ -10068,9 +10199,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:8.8.0":
+"eslint@npm:^8.8.0":
   version: 8.8.0
-  resolution: "eslint@npm:8.8.0"
+  resolution: "eslint@npm:8.8.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Feslint%2F-%2Feslint-8.8.0.tgz"
   dependencies:
     "@eslint/eslintrc": ^1.0.5
     "@humanwhocodes/config-array": ^0.9.2
@@ -18978,11 +19109,11 @@ __metadata:
 
 "typescript@patch:typescript@^4.5.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.5.5#~builtin<compat/typescript>":
   version: 4.5.5
-  resolution: "typescript@patch:typescript@npm%3A4.5.5%3A%3A__archiveUrl=https%253A%252F%252Fregistry.npmjs.org%252Ftypescript%252F-%252Ftypescript-4.5.5.tgz#~builtin<compat/typescript>::version=4.5.5&hash=493e53"
+  resolution: "typescript@patch:typescript@npm%3A4.5.5%3A%3A__archiveUrl=https%253A%252F%252Fregistry.npmjs.org%252Ftypescript%252F-%252Ftypescript-4.5.5.tgz#~builtin<compat/typescript>::version=4.5.5&hash=142761"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: c05c318d79c690f101d7ffb34cd6c7d6bbd884d3af9cefe7749ad0cd6be43c7082f098280982ca945dcba23fde34a08fed9602bb26540936baf8c0520727d3ba
+  checksum: 858c61fa63f7274ca4aaaffeced854d550bf416cff6e558c4884041b3311fb662f476f167cf5c9f8680c607239797e26a2ee0bcc6467fbc05bfcb218e1c6c671
   languageName: node
   linkType: hard
 
@@ -19537,6 +19668,12 @@ __metadata:
     "@types/validator": 13.7.1
     "@typescript-eslint/eslint-plugin": ~5.10.1
     "@typescript-eslint/parser": ~5.10.1
+    "@waweb/base-ui.theme.color-definition": ^0.1.0
+    "@waweb/base-ui.theme.colors": ^0.1.0
+    "@waweb/base-ui.theme.heading-margin-definition": 0.1.0
+    "@waweb/base-ui.theme.shadow-definition": ^0.1.0
+    "@waweb/base-ui.theme.size-definition": ^0.1.0
+    "@waweb/base-ui.theme.theme-provider": ^2.0.0
     apollo-server-core: ^3.6.2
     apollo-server-express: ^3.6.2
     apollo-server-micro: ^3.6.2
@@ -19551,15 +19688,15 @@ __metadata:
     date-fns: 2.28.0
     dependency-cruiser: ^11.3.0
     dotenv: ^14.3.2
-    eslint: 8.8.0
+    eslint: ^8.8.0
     eslint-config-next: 12.0.9
-    eslint-config-prettier: 8.3.0
+    eslint-config-prettier: ^8.3.0
     eslint-plugin-cypress: ^2.12.1
     eslint-plugin-import: 2.25.4
     eslint-plugin-jsx-a11y: 6.5.1
     eslint-plugin-prettier: ^4.0.0
     eslint-plugin-react: 7.28.0
-    eslint-plugin-react-hooks: 4.3.0
+    eslint-plugin-react-hooks: ^4.3.0
     graphql: ^15.8.0
     graphql-scalars: ^1.14.1
     graphql-tools: ^8.2.0

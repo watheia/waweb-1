@@ -15,10 +15,10 @@
  */
 
 import { Stage } from '@waweb/model';
-import useLoginStatus from './hooks/use-auth-context';
 import cn from 'clsx';
 import useSWR from 'swr';
 import ConfEntry from './conf-entry';
+import useLoginStatus from './hooks/use-login-status';
 import ScheduleSidebar from './schedule-sidebar';
 import styles from './stage-container.module.css';
 import styleUtils from './utils.module.css';

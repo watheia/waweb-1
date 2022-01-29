@@ -26,6 +26,7 @@ setup:
 
 build:
 	@echo "~~~> Build home bundle..."
+	prisma generate --schema libs/model/schema.prisma
 	nx build home --prod
 
 docs:

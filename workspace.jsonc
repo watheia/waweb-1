@@ -41,6 +41,7 @@
       "dependencies": {
         "@waweb/base-ui.theme.color-definition": "^0.1.0",
         "@waweb/base-ui.theme.colors": "^0.1.0",
+        "@waweb/base-ui.theme.heading-margin-definition": "0.1.0",
         "@waweb/base-ui.theme.shadow-definition": "^0.1.0",
         "@waweb/base-ui.theme.size-definition": "^0.1.0",
         "@waweb/base-ui.theme.theme-provider": "^2.0.0"

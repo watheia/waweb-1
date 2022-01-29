@@ -20,7 +20,69 @@ export default class CustomDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head />
+        <Head>
+          <meta name="application-name" content="Watheia Labs" />
+          <meta name="apple-mobile-web-app-capable" content="yes" />
+          <meta
+            name="apple-mobile-web-app-status-bar-style"
+            content="default"
+          />
+          <meta name="apple-mobile-web-app-title" content="Watheia Labs" />
+          <meta name="description" content="Watheia Labs corporate homepage" />
+          <meta name="format-detection" content="telephone=no" />
+          <meta name="mobile-web-app-capable" content="yes" />
+          <meta name="msapplication-config" content="/browserconfig.xml" />
+          <meta name="msapplication-TileColor" content="#111" />
+          <meta name="msapplication-tap-highlight" content="no" />
+          <meta name="theme-color" content="#111" />
+
+          <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+          />
+          <link rel="manifest" href="/manifest.json" />
+          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+          <link rel="shortcut icon" href="/favicon.ico" />
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap"
+          />
+
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:url" content="https://watheia.vercel.app" />
+          <meta name="twitter:title" content="Watheia Labs" />
+          <meta
+            name="twitter:description"
+            content="Watheia Labs corporate homepage"
+          />
+          <meta
+            name="twitter:image"
+            content="https://watheia.vercel.app/android-chrome-192x192.png"
+          />
+          <meta name="twitter:creator" content="@watheia" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Watheia Labs" />
+          <meta
+            property="og:description"
+            content="Watheia Labs corporate homepage"
+          />
+          <meta property="og:site_name" content="Watheia Labs" />
+          <meta property="og:url" content="https://watheia.vercel.app" />
+          <meta
+            property="og:image"
+            content="https://watheia.vercel.app/apple-touch-icon.png"
+          />
+        </Head>
         <body className="loading">
           <Main />
           <NextScript />

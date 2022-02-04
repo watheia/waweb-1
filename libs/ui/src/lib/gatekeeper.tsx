@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-import Gatekeeper from '@waweb/ui.gatekeeper';
-import useConfig from '@waweb/ui.hooks/use-config';
-import Page from '@waweb/ui.page';
+import Container from './container';
+import Form from './form';
+import Hero from './hero';
+import Layout from './layout';
+import LearnMore from './learn-more';
 
-export default function IndexPage() {
-  const config = useConfig();
-  const meta = {
-    title: 'Watheia Labs | Gatekeeper',
-    description: config.metaDescription,
-  };
-
+export default function GatekeeperPage() {
   return (
-    <Page meta={meta} fullViewport>
-      <Gatekeeper />
-    </Page>
+    <Layout useBackdrop>
+      <Container>
+        <Hero />
+        <Form />
+        <LearnMore />
+      </Container>
+    </Layout>
   );
 }

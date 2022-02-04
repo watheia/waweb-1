@@ -18,3 +18,10 @@ export type { SponsorLink } from './types/SponsorLink';
 export type { Stage } from './types/Stage';
 export type { Talk } from './types/Talk';
 export type { TicketGenerationState } from './types/TicketGenerationState';
+export type {
+  NextAppPageProps,
+  NextAppPageRedirProps,
+  NextAppPageServerSideProps,
+  NextAppPageUserProps,
+  NextAppSEOProps,
+} from './types/app';

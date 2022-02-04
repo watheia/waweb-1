@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-import Gatekeeper from '@waweb/ui.gatekeeper';
+import Blog from '@waweb/ui.blog';
 import useConfig from '@waweb/ui.hooks/use-config';
 import Page from '@waweb/ui.page';
 
 export default function IndexPage() {
   const config = useConfig();
   const meta = {
-    title: 'Watheia Labs | Gatekeeper',
+    title: 'Watheia Labs | Blog',
     description: config.metaDescription,
   };
 
   return (
     <Page meta={meta} fullViewport>
-      <Gatekeeper />
+      <Blog />
     </Page>
   );
 }

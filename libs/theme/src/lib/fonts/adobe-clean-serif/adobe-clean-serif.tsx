@@ -1,12 +1,8 @@
 import { css, Global } from '@emotion/react';
-import {
-  AdobeCleanProps,
-  fontWeights,
-  staticFontsPath,
-} from '@waweb/base-ui.theme.fonts.adobe-clean';
 import clsx from 'clsx';
 import { camelCase, startCase } from 'lodash';
 import React from 'react';
+import { AdobeCleanProps, fontWeights, staticFontsPath } from '../adobe-clean';
 import styles from './adobe-clean-serif.module.scss';
 
 export type AdobeCleanSerifClass =
@@ -17,7 +13,7 @@ export type AdobeCleanSerifClass =
   | 'black'
   | 'blackIt';
 
-export type AdobeCleanSerifProps = {} & Omit<AdobeCleanProps, 'className'>;
+export type AdobeCleanSerifProps = Omit<AdobeCleanProps, 'className'>;
 
 export function AdobeCleanSerif({
   children,
@@ -68,25 +64,25 @@ export function AdobeCleanSerif({
   );
 }
 
-export const AdobeCleanSerifIt = ({ children }: AdobeCleanProps) => (
+export const AdobeCleanSerifIt = ({ children }: AdobeCleanSerifProps) => (
   <AdobeCleanSerif fontStyle="italic">{children}</AdobeCleanSerif>
 );
 
-export const AdobeCleanSerifBold = ({ children }: AdobeCleanProps) => (
+export const AdobeCleanSerifBold = ({ children }: AdobeCleanSerifProps) => (
   <AdobeCleanSerif weight="bold">{children}</AdobeCleanSerif>
 );
 
-export const AdobeCleanSerifBoldIt = ({ children }: AdobeCleanProps) => (
+export const AdobeCleanSerifBoldIt = ({ children }: AdobeCleanSerifProps) => (
   <AdobeCleanSerif weight="bold" fontStyle="italic">
     {children}
   </AdobeCleanSerif>
 );
 
-export const AdobeCleanSerifBlack = ({ children }: AdobeCleanProps) => (
+export const AdobeCleanSerifBlack = ({ children }: AdobeCleanSerifProps) => (
   <AdobeCleanSerif weight="black">{children}</AdobeCleanSerif>
 );
 
-export const AdobeCleanSerifBlackIt = ({ children }: AdobeCleanProps) => (
+export const AdobeCleanSerifBlackIt = ({ children }: AdobeCleanSerifProps) => (
   <AdobeCleanSerif weight="black" fontStyle="italic">
     {children}
   </AdobeCleanSerif>

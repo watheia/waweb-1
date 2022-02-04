@@ -1,4 +1,4 @@
-import { createContext, useCallback, useContext, useState } from 'react';
+import { createContext, useContext } from 'react';
 
 interface NavZone {
   name: string;
@@ -18,7 +18,7 @@ interface SiteConfig {
 }
 
 const Context = createContext<SiteConfig>({
-  baseUrl: 'https://watheia.vercel.app',
+  baseUrl: 'https://watheia.io',
   brandName: 'Watheia',
   legalName: 'Watheia Labs, LLC',
   metaDescription:
@@ -26,19 +26,19 @@ const Context = createContext<SiteConfig>({
   repo: 'https://github.com/drkstr101/watheia',
   siteDescription: '',
   siteName: 'Watheia Labs',
-  legalUrl: "#",
+  legalUrl: '#',
   navigation: [
     {
-      name: 'Stage A',
-      route: '/stage/a',
+      name: 'Home',
+      route: '/home',
     },
     {
-      name: 'Stage B',
-      route: '/stage/b',
+      name: 'Blog',
+      route: '/blog',
     },
     {
-      name: 'Schedule',
-      route: '/schedule',
+      name: 'Support',
+      route: '/support',
     },
     {
       name: 'Expo',

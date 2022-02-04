@@ -1,3 +1,5 @@
+import { AuthProvider } from '@waweb/auth';
+import { MessageProvider } from '@waweb/message';
 import { Theme } from '@waweb/theme';
 import '@waweb/theme.styles/index.css';
 import NProgress from '@waweb/ui.nprogress';
@@ -6,8 +8,7 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { useEffect } from 'react';
 import { OverlayProvider, SSRProvider } from 'react-aria';
-import { AuthProvider } from '@waweb/auth';
-import { MessageProvider } from '@waweb/message';
+import 'tailwindcss/tailwind.css';
 // import seo from '../next-seo.config';
 // import { DefaultSeo } from 'next-seo';
 

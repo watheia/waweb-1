@@ -30,6 +30,8 @@ type Props = {
   className?: string;
   hideNav?: boolean;
   layoutStyles?: any;
+  usePadding?: boolean;
+  useBackdrop?: boolean;
 };
 
 export default function Layout({
@@ -37,15 +39,17 @@ export default function Layout({
   className,
   hideNav,
   layoutStyles,
+  usePadding = false,
+  useBackdrop = false,
 }: Props) {
   const config = useConfig();
   const router = useRouter();
-  const activeRoute = router.asPath;
+  const activeRoute = router?.asPath ?? '/';
 
   return (
     <>
       <ViewSource />
-      <div className={styles['background']}>
+      <div className={cn(useBackdrop && styles['background'])}>
         {!hideNav && (
           <header className={cn(styles['header'])}>
             <div className={styles['header-logos']}>
@@ -71,17 +75,20 @@ export default function Layout({
                 </Link>
               ))}
             </div>
-            {/* <div className={cn(styles['header-right'])}>
-              <Logo />
-            </div> */}
           </header>
         )}
         <div className={styles['page']}>
-          <main className={styles['main']} style={layoutStyles}>
+          <main
+            className={cn(styles['main'], usePadding && 'px-2 sm:px-6 lg:px-8')}
+            style={layoutStyles}
+          >
             <SkipNavContent />
-            <div className={cn(styles['full'], className)}>{children}</div>
+            <div className={cn(styles['full'], className)}>
+              <SkipNavContent />
+              {children}
+            </div>
           </main>
-          {!activeRoute.startsWith('/stage') && <Footer />}
+          <Footer />
         </div>
       </div>
     </>

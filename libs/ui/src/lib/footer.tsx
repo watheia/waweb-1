@@ -58,7 +58,6 @@ export default function Footer() {
             </a>
           </p>
           <div className={styles['footer-separator']} />
-          <div className={styles['footer-separator']} />
           <p className={styles['footer-paragraph']}>
             <a
               href={config.legalUrl}

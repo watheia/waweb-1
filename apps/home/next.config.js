@@ -28,6 +28,8 @@ function webpack(config, options) {
  * @type {import('@nrwl/next/plugins/with-nx').WithNxOptions}
  **/
 const nextConfig = {
+  hostname: 'localhost',
+  port: 4200,
   // Prefer loading of ES Modules over CommonJS
   experimental: { esmExternals: true },
   // Support MDX files as pages:

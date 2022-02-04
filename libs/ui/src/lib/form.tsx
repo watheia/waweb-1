@@ -34,7 +34,6 @@ type Props = {
 };
 
 export default function Form({ sharePage }: Props) {
-  console.log('Form(props)', { sharePage });
   const [email, setEmail] = useState('');
   const [errorMsg, setErrorMsg] = useState('');
   const [errorTryAgain, setErrorTryAgain] = useState(false);

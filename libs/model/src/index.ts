@@ -1,6 +1,14 @@
 export { default as prisma } from './lib/prisma';
-export type { AuthUser } from './types/AuthUser';
-export type { GitHubOAuthData } from './types/GitHubOAuthData';
+export type {
+  AppPermission,
+  AppRole,
+  Channel,
+  Message,
+  RolePermission,
+  User,
+  UserRole,
+  UserStatus,
+} from '@prisma/client';
 export type { Image } from './types/Image';
 export type { Job } from './types/Job';
 export type { Link } from './types/Link';

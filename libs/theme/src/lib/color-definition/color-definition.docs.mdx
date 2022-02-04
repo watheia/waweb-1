@@ -1,0 +1,32 @@
+Defines the colors for the whole app.
+Included in the `theme-provider` component.
+
+Colors divide into these groups:
+
+- Primary, brand (purple)
+- Secondary (blue)
+- Complementary (pink)
+- Success (green)
+- Risk (yellow)
+- Danger (red)
+- Neutrals (gray)
+- Shadows
+
+Each color has its own shades, scaling between 0 (lightest) and 100 (darkest),
+e.g.: p20 (lightest purple), p30, p50 (base purple), p60 (highlight) p70 (darkest)
+
+```tsx
+import { primaryPalette } from '@waweb/base-ui.theme.accent-color';
+
+function ApplicationContext({ children }) {
+  return <div className={primaryPalette}>{children}</div>;
+}
+```
+
+We have a couple of main groups:
+
+- texts color
+- accent color (the 'primary', intent color).
+  You can override it with the `accent-color` component.
+- backgrounds
+- ~~errors~~ (prefer to use accent 'error' instead)

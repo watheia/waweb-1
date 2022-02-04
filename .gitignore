@@ -4,6 +4,11 @@
 /dist
 /tmp
 /out-tsc
+/.bit
+!/.bit/scope.json
+.env
+.env.*
+!.env.example
 
 # dependencies
 /node_modules

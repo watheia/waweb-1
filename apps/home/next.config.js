@@ -1,23 +1,40 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const withNx = require('@nrwl/next/plugins/with-nx');
 const withPlugins = require('next-compose-plugins');
-const withTM = require('next-transpile-modules')(
-  [
-    // '@waweb/base-ui.theme.colors',
-    // '@waweb/base-ui.theme.color-definition',
-    // '@waweb/base-ui.theme.size-definition',
-    // '@waweb/base-ui.theme.shadow-definition',
-    // '@waweb/base-ui.theme.brand-definition',
-    // '@waweb/base-ui.theme.theme-provider',
-  ],
-  { debug: true }
-);
 const withPWA = require('next-pwa');
+
+/**
+ * Support loading `.md`, `.mdx`:
+ * @param {import('@nrwl/next/plugins/with-nx').WithNxOptions} config
+ * @param {*} options
+ */
+function webpack(config, options) {
+  config.module.rules.push({
+    test: /\.mdx?$/,
+    use: [
+      // The default `babel-loader` used by Next:
+      options.defaultLoaders.babel,
+      {
+        loader: '@mdx-js/loader',
+        /** @type {import('@mdx-js/loader').Options} */
+        options: {
+          /* jsxImportSource: …, otherOptions… */
+        },
+      },
+    ],
+  });
+}
 
 /**
  * @type {import('@nrwl/next/plugins/with-nx').WithNxOptions}
  **/
 const nextConfig = {
+  // Prefer loading of ES Modules over CommonJS
+  experimental: { esmExternals: true },
+  // Support MDX files as pages:
+  pageExtensions: ['md', 'mdx', 'tsx', 'ts', 'jsx', 'js'],
+  // minify output
+  swcMinify: true,
+  // webpack,
   nx: {
     // Set this to true if you would like to to use SVGR
     // See: https://github.com/gregberge/svgr
@@ -40,4 +57,4 @@ const pwaConfig = {};
 
 const plugins = [[withNx], [withPWA, pwaConfig]];
 
-module.exports = withTM(withPlugins([...plugins], nextConfig));
+module.exports = withPlugins([...plugins], nextConfig);

@@ -1,13 +1,13 @@
 {
   "version": 2,
   "projects": {
-    "api-auth": "libs/api/auth",
-    "api-cms": "libs/api/cms",
-    "base-ui-theme": "libs/base-ui/theme",
-    "envs": "libs/envs",
+    "auth": "libs/auth",
     "home": "apps/home",
     "home-e2e": "apps/home-e2e",
+    "message": "libs/message",
     "model": "libs/model",
+    "navigation": "libs/navigation",
+    "store": "libs/store",
     "theme": "libs/theme",
     "ui": "libs/ui",
     "util": "libs/util"

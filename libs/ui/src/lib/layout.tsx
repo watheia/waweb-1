@@ -71,9 +71,9 @@ export default function Layout({
                 </Link>
               ))}
             </div>
-            <div className={cn(styles['header-right'])}>
+            {/* <div className={cn(styles['header-right'])}>
               <Logo />
-            </div>
+            </div> */}
           </header>
         )}
         <div className={styles['page']}>

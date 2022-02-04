@@ -14,55 +14,20 @@
  * limitations under the License.
  */
 
-import { useState } from 'react';
-import ConfContainer from './conf-container';
+import Container from './container';
 import Form from './form';
 import Hero from './hero';
-import { AuthContext, PageState, UserData } from './hooks/use-auth-context';
 import Layout from './layout';
 import LearnMore from './learn-more';
-import Ticket from './ticket';
 
-type Props = {
-  defaultUserData: UserData;
-  sharePage?: boolean;
-  defaultPageState?: PageState;
-};
-
-export default function Conf({
-  defaultUserData,
-  sharePage,
-  defaultPageState = 'offline',
-}: Props) {
-  const [userData, setUserData] = useState<UserData>(defaultUserData);
-  const [pageState, setPageState] = useState<PageState>(defaultPageState);
-
+export default function HomePage() {
   return (
-    <AuthContext.Provider
-      value={{
-        userData,
-        setUserData,
-        setPageState,
-      }}
-    >
-      <Layout>
-        <ConfContainer>
-          {pageState === 'offline' && !sharePage ? (
-            <>
-              <Hero />
-              <Form />
-              <LearnMore />
-            </>
-          ) : (
-            <Ticket
-              username={userData.username}
-              name={userData.name}
-              ticketNumber={userData.ticketNumber}
-              sharePage={sharePage}
-            />
-          )}
-        </ConfContainer>
-      </Layout>
-    </AuthContext.Provider>
+    <Layout>
+      <Container>
+        <Hero />
+        <Form />
+        <LearnMore />
+      </Container>
+    </Layout>
   );
 }

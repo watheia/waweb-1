@@ -18,30 +18,18 @@ import { SkipNavContent } from '@reach/skip-nav';
 import Home from '@waweb/ui.home';
 import useConfig from '@waweb/ui.hooks/use-config';
 import Page from '@waweb/ui.page';
-import { useRouter } from 'next/router';
 
 export default function IndexPage() {
   const config = useConfig();
-  const { query } = useRouter();
   const meta = {
     title: 'Watheia Labs | Gatekeeper',
     description: config.metaDescription,
-  };
-  const ticketNumber = query.ticketNumber?.toString();
-  const defaultUserData = {
-    id: query.id?.toString(),
-    ticketNumber: ticketNumber ? parseInt(ticketNumber, 10) : undefined,
-    name: query.name?.toString(),
-    username: query.username?.toString(),
   };
 
   return (
     <Page meta={meta} fullViewport>
       <SkipNavContent />
-      <Home
-        defaultUserData={defaultUserData}
-        defaultPageState={query.ticketNumber ? 'online' : 'offline'}
-      />
+      <Home />
     </Page>
   );
 }

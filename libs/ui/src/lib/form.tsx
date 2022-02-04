@@ -14,14 +14,10 @@
  * limitations under the License.
  */
 
-import { login } from '@waweb/api.auth';
+import { useAuth } from '@waweb/auth';
 import cn from 'clsx';
-import { useRouter } from 'next/router';
 import { useCallback, useState } from 'react';
-import Captcha, { useCaptcha } from './captcha';
 import styles from './form.module.css';
-import useAuthContext from './hooks/use-auth-context';
-import useEmailQueryParam from './hooks/use-email-query-param';
 import LoadingDots from './loading-dots';
 import styleUtils from './utils.module.css';
 
@@ -38,106 +34,36 @@ type Props = {
 };
 
 export default function Form({ sharePage }: Props) {
+  console.log('Form(props)', { sharePage });
   const [email, setEmail] = useState('');
   const [errorMsg, setErrorMsg] = useState('');
   const [errorTryAgain, setErrorTryAgain] = useState(false);
   const [focused, setFocused] = useState(false);
   const [formState, setFormState] = useState<FormState>('default');
-  const { setPageState, setUserData } = useAuthContext();
-  const router = useRouter();
-  const {
-    ref: captchaRef,
-    execute: executeCaptcha,
-    reset: resetCaptcha,
-    isEnabled: isCaptchaEnabled,
-  } = useCaptcha();
-
-  const handleLogin = useCallback(
-    (token?: string) => {
-      login(email, token)
-        .then(async (res: Response) => {
-          if (!res.ok) {
-            throw new FormError(res);
-          }
-
-          const data = await res.json();
-          setUserData({
-            id: data.id,
-            ticketNumber: data.ticketNumber,
-            name: data.name,
-            username: data.username,
-          });
-          setPageState('online');
-
-          // if (sharePage) {
-          //   const queryString = Object.keys(params)
-          //     .map(
-          //       (key) =>
-          //         `${encodeURIComponent(key)}=${encodeURIComponent(
-          //           params[key as keyof typeof params] || ''
-          //         )}`
-          //     )
-          //     .join('&');
-          //   await router.replace(`/?${queryString}`, '/');
-          // } else {
-          // setUserData(params);
-          // setPageState('online');
-          // }
-        })
-        .catch(async (err: Error) => {
-          let message = 'Error! Please try again.';
-
-          if (err instanceof FormError) {
-            const { res } = err;
-            const data = res.headers
-              .get('Content-Type')
-              ?.includes('application/json')
-              ? await res.json()
-              : null;
-
-            if (data?.error?.code === 'bad_email') {
-              message = 'Please enter a valid email';
-            }
-          }
-
-          setErrorMsg(message);
-          setFormState('error');
-        });
-    },
-    [email, router, setPageState, setUserData, sharePage]
-  );
+  const auth = useAuth();
 
   const onSubmit = useCallback(
-    (e: React.FormEvent) => {
+    (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
 
       if (formState === 'default') {
         setFormState('loading');
-
-        if (isCaptchaEnabled) {
-          return executeCaptcha();
-        }
-
-        return handleLogin();
+        const data = new FormData(e.currentTarget);
+        return auth.signIn({ email: data.get('email') as string });
       } else {
         setFormState('default');
       }
     },
-    [executeCaptcha, formState, isCaptchaEnabled, handleLogin]
+    [auth, formState]
   );
 
-  const onTryAgainClick = useCallback(
-    (e: React.MouseEvent) => {
-      e.preventDefault();
+  const onTryAgainClick = useCallback((e: React.MouseEvent) => {
+    e.preventDefault();
+    setFormState('default');
+    setErrorTryAgain(true);
+  }, []);
 
-      setFormState('default');
-      setErrorTryAgain(true);
-      resetCaptcha();
-    },
-    [resetCaptcha]
-  );
-
-  useEmailQueryParam('email', setEmail);
+  // useEmailQueryParam('email', setEmail);
 
   return formState === 'error' ? (
     <div
@@ -199,7 +125,6 @@ export default function Form({ sharePage }: Props) {
           {formState === 'loading' ? <LoadingDots size={4} /> : <>Login</>}
         </button>
       </div>
-      <Captcha ref={captchaRef} onVerify={handleLogin} />
     </form>
   );
 }

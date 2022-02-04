@@ -17,10 +17,10 @@
 import { Stage } from '@waweb/model';
 import cn from 'clsx';
 import useSWR from 'swr';
-import ConfEntry from './conf-entry';
+import AppEntry from './app-entry';
 import useLoginStatus from './hooks/use-login-status';
 import ScheduleSidebar from './schedule-sidebar';
-import styles from './stage-container.module.css';
+import styles from './container.module.css';
 import styleUtils from './utils.module.css';
 
 type Props = {
@@ -94,7 +94,7 @@ export default function StageContainer({ stage, allStages }: Props) {
             </div>
           </div>
         ) : loginStatus === 'loading' ? null : (
-          <ConfEntry onLogin={() => mutate()} />
+          <AppEntry onLogin={() => mutate()} />
         )}
       </div>
       <ScheduleSidebar allStages={updatedStages} />

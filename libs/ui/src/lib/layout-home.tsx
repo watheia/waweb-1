@@ -3,7 +3,7 @@ import { addChannel, deleteChannel } from '@waweb/store';
 import slugify from '@waweb/util.slugify';
 import ChannelNav from './channel-nav';
 import Layout from './layout';
-import styles from './layout-chat.module.css';
+import styles from './layout-home.module.css';
 
 export interface LayoutChatProps extends DivProps {
   user: User;
@@ -13,7 +13,7 @@ export interface LayoutChatProps extends DivProps {
   children: Children;
 }
 
-export default function LayoutChat({
+export default function LayoutHome({
   channels,
   activeChannel,
   userRoles,

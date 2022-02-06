@@ -73,7 +73,7 @@ const useStore = (slug: string): StoreApi => {
   // New message received from Postgres
   useEffect(() => {
     if (newMessage && newMessage.channel_id === activeChannel?.id) {
-      console.log('Recieved server message ', newMessage);
+      console.log('Received server message ', newMessage);
       const handleAsync = async () => {
         const authorId = newMessage.user_id;
         if (users[authorId])
@@ -97,7 +97,7 @@ const useStore = (slug: string): StoreApi => {
   // New channel received from Postgres
   useEffect(() => {
     if (newChannel) {
-      console.log('Recieved server channel ', newChannel);
+      console.log('Received server channel ', newChannel);
       setChannels(channels.concat(newChannel));
     }
   }, [channels, newChannel]);
@@ -123,11 +123,10 @@ const useStore = (slug: string): StoreApi => {
   const timelineEntries: MessageModel[] = messages.map((x) => ({
     ...x,
     type: 'comment',
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     channel: activeChannel!,
     author: users[x.user_id],
   }));
-
-  console.log('Loaded timeline entries');
 
   return {
     // We export computed values here after initial load

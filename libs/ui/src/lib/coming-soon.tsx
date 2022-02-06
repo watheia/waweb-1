@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Layout from './layout';
 
 /* This example requires Tailwind CSS v2.0+ */
@@ -27,44 +28,44 @@ export default function ComingSoon() {
               We are still working on this page.
             </p>
             <div className="mt-6">
-              <a
-                href="#"
-                className="text-base font-medium text-teal-600 hover:text-teal-500"
-              >
-                Go back home<span aria-hidden="true"> &rarr;</span>
-              </a>
+              <Link href="/home">
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                <a className="text-base font-medium text-teal-600 hover:text-teal-500">
+                  Go back home<span aria-hidden="true"> &rarr;</span>
+                </a>
+              </Link>
             </div>
           </div>
         </div>
       </main>
       <footer className="flex-shrink-0 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
         <nav className="flex justify-center space-x-4">
-          <a
-            href="#"
-            className="text-sm font-medium text-gray-500 hover:text-gray-600"
-          >
-            Contact Support
-          </a>
+          <Link href="/support">
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+            <a className="text-sm font-medium text-gray-500 hover:text-gray-600">
+              Contact Support
+            </a>
+          </Link>
           <span
             className="inline-block border-l border-gray-300"
             aria-hidden="true"
           />
-          <a
-            href="#"
-            className="text-sm font-medium text-gray-500 hover:text-gray-600"
-          >
-            Status
-          </a>
+          <Link href="/channel/announcements">
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+            <a className="text-sm font-medium text-gray-500 hover:text-gray-600">
+              Status
+            </a>
+          </Link>
           <span
             className="inline-block border-l border-gray-300"
             aria-hidden="true"
           />
-          <a
-            href="#"
-            className="text-sm font-medium text-gray-500 hover:text-gray-600"
-          >
-            Twitter
-          </a>
+          <Link href="/channel/public">
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+            <a className="text-sm font-medium text-gray-500 hover:text-gray-600">
+              Community Chat
+            </a>
+          </Link>
         </nav>
       </footer>
     </Layout>

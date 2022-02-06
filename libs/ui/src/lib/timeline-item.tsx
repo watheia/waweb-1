@@ -4,10 +4,10 @@ import clsx from 'clsx';
 
 export interface MessageProps extends DivProps {
   item: MessageModel;
-  isDeleteable: boolean;
+  deleteEnabled: boolean;
 }
 
-const TimelineItem = ({ item, isDeleteable, className }: MessageProps) => {
+const TimelineItem = ({ item, deleteEnabled, className }: MessageProps) => {
   return (
     <div
       className={clsx(

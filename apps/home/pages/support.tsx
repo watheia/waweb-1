@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import ComingSoom from '@waweb/ui.coming-soon';
+import ComingSoon from '@waweb/ui.coming-soon';
 import useConfig from '@waweb/ui.hooks/use-config';
 import Page from '@waweb/ui.page';
 
@@ -27,7 +27,7 @@ export default function IndexPage() {
 
   return (
     <Page meta={meta} fullViewport>
-      <ComingSoom />
+      <ComingSoon />
     </Page>
   );
 }

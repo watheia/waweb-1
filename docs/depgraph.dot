@@ -3,6 +3,7 @@ strict digraph "dependency-cruiser output"{
     node [shape="box" style="rounded, filled" height="0.2" color="black" fillcolor="#ffffcc" fontcolor="black" fontname="Helvetica" fontsize="9"]
     edge [arrowhead="normal" arrowsize="0.6" penwidth="2.0" color="#00000033" fontname="Helvetica" fontsize="9"]
 
+    "./container.module.css" [label=<container.module.css> tooltip="container.module.css" color="red" fontcolor="red"]
     "./schedule-sidebar.module.css" [label=<schedule-sidebar.module.css> tooltip="schedule-sidebar.module.css" color="red" fontcolor="red"]
     "./store" [label=<store> tooltip="store" color="red" fontcolor="red"]
     ".dependency-cruiser.js" [label=<.dependency-cruiser.js> tooltip=".dependency-cruiser.js" URL="https://github.com/drkstr101/watheia/blob/main/.dependency-cruiser.js" fillcolor="#ccffcc"]
@@ -52,14 +53,11 @@ strict digraph "dependency-cruiser output"{
     "apps/home/pages/blog.tsx" -> "libs/ui/src/lib/blog.tsx"
     "apps/home/pages/blog.tsx" -> "libs/ui/src/lib/hooks/use-config.ts"
     "apps/home/pages/blog.tsx" -> "libs/ui/src/lib/page.tsx"
-    subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/home" {label="home" subgraph "cluster_apps/home/pages" {label="pages" subgraph "cluster_apps/home/pages/channels" {label="channels" "apps/home/pages/channels/[id].tsx" [label=<[id].tsx> tooltip="[id].tsx" URL="https://github.com/drkstr101/watheia/blob/main/apps/home/pages/channels/[id].tsx" fillcolor="#bbfeff"] } } } }
-    "apps/home/pages/channels/[id].tsx" -> "libs/auth/src/index.ts"
-    "apps/home/pages/channels/[id].tsx" -> "libs/store/src/index.ts"
-    "apps/home/pages/channels/[id].tsx" -> "libs/ui/src/lib/layout-chat.tsx"
-    "apps/home/pages/channels/[id].tsx" -> "libs/ui/src/lib/message.tsx"
-    "apps/home/pages/channels/[id].tsx" -> "libs/ui/src/lib/message-input.tsx"
-    "apps/home/pages/channels/[id].tsx" -> "node_modules/next" [penwidth="1.0"]
-    "apps/home/pages/channels/[id].tsx" -> "node_modules/react" [penwidth="1.0"]
+    subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/home" {label="home" subgraph "cluster_apps/home/pages" {label="pages" subgraph "cluster_apps/home/pages/channel" {label="channel" "apps/home/pages/channel/[slug].tsx" [label=<[slug].tsx> tooltip="[slug].tsx" URL="https://github.com/drkstr101/watheia/blob/main/apps/home/pages/channel/[slug].tsx" fillcolor="#bbfeff"] } } } }
+    "apps/home/pages/channel/[slug].tsx" -> "libs/auth/src/index.ts"
+    "apps/home/pages/channel/[slug].tsx" -> "libs/store/src/index.ts"
+    "apps/home/pages/channel/[slug].tsx" -> "libs/ui/src/lib/home-view.tsx"
+    "apps/home/pages/channel/[slug].tsx" -> "node_modules/next" [penwidth="1.0"]
     subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/home" {label="home" subgraph "cluster_apps/home/pages" {label="pages" "apps/home/pages/expo.tsx" [label=<expo.tsx> tooltip="expo.tsx" URL="https://github.com/drkstr101/watheia/blob/main/apps/home/pages/expo.tsx" fillcolor="#bbfeff"] } } }
     "apps/home/pages/expo.tsx" -> "libs/ui/src/lib/coming-soon.tsx"
     "apps/home/pages/expo.tsx" -> "libs/ui/src/lib/hooks/use-config.ts"
@@ -92,7 +90,6 @@ strict digraph "dependency-cruiser output"{
     subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/home" {label="home" subgraph "cluster_apps/home/public" {label="public" "apps/home/public/manifest.json" [label=<manifest.json> tooltip="manifest.json" URL="https://github.com/drkstr101/watheia/blob/main/apps/home/public/manifest.json" fillcolor="#ccffcc"] } } }
     subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/home" {label="home" subgraph "cluster_apps/home/public" {label="public" "apps/home/public/mstile-150x150.png" [label=<mstile-150x150.png> tooltip="no-orphans" URL="https://github.com/drkstr101/watheia/blob/main/apps/home/public/mstile-150x150.png" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
     subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/home" {label="home" subgraph "cluster_apps/home/public" {label="public" "apps/home/public/safari-pinned-tab.svg" [label=<safari-pinned-tab.svg> tooltip="no-orphans" URL="https://github.com/drkstr101/watheia/blob/main/apps/home/public/safari-pinned-tab.svg" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
-    subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/home" {label="home" subgraph "cluster_apps/home/public" {label="public" "apps/home/public/sw.js" [label=<sw.js> tooltip="no-orphans" URL="https://github.com/drkstr101/watheia/blob/main/apps/home/public/sw.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
     subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/home" {label="home" subgraph "cluster_apps/home/specs" {label="specs" "apps/home/specs/index.spec.tsx" [label=<index.spec.tsx> tooltip="index.spec.tsx" URL="https://github.com/drkstr101/watheia/blob/main/apps/home/specs/index.spec.tsx" fillcolor="#bbfeff"] } } }
     "apps/home/specs/index.spec.tsx" -> "apps/home/pages/nx.tsx"
     "apps/home/specs/index.spec.tsx" -> "node_modules/@testing-library" [penwidth="1.0"]
@@ -101,7 +98,6 @@ strict digraph "dependency-cruiser output"{
     "apps/home/tailwind.config.js" -> "node_modules/@nrwl" [penwidth="1.0"]
     "apps/home/tailwind.config.js" -> "node_modules/@tailwindcss" [penwidth="1.0"]
     "apps/home/tailwind.config.js" -> "path" [style="dashed" penwidth="1.0"]
-    "apps/home/tailwind.config.js" -> "node_modules/tailwindcss" [penwidth="1.0"]
     subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/home" {label="home" "apps/home/tsconfig.json" [label=<tsconfig.json> tooltip="tsconfig.json" URL="https://github.com/drkstr101/watheia/blob/main/apps/home/tsconfig.json" fillcolor="#ccffcc"] } }
     subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/home" {label="home" "apps/home/tsconfig.spec.json" [label=<tsconfig.spec.json> tooltip="tsconfig.spec.json" URL="https://github.com/drkstr101/watheia/blob/main/apps/home/tsconfig.spec.json" fillcolor="#ccffcc"] } }
     subgraph "cluster_apps" {label="apps" subgraph "cluster_apps/home" {label="home" "apps/home/vercel.json" [label=<vercel.json> tooltip="vercel.json" URL="https://github.com/drkstr101/watheia/blob/main/apps/home/vercel.json" fillcolor="#ccffcc"] } }
@@ -263,7 +259,7 @@ strict digraph "dependency-cruiser output"{
     "libs/store/src/lib/fetch-channels.ts" -> "node_modules/react" [penwidth="1.0"]
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/store" {label="store" subgraph "cluster_libs/store/src" {label="src" subgraph "cluster_libs/store/src/lib" {label="lib" "libs/store/src/lib/fetch-messages.ts" [label=<fetch-messages.ts> tooltip="fetch-messages.ts" URL="https://github.com/drkstr101/watheia/blob/main/libs/store/src/lib/fetch-messages.ts" fillcolor="#ddfeff"] } } } }
     "libs/store/src/lib/fetch-messages.ts" -> "libs/store/src/lib/supabase.ts"
-    "libs/store/src/lib/fetch-messages.ts" -> "node_modules/@prisma" [penwidth="1.0"]
+    "libs/store/src/lib/fetch-messages.ts" -> "libs/model/src/index.ts"
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/store" {label="store" subgraph "cluster_libs/store/src" {label="src" subgraph "cluster_libs/store/src/lib" {label="lib" "libs/store/src/lib/fetch-user-roles.ts" [label=<fetch-user-roles.ts> tooltip="fetch-user-roles.ts" URL="https://github.com/drkstr101/watheia/blob/main/libs/store/src/lib/fetch-user-roles.ts" fillcolor="#ddfeff"] } } } }
     "libs/store/src/lib/fetch-user-roles.ts" -> "libs/store/src/lib/supabase.ts"
     "libs/store/src/lib/fetch-user-roles.ts" -> "libs/model/src/index.ts"
@@ -377,7 +373,6 @@ strict digraph "dependency-cruiser output"{
     "libs/ui/src/lib/app-entry.tsx" -> "libs/ui/src/lib/hooks/use-config.ts"
     "libs/ui/src/lib/app-entry.tsx" -> "libs/ui/src/lib/loading-dots.tsx"
     "libs/ui/src/lib/app-entry.tsx" -> "libs/ui/src/lib/utils.module.css"
-    "libs/ui/src/lib/app-entry.tsx" -> "libs/ui/src/lib/hooks/use-email-query-param.ts"
     "libs/ui/src/lib/app-entry.tsx" -> "node_modules/clsx" [penwidth="1.0"]
     "libs/ui/src/lib/app-entry.tsx" -> "node_modules/react" [penwidth="1.0"]
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/author-section.module.css" [label=<author-section.module.css> tooltip="author-section.module.css" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/author-section.module.css" ] } } } }
@@ -399,7 +394,7 @@ strict digraph "dependency-cruiser output"{
     "libs/ui/src/lib/blog.tsx" -> "node_modules/react" [penwidth="1.0"]
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/category-container.tsx" [label=<category-container.tsx> tooltip="category-container.tsx" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/category-container.tsx" fillcolor="#bbfeff"] } } } }
     "libs/ui/src/lib/category-container.tsx" -> "libs/ui/src/lib/app-entry.tsx"
-    "libs/ui/src/lib/category-container.tsx" -> "libs/ui/src/lib/container.module.css"
+    "libs/ui/src/lib/category-container.tsx" -> "./container.module.css" [xlabel="not-to-unresolvable" tooltip="not-to-unresolvable" fontcolor="red" color="red"]
     "libs/ui/src/lib/category-container.tsx" -> "libs/ui/src/lib/hooks/use-login-status.ts"
     "libs/ui/src/lib/category-container.tsx" -> "libs/ui/src/lib/project-sidebar.tsx"
     "libs/ui/src/lib/category-container.tsx" -> "libs/ui/src/lib/utils.module.css"
@@ -416,10 +411,17 @@ strict digraph "dependency-cruiser output"{
     "libs/ui/src/lib/channel-nav.tsx" -> "node_modules/react" [penwidth="1.0"]
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/coming-soon.tsx" [label=<coming-soon.tsx> tooltip="coming-soon.tsx" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/coming-soon.tsx" fillcolor="#bbfeff"] } } } }
     "libs/ui/src/lib/coming-soon.tsx" -> "libs/ui/src/lib/layout.tsx"
+    "libs/ui/src/lib/coming-soon.tsx" -> "node_modules/next" [penwidth="1.0"]
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/contact.module.css" [label=<contact.module.css> tooltip="contact.module.css" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/contact.module.css" ] } } } }
-    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/container.module.css" [label=<container.module.css> tooltip="container.module.css" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/container.module.css" ] } } } }
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/container.tsx" [label=<container.tsx> tooltip="container.tsx" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/container.tsx" fillcolor="#bbfeff"] } } } }
-    "libs/ui/src/lib/container.tsx" -> "libs/ui/src/lib/container.module.css"
+    "libs/ui/src/lib/container.tsx" -> "libs/model/src/index.ts"
+    "libs/ui/src/lib/container.tsx" -> "node_modules/clsx" [penwidth="1.0"]
+    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/dashboard.tsx" [label=<dashboard.tsx> tooltip="dashboard.tsx" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/dashboard.tsx" fillcolor="#bbfeff"] } } } }
+    "libs/ui/src/lib/dashboard.tsx" -> "libs/ui/src/lib/container.tsx"
+    "libs/ui/src/lib/dashboard.tsx" -> "libs/ui/src/lib/timeline-item.tsx"
+    "libs/ui/src/lib/dashboard.tsx" -> "libs/model/src/index.ts"
+    "libs/ui/src/lib/dashboard.tsx" -> "libs/ui/src/lib/layout-dash.tsx"
+    "libs/ui/src/lib/dashboard.tsx" -> "node_modules/react" [penwidth="1.0"]
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/footer.module.css" [label=<footer.module.css> tooltip="footer.module.css" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/footer.module.css" ] } } } }
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/footer.tsx" [label=<footer.tsx> tooltip="footer.tsx" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/footer.tsx" fillcolor="#bbfeff"] } } } }
     "libs/ui/src/lib/footer.tsx" -> "libs/ui/src/lib/footer.module.css"
@@ -451,6 +453,10 @@ strict digraph "dependency-cruiser output"{
     "libs/ui/src/lib/hero.tsx" -> "libs/ui/src/lib/hooks/use-config.ts"
     "libs/ui/src/lib/hero.tsx" -> "libs/ui/src/lib/utils.module.css"
     "libs/ui/src/lib/hero.tsx" -> "node_modules/clsx" [penwidth="1.0"]
+    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/home-view.tsx" [label=<home-view.tsx> tooltip="home-view.tsx" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/home-view.tsx" fillcolor="#bbfeff"] } } } }
+    "libs/ui/src/lib/home-view.tsx" -> "libs/ui/src/lib/dashboard.tsx"
+    "libs/ui/src/lib/home-view.tsx" -> "libs/model/src/index.ts"
+    "libs/ui/src/lib/home-view.tsx" -> "node_modules/react" [penwidth="1.0"]
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/home.tsx" [label=<home.tsx> tooltip="home.tsx" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/home.tsx" fillcolor="#bbfeff"] } } } }
     "libs/ui/src/lib/home.tsx" -> "libs/ui/src/lib/layout.tsx"
     "libs/ui/src/lib/home.tsx" -> "node_modules/@heroicons" [penwidth="1.0"]
@@ -459,9 +465,6 @@ strict digraph "dependency-cruiser output"{
     "libs/ui/src/lib/hooks/use-config.spec.ts" -> "node_modules/@testing-library" [penwidth="1.0"]
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" subgraph "cluster_libs/ui/src/lib/hooks" {label="hooks" "libs/ui/src/lib/hooks/use-config.ts" [label=<use-config.ts> tooltip="use-config.ts" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/hooks/use-config.ts" fillcolor="#ddfeff"] } } } } }
     "libs/ui/src/lib/hooks/use-config.ts" -> "node_modules/react" [penwidth="1.0"]
-    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" subgraph "cluster_libs/ui/src/lib/hooks" {label="hooks" "libs/ui/src/lib/hooks/use-email-query-param.ts" [label=<use-email-query-param.ts> tooltip="use-email-query-param.ts" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/hooks/use-email-query-param.ts" fillcolor="#ddfeff"] } } } } }
-    "libs/ui/src/lib/hooks/use-email-query-param.ts" -> "node_modules/next" [penwidth="1.0"]
-    "libs/ui/src/lib/hooks/use-email-query-param.ts" -> "node_modules/react" [penwidth="1.0"]
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" subgraph "cluster_libs/ui/src/lib/hooks" {label="hooks" "libs/ui/src/lib/hooks/use-login-status.ts" [label=<use-login-status.ts> tooltip="use-login-status.ts" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/hooks/use-login-status.ts" fillcolor="#ddfeff"] } } } } }
     "libs/ui/src/lib/hooks/use-login-status.ts" -> "node_modules/swr" [penwidth="1.0"]
     "libs/ui/src/lib/hooks/use-login-status.ts" -> "swr/dist/types" [xlabel="not-to-unresolvable" tooltip="not-to-unresolvable" fontcolor="red" color="red"]
@@ -480,15 +483,22 @@ strict digraph "dependency-cruiser output"{
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" subgraph "cluster_libs/ui/src/lib/icons" {label="icons" "libs/ui/src/lib/icons/icon-trash.tsx" [label=<icon-trash.tsx> tooltip="icon-trash.tsx" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/icons/icon-trash.tsx" fillcolor="#bbfeff"] } } } } }
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" subgraph "cluster_libs/ui/src/lib/icons" {label="icons" "libs/ui/src/lib/icons/icon-twitter.tsx" [label=<icon-twitter.tsx> tooltip="icon-twitter.tsx" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/icons/icon-twitter.tsx" fillcolor="#bbfeff"] } } } } }
     "libs/ui/src/lib/icons/icon-twitter.tsx" -> "libs/ui/src/lib/icons/icon-transition.module.css"
-    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/layout-chat.module.css" [label=<layout-chat.module.css> tooltip="layout-chat.module.css" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/layout-chat.module.css" ] } } } }
-    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/layout-chat.tsx" [label=<layout-chat.tsx> tooltip="layout-chat.tsx" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/layout-chat.tsx" fillcolor="#bbfeff"] } } } }
-    "libs/ui/src/lib/layout-chat.tsx" -> "libs/ui/src/lib/channel-nav.tsx"
-    "libs/ui/src/lib/layout-chat.tsx" -> "libs/ui/src/lib/layout.tsx"
-    "libs/ui/src/lib/layout-chat.tsx" -> "libs/ui/src/lib/layout-chat.module.css"
-    "libs/ui/src/lib/layout-chat.tsx" -> "libs/auth/src/index.ts"
-    "libs/ui/src/lib/layout-chat.tsx" -> "libs/model/src/index.ts"
-    "libs/ui/src/lib/layout-chat.tsx" -> "libs/store/src/index.ts"
-    "libs/ui/src/lib/layout-chat.tsx" -> "libs/util/src/lib/slugify.ts"
+    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/layout-dash.tsx" [label=<layout-dash.tsx> tooltip="layout-dash.tsx" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/layout-dash.tsx" fillcolor="#bbfeff"] } } } }
+    "libs/ui/src/lib/layout-dash.tsx" -> "libs/ui/src/lib/layout.tsx"
+    "libs/ui/src/lib/layout-dash.tsx" -> "libs/ui/src/lib/logo-alt.tsx"
+    "libs/ui/src/lib/layout-dash.tsx" -> "node_modules/@headlessui" [penwidth="1.0"]
+    "libs/ui/src/lib/layout-dash.tsx" -> "node_modules/@heroicons" [penwidth="1.0"]
+    "libs/ui/src/lib/layout-dash.tsx" -> "libs/model/src/index.ts"
+    "libs/ui/src/lib/layout-dash.tsx" -> "node_modules/clsx" [penwidth="1.0"]
+    "libs/ui/src/lib/layout-dash.tsx" -> "node_modules/react" [penwidth="1.0"]
+    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/layout-home.module.css" [label=<layout-home.module.css> tooltip="layout-home.module.css" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/layout-home.module.css" ] } } } }
+    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/layout-home.tsx" [label=<layout-home.tsx> tooltip="layout-home.tsx" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/layout-home.tsx" fillcolor="#bbfeff"] } } } }
+    "libs/ui/src/lib/layout-home.tsx" -> "libs/ui/src/lib/channel-nav.tsx"
+    "libs/ui/src/lib/layout-home.tsx" -> "libs/ui/src/lib/layout.tsx"
+    "libs/ui/src/lib/layout-home.tsx" -> "libs/ui/src/lib/layout-home.module.css"
+    "libs/ui/src/lib/layout-home.tsx" -> "libs/model/src/index.ts"
+    "libs/ui/src/lib/layout-home.tsx" -> "libs/store/src/index.ts"
+    "libs/ui/src/lib/layout-home.tsx" -> "libs/util/src/lib/slugify.ts"
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/layout.module.css" [label=<layout.module.css> tooltip="layout.module.css" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/layout.module.css" ] } } } }
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/layout.tsx" [label=<layout.tsx> tooltip="layout.tsx" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/layout.tsx" fillcolor="#bbfeff"] } } } }
     "libs/ui/src/lib/layout.tsx" -> "libs/ui/src/lib/footer.tsx"
@@ -511,6 +521,8 @@ strict digraph "dependency-cruiser output"{
     "libs/ui/src/lib/loading-dots.tsx" -> "libs/ui/src/lib/loading-dots.module.css"
     "libs/ui/src/lib/loading-dots.tsx" -> "libs/util/src/lib/to-pixels.ts"
     "libs/ui/src/lib/loading-dots.tsx" -> "node_modules/clsx" [penwidth="1.0"]
+    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/logo-alt.tsx" [label=<logo-alt.tsx> tooltip="logo-alt.tsx" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/logo-alt.tsx" fillcolor="#bbfeff"] } } } }
+    "libs/ui/src/lib/logo-alt.tsx" -> "node_modules/react" [penwidth="1.0"]
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/logo.spec.tsx" [label=<logo.spec.tsx> tooltip="logo.spec.tsx" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/logo.spec.tsx" fillcolor="#bbfeff"] } } } }
     "libs/ui/src/lib/logo.spec.tsx" -> "libs/ui/src/lib/logo.tsx"
     "libs/ui/src/lib/logo.spec.tsx" -> "node_modules/@testing-library" [penwidth="1.0"]
@@ -518,11 +530,6 @@ strict digraph "dependency-cruiser output"{
     "libs/ui/src/lib/logo.tsx" -> "node_modules/react" [penwidth="1.0"]
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/message-input.tsx" [label=<message-input.tsx> tooltip="message-input.tsx" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/message-input.tsx" fillcolor="#bbfeff"] } } } }
     "libs/ui/src/lib/message-input.tsx" -> "node_modules/react" [penwidth="1.0"]
-    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/message.tsx" [label=<message.tsx> tooltip="message.tsx" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/message.tsx" fillcolor="#bbfeff"] } } } }
-    "libs/ui/src/lib/message.tsx" -> "libs/ui/src/lib/icons/icon-trash.tsx"
-    "libs/ui/src/lib/message.tsx" -> "libs/auth/src/index.ts"
-    "libs/ui/src/lib/message.tsx" -> "libs/model/src/index.ts"
-    "libs/ui/src/lib/message.tsx" -> "libs/store/src/index.ts"
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/mobile-menu.module.css" [label=<mobile-menu.module.css> tooltip="mobile-menu.module.css" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/mobile-menu.module.css" ] } } } }
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/mobile-menu.tsx" [label=<mobile-menu.tsx> tooltip="mobile-menu.tsx" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/mobile-menu.tsx" fillcolor="#bbfeff"] } } } }
     "libs/ui/src/lib/mobile-menu.tsx" -> "libs/ui/src/lib/hooks/use-config.ts"
@@ -532,6 +539,11 @@ strict digraph "dependency-cruiser output"{
     "libs/ui/src/lib/mobile-menu.tsx" -> "node_modules/clsx" [penwidth="1.0"]
     "libs/ui/src/lib/mobile-menu.tsx" -> "node_modules/next" [penwidth="1.0"]
     "libs/ui/src/lib/mobile-menu.tsx" -> "node_modules/react" [penwidth="1.0"]
+    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/mock-feed.tsx" [label=<mock-feed.tsx> tooltip="mock-feed.tsx" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/mock-feed.tsx" fillcolor="#bbfeff"] } } } }
+    "libs/ui/src/lib/mock-feed.tsx" -> "node_modules/@heroicons" [penwidth="1.0"]
+    "libs/ui/src/lib/mock-feed.tsx" -> "libs/model/src/index.ts"
+    "libs/ui/src/lib/mock-feed.tsx" -> "node_modules/clsx" [penwidth="1.0"]
+    "libs/ui/src/lib/mock-feed.tsx" -> "node_modules/react" [penwidth="1.0"]
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/nprogress.tsx" [label=<nprogress.tsx> tooltip="nprogress.tsx" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/nprogress.tsx" fillcolor="#bbfeff"] } } } }
     "libs/ui/src/lib/nprogress.tsx" -> "node_modules/next" [penwidth="1.0"]
     "libs/ui/src/lib/nprogress.tsx" -> "node_modules/nprogress" [penwidth="1.0"]
@@ -590,6 +602,10 @@ strict digraph "dependency-cruiser output"{
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/tasks-grid.tsx" [label=<tasks-grid.tsx> tooltip="tasks-grid.tsx" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/tasks-grid.tsx" fillcolor="#bbfeff"] } } } }
     "libs/ui/src/lib/tasks-grid.tsx" -> "libs/ui/src/lib/tasks-grid.module.css"
     "libs/ui/src/lib/tasks-grid.tsx" -> "libs/model/src/index.ts"
+    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/timeline-item.tsx" [label=<timeline-item.tsx> tooltip="timeline-item.tsx" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/timeline-item.tsx" fillcolor="#bbfeff"] } } } }
+    "libs/ui/src/lib/timeline-item.tsx" -> "node_modules/@heroicons" [penwidth="1.0"]
+    "libs/ui/src/lib/timeline-item.tsx" -> "libs/model/src/index.ts"
+    "libs/ui/src/lib/timeline-item.tsx" -> "node_modules/clsx" [penwidth="1.0"]
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/utils.module.css" [label=<utils.module.css> tooltip="utils.module.css" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/utils.module.css" ] } } } }
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/view-source.module.css" [label=<view-source.module.css> tooltip="view-source.module.css" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/view-source.module.css" ] } } } }
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/ui" {label="ui" subgraph "cluster_libs/ui/src" {label="src" subgraph "cluster_libs/ui/src/lib" {label="lib" "libs/ui/src/lib/view-source.tsx" [label=<view-source.tsx> tooltip="view-source.tsx" URL="https://github.com/drkstr101/watheia/blob/main/libs/ui/src/lib/view-source.tsx" fillcolor="#bbfeff"] } } } }

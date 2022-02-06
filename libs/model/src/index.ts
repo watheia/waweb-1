@@ -1,11 +1,11 @@
-import { AppRole, Channel, Message, Prisma } from '@prisma/client';
+import { AppRole, Channel, Message } from '@prisma/client';
 import { Provider, User } from '@supabase/supabase-js';
 import { ReactChild, ReactFragment, ReactPortal } from 'react';
 
 // export prisma types
 ////
 
-export { AppPermission, AppRole, UserStatus } from '@prisma/client';
+export { AppPermission, AppRole, UserStatus, Prisma } from '@prisma/client';
 export type {
   Channel,
   Message,
@@ -13,10 +13,15 @@ export type {
   UserRole,
 } from '@prisma/client';
 
-// export compound types
+// export entity types
 ////
 
-export type MessageModel = Message & { channel?: Channel; author?: User };
+export type MessageType = 'comment' | 'alert';
+export type MessageModel = Message & {
+  channel?: Channel;
+  author?: User;
+  type?: MessageType;
+};
 export type ChannelModel = Channel & { user?: User; messages?: MessageModel[] };
 export type UserModel = User & {
   channels?: Channel[];

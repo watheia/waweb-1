@@ -1,18 +1,21 @@
-import { Channel, Message, User } from '@waweb/model';
-import { useEffect, useState } from 'react';
+import { Channel, Message, MessageModel, User } from '@waweb/model';
+import { useEffect, useMemo, useState } from 'react';
 import fetchChannels from './fetch-channels';
 import fetchMessages from './fetch-messages';
 import fetchUser from './fetch-user';
 import supabase from './supabase';
 
-type Props = {
-  channelId: bigint;
-};
+export interface StoreApi {
+  activeChannel: Channel | null;
+  timeline: MessageModel[];
+  channels: Channel[];
+  users: Record<string, User>;
+}
 
 /**
- * @param {number} channelId the currently selected Channel
+ * @param {string} slug the currently selected Channel
  */
-const useStore = ({ channelId }: Props) => {
+const useStore = (slug: string): StoreApi => {
   const [channels, setChannels] = useState<Channel[]>([]);
   const [messages, setMessages] = useState<Message[]>([]);
   const [users] = useState<Record<string, User>>({});
@@ -23,6 +26,11 @@ const useStore = ({ channelId }: Props) => {
   );
   const [deletedChannel, handleDeletedChannel] = useState<Channel | null>(null);
   const [deletedMessage, handleDeletedMessage] = useState<Message | null>(null);
+
+  const activeChannel = useMemo(
+    () => channels.find((it) => it.slug === slug) ?? null,
+    [channels, slug]
+  );
 
   // Load initial data and set up listeners
   useEffect(() => {
@@ -47,26 +55,24 @@ const useStore = ({ channelId }: Props) => {
       .subscribe();
     // Cleanup on unmount
     return () => {
-      messageListener.unsubscribe();
-      userListener.unsubscribe();
-      channelListener.unsubscribe();
+      messageListener?.unsubscribe();
+      userListener?.unsubscribe();
+      channelListener?.unsubscribe();
     };
   }, []);
 
   // Update when the route changes
   useEffect(() => {
-    if (channelId > 0) {
-      console.log('Fetch messages for ', channelId);
-      fetchMessages(channelId, (messages) => {
-        console.log('(channelId, messages) = ', channelId, messages);
-        setMessages(messages);
+    activeChannel &&
+      fetchMessages(activeChannel.id, (timeline) => {
+        console.info(slug + ' channel activated.', timeline);
+        setMessages(timeline);
       });
-    }
-  }, [channelId]);
+  }, [channels, slug]);
 
   // New message received from Postgres
   useEffect(() => {
-    if (newMessage && newMessage.channel_id === channelId) {
+    if (newMessage && newMessage.channel_id === activeChannel?.id) {
       console.log('Recieved server message ', newMessage);
       const handleAsync = async () => {
         const authorId = newMessage.user_id;
@@ -94,7 +100,7 @@ const useStore = ({ channelId }: Props) => {
       console.log('Recieved server channel ', newChannel);
       setChannels(channels.concat(newChannel));
     }
-  }, [newChannel]);
+  }, [channels, newChannel]);
 
   // Deleted channel received from postgres
   useEffect(() => {
@@ -104,7 +110,7 @@ const useStore = ({ channelId }: Props) => {
         channels.filter((channel) => channel.id !== deletedChannel.id)
       );
     }
-  }, [deletedChannel]);
+  }, [channels, deletedChannel]);
 
   // New or updated user received from Postgres
   useEffect(() => {
@@ -112,11 +118,21 @@ const useStore = ({ channelId }: Props) => {
       console.log('A new or updated user has connected.', newOrUpdatedUser);
       users[newOrUpdatedUser.id] = newOrUpdatedUser;
     }
-  }, [newOrUpdatedUser]);
+  }, [users, newOrUpdatedUser]);
+
+  const timelineEntries: MessageModel[] = messages.map((x) => ({
+    ...x,
+    type: 'comment',
+    channel: activeChannel!,
+    author: users[x.user_id],
+  }));
+
+  console.log('Loaded timeline entries');
 
   return {
-    // We can export computed values here to map the authors to each message
-    messages: messages.map((x) => ({ ...x, author: users[x.user_id] })),
+    // We export computed values here after initial load
+    timeline: timelineEntries,
+    activeChannel,
     channels:
       channels !== null
         ? channels.sort((a, b) => a.slug.localeCompare(b.slug))

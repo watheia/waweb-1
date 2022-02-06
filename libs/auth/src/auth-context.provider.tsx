@@ -95,11 +95,8 @@ export const AuthProvider: FunctionComponent = ({ children }) => {
     if (user) {
       setUser(user);
       setLoggedin(true);
-      console.log('Fetching roles for principal user...');
       fetchUserRoles((userRoles) => {
-        const roles = userRoles.map((userRole) => userRole.role);
-        console.info('roles = ', roles);
-        setUserRoles(roles);
+        setUserRoles(userRoles.map((userRole) => userRole.role));
       });
     }
 

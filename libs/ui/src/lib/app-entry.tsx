@@ -14,7 +14,6 @@
  * limitations under the License.
  */
 
-import useEmailQueryParam from '@waweb/ui.hooks.use-email-query-param';
 import cn from 'clsx';
 import { useCallback, useState } from 'react';
 import styles from './app-entry.module.css';
@@ -78,8 +77,6 @@ export default function AppEntry({ onLogin }: { onLogin: () => void }) {
     setErrorMsg('');
     setFormState('default');
   }, []);
-
-  useEmailQueryParam('login', setEmailInput);
 
   return (
     <div

@@ -27,7 +27,7 @@ export default function GatekeeperPage() {
   const { isLoggedIn } = useAuth();
   const router = useRouter();
   useEffect(() => {
-    if (isLoggedIn) router.push('/channels/1');
+    if (isLoggedIn) router.push('/channel/public');
   }, [isLoggedIn, router]);
 
   return (

@@ -1,30 +1,30 @@
-import { AppRole, Channel, ChannelModel, DivProps, User } from '@waweb/model';
+import { Channel, DivProps, User } from '@waweb/model';
+import clsx from 'clsx';
 import Link from 'next/link';
-import React, { useCallback } from 'react';
+import React from 'react';
 import styles from './channel-nav.module.css';
 import TrashIcon from './icons/icon-trash';
-import clsx from 'clsx';
 
 export type SidebarItemProps = {
   channel: Channel;
-  isActiveChannel: boolean;
+  isActive: boolean;
   isAdmin: boolean;
   deleteChannel: (channel: Channel) => void;
 };
 
 const SidebarItem = ({
   channel,
-  isActiveChannel,
+  isActive,
   isAdmin,
   deleteChannel,
 }: SidebarItemProps) => {
   return (
     <li className="flex items-center justify-between">
-      <Link href="/channels/[id]" as={`/channels/${channel.id}`}>
+      <Link href="/channel/[slug]" as={`/channel/${channel.slug}`}>
         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-        <a className={isActiveChannel ? 'font-bold' : ''}>{channel.slug}</a>
+        <a className={isActive ? 'font-bold' : ''}>{channel.slug}</a>
       </Link>
-      {channel.id !== BigInt(1) && isAdmin && (
+      {channel.slug !== 'public' && isAdmin && (
         <button onClick={() => deleteChannel(channel)}>
           <TrashIcon />
         </button>
@@ -36,15 +36,15 @@ const SidebarItem = ({
 export interface ChannelNavProps extends DivProps {
   user: User | null;
   isAdmin: boolean;
-  channels: ChannelModel[];
-  activeChannelId: bigint;
+  channels: Channel[];
+  activeChannel: Channel | null;
   onChannelCreate: (name: string) => void;
   onChannelDelete: (channel: Channel) => void;
 }
 
 const ChannelNav = ({
   channels,
-  activeChannelId,
+  activeChannel,
   isAdmin,
   user,
   onChannelCreate: onCreate,
@@ -52,13 +52,10 @@ const ChannelNav = ({
   className,
   ...props
 }: ChannelNavProps) => {
-  //wait for user to load before activating ui
-  if (!user) return <div className={styles['channelnav']} />;
-
   return (
     <nav className={clsx(styles['channelnav'], className)} {...props}>
       <div className="p-2 ">
-        <div className="p-2">{user.email}</div>
+        <div className="p-2">{user?.email}</div>
         <hr className="m-2" />
         <h4 className="font-bold">Channels</h4>
         <ul className="channel-list">
@@ -66,7 +63,7 @@ const ChannelNav = ({
             <SidebarItem
               channel={x}
               key={x.id.toString()}
-              isActiveChannel={x.id === activeChannelId}
+              isActive={x.id === activeChannel?.id}
               isAdmin={isAdmin}
               deleteChannel={onChannelDelete}
             />

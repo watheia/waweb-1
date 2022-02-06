@@ -1,4 +1,4 @@
-import { Message, Prisma } from '@prisma/client';
+import { Message, Prisma } from '@waweb/model';
 import supabase from './supabase';
 
 export type FetchMessagesResponse = Message & Prisma.MessageInclude;

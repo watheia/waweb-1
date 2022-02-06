@@ -1,5 +1,4 @@
-import { useAuth } from '@waweb/auth';
-import { AppRole, Channel, Children, DivProps } from '@waweb/model';
+import { AppRole, Channel, Children, DivProps, User } from '@waweb/model';
 import { addChannel, deleteChannel } from '@waweb/store';
 import slugify from '@waweb/util.slugify';
 import ChannelNav from './channel-nav';
@@ -7,20 +6,22 @@ import Layout from './layout';
 import styles from './layout-chat.module.css';
 
 export interface LayoutChatProps extends DivProps {
+  user: User;
+  userRoles: AppRole[];
   channels: Channel[];
-  activeChannelId: bigint;
+  activeChannel: Channel | null;
   children: Children;
 }
 
 export default function LayoutChat({
   channels,
-  activeChannelId,
+  activeChannel,
+  userRoles,
+  user,
   children,
   ...props
 }: LayoutChatProps) {
-  const { user, userRoles } = useAuth();
   const isAdmin = userRoles.includes(AppRole.Admin);
-  const hasChannels = channels && channels.length > 0;
 
   const handleCreate = async (name: string) => {
     const slug = prompt('Please enter your name');
@@ -35,8 +36,8 @@ export default function LayoutChat({
     if (
       // user is active
       user &&
-      // channel is not default
-      channel.id > BigInt(1) &&
+      // channel is not the default
+      channel.slug !== 'public' &&
       // user is admin or owner of channel
       (isAdmin || channel.created_by === user.id)
     ) {
@@ -47,16 +48,16 @@ export default function LayoutChat({
   };
 
   return (
-    <Layout useBackdrop {...props} className={styles['root']}>
+    <Layout useBackdrop {...props} className={styles['layout']}>
       <ChannelNav
         user={user}
         isAdmin={isAdmin}
         channels={channels}
-        activeChannelId={BigInt(1)}
+        activeChannel={activeChannel}
         onChannelCreate={handleCreate}
         onChannelDelete={handleDelete}
       />
-      <div className={styles['chat']}>{hasChannels && children}</div>
+      <div className={styles['timeline']}>{children}</div>
     </Layout>
   );
 }

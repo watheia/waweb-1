@@ -1,4 +1,3 @@
-const { fontFamily } = require('tailwindcss/defaultTheme');
 const { createGlobPatternsForDependencies } = require('@nrwl/next/tailwind');
 const { join } = require('path');
 
@@ -10,7 +9,39 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ['Work Sans', ...fontFamily.sans],
+      sans: [
+        'Adobe Clean',
+        'system-ui',
+        '-apple-system',
+        'BlinkMacSystemFont',
+        'Segoe UI',
+        'Roboto',
+        'Helvetica Neue',
+        'Arial, Noto Sans',
+        'sans-serif',
+        'Apple Color Emoji',
+        'Segoe UI Emoji',
+        'Segoe UI Symbol',
+        'Noto Color Emoji',
+      ],
+      serif: [
+        'Adobe Clean Serif',
+        'Georgia',
+        'Times New Roman',
+        'Times',
+        'serif',
+      ],
+      mono: [
+        'Source Code Pro',
+        'ui-monospace',
+        'SFMono-Regular',
+        'Menlo',
+        'Monaco',
+        'Consolas',
+        'Liberation Mono',
+        'Courier New',
+        'monospace',
+      ],
     },
     extend: {},
   },

@@ -14,8 +14,16 @@
  * limitations under the License.
  */
 
-import styles from './container.module.css';
+import { DivProps } from '@waweb/model';
+import clsx from 'clsx';
 
-export default function Container({ children }: { children: React.ReactNode }) {
-  return <div className={styles['container']}>{children}</div>;
+export default function Container({ children, className, ...props }: DivProps) {
+  return (
+    <div
+      className={clsx('container mx-auto sm:px-6 lg:px-8', className)}
+      {...props}
+    >
+      {children}
+    </div>
+  );
 }

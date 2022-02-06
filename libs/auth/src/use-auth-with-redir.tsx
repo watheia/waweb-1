@@ -13,5 +13,6 @@ export const useAuthWithRedir = (redirectTo = '/') => {
     }
   }, [isUserLoading, isLoggedIn, redirectTo, router]);
 
-  return context;
+  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+  return { ...context, user: context.user! };
 };

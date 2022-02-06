@@ -14,42 +14,42 @@
  * limitations under the License.
  */
 
-import { Speaker } from '@waweb/model';
+import { Author } from '@waweb/model';
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from './speakers-grid.module.css';
+import styles from './authors-grid.module.css';
 
 type Props = {
-  speakers: Speaker[];
+  authors: Author[];
 };
 
-export default function SpeakersGrid({ speakers }: Props) {
+export default function AuthorsGrid({ authors }: Props) {
   return (
     <div className={styles['grid']}>
-      {speakers.map((speaker) => (
-        <Link key={speaker.name} href={`/speakers/${speaker.slug}`}>
+      {authors.map((author) => (
+        <Link key={author.name} href={`/authors/${author.slug}`}>
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <a role="button" tabIndex={0} className={styles['card']}>
             <div className={styles['imageWrapper']}>
               <Image
-                alt={speaker.name}
-                src={speaker.image['url']}
+                alt={author.name}
+                src={author.image['url']}
                 className={styles['image']}
                 loading="lazy"
                 quality="50"
-                title={speaker.name}
-                placeholder={speaker.image.blurDataURL ? 'blur' : 'empty'}
-                blurDataURL={speaker.image.blurDataURL}
+                title={author.name}
+                placeholder={author.image.blurDataURL ? 'blur' : 'empty'}
+                blurDataURL={author.image.blurDataURL}
                 width={300}
                 height={300}
               />
             </div>
             <div className={styles['cardBody']}>
               <div>
-                <h2 className={styles['name']}>{speaker.name}</h2>
+                <h2 className={styles['name']}>{author.name}</h2>
                 <p className={styles['title']}>
-                  {`${speaker.title} @ `}
-                  <span className={styles['company']}>{speaker.company}</span>
+                  {`${author.title} @ `}
+                  <span className={styles['company']}>{author.company}</span>
                 </p>
               </div>
             </div>

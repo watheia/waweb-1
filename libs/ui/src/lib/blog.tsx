@@ -377,7 +377,7 @@ const FeaturedPosts = () => (
 
 export default function Blog() {
   return (
-    <Layout usePadding>
+    <Layout usePadding useBackdrop>
       <Hero />
       <FeaturedPosts />
     </Layout>

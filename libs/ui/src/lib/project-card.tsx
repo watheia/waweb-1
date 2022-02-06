@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-import { Talk } from '@waweb/model';
+import { CaseStudy } from '@waweb/model';
 import cn from 'clsx';
 import { format, isAfter, isBefore, parseISO } from 'date-fns';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import styles from './talk-card.module.css';
+import styles from './project-card.module.css';
 
 type Props = {
   key: string;
-  talk: Talk;
+  caseStudy: CaseStudy;
   showTime: boolean;
 };
 
@@ -33,42 +33,42 @@ const formatDate = (date: string) => {
   return format(parseISO(date), "h:mmaaaaa'm'");
 };
 
-export default function TalkCard({
-  talk: { title, speaker, start, end },
+export default function ProjectCard({
+  caseStudy: { title, author, start, end },
   showTime,
 }: Props) {
-  const [isTalkLive, setIsTalkLive] = useState(false);
+  const [isCaseStudyLive, setIsCaseStudyLive] = useState(false);
   const [startAndEndTime, setStartAndEndTime] = useState('');
 
   useEffect(() => {
     const now = Date.now();
-    setIsTalkLive(
+    setIsCaseStudyLive(
       isAfter(now, parseISO(start)) && isBefore(now, parseISO(end))
     );
     setStartAndEndTime(`${formatDate(start)} – ${formatDate(end)}`);
   }, [end, start]);
 
-  const firstSpeakerLink = `/speakers/${speaker[0].slug}`;
+  const firstAuthorLink = `/authors/${author[0].slug}`;
 
   return (
-    <div key={title} className={styles['talk']}>
+    <div key={title} className={styles['caseStudy']}>
       {showTime && (
         <p className={styles['time']}>{startAndEndTime || <>&nbsp;</>}</p>
       )}
-      <Link href={firstSpeakerLink}>
-        {/* /eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+      <Link href={firstAuthorLink}>
+        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <a
           className={cn(styles['card'], {
-            [styles['is-live']]: isTalkLive,
+            [styles['is-live']]: isCaseStudyLive,
           })}
         >
           <div className={styles['card-body']}>
             <h4 title={title} className={styles['title']}>
               {title}
             </h4>
-            <div className={styles['speaker']}>
+            <div className={styles['author']}>
               <div className={styles['avatar-group']}>
-                {speaker.map((s) => (
+                {author.map((s) => (
                   <div key={s.name} className={styles['avatar-wrapper']}>
                     <Image
                       loading="lazy"
@@ -83,9 +83,9 @@ export default function TalkCard({
                 ))}
               </div>
               <h5 className={styles['name']}>
-                {speaker.length === 1
-                  ? speaker[0].name
-                  : `${speaker.length} speakers`}
+                {author.length === 1
+                  ? author[0].name
+                  : `${author.length} authors`}
               </h5>
             </div>
           </div>

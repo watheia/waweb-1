@@ -1,15 +1,15 @@
 import { Image } from './Image';
-import { Talk } from './Talk';
 
-export interface Speaker {
+type Bio = { title: string; description: string };
+
+export interface Author {
   name: string;
-  bio: string;
   title: string;
   slug: string;
   twitter: string;
   github: string;
   company: string;
-  talk: Talk;
+  bio?: Bio;
   image: Image;
   imageSquare: Image;
 }

@@ -14,15 +14,18 @@
  * limitations under the License.
  */
 
-import { Stage, Talk } from '@waweb/model';
+import { Category, CaseStudy } from '@waweb/model';
 import cn from 'clsx';
-import styles from './schedule.module.css';
-import TalkCard from './talk-card';
+import styles from './projects.module.css';
+import ProjectCard from './project-card';
 
-function StageRow({ stage }: { stage: Stage }) {
-  // Group talks by the time block
-  const timeBlocks = stage.schedule.reduce((allBlocks: any, talk) => {
-    allBlocks[talk.start] = [...(allBlocks[talk.start] || []), talk];
+function CategoryRow({ stage }: { stage: Category }) {
+  // Group projects by the time block
+  const timeBlocks = stage.articles.reduce((allBlocks: any, caseStudy) => {
+    allBlocks[caseStudy.start] = [
+      ...(allBlocks[caseStudy.start] || []),
+      caseStudy,
+    ];
     return allBlocks;
   }, {});
 
@@ -31,12 +34,18 @@ function StageRow({ stage }: { stage: Stage }) {
       <h3 className={cn(styles['stage-name'], styles[stage.slug])}>
         <span>{stage.name}</span>
       </h3>
-      <div className={cn(styles['talks'], styles[stage.slug])}>
+      <div className={cn(styles['projects'], styles[stage.slug])}>
         {Object.keys(timeBlocks).map((startTime: string) => (
           <div key={startTime}>
-            {timeBlocks[startTime].map((talk: Talk, index: number) => (
-              <TalkCard key={talk.title} talk={talk} showTime={index === 0} />
-            ))}
+            {timeBlocks[startTime].map(
+              (caseStudy: CaseStudy, index: number) => (
+                <ProjectCard
+                  key={caseStudy.title}
+                  caseStudy={caseStudy}
+                  showTime={index === 0}
+                />
+              )
+            )}
           </div>
         ))}
       </div>
@@ -45,15 +54,15 @@ function StageRow({ stage }: { stage: Stage }) {
 }
 
 type Props = {
-  allStages: Stage[];
+  allCategories: Category[];
 };
 
-export default function Schedule({ allStages }: Props) {
+export default function Projects({ allCategories }: Props) {
   return (
     <div className={styles['container']}>
       <div className={styles['row-wrapper']}>
-        {allStages.map((stage) => (
-          <StageRow key={stage.slug} stage={stage} />
+        {allCategories.map((stage) => (
+          <CategoryRow key={stage.slug} stage={stage} />
         ))}
       </div>
     </div>

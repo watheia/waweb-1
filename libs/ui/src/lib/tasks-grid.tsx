@@ -14,29 +14,29 @@
  * limitations under the License.
  */
 
-import { Job } from '@waweb/model';
-import styles from './jobs-grid.module.css';
+import { Task } from '@waweb/model';
+import styles from './tasks-grid.module.css';
 
 type Props = {
-  jobs: Job[];
+  tasks: Task[];
 };
 
-function CompanyJobs({ jobs }: Props) {
+function Tasks({ tasks }: Props) {
   return (
     <div className={styles['grid']}>
-      {jobs.map((job) => (
+      {tasks.map((task) => (
         <a
-          key={job.id}
+          key={task.id}
           className={styles['card']}
-          href={job.link}
+          href={task.link}
           target="_blank"
           rel="noopener noreferrer"
         >
           <div className={styles['cardBody']}>
             <div>
-              <h3 className={styles['title']}>{job.title}</h3>
-              <p className={styles['company']}>{job.companyName}</p>
-              <p className={styles['description']}>{job.description}</p>
+              <h3 className={styles['title']}>{task.title}</h3>
+              <p className={styles['company']}>{task.companyName}</p>
+              <p className={styles['description']}>{task.description}</p>
             </div>
             <p className={styles['link']}>
               Learn More
@@ -64,11 +64,11 @@ function CompanyJobs({ jobs }: Props) {
   );
 }
 
-export default function JobsGrid({ jobs }: Props) {
-  const companies = jobs.reduce((allCompanies: any, job) => {
-    allCompanies[job.companyName] = [
-      ...(allCompanies[job.companyName] || []),
-      job,
+export default function TasksGrid({ tasks }: Props) {
+  const companies = tasks.reduce((allCompanies: any, task) => {
+    allCompanies[task.companyName] = [
+      ...(allCompanies[task.companyName] || []),
+      task,
     ];
     return allCompanies;
   }, {});
@@ -98,7 +98,7 @@ export default function JobsGrid({ jobs }: Props) {
               </svg>
             </a>
           </div>
-          <CompanyJobs jobs={companies[companyName]} />
+          <Tasks tasks={companies[companyName]} />
         </div>
       ))}
     </>

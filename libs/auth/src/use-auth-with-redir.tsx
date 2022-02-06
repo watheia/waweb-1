@@ -4,14 +4,14 @@ import { useAuth } from './use-auth';
 
 export const useAuthWithRedir = () => {
   const context = useAuth();
-  const { userLoading, loggedIn } = context;
+  const { isUserLoading: userLoading, isLoggedIn: loggedIn } = context;
   const navigateTo = useNavigation();
 
   useEffect(() => {
     if (!userLoading && !loggedIn) {
       navigateTo.auth();
     }
-  }, [userLoading, loggedIn]);
+  }, [userLoading, loggedIn, navigateTo]);
 
   return context;
 };

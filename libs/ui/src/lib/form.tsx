@@ -35,25 +35,23 @@ type Props = {
 
 export default function Form({ sharePage }: Props) {
   const [email, setEmail] = useState('');
-  const [errorMsg, setErrorMsg] = useState('');
+  const [errorMsg] = useState('');
   const [errorTryAgain, setErrorTryAgain] = useState(false);
   const [focused, setFocused] = useState(false);
   const [formState, setFormState] = useState<FormState>('default');
-  const auth = useAuth();
+  const { signIn } = useAuth();
 
   const onSubmit = useCallback(
     (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
-
       if (formState === 'default') {
         setFormState('loading');
-        const data = new FormData(e.currentTarget);
-        return auth.signIn({ email: data.get('email') as string });
+        signIn({ email });
       } else {
         setFormState('default');
       }
     },
-    [auth, formState]
+    [signIn, email, formState]
   );
 
   const onTryAgainClick = useCallback((e: React.MouseEvent) => {

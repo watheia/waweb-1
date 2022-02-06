@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-import { Speaker } from '@waweb/model';
+import { Author } from '@waweb/model';
 import cn from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
 import GithubIcon from './icons/icon-github';
-import styles from './speaker-section.module.css';
+import styles from './author-section.module.css';
 
 const TwitterIcon = () => (
   <svg
@@ -36,13 +36,13 @@ const TwitterIcon = () => (
 );
 
 type Props = {
-  speaker: Speaker;
+  author: Author;
 };
 
-export default function SpeakerSection({ speaker }: Props) {
+export default function AuthorSection({ author }: Props) {
   return (
     <>
-      <Link href="/speakers">
+      <Link href="/authors">
         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <a className={styles['backlink']}>
           <svg
@@ -58,35 +58,35 @@ export default function SpeakerSection({ speaker }: Props) {
           >
             <path d="M15 18l-6-6 6-6" />
           </svg>
-          Back to speakers
+          Back to authors
         </a>
       </Link>
-      <div key={speaker.name} className={styles['container']}>
+      <div key={author.name} className={styles['container']}>
         <div style={{ minWidth: '300px' }}>
           <Image
-            alt={speaker.name}
-            title={speaker.name}
-            src={speaker.image['url']}
+            alt={author.name}
+            title={author.name}
+            src={author.image['url']}
             className={styles['image']}
             loading="lazy"
             height={400}
             width={300}
           />
         </div>
-        <div className={styles['speaker-details']}>
+        <div className={styles['author-details']}>
           <div>
-            <h1 className={styles['name']}>{speaker.name}</h1>
+            <h1 className={styles['name']}>{author.name}</h1>
             <p className={styles['title']}>
-              {`${speaker.title} @ `}
-              <span className={styles['company']}>{speaker.company}</span>
+              {`${author.title} @ `}
+              <span className={styles['company']}>{author.company}</span>
             </p>
             <h2 className={styles['bio-header']}>Bio</h2>
-            <p className={styles['bio']}>{speaker.bio}</p>
+            <p className={styles['bio']}>{author.bio}</p>
             <h3 className={styles['socials-header']}>Social Media</h3>
-            {speaker.twitter ? (
+            {author.twitter ? (
               <a
                 aria-label="Twitter"
-                href={speaker.twitter}
+                href={author.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -97,11 +97,11 @@ export default function SpeakerSection({ speaker }: Props) {
                 <TwitterIcon />
               </span>
             )}
-            {speaker.github ? (
+            {author.github ? (
               <a
                 aria-label="GitHub"
                 className={styles['githubIcon']}
-                href={speaker.github}
+                href={author.github}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -115,10 +115,10 @@ export default function SpeakerSection({ speaker }: Props) {
           </div>
         </div>
       </div>
-      {speaker.talk && (
-        <div className={styles['talk-details']}>
-          <h3 className={styles['socials-header']}>{speaker.talk.title}</h3>
-          <p>{speaker.talk.description}</p>
+      {author.bio && (
+        <div className={styles['post-details']}>
+          <h3 className={styles['socials-header']}>{author.bio.title}</h3>
+          <p>{author.bio.description}</p>
         </div>
       )}
     </>

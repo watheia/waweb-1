@@ -14,28 +14,28 @@
  * limitations under the License.
  */
 
-import { Stage } from '@waweb/model';
+import { Category } from '@waweb/model';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import styles from './schedule-sidebar.module.css';
 import Select from './select';
-import TalkCard from './talk-card';
+import ProjectCard from './project-card';
 
 type Props = {
-  allStages: Stage[];
+  allCategories: Category[];
 };
 
-export default function ScheduleSidebar({ allStages }: Props) {
+export default function ProjectSidebar({ allCategories }: Props) {
   const router = useRouter();
-  const [currentStageSlug, setCurrentStageSlug] = useState(
+  const [currentCategorySlug, setCurrentCategorySlug] = useState(
     router.query['slug']
   );
-  const currentStage = allStages.find(
-    (s: Stage) => s.slug === currentStageSlug
+  const currentCategory = allCategories.find(
+    (s: Category) => s.slug === currentCategorySlug
   );
 
   useEffect(() => {
-    setCurrentStageSlug(router.query['slug']);
+    setCurrentCategorySlug(router.query['slug']);
   }, [router.query]);
 
   return (
@@ -44,22 +44,22 @@ export default function ScheduleSidebar({ allStages }: Props) {
       <p>Jan 1</p>
       <Select
         aria-label="Select a stage"
-        value={currentStageSlug}
+        value={currentCategorySlug}
         onChange={(e) => {
           const slug = e.target.value;
-          setCurrentStageSlug(slug);
+          setCurrentCategorySlug(slug);
           router.push(`/stage/${slug}`);
         }}
       >
-        {allStages.map((stage) => (
+        {allCategories.map((stage) => (
           <option key={stage.slug} value={stage.slug}>
             {stage.name}
           </option>
         ))}
       </Select>
-      <div className={styles['talks']}>
-        {currentStage?.schedule.map((talk) => (
-          <TalkCard key={talk.title} talk={talk} showTime />
+      <div className={styles['projects']}>
+        {currentCategory?.articles.map((caseStudy) => (
+          <ProjectCard key={caseStudy.title} caseStudy={caseStudy} showTime />
         ))}
       </div>
     </div>

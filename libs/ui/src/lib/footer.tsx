@@ -17,7 +17,7 @@
 import cn from 'clsx';
 import styles from './footer.module.css';
 import useConfig from './hooks/use-config';
-import Logo from './logo';
+// import Logo from './logo';
 
 // export function HostedByVercel() {
 //   return (
@@ -38,10 +38,10 @@ export default function Footer() {
   return (
     <footer className={cn(styles['footer'])}>
       <div className={styles['footer-legal']}>
-        <div className={styles['footer-hostedby']}>
+        {/* <div className={styles['footer-hostedby']}>
           <Logo width={'100%'} />
           <div className={styles['footer-separator']} />
-        </div>
+        </div> */}
         <div className={styles['footer-copyright']}>
           Copyright © {`${new Date().getFullYear()} `} {config.legalName}. All
           rights reserved.

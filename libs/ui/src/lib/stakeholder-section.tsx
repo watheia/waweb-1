@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-import { Sponsor } from '@waweb/model';
+import { Stakeholder } from '@waweb/model';
 import cn from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from './sponsor-section.module.css';
+import styles from './stakeholder-section.module.css';
 import styleUtils from './utils.module.css';
 
 type Props = {
-  sponsor: Sponsor;
+  stakeholder: Stakeholder;
 };
 
-export default function SponsorSection({ sponsor }: Props) {
+export default function StakeholderSection({ stakeholder }: Props) {
   return (
     <>
       <Link href="/expo">
@@ -58,36 +58,36 @@ export default function SponsorSection({ sponsor }: Props) {
           allowFullScreen
           frameBorder="0"
           height="100%"
-          src={`https://youtube.com/embed/${sponsor.youtubeSlug}`}
-          title={sponsor.name}
+          src={`https://youtube.com/embed/${stakeholder.youtubeSlug}`}
+          title={stakeholder.name}
           width="100%"
         />
         <div className={styles['container']}>
           <div className={styles['name-and-logo']}>
             <Image
-              alt={sponsor.name}
-              src={sponsor.logo['url']}
+              alt={stakeholder.name}
+              src={stakeholder.logo['url']}
               className={styles['image']}
               loading="lazy"
-              title={sponsor.name}
+              title={stakeholder.name}
               height={64}
               width={64}
             />
-            <h1 className={styles['name']}>{sponsor.name}</h1>
+            <h1 className={styles['name']}>{stakeholder.name}</h1>
           </div>
-          <p className={styles['description']}>{sponsor.description}</p>
-          <div className={styles['sponsor-details']}>
+          <p className={styles['description']}>{stakeholder.description}</p>
+          <div className={styles['stakeholder-details']}>
             <a
-              href={sponsor.callToActionLink}
+              href={stakeholder.callToActionLink}
               target="_blank"
               rel="noopener noreferrer"
               type="button"
               className={styles['button']}
             >
-              {sponsor.callToAction}
+              {stakeholder.callToAction}
             </a>
             <a
-              href={sponsor.discord}
+              href={stakeholder.discord}
               target="_blank"
               rel="noopener noreferrer"
               type="button"
@@ -98,7 +98,7 @@ export default function SponsorSection({ sponsor }: Props) {
           </div>
           <div className={styles['resources']}>
             <h2 className={styles['heading']}>Resources</h2>
-            {sponsor.links.map((link) => (
+            {stakeholder.links.map((link) => (
               <a
                 key={link.url}
                 href={link.url}

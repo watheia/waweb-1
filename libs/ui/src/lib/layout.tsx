@@ -15,6 +15,7 @@
  */
 
 import { SkipNavContent } from '@reach/skip-nav';
+import { MessageList, useMessage } from '@waweb/message';
 import cn from 'clsx';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -45,11 +46,12 @@ export default function Layout({
   const config = useConfig();
   const router = useRouter();
   const activeRoute = router?.asPath ?? '/';
+  const { messages } = useMessage();
 
   return (
     <>
       <ViewSource />
-      <div className={cn(useBackdrop && styles['background'])}>
+      <div className={cn(useBackdrop && styles['backdrop'])}>
         {!hideNav && (
           <header className={cn(styles['header'])}>
             <div className={styles['header-logos']}>
@@ -78,15 +80,16 @@ export default function Layout({
           </header>
         )}
         <div className={styles['page']}>
+          <MessageList messages={messages} />
+          <SkipNavContent />
           <main
-            className={cn(styles['main'], usePadding && 'px-2 sm:px-6 lg:px-8')}
+            className={cn(
+              styles['main'],
+              usePadding && 'px-2 py-1 sm:px-6 lg:px-8'
+            )}
             style={layoutStyles}
           >
-            <SkipNavContent />
-            <div className={cn(styles['full'], className)}>
-              <SkipNavContent />
-              {children}
-            </div>
+            <div className={cn(styles['full'], className)}>{children}</div>
           </main>
           <Footer />
         </div>

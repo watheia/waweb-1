@@ -1,14 +1,14 @@
 import { Image } from './Image';
-import { SponsorLink } from './SponsorLink';
+import { StakeholderLink } from './StakeholderLink';
 
-export interface Sponsor {
+export interface Stakeholder {
   name: string;
   description: string;
   slug: string;
   website: string;
   callToAction: string;
   callToActionLink: string;
-  links: SponsorLink[];
+  links: StakeholderLink[];
   discord: string;
   tier: string;
   cardImage: Image;

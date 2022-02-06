@@ -15,7 +15,7 @@ type Props = {
 const useStore = ({ channelId }: Props) => {
   const [channels, setChannels] = useState<Channel[]>([]);
   const [messages, setMessages] = useState<Message[]>([]);
-  const [users] = useState(new Map());
+  const [users] = useState<Record<string, User>>({});
   const [newMessage, handleNewMessage] = useState<Message | null>(null);
   const [newChannel, handleNewChannel] = useState<Channel | null>(null);
   const [newOrUpdatedUser, handleNewOrUpdatedUser] = useState<User | null>(
@@ -57,19 +57,18 @@ const useStore = ({ channelId }: Props) => {
   useEffect(() => {
     if (channelId > 0) {
       fetchMessages(channelId, (messages) => {
-        messages.forEach((x) => users.set(x.user_id, x.author));
+        // messages.forEach((x) => users[x.user_id] , x.author));
         setMessages(messages);
       });
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [channelId]);
 
   // New message received from Postgres
   useEffect(() => {
     if (newMessage && newMessage.channel_id === channelId) {
       const handleAsync = async () => {
-        let authorId = newMessage.user_id;
-        if (!users.get(authorId))
+        const authorId = newMessage.user_id;
+        if (users[authorId])
           await fetchUser(authorId, (user) => handleNewOrUpdatedUser(user));
         setMessages(messages.concat(newMessage));
       };
@@ -100,12 +99,12 @@ const useStore = ({ channelId }: Props) => {
 
   // New or updated user received from Postgres
   useEffect(() => {
-    if (newOrUpdatedUser) users.set(newOrUpdatedUser.id, newOrUpdatedUser);
+    if (newOrUpdatedUser) users[newOrUpdatedUser.id] = newOrUpdatedUser;
   }, [newOrUpdatedUser]);
 
   return {
     // We can export computed values here to map the authors to each message
-    messages: messages.map((x) => ({ ...x, author: users.get(x.user_id) })),
+    messages: messages.map((x) => ({ ...x, author: users[x.user_id] })),
     channels:
       channels !== null
         ? channels.sort((a, b) => a.slug.localeCompare(b.slug))

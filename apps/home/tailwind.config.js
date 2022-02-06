@@ -8,7 +8,6 @@ module.exports = {
     join(__dirname, 'pages/**/*.{js,ts,jsx,tsx}'),
     ...createGlobPatternsForDependencies(__dirname),
   ],
-  darkMode: false,
   theme: {
     fontFamily: {
       sans: ['Work Sans', ...fontFamily.sans],

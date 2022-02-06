@@ -9,11 +9,11 @@ const fetchUserRoles = async (
   setState: (roles: UserRole[]) => void
 ): Promise<UserRole[]> => {
   try {
-    let { body } = await supabase.from<UserRole>('user_roles').select(`*`);
+    const { body } = await supabase.from<UserRole>('user_roles').select(`*`);
     if (setState) setState(body ?? []);
     return body ?? [];
   } catch (error) {
-    console.log('error', error);
+    console.error('error', error);
     return [];
   }
 };

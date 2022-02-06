@@ -14,29 +14,29 @@
  * limitations under the License.
  */
 
-import { Stage } from '@waweb/model';
+import { Category } from '@waweb/model';
 import cn from 'clsx';
 import useSWR from 'swr';
 import AppEntry from './app-entry';
 import useLoginStatus from './hooks/use-login-status';
-import ScheduleSidebar from './schedule-sidebar';
+import ProjectSidebar from './project-sidebar';
 import styles from './container.module.css';
 import styleUtils from './utils.module.css';
 
 type Props = {
-  stage: Stage;
-  allStages: Stage[];
+  stage: Category;
+  allCategories: Category[];
 };
 
-export default function StageContainer({ stage, allStages }: Props) {
-  const response = useSWR('/api/stages', {
-    fallbackData: allStages,
+export default function CategoryContainer({ stage, allCategories }: Props) {
+  const response = useSWR('/api/categories', {
+    fallbackData: allCategories,
     refreshInterval: 5000,
   });
 
-  const updatedStages = response.data || [];
-  const updatedStage =
-    updatedStages.find((s: Stage) => s.slug === stage.slug) || stage;
+  const updatedCategories = response.data || [];
+  const updatedCategory =
+    updatedCategories.find((s: Category) => s.slug === stage.slug) || stage;
   const { loginStatus, mutate } = useLoginStatus();
 
   return (
@@ -54,8 +54,8 @@ export default function StageContainer({ stage, allStages }: Props) {
               allow="autoplay; picture-in-picture"
               allowFullScreen
               frameBorder="0"
-              src={`${updatedStage.stream}?autoplay=1&mute=1`}
-              title={updatedStage.name}
+              src={`${updatedCategory.stream}?autoplay=1&mute=1`}
+              title={updatedCategory.name}
               width="100%"
             />
             <div
@@ -69,7 +69,7 @@ export default function StageContainer({ stage, allStages }: Props) {
                 <h2 className={styles['stageName']}>{stage.name}</h2>
               </div>
               <a
-                href={updatedStage.discord}
+                href={updatedCategory.discord}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles['button']}
@@ -97,7 +97,7 @@ export default function StageContainer({ stage, allStages }: Props) {
           <AppEntry onLogin={() => mutate()} />
         )}
       </div>
-      <ScheduleSidebar allStages={updatedStages} />
+      <ProjectSidebar allCategories={updatedCategories} />
     </div>
   );
 }

@@ -14,42 +14,42 @@
  * limitations under the License.
  */
 
-import { Sponsor } from '@waweb/model';
+import { Stakeholder } from '@waweb/model';
 import cn from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from './sponsors-grid.module.css';
+import styles from './stakeholders-grid.module.css';
 
-function SponsorCard({ sponsor }: { sponsor: Sponsor }) {
+function StakeholderCard({ stakeholder }: { stakeholder: Stakeholder }) {
   return (
-    <Link key={sponsor.name} href={`/expo/${sponsor.slug}`}>
+    <Link key={stakeholder.name} href={`/expo/${stakeholder.slug}`}>
       {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
       <a
         role="button"
         tabIndex={0}
         className={cn(styles['card'], {
-          [styles['diamond']]: sponsor.tier === 'diamond',
-          [styles['gold']]: sponsor.tier === 'gold',
+          [styles['diamond']]: stakeholder.tier === 'diamond',
+          [styles['gold']]: stakeholder.tier === 'gold',
         })}
       >
         <div className={styles['imageWrapper']}>
           <Image
-            alt={sponsor.name}
-            src={sponsor.cardImage['url']}
+            alt={stakeholder.name}
+            src={stakeholder.cardImage['url']}
             className={cn(styles['image'], {
-              [styles['silver']]: sponsor.tier === 'silver',
+              [styles['silver']]: stakeholder.tier === 'silver',
             })}
             loading="lazy"
-            title={sponsor.name}
+            title={stakeholder.name}
             width={900}
             height={500}
           />
         </div>
-        {sponsor.tier !== 'silver' && (
+        {stakeholder.tier !== 'silver' && (
           <div className={styles['cardBody']}>
             <div>
-              <h2 className={styles['name']}>{sponsor.name}</h2>
-              <p className={styles['description']}>{sponsor.description}</p>
+              <h2 className={styles['name']}>{stakeholder.name}</h2>
+              <p className={styles['description']}>{stakeholder.description}</p>
             </div>
           </div>
         )}
@@ -59,23 +59,23 @@ function SponsorCard({ sponsor }: { sponsor: Sponsor }) {
 }
 
 type Props = {
-  sponsors: Sponsor[];
+  stakeholders: Stakeholder[];
 };
 
-export default function SponsorsGrid({ sponsors }: Props) {
-  const silverSponsors = sponsors.filter((s) => s.tier === 'silver');
-  const otherSponsors = sponsors.filter((s) => s.tier !== 'silver');
+export default function StakeholdersGrid({ stakeholders }: Props) {
+  const silverStakeholders = stakeholders.filter((s) => s.tier === 'silver');
+  const otherStakeholders = stakeholders.filter((s) => s.tier !== 'silver');
 
   return (
     <>
       <div className={styles['grid']}>
-        {otherSponsors.map((sponsor) => (
-          <SponsorCard key={sponsor.name} sponsor={sponsor} />
+        {otherStakeholders.map((stakeholder) => (
+          <StakeholderCard key={stakeholder.name} stakeholder={stakeholder} />
         ))}
       </div>
       <div className={styles['grid']}>
-        {silverSponsors.map((sponsor) => (
-          <SponsorCard key={sponsor.name} sponsor={sponsor} />
+        {silverStakeholders.map((stakeholder) => (
+          <StakeholderCard key={stakeholder.name} stakeholder={stakeholder} />
         ))}
       </div>
     </>

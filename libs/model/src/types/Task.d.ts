@@ -1,4 +1,4 @@
-export interface Job {
+export interface Task {
   id: string;
   companyName: string;
   title: string;
@@ -6,4 +6,4 @@ export interface Job {
   discord: string;
   link: string;
   rank: number;
-};
+}

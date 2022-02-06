@@ -17,7 +17,6 @@
 import useEmailQueryParam from '@waweb/ui.hooks.use-email-query-param';
 import cn from 'clsx';
 import { useCallback, useState } from 'react';
-import Captcha, { useCaptcha } from './captcha';
 import styles from './app-entry.module.css';
 import useConfig from './hooks/use-config';
 import LoadingDots from './loading-dots';
@@ -27,44 +26,35 @@ type FormState = 'default' | 'loading' | 'error';
 
 const DEFAULT_ERROR_MSG = 'Error! Please try again.';
 
-function getErrorMsg(code: string) {
-  switch (code) {
-    case 'bad_email':
-      return 'Please enter a valid email';
-    default:
-      return DEFAULT_ERROR_MSG;
-  }
-}
+// function getErrorMsg(code: string) {
+//   switch (code) {
+//     case 'bad_email':
+//       return 'Please enter a valid email';
+//     default:
+//       return DEFAULT_ERROR_MSG;
+//   }
+// }
 
 export default function AppEntry({ onLogin }: { onLogin: () => void }) {
   const [emailInput, setEmailInput] = useState('');
   const [focused, setFocused] = useState(false);
   const [formState, setFormState] = useState<FormState>('default');
   const [errorMsg, setErrorMsg] = useState('');
-  const {
-    ref: captchaRef,
-    reset: resetCaptcha,
-    execute: executeCaptcha,
-    isEnabled: isCaptchaEnabled,
-  } = useCaptcha();
   const config = useConfig();
 
-  const handleLogin = useCallback(
-    async (token?: string) => {
-      alert('TODO not implemented');
-      // const res = await login(emailInput, token);
+  const handleLogin = useCallback(async (token?: string) => {
+    alert('TODO not implemented');
+    // const res = await login(emailInput, token);
 
-      // if (!res.ok) {
-      //   const json = await res.json();
-      //   setErrorMsg(getErrorMsg(json.error.code));
-      //   setFormState('error');
-      //   return;
-      // }
+    // if (!res.ok) {
+    //   const json = await res.json();
+    //   setErrorMsg(getErrorMsg(json.error.code));
+    //   setFormState('error');
+    //   return;
+    // }
 
-      // onLogin();
-    },
-    [emailInput, onLogin]
-  );
+    // onLogin();
+  }, []);
 
   const onSubmit = useCallback(
     async (e: React.FormEvent) => {
@@ -72,11 +62,6 @@ export default function AppEntry({ onLogin }: { onLogin: () => void }) {
 
       try {
         setFormState('loading');
-
-        if (isCaptchaEnabled) {
-          return executeCaptcha();
-        }
-
         return handleLogin();
       } catch (err) {
         console.error(err);
@@ -84,19 +69,15 @@ export default function AppEntry({ onLogin }: { onLogin: () => void }) {
         setFormState('error');
       }
     },
-    [executeCaptcha, isCaptchaEnabled, handleLogin]
+    [handleLogin]
   );
 
-  const onTryAgainClick = useCallback(
-    (e: React.MouseEvent) => {
-      e.preventDefault();
+  const onTryAgainClick = useCallback((e: React.MouseEvent) => {
+    e.preventDefault();
 
-      setErrorMsg('');
-      setFormState('default');
-      resetCaptcha();
-    },
-    [resetCaptcha]
-  );
+    setErrorMsg('');
+    setFormState('default');
+  }, []);
 
   useEmailQueryParam('login', setEmailInput);
 
@@ -148,11 +129,11 @@ export default function AppEntry({ onLogin }: { onLogin: () => void }) {
             {formState === 'loading' ? (
               <LoadingDots size={4} />
             ) : (
+              // eslint-disable-next-line react/jsx-no-useless-fragment
               <>{formState === 'error' ? 'Try Again' : 'Join'}</>
             )}
           </button>
         </div>
-        <Captcha ref={captchaRef} onVerify={handleLogin} />
       </form>
     </div>
   );

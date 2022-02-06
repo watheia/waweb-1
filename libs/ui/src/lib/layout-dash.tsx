@@ -180,10 +180,6 @@ const MobileSidebar = ({
   </Transition.Root>
 );
 
-interface StaticSidebarProps extends DivProps {
-  navigation: NavItem[];
-}
-
 const PrincipalUserMenu = ({ navigation }: { navigation: NavItem[] }) => (
   <Menu as="div" className="ml-3 relative">
     <div>

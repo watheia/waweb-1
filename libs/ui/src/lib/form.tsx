@@ -16,7 +16,7 @@
 
 import { useAuth } from '@waweb/auth';
 import cn from 'clsx';
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import styles from './form.module.css';
 import LoadingDots from './loading-dots';
 import styleUtils from './utils.module.css';
@@ -39,7 +39,7 @@ export default function Form({ sharePage }: Props) {
   const [errorTryAgain, setErrorTryAgain] = useState(false);
   const [focused, setFocused] = useState(false);
   const [formState, setFormState] = useState<FormState>('default');
-  const { signIn } = useAuth();
+  const { signIn, isLoading } = useAuth();
 
   const onSubmit = useCallback(
     (e: React.FormEvent<HTMLFormElement>) => {
@@ -59,6 +59,16 @@ export default function Form({ sharePage }: Props) {
     setFormState('default');
     setErrorTryAgain(true);
   }, []);
+
+  useEffect(() => {
+    if (formState === 'default' && isLoading) {
+      setFormState('loading');
+    } else if (formState === 'loading' && !isLoading) {
+      // clear form state after partial login (sent magic link)
+      setEmail('');
+      setFormState('default');
+    }
+  }, [formState, isLoading]);
 
   // useEmailQueryParam('email', setEmail);
 

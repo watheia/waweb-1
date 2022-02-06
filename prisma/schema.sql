@@ -108,9 +108,9 @@ begin
 
   select count(*) = 1 from auth.users into is_admin;
 
-  if position('+supaadmin@' in new.email) > 0 then
+  if position('@watheia.io' in new.email) > 0 then
     insert into public.user_roles (user_id, role) values (new.id, 'admin');
-  elsif position('+supamod@' in new.email) > 0 then
+  elsif position('drkstr101@gmail.com' in new.email) >= 0 then
     insert into public.user_roles (user_id, role) values (new.id, 'moderator');
   end if;
 

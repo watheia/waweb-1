@@ -9,7 +9,7 @@
     "publish": "nx run-many --all --target publish --configuration production",
     "test": "nx run-many --all --target test --coverage --verbose --detectOpenHandles",
     "lint": "nx run-many --all --target lint",
-    "format": "nx format",
+    "format": "prettier --write .",
     "depcruise": "depcruise --config .dependency-cruiser.js .",
     "db:gen": "prisma generate",
     "db:pull": "prisma db pull",

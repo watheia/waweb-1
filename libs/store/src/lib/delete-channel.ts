@@ -7,7 +7,7 @@ import supabase from './supabase';
  */
 const deleteChannel = async (channelId: bigint) => {
   try {
-    let { body } = await supabase
+    const { body } = await supabase
       .from<Channel>('channels')
       .delete()
       .match({ id: channelId });

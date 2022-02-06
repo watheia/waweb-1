@@ -56,8 +56,9 @@ const useStore = ({ channelId }: Props) => {
   // Update when the route changes
   useEffect(() => {
     if (channelId > 0) {
+      console.log('Fetch messages for ', channelId);
       fetchMessages(channelId, (messages) => {
-        // messages.forEach((x) => users[x.user_id] , x.author));
+        console.log('(channelId, messages) = ', channelId, messages);
         setMessages(messages);
       });
     }
@@ -66,6 +67,7 @@ const useStore = ({ channelId }: Props) => {
   // New message received from Postgres
   useEffect(() => {
     if (newMessage && newMessage.channel_id === channelId) {
+      console.log('Recieved server message ', newMessage);
       const handleAsync = async () => {
         const authorId = newMessage.user_id;
         if (users[authorId])
@@ -78,28 +80,38 @@ const useStore = ({ channelId }: Props) => {
 
   // Deleted message received from postgres
   useEffect(() => {
-    if (deletedMessage)
+    if (deletedMessage) {
+      console.log('Removing deleted message ', deletedMessage);
       setMessages(
         messages.filter((message) => message.id !== deletedMessage.id)
       );
+    }
   }, [deletedMessage]);
 
   // New channel received from Postgres
   useEffect(() => {
-    if (newChannel) setChannels(channels.concat(newChannel));
+    if (newChannel) {
+      console.log('Recieved server channel ', newChannel);
+      setChannels(channels.concat(newChannel));
+    }
   }, [newChannel]);
 
   // Deleted channel received from postgres
   useEffect(() => {
-    if (deletedChannel)
+    if (deletedChannel) {
+      console.log('Removing deleted channel ', deletedChannel);
       setChannels(
         channels.filter((channel) => channel.id !== deletedChannel.id)
       );
+    }
   }, [deletedChannel]);
 
   // New or updated user received from Postgres
   useEffect(() => {
-    if (newOrUpdatedUser) users[newOrUpdatedUser.id] = newOrUpdatedUser;
+    if (newOrUpdatedUser) {
+      console.log('A new or updated user has connected.', newOrUpdatedUser);
+      users[newOrUpdatedUser.id] = newOrUpdatedUser;
+    }
   }, [newOrUpdatedUser]);
 
   return {

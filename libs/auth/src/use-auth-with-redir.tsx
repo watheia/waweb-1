@@ -1,17 +1,17 @@
-import { useNavigation } from '@waweb/navigation';
+import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import { useAuth } from './use-auth';
 
-export const useAuthWithRedir = () => {
+export const useAuthWithRedir = (redirectTo = '/') => {
   const context = useAuth();
-  const { isUserLoading: userLoading, isLoggedIn: loggedIn } = context;
-  const navigateTo = useNavigation();
+  const router = useRouter();
+  const { isUserLoading, isLoggedIn } = context;
 
   useEffect(() => {
-    if (!userLoading && !loggedIn) {
-      navigateTo.auth();
+    if (!isUserLoading && !isLoggedIn) {
+      router.push(redirectTo);
     }
-  }, [userLoading, loggedIn, navigateTo]);
+  }, [isUserLoading, isLoggedIn, redirectTo, router]);
 
   return context;
 };

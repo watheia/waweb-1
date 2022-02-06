@@ -14,7 +14,7 @@ const fetchChannels = async (
     setState(body ?? []);
     return body ?? [];
   } catch (error) {
-    console.log('error', error);
+    console.error('error', error);
     return [];
   }
 };

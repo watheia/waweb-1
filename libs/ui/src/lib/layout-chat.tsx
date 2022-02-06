@@ -20,6 +20,7 @@ export default function LayoutChat({
 }: LayoutChatProps) {
   const { user, userRoles } = useAuth();
   const isAdmin = userRoles.includes(AppRole.Admin);
+  const hasChannels = channels && channels.length > 0;
 
   const handleCreate = async (name: string) => {
     const slug = prompt('Please enter your name');
@@ -50,12 +51,12 @@ export default function LayoutChat({
       <ChannelNav
         user={user}
         isAdmin={isAdmin}
-        channels={[]}
+        channels={channels}
         activeChannelId={BigInt(1)}
         onChannelCreate={handleCreate}
         onChannelDelete={handleDelete}
       />
-      <div className={styles['chat']}>{children}</div>
+      <div className={styles['chat']}>{hasChannels && children}</div>
     </Layout>
   );
 }

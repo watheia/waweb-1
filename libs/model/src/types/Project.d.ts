@@ -1,6 +1,6 @@
 import { Author } from './Author';
 
-export interface CaseStudy {
+export interface Project {
   title: string;
   description: string;
   start: string;

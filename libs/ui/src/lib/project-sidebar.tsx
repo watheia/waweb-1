@@ -58,8 +58,8 @@ export default function ProjectSidebar({ allCategories }: Props) {
         ))}
       </Select>
       <div className={styles['projects']}>
-        {currentCategory?.articles.map((caseStudy) => (
-          <ProjectCard key={caseStudy.title} project={caseStudy} showTime />
+        {currentCategory?.articles.map((project) => (
+          <ProjectCard key={project.title} project={project} showTime />
         ))}
       </div>
     </div>

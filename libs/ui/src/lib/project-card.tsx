@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { CaseStudy } from '@waweb/model';
+import { Project } from '@waweb/model';
 import cn from 'clsx';
 import { format, isAfter, isBefore, parseISO } from 'date-fns';
 import Image from 'next/image';
@@ -24,7 +24,7 @@ import styles from './project-card.module.css';
 
 type Props = {
   key: string;
-  project: CaseStudy;
+  project: Project;
   showTime: boolean;
 };
 
@@ -37,12 +37,12 @@ export default function ProjectCard({
   project: { title, stakeholders, start, end },
   showTime,
 }: Props) {
-  const [isCaseStudyLive, setIsCaseStudyLive] = useState(false);
+  const [isProjectLive, setIsProjectLive] = useState(false);
   const [startAndEndTime, setStartAndEndTime] = useState('');
 
   useEffect(() => {
     const now = Date.now();
-    setIsCaseStudyLive(
+    setIsProjectLive(
       isAfter(now, parseISO(start)) && isBefore(now, parseISO(end))
     );
     setStartAndEndTime(`${formatDate(start)} – ${formatDate(end)}`);
@@ -51,7 +51,7 @@ export default function ProjectCard({
   const firstAuthorLink = `/users/${stakeholders[0].slug ?? '/supabot'}`;
 
   return (
-    <div key={title} className={styles['caseStudy']}>
+    <div key={title} className={styles['project']}>
       {showTime && (
         <p className={styles['time']}>{startAndEndTime || <>&nbsp;</>}</p>
       )}
@@ -59,7 +59,7 @@ export default function ProjectCard({
         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <a
           className={cn(styles['card'], {
-            [styles['is-live']]: isCaseStudyLive,
+            [styles['is-live']]: isProjectLive,
           })}
         >
           <div className={styles['card-body']}>

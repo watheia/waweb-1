@@ -65,7 +65,7 @@ export type SignInRequest = {
 
 // Misc Types
 export type { Author } from './types/Author';
-export type { CaseStudy } from './types/CaseStudy';
+export type { Project } from './types/Project';
 export type { Category } from './types/Category';
 export type { Image } from './types/Image';
 export type { Link } from './types/Link';

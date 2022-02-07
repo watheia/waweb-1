@@ -14,18 +14,15 @@
  * limitations under the License.
  */
 
-import { Category, CaseStudy } from '@waweb/model';
+import { Category, Project } from '@waweb/model';
 import cn from 'clsx';
 import styles from './projects.module.css';
 import ProjectCard from './project-card';
 
 function CategoryRow({ stage }: { stage: Category }) {
   // Group projects by the time block
-  const timeBlocks = stage.articles.reduce((allBlocks: any, caseStudy) => {
-    allBlocks[caseStudy.start] = [
-      ...(allBlocks[caseStudy.start] || []),
-      caseStudy,
-    ];
+  const timeBlocks = stage.articles.reduce((allBlocks: any, project) => {
+    allBlocks[project.start] = [...(allBlocks[project.start] || []), project];
     return allBlocks;
   }, {});
 
@@ -37,15 +34,13 @@ function CategoryRow({ stage }: { stage: Category }) {
       <div className={cn(styles['projects'], styles[stage.slug])}>
         {Object.keys(timeBlocks).map((startTime: string) => (
           <div key={startTime}>
-            {timeBlocks[startTime].map(
-              (caseStudy: CaseStudy, index: number) => (
-                <ProjectCard
-                  key={caseStudy.title}
-                  project={caseStudy}
-                  showTime={index === 0}
-                />
-              )
-            )}
+            {timeBlocks[startTime].map((project: Project, index: number) => (
+              <ProjectCard
+                key={project.title}
+                project={project}
+                showTime={index === 0}
+              />
+            ))}
           </div>
         ))}
       </div>

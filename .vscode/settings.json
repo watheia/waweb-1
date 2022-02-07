@@ -1,4 +1,5 @@
 {
   "typescript.tsdk": "node_modules/typescript/lib",
-  "jest.jestCommandLine": "yarn jest --coverage"
+  "jest.jestCommandLine": "yarn jest --coverage",
+  "cSpell.words": ["supabot"]
 }

@@ -2732,6 +2732,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/bundle-analyzer@npm:^12.0.10":
+  version: 12.0.10
+  resolution: "@next/bundle-analyzer@npm:12.0.10"
+  dependencies:
+    webpack-bundle-analyzer: 4.3.0
+  checksum: 7dcec46afe294e32110773a36b53260a18cb1fe1cbc67518b2781b00fd300863ec50a969b8a8ab219e4042376aede262e6304dc60815870025b14b28c156b9f1
+  languageName: node
+  linkType: hard
+
 "@next/env@npm:12.0.10":
   version: 12.0.10
   resolution: "@next/env@npm:12.0.10"
@@ -3535,6 +3544,13 @@ __metadata:
     webpack-plugin-serve:
       optional: true
   checksum: 66deb75fe06c0d93f9f6f87c57349013cdc82d4cc536b3aff919fd417df1c6603d14a96448d4088f1a680ec22a75f994b30c374a0042c524dfecd96a942ff674
+  languageName: node
+  linkType: hard
+
+"@polka/url@npm:^1.0.0-next.20":
+  version: 1.0.0-next.21
+  resolution: "@polka/url@npm:1.0.0-next.21"
+  checksum: c7654046d38984257dd639eab3dc770d1b0340916097b2fac03ce5d23506ada684e05574a69b255c32ea6a144a957c8cd84264159b545fca031c772289d88788
   languageName: node
   linkType: hard
 
@@ -7156,7 +7172,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn-walk@npm:8.2.0, acorn-walk@npm:^8.1.1":
+"acorn-walk@npm:8.2.0, acorn-walk@npm:^8.0.0, acorn-walk@npm:^8.1.1":
   version: 8.2.0
   resolution: "acorn-walk@npm:8.2.0"
   checksum: 1715e76c01dd7b2d4ca472f9c58968516a4899378a63ad5b6c2d668bba8da21a71976c14ec5f5b75f887b6317c4ae0b897ab141c831d741dc76024d8745f1ad1
@@ -7170,7 +7186,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn@npm:8.7.0, acorn@npm:^8.0.0, acorn@npm:^8.2.4, acorn@npm:^8.4.1, acorn@npm:^8.5.0, acorn@npm:^8.7.0":
+"acorn@npm:8.7.0, acorn@npm:^8.0.0, acorn@npm:^8.0.4, acorn@npm:^8.2.4, acorn@npm:^8.4.1, acorn@npm:^8.5.0, acorn@npm:^8.7.0":
   version: 8.7.0
   resolution: "acorn@npm:8.7.0"
   bin:
@@ -8881,6 +8897,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"commander@npm:^6.2.0":
+  version: 6.2.1
+  resolution: "commander@npm:6.2.1"
+  checksum: d7090410c0de6bc5c67d3ca41c41760d6d268f3c799e530aafb73b7437d1826bbf0d2a3edac33f8b57cc9887b4a986dce307fa5557e109be40eadb7c43b21742
+  languageName: node
+  linkType: hard
+
 "commander@npm:^7.1.0, commander@npm:^7.2.0":
   version: 7.2.0
   resolution: "commander@npm:7.2.0"
@@ -9120,6 +9143,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cross-env@npm:^7.0.3":
+  version: 7.0.3
+  resolution: "cross-env@npm:7.0.3"
+  dependencies:
+    cross-spawn: ^7.0.1
+  bin:
+    cross-env: src/bin/cross-env.js
+    cross-env-shell: src/bin/cross-env-shell.js
+  checksum: 26f2f3ea2ab32617f57effb70d329c2070d2f5630adc800985d8b30b56e8bf7f5f439dd3a0358b79cee6f930afc23cf8e23515f17ccfb30092c6b62c6b630a79
+  languageName: node
+  linkType: hard
+
 "cross-fetch@npm:^3.0.6, cross-fetch@npm:^3.1.0":
   version: 3.1.5
   resolution: "cross-fetch@npm:3.1.5"
@@ -9129,7 +9164,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.2, cross-spawn@npm:^7.0.3":
+"cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.1, cross-spawn@npm:^7.0.2, cross-spawn@npm:^7.0.3":
   version: 7.0.3
   resolution: "cross-spawn@npm:7.0.3"
   dependencies:
@@ -10028,6 +10063,13 @@ __metadata:
   dependencies:
     readable-stream: ^2.0.2
   checksum: 744961f03c7f54313f90555ac20284a3fb7bf22fdff6538f041a86c22499560eb6eac9d30ab5768054137cb40e6b18b40f621094e0261d7d8c35a37b7a5ad241
+  languageName: node
+  linkType: hard
+
+"duplexer@npm:^0.1.2":
+  version: 0.1.2
+  resolution: "duplexer@npm:0.1.2"
+  checksum: 62ba61a830c56801db28ff6305c7d289b6dc9f859054e8c982abd8ee0b0a14d2e9a8e7d086ffee12e868d43e2bbe8a964be55ddbd8c8957714c87373c7a4f9b0
   languageName: node
   linkType: hard
 
@@ -11700,6 +11742,15 @@ __metadata:
     section-matter: ^1.0.0
     strip-bom-string: ^1.0.0
   checksum: 37717bd424344487d655392251ce8d8878a1275ee087003e61208fba3bfd59cbb73a85b2159abf742ae95e23db04964813fdc33ae18b074208428b2528205222
+  languageName: node
+  linkType: hard
+
+"gzip-size@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "gzip-size@npm:6.0.0"
+  dependencies:
+    duplexer: ^0.1.2
+  checksum: 2df97f359696ad154fc171dcb55bc883fe6e833bca7a65e457b9358f3cb6312405ed70a8da24a77c1baac0639906cd52358dc0ce2ec1a937eaa631b934c94194
   languageName: node
   linkType: hard
 
@@ -15206,6 +15257,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mrmime@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "mrmime@npm:1.0.0"
+  checksum: 2c72a40942af7c53bc97d1e9e9c5cb0e6541d18f736811c3a1b46fa2a2b2362480d687daa8ae8372523acaacd82426a4f7ce34b0bf1825ea83b3983e8cb91afd
+  languageName: node
+  linkType: hard
+
 "ms@npm:2.0.0":
   version: 2.0.0
   resolution: "ms@npm:2.0.0"
@@ -15831,7 +15889,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"opener@npm:^1.5.1":
+"opener@npm:^1.5.1, opener@npm:^1.5.2":
   version: 1.5.2
   resolution: "opener@npm:1.5.2"
   bin:
@@ -18675,6 +18733,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sirv@npm:^1.0.7":
+  version: 1.0.19
+  resolution: "sirv@npm:1.0.19"
+  dependencies:
+    "@polka/url": ^1.0.0-next.20
+    mrmime: ^1.0.0
+    totalist: ^1.0.0
+  checksum: c943cfc61baf85f05f125451796212ec35d4377af4da90ae8ec1fa23e6d7b0b4d9c74a8fbf65af83c94e669e88a09dc6451ba99154235eead4393c10dda5b07c
+  languageName: node
+  linkType: hard
+
 "sisteransi@npm:^1.0.5":
   version: 1.0.5
   resolution: "sisteransi@npm:1.0.5"
@@ -19831,6 +19900,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"totalist@npm:^1.0.0":
+  version: 1.1.0
+  resolution: "totalist@npm:1.1.0"
+  checksum: dfab80c7104a1d170adc8c18782d6c04b7df08352dec452191208c66395f7ef2af7537ddfa2cf1decbdcfab1a47afbbf0dec6543ea191da98c1c6e1599f86adc
+  languageName: node
+  linkType: hard
+
 "tough-cookie@npm:^4.0.0":
   version: 4.0.0
   resolution: "tough-cookie@npm:4.0.0"
@@ -20898,6 +20974,7 @@ __metadata:
     "@mui/icons-material": ^5.3.1
     "@mui/material": ^5.4.0
     "@mui/types": ^7.1.0
+    "@next/bundle-analyzer": ^12.0.10
     "@nrwl/cli": 13.7.3
     "@nrwl/cypress": 13.7.3
     "@nrwl/eslint-plugin-nx": 13.7.3
@@ -20980,6 +21057,7 @@ __metadata:
     clsx: ^1.1.1
     cookie: ^0.4.2
     core-js: ^3.21.0
+    cross-env: ^7.0.3
     cypress: ^9.4.1
     daisyui: ^1.25.4
     date-fns: ^2.28.0
@@ -21098,6 +21176,25 @@ __metadata:
   version: 6.1.0
   resolution: "webidl-conversions@npm:6.1.0"
   checksum: 1f526507aa491f972a0c1409d07f8444e1d28778dfa269a9971f2e157182f3d496dc33296e4ed45b157fdb3bf535bb90c90bf10c50dcf1dd6caacb2a34cc84fb
+  languageName: node
+  linkType: hard
+
+"webpack-bundle-analyzer@npm:4.3.0":
+  version: 4.3.0
+  resolution: "webpack-bundle-analyzer@npm:4.3.0"
+  dependencies:
+    acorn: ^8.0.4
+    acorn-walk: ^8.0.0
+    chalk: ^4.1.0
+    commander: ^6.2.0
+    gzip-size: ^6.0.0
+    lodash: ^4.17.20
+    opener: ^1.5.2
+    sirv: ^1.0.7
+    ws: ^7.3.1
+  bin:
+    webpack-bundle-analyzer: lib/bin/analyzer.js
+  checksum: 00b7bf4ac9fca17062b66b6897145b94e87153d3ec8815f0e0c05a3b8a1ca75320262db01a5fa634f604ee3d41aecde1ee59838d05b6d03cd5be62eb1addbcf8
   languageName: node
   linkType: hard
 
@@ -21683,7 +21780,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ws@npm:^7.4.6":
+"ws@npm:^7.3.1, ws@npm:^7.4.6":
   version: 7.5.6
   resolution: "ws@npm:7.5.6"
   peerDependencies:

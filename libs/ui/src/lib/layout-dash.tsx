@@ -58,26 +58,27 @@ const navigation: NavItem[] = [
 ];
 
 const userNavigation: NavItem[] = [
-  { name: 'Your Profile', href: '/user/profile' },
-  { name: 'Settings', href: '/user/settings' },
-  { name: 'Sign out', href: '/user/signout' },
+  { name: 'Profile', href: '/user/profile' },
+  { name: 'Account', href: '/user/settings' },
+  { name: 'Logout', href: '/user/signout' },
 ];
 
 const SearchBar = () => (
-  <div className="min-w-0 flex-1 md:px-8 lg:px-0 xl:col-span-6">
+  <div className="flex-1 min-w-0 md:px-8 lg:px-0 xl:col-span-6">
     <div className="flex items-center px-6 py-4 md:max-w-3xl md:mx-auto lg:max-w-none lg:mx-0 xl:px-0">
       <div className="w-full">
         <label htmlFor="search" className="sr-only">
           Search
         </label>
         <div className="relative">
-          <div className="pointer-events-none absolute inset-y-0 left-0 pl-3 flex items-center">
-            <SearchIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
+          <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <SearchIcon className="w-5 h-5 text-gray-400" aria-hidden="true" />
           </div>
           <input
             id="search"
             name="search"
-            className="block w-full bg-gray-900 border border-gray-700 opacity-75 rounded-md py-2 pl-10 pr-3 text-sm placeholder-gray-500 focus:opacity-100 focus:outline-none focus:text-gray-200 focus:placeholder-gray-400 focus:ring-1 focus:ring-teal-500 focus:border-teal-500 sm:text-sm"
+            className="block w-full py-2 pl-10 pr-3 text-sm placeholder-gray-500 bg-gray-900 border border-gray-700 rounded-md opacity-75 focus:opacity-100 focus:outline-none focus:text-gray-200 focus:placeholder-gray-400 focus:ring-1 focus:ring-teal-500 focus:border-teal-500 sm:text-sm"
+            style={{ minWidth: '120px' }}
             placeholder="Search"
             type="search"
           />
@@ -99,7 +100,7 @@ const MobileSidebar = ({
   navigation,
 }: MobileSidebarProps) => (
   <Transition.Root show={isOpen} as={Fragment}>
-    <Dialog as="div" className="fixed inset-0 flex z-40" onClose={setIsOpen}>
+    <Dialog as="div" className="fixed inset-0 z-40 flex" onClose={setIsOpen}>
       <Transition.Child
         as={Fragment}
         enter="transition-opacity ease-linear duration-300"
@@ -120,7 +121,7 @@ const MobileSidebar = ({
         leaveFrom="translate-x-0"
         leaveTo="-translate-x-full"
       >
-        <div className="relative flex-1 flex flex-col max-w-xs w-full pt-5 pb-4 bg-white">
+        <div className="relative flex flex-col flex-1 w-full max-w-xs pt-5 pb-4 bg-white">
           <Transition.Child
             as={Fragment}
             enter="ease-in-out duration-300"
@@ -130,21 +131,21 @@ const MobileSidebar = ({
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="absolute top-0 right-0 -mr-12 pt-2">
+            <div className="absolute top-0 right-0 pt-2 -mr-12">
               <button
                 type="button"
-                className="ml-1 flex items-center justify-center h-10 w-10 rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                className="flex items-center justify-center w-10 h-10 ml-1 rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                 onClick={() => setIsOpen(false)}
               >
                 <span className="sr-only">Close sidebar</span>
-                <XIcon className="h-6 w-6 text-white" aria-hidden="true" />
+                <XIcon className="w-6 h-6 text-white" aria-hidden="true" />
               </button>
             </div>
           </Transition.Child>
-          <div className="flex-shrink-0 flex items-center px-4">
+          <div className="flex items-center flex-shrink-0 px-4">
             <LogoAlt />
           </div>
-          <div className="mt-5 flex-1 h-0 overflow-y-auto">
+          <div className="flex-1 h-0 mt-5 overflow-y-auto">
             <nav className="px-2 space-y-1">
               {navigation.map((item) => (
                 <a
@@ -181,12 +182,16 @@ const MobileSidebar = ({
 );
 
 const PrincipalUserMenu = ({ navigation }: { navigation: NavItem[] }) => (
-  <Menu as="div" className="ml-3 relative">
+  <Menu
+    as="div"
+    className="relative ml-3"
+    style={{ minWidth: 32, minHeight: 32 }}
+  >
     <div>
-      <Menu.Button className="max-w-xs bg-white flex items-center text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500">
+      <Menu.Button className="flex items-center max-w-xs text-sm bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500">
         <span className="sr-only">Open user menu</span>
         <img
-          className="h-8 w-8 rounded-full"
+          className="w-8 h-8 rounded-full"
           src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
           alt=""
         />
@@ -201,7 +206,7 @@ const PrincipalUserMenu = ({ navigation }: { navigation: NavItem[] }) => (
       leaveFrom="transform opacity-100 scale-100"
       leaveTo="transform opacity-0 scale-95"
     >
-      <Menu.Items className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+      <Menu.Items className="absolute right-0 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
         {navigation.map((item) => (
           <Menu.Item key={item.name}>
             {({ active }) => (
@@ -222,6 +227,42 @@ const PrincipalUserMenu = ({ navigation }: { navigation: NavItem[] }) => (
   </Menu>
 );
 
+interface DashHeaderProps extends DivProps {
+  isMenuOpen: boolean;
+  setMenuOpen: (open: boolean) => void;
+  navigation: NavItem[];
+}
+
+const DashHeader = ({ setMenuOpen, ...props }: DashHeaderProps) => (
+  <div className="sticky top-0 z-10 flex flex-shrink-0 h-16 shadow" {...props}>
+    <button
+      type="button"
+      className="px-4 text-gray-500 border-r border-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500"
+      onClick={() => setMenuOpen(true)}
+    >
+      <span className="sr-only">Open sidebar</span>
+      <MenuAlt2Icon className="w-6 h-6" aria-hidden="true" />
+    </button>
+    <div className="flex justify-between flex-1 px-4">
+      <div className="flex flex-1">
+        <SearchBar />
+      </div>
+      <div className="flex items-center ml-4 mr-16 md:ml-6">
+        <button
+          type="button"
+          className="p-1 text-gray-400 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
+        >
+          <span className="sr-only">View notifications</span>
+          <BellIcon className="w-6 h-6" aria-hidden="true" />
+        </button>
+
+        {/* Profile dropdown */}
+        <PrincipalUserMenu navigation={userNavigation} />
+      </div>
+    </div>
+  </div>
+);
+
 export interface NavItem {
   name: string;
   href: string;
@@ -238,7 +279,7 @@ export interface LayoutDashProps extends DivProps {
 export default function LayoutDash({
   className,
   children,
-  title = 'Watheia Realtime | Home',
+  title,
   ...props
 }: LayoutDashProps) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -250,53 +291,30 @@ export default function LayoutDash({
         setIsOpen={setSidebarOpen}
         navigation={navigation}
       />
-      {/* <StaticSidebar navigation={navigation} /> */}
 
       <div className="flex flex-col flex-1">
-        <div className="sticky top-0 z-10 flex-shrink-0 flex h-16 shadow">
-          <button
-            type="button"
-            className="px-4 border-r border-gray-200 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500"
-            onClick={() => setSidebarOpen(true)}
-          >
-            <span className="sr-only">Open sidebar</span>
-            <MenuAlt2Icon className="h-6 w-6" aria-hidden="true" />
-          </button>
-          <div className="flex-1 px-4 flex justify-between">
-            <div className="flex-1 flex">
-              <SearchBar />
-            </div>
-            <div className="ml-4 flex items-center md:ml-6 mr-16">
-              <button
-                type="button"
-                className="bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
-              >
-                <span className="sr-only">View notifications</span>
-                <BellIcon className="h-6 w-6" aria-hidden="true" />
-              </button>
+        <DashHeader
+          isMenuOpen={sidebarOpen}
+          setMenuOpen={setSidebarOpen}
+          navigation={navigation}
+        />
 
-              {/* Profile dropdown */}
-              <PrincipalUserMenu navigation={userNavigation} />
-            </div>
-          </div>
-        </div>
-
-        <main className="flex-1">
-          <div className="py-6">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+        <div className="flex-1">
+          {title && (
+            <div className="px-4 mx-auto max-w-7xl sm:px-6 md:px-8">
               <h1 className="text-2xl font-semibold text-gray-300">{title}</h1>
             </div>
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-              {/* Replace with your content */}
-              <div className="py-4">
-                {children ?? (
-                  <div className="border-2 border-dashed border-gray-700 rounded-lg h-96" />
-                )}
-              </div>
-              {/* /End replace */}
+          )}
+          <div className="px-4 mx-auto max-w-7xl sm:px-6 md:px-8">
+            {/* Replace with your content */}
+            <div className="py-4">
+              {children ?? (
+                <div className="border-2 border-gray-700 border-dashed rounded-lg h-96" />
+              )}
             </div>
+            {/* /End replace */}
           </div>
-        </main>
+        </div>
       </div>
     </Layout>
   );

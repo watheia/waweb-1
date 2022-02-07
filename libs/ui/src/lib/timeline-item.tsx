@@ -11,27 +11,23 @@ const TimelineItem = ({ item, deleteEnabled, className }: MessageProps) => {
   return (
     <div
       className={clsx(
-        'bg-white/[.8] overflow-hidden shadow rounded-lg',
+        'bg-white/[.6] overflow-hidden shadow rounded-lg',
         className
       )}
     >
-      <div className="p-2 flex">
+      <div className="flex p-2">
         <div className="relative mr-4">
           <img
-            className="h-10 w-10 rounded-full bg-gray-400 flex items-center justify-center ring-8 ring-white"
+            className="flex items-center justify-center w-10 h-10 bg-gray-400 rounded-full ring-2 ring-white"
             src="https://www.datocms-assets.com/53041/1628748273-icon.png"
             alt=""
           />
-
-          <span className="absolute -bottom-0.5 -right-1 bg-white rounded-tl px-0.5 py-px">
-            <ChatAltIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
-          </span>
         </div>
-        <div className="min-w-0 flex-1">
+        <div className="flex-1 min-w-0">
           <div>
             <div className="text-sm">
               <a href="#" className="font-medium text-gray-900">
-                {item.author?.email}
+                {item.author?.email ?? 'supabot'}
               </a>
             </div>
             <p className="mt-0.5 text-sm text-gray-500">

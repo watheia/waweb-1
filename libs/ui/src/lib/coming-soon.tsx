@@ -4,13 +4,13 @@ import Layout from './layout';
 /* This example requires Tailwind CSS v2.0+ */
 export default function ComingSoon() {
   return (
-    <Layout className="min-h-full pt-16 pb-12 flex flex-col">
-      <main className="flex-grow flex flex-col justify-center max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex-shrink-0 flex justify-center">
+    <Layout className="flex flex-col min-h-full pt-16 pb-12">
+      <div className="flex flex-col justify-center flex-grow w-full px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="flex justify-center flex-shrink-0">
           <a href="/" className="inline-flex">
             <span className="sr-only">Workflow</span>
             <img
-              className="h-12 w-auto"
+              className="w-auto h-12"
               src="https://tailwindui.com/img/logos/workflow-mark.svg?color=teal&shade=600"
               alt=""
             />
@@ -18,10 +18,10 @@ export default function ComingSoon() {
         </div>
         <div className="py-16">
           <div className="text-center">
-            <p className="text-sm font-semibold text-teal-600 uppercase tracking-wide">
+            <p className="text-sm font-semibold tracking-wide text-teal-600 uppercase">
               Placeholder
             </p>
-            <h1 className="mt-2 text-4xl font-extrabold text-gray-200 tracking-tight sm:text-5xl">
+            <h1 className="mt-2 text-4xl font-extrabold tracking-tight text-gray-200 sm:text-5xl">
               Please stand by.
             </h1>
             <p className="mt-2 text-base text-gray-400">
@@ -37,8 +37,8 @@ export default function ComingSoon() {
             </div>
           </div>
         </div>
-      </main>
-      <footer className="flex-shrink-0 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
+      </div>
+      <footer className="flex-shrink-0 w-full px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <nav className="flex justify-center space-x-4">
           <Link href="/support">
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

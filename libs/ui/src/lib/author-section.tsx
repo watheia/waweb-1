@@ -1,5 +1,5 @@
 /**
- * Copyright 2020 Vercel Inc.
+ * Copyright 2022 Watheia Labs, LLC.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -63,15 +63,17 @@ export default function AuthorSection({ author }: Props) {
       </Link>
       <div key={author.name} className={styles['container']}>
         <div style={{ minWidth: '300px' }}>
-          <Image
-            alt={author.name}
-            title={author.name}
-            src={author.image['url']}
-            className={styles['image']}
-            loading="lazy"
-            height={400}
-            width={300}
-          />
+          {author?.image && (
+            <Image
+              alt={author.name}
+              title={author.name}
+              src={author?.image.url}
+              className={styles['image']}
+              loading="lazy"
+              height={400}
+              width={300}
+            />
+          )}
         </div>
         <div className={styles['author-details']}>
           <div>

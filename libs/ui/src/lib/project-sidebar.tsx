@@ -1,5 +1,5 @@
 /**
- * Copyright 2020 Vercel Inc.
+ * Copyright 2022 Watheia Labs, LLC.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 import { Category } from '@waweb/model';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import styles from './schedule-sidebar.module.css';
+import styles from './project-sidebar.module.css';
 import Select from './select';
 import ProjectCard from './project-card';
 
@@ -59,7 +59,7 @@ export default function ProjectSidebar({ allCategories }: Props) {
       </Select>
       <div className={styles['projects']}>
         {currentCategory?.articles.map((caseStudy) => (
-          <ProjectCard key={caseStudy.title} caseStudy={caseStudy} showTime />
+          <ProjectCard key={caseStudy.title} project={caseStudy} showTime />
         ))}
       </div>
     </div>

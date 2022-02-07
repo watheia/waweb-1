@@ -6,10 +6,10 @@ export interface Author {
   name: string;
   title: string;
   slug: string;
-  twitter: string;
-  github: string;
-  company: string;
+  twitter?: string;
+  github?: string;
+  company?: string;
   bio?: Bio;
-  image: Image;
-  imageSquare: Image;
+  image?: Image;
+  imageSquare?: Image;
 }

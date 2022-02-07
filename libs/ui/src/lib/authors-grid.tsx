@@ -1,5 +1,5 @@
 /**
- * Copyright 2020 Vercel Inc.
+ * Copyright 2022 Watheia Labs, LLC.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,18 +31,20 @@ export default function AuthorsGrid({ authors }: Props) {
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <a role="button" tabIndex={0} className={styles['card']}>
             <div className={styles['imageWrapper']}>
-              <Image
-                alt={author.name}
-                src={author.image['url']}
-                className={styles['image']}
-                loading="lazy"
-                quality="50"
-                title={author.name}
-                placeholder={author.image.blurDataURL ? 'blur' : 'empty'}
-                blurDataURL={author.image.blurDataURL}
-                width={300}
-                height={300}
-              />
+              {author.image && (
+                <Image
+                  alt={author.name}
+                  src={author.image.url}
+                  className={styles['image']}
+                  loading="lazy"
+                  quality="50"
+                  title={author.name}
+                  placeholder={author.image.blurDataURL ? 'blur' : 'empty'}
+                  blurDataURL={author.image.blurDataURL}
+                  width={300}
+                  height={300}
+                />
+              )}
             </div>
             <div className={styles['cardBody']}>
               <div>

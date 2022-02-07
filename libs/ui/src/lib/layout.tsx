@@ -1,5 +1,5 @@
 /**
- * Copyright 2020 Vercel Inc.
+ * Copyright 2022 Watheia Labs, LLC.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -55,7 +55,7 @@ export default function Layout({
         {!hideNav && (
           <header className={cn(styles['header'])}>
             <div className={styles['header-logos']}>
-              <MobileMenu key={router.asPath} />
+              <MobileMenu key={router?.asPath ?? '/'} />
               <Link href="/">
                 {/* eslint-disable-next-line */}
                 <a className={styles['logo']}>

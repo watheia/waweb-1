@@ -1,5 +1,4 @@
 import { DivProps, MessageModel } from '@waweb/model';
-import { ChatAltIcon } from '@heroicons/react/solid';
 import clsx from 'clsx';
 
 export interface MessageProps extends DivProps {
@@ -11,7 +10,7 @@ const TimelineItem = ({ item, deleteEnabled, className }: MessageProps) => {
   return (
     <div
       className={clsx(
-        'bg-white/[.6] overflow-hidden shadow rounded-lg',
+        'bg-white/[.9] overflow-hidden shadow rounded-lg',
         className
       )}
     >

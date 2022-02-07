@@ -1,5 +1,5 @@
 /**
- * Copyright 2020 Vercel Inc.
+ * Copyright 2022 Watheia Labs, LLC.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,9 +17,9 @@
 import cn from 'clsx';
 import styles from './icon-transition.module.css';
 
-type Props = { width: number | string };
+type Props = { width?: number | string };
 
-export default function IconDownload({ width }: Props) {
+export default function IconDownload({ width = 24 }: Props) {
   return (
     <svg
       width={width}

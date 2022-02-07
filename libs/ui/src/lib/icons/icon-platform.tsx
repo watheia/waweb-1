@@ -1,5 +1,5 @@
 /**
- * Copyright 2020 Vercel Inc.
+ * Copyright 2022 Watheia Labs, LLC.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,9 +14,12 @@
  * limitations under the License.
  */
 
-type Props = { color: string; height?: number | string };
+type Props = { color?: string; height?: number | string };
 
-export default function PlatformLogo({ color, height = 20 }: Props) {
+export default function PlatformLogo({
+  color = '#111111',
+  height = 20,
+}: Props) {
   return (
     <svg
       height={height}

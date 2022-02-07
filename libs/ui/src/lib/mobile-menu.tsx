@@ -1,5 +1,5 @@
 /**
- * Copyright 2020 Vercel Inc.
+ * Copyright 2022 Watheia Labs, LLC.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,7 +35,7 @@ function ModalDialog(
   props: Parameters<typeof useOverlay>[0] & Parameters<typeof useDialog>[0]
 ) {
   const router = useRouter();
-  const activeRoute = router.asPath;
+  const activeRoute = router?.asPath ?? '/';
 
   const config = useConfig();
 

@@ -1,5 +1,5 @@
 /**
- * Copyright 2020 Vercel Inc.
+ * Copyright 2022 Watheia Labs, LLC.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ import {
   MessageModel,
   User,
 } from '@waweb/model';
-import LayoutDash from '@waweb/ui.layout-dash';
+import LayoutDash, { NavItem } from '@waweb/ui.layout-dash';
 import { useRef } from 'react';
 import Container from './container';
 import TimelineItem from './timeline-item';
@@ -32,12 +32,19 @@ export interface DashboardProps extends DivProps {
   channels: ChannelModel[];
   activeChannel: ChannelModel;
   timeline: MessageModel[];
+  navigation: NavItem[];
 }
-export default function Dashboard(props: DashboardProps) {
-  const { timeline, user, userRoles } = props;
+
+export default function Dashboard({
+  timeline,
+  user,
+  userRoles,
+  navigation,
+  ...props
+}: DashboardProps) {
   const messagesEndRef = useRef<HTMLDivElement>(null);
   return (
-    <LayoutDash {...props}>
+    <LayoutDash user={user} userRoles={userRoles} {...props}>
       <Container className="pt-6">
         {timeline.map((it) => (
           <TimelineItem

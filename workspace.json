@@ -10,6 +10,7 @@
     "store": "libs/store",
     "theme": "libs/theme",
     "ui": "libs/ui",
+    "ui-e2e": "apps/ui-e2e",
     "util": "libs/util"
   }
 }

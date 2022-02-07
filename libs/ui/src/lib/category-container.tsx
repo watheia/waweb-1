@@ -1,5 +1,5 @@
 /**
- * Copyright 2020 Vercel Inc.
+ * Copyright 2022 Watheia Labs, LLC.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,15 +20,18 @@ import useSWR from 'swr';
 import AppEntry from './app-entry';
 import useLoginStatus from './hooks/use-login-status';
 import ProjectSidebar from './project-sidebar';
-import styles from './container.module.css';
+import styles from './category-container.module.css';
 import styleUtils from './utils.module.css';
 
 type Props = {
-  stage: Category;
+  category: Category;
   allCategories: Category[];
 };
 
-export default function CategoryContainer({ stage, allCategories }: Props) {
+export default function CategoryContainer({
+  category: stage,
+  allCategories,
+}: Props) {
   const response = useSWR('/api/categories', {
     fallbackData: allCategories,
     refreshInterval: 5000,

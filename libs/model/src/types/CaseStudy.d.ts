@@ -5,5 +5,5 @@ export interface CaseStudy {
   description: string;
   start: string;
   end: string;
-  author: Author[];
+  stakeholders: Author[];
 }

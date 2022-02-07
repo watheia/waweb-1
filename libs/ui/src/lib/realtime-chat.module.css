@@ -1,0 +1,22 @@
+.realtime-chat {
+  flex-flow: column nowrap;
+  place-content: stretch flex-start;
+  align-items: stretch;
+  background: white;
+}
+
+.realtime-chat > .messages {
+  flex: 1 0 auto;
+  order: 0;
+  align-self: auto;
+  width: 100%;
+  background: red;
+}
+
+.realtime-chat > .control-bar {
+  flex: 0 1 auto;
+  align-self: auto;
+  width: 100%;
+  order: 1;
+  background: blue;
+}

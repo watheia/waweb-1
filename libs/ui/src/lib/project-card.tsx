@@ -1,5 +1,5 @@
 /**
- * Copyright 2020 Vercel Inc.
+ * Copyright 2022 Watheia Labs, LLC.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@ import styles from './project-card.module.css';
 
 type Props = {
   key: string;
-  caseStudy: CaseStudy;
+  project: CaseStudy;
   showTime: boolean;
 };
 
@@ -34,7 +34,7 @@ const formatDate = (date: string) => {
 };
 
 export default function ProjectCard({
-  caseStudy: { title, author, start, end },
+  project: { title, stakeholders, start, end },
   showTime,
 }: Props) {
   const [isCaseStudyLive, setIsCaseStudyLive] = useState(false);
@@ -48,7 +48,7 @@ export default function ProjectCard({
     setStartAndEndTime(`${formatDate(start)} – ${formatDate(end)}`);
   }, [end, start]);
 
-  const firstAuthorLink = `/authors/${author[0].slug}`;
+  const firstAuthorLink = `/users/${stakeholders[0].slug ?? '/supabot'}`;
 
   return (
     <div key={title} className={styles['caseStudy']}>
@@ -68,24 +68,26 @@ export default function ProjectCard({
             </h4>
             <div className={styles['author']}>
               <div className={styles['avatar-group']}>
-                {author.map((s) => (
+                {stakeholders.map((s) => (
                   <div key={s.name} className={styles['avatar-wrapper']}>
-                    <Image
-                      loading="lazy"
-                      alt={s.name}
-                      className={styles['avatar']}
-                      src={s.image['url']}
-                      title={s.name}
-                      width={24}
-                      height={24}
-                    />
+                    {s.image && (
+                      <Image
+                        loading="lazy"
+                        alt={s.name}
+                        className={styles['avatar']}
+                        src={s.image.url}
+                        title={s.name}
+                        width={24}
+                        height={24}
+                      />
+                    )}
                   </div>
                 ))}
               </div>
               <h5 className={styles['name']}>
-                {author.length === 1
-                  ? author[0].name
-                  : `${author.length} authors`}
+                {stakeholders.length === 1
+                  ? stakeholders[0].name
+                  : `${stakeholders.length} stakeholders`}
               </h5>
             </div>
           </div>

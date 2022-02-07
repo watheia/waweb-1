@@ -1,58 +1,48 @@
-import React from 'react';
-import { AppRole, DivProps, User } from '@waweb/model';
-import { Fragment, useState } from 'react';
 import { Dialog, Menu, Transition } from '@headlessui/react';
-import {
-  BellIcon,
-  CalendarIcon,
-  ChartBarIcon,
-  BriefcaseIcon,
-  ChatAlt2Icon,
-  ChatAltIcon,
-  InboxIcon,
-  MenuAlt2Icon,
-  XIcon,
-} from '@heroicons/react/outline';
+import { BellIcon, MenuAlt2Icon, XIcon } from '@heroicons/react/outline';
 import { SearchIcon } from '@heroicons/react/solid';
+import { AppRole, DivProps, User } from '@waweb/model';
 import clsx from 'clsx';
+import React, { Fragment, useState } from 'react';
 import Layout from './layout';
 import LogoAlt from './logo-alt';
+import { iconsByName } from './icons';
 
 const navigation: NavItem[] = [
   {
     name: 'Public Chat',
     href: '/channel/public',
-    icon: ChatAlt2Icon,
+    icon: iconsByName.ChatAlt2,
     current: true,
   },
   {
     name: 'Announcements',
     href: '/channel/announcements',
-    icon: ChatAltIcon,
+    icon: iconsByName.ChatAlt,
     current: false,
   },
   {
     name: 'Project Updates',
     href: '/channel/updates',
-    icon: BriefcaseIcon,
+    icon: iconsByName.Briefcase,
     current: false,
   },
   {
     name: 'Timeline',
     href: '/channel/timeline',
-    icon: CalendarIcon,
+    icon: iconsByName.Calendar,
     current: false,
   },
   {
     name: 'Ledger',
     href: '/channel/ledger',
-    icon: InboxIcon,
+    icon: iconsByName.Inbox,
     current: false,
   },
   {
     name: 'Reports',
     href: '/channel/reports',
-    icon: ChartBarIcon,
+    icon: iconsByName.ChartBar,
     current: false,
   },
 ];
@@ -91,14 +81,9 @@ const SearchBar = () => (
 interface MobileSidebarProps extends DivProps {
   isOpen: boolean;
   setIsOpen: (open: boolean) => void;
-  navigation: NavItem[];
 }
 
-const MobileSidebar = ({
-  isOpen = false,
-  setIsOpen,
-  navigation,
-}: MobileSidebarProps) => (
+const MobileSidebar = ({ isOpen = false, setIsOpen }: MobileSidebarProps) => (
   <Transition.Root show={isOpen} as={Fragment}>
     <Dialog as="div" className="fixed inset-0 z-40 flex" onClose={setIsOpen}>
       <Transition.Child
@@ -233,7 +218,7 @@ interface DashHeaderProps extends DivProps {
   navigation: NavItem[];
 }
 
-const DashHeader = ({ setMenuOpen, ...props }: DashHeaderProps) => (
+const DashHeader = ({ isMenuOpen, setMenuOpen, ...props }: DashHeaderProps) => (
   <div className="sticky top-0 z-10 flex flex-shrink-0 h-16 shadow" {...props}>
     <button
       type="button"
@@ -286,11 +271,7 @@ export default function LayoutDash({
 
   return (
     <Layout useBackdrop hideNav>
-      <MobileSidebar
-        isOpen={sidebarOpen}
-        setIsOpen={setSidebarOpen}
-        navigation={navigation}
-      />
+      <MobileSidebar isOpen={sidebarOpen} setIsOpen={setSidebarOpen} />
 
       <div className="flex flex-col flex-1">
         <DashHeader
@@ -298,7 +279,6 @@ export default function LayoutDash({
           setMenuOpen={setSidebarOpen}
           navigation={navigation}
         />
-
         <div className="flex-1">
           {title && (
             <div className="px-4 mx-auto max-w-7xl sm:px-6 md:px-8">

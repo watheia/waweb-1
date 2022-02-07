@@ -1,5 +1,5 @@
 /**
- * Copyright 2020 Vercel Inc.
+ * Copyright 2022 Watheia Labs, LLC.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,14 +33,14 @@ export default function Progress() {
       NProgress.done();
     };
 
-    router.events.on('routeChangeStart', start);
-    router.events.on('routeChangeComplete', done);
-    router.events.on('routeChangeError', done);
+    router?.events.on('routeChangeStart', start);
+    router?.events.on('routeChangeComplete', done);
+    router?.events.on('routeChangeError', done);
     return () => {
-      router.events.off('routeChangeStart', start);
-      router.events.off('routeChangeComplete', done);
-      router.events.off('routeChangeError', done);
+      router?.events.off('routeChangeStart', start);
+      router?.events.off('routeChangeComplete', done);
+      router?.events.off('routeChangeError', done);
     };
-  }, [router.events]);
+  }, [router]);
   return <></>;
 }

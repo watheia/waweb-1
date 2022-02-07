@@ -1,5 +1,5 @@
 /**
- * Copyright 2020 Vercel Inc.
+ * Copyright 2022 Watheia Labs, LLC.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,16 +15,16 @@
  */
 
 type Props = {
-  color: string;
-  size: number;
+  color?: string;
+  size?: number;
 };
 
-export default function IconCheck({ color, size }: Props) {
+export default function IconCheck({ color = '#111111', size = 24 }: Props) {
   return (
     <svg viewBox="0 0 16 16" width={size} height={size}>
-      <g fill={color || '#111111'}>
+      <g fill={color}>
         <path
-          fill={color || '#111111'}
+          fill={color}
           d="M8,0C3.6,0,0,3.6,0,8s3.6,8,8,8s8-3.6,8-8S12.4,0,8,0z M7,11.4L3.6,8L5,6.6l2,2l4-4L12.4,6L7,11.4z"
         />
       </g>

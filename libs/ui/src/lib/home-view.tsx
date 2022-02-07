@@ -7,6 +7,7 @@ import {
 } from '@waweb/model';
 import { useEffect, useRef } from 'react';
 import Dashboard from './dashboard';
+import { NavItem } from './layout-dash';
 
 export interface HomeViewProps extends DivProps {
   user: User;
@@ -14,6 +15,7 @@ export interface HomeViewProps extends DivProps {
   channels: ChannelModel[];
   activeChannel: ChannelModel;
   timeline: MessageModel[];
+  navigation: NavItem[];
 }
 
 const HomeView = ({
@@ -22,6 +24,7 @@ const HomeView = ({
   channels,
   activeChannel,
   timeline,
+  navigation,
   ...props
 }: HomeViewProps) => {
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -55,6 +58,7 @@ const HomeView = ({
       channels={channels}
       activeChannel={activeChannel}
       timeline={timeline}
+      navigation={navigation}
     />
   );
 };

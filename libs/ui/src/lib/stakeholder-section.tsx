@@ -1,5 +1,5 @@
 /**
- * Copyright 2020 Vercel Inc.
+ * Copyright 2022 Watheia Labs, LLC.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -66,7 +66,7 @@ export default function StakeholderSection({ stakeholder }: Props) {
           <div className={styles['name-and-logo']}>
             <Image
               alt={stakeholder.name}
-              src={stakeholder.logo['url']}
+              src={stakeholder.logo?.url}
               className={styles['image']}
               loading="lazy"
               title={stakeholder.name}

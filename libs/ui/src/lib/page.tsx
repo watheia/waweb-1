@@ -1,5 +1,5 @@
 /**
- * Copyright 2020 Vercel Inc.
+ * Copyright 2022 Watheia Labs, LLC.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,9 +35,10 @@ type Props = {
 export default function Page({ meta, children, fullViewport = false }: Props) {
   const router = useRouter();
   const config = useConfig();
+  const path = router?.asPath ?? '/';
   const image = meta.image || '/twitter-card.png';
   const title = meta.title || config.siteName;
-  const url = meta.url ?? `${config.baseUrl}${router.asPath}`;
+  const url = meta.url ?? `${config.baseUrl}${path}`;
   const description = meta.description ?? config.siteName;
 
   return (
@@ -72,13 +73,6 @@ export default function Page({ meta, children, fullViewport = false }: Props) {
         />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="shortcut icon" href="/favicon.ico" />
-        <link
-          rel="preload"
-          href="https://assets.vercel.com/raw/upload/v1587415301/fonts/2/inter-var-latin.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
         {image && (
           <meta
             property="og:image"

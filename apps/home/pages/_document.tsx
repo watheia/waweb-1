@@ -55,7 +55,7 @@ export default class CustomDocument extends Document {
           <link rel="shortcut icon" href="/favicon.ico" />
 
           <meta name="twitter:card" content="summary" />
-          <meta name="twitter:url" content="https://watheia.vercel.app" />
+          <meta name="twitter:url" content="https://watheia.io" />
           <meta name="twitter:title" content="Watheia Labs" />
           <meta
             name="twitter:description"
@@ -63,7 +63,7 @@ export default class CustomDocument extends Document {
           />
           <meta
             name="twitter:image"
-            content="https://watheia.vercel.app/android-chrome-192x192.png"
+            content="https://watheia.io/android-chrome-192x192.png"
           />
           <meta name="twitter:creator" content="@watheia" />
           <meta property="og:type" content="website" />
@@ -73,10 +73,10 @@ export default class CustomDocument extends Document {
             content="Watheia Labs corporate homepage"
           />
           <meta property="og:site_name" content="Watheia Labs" />
-          <meta property="og:url" content="https://watheia.vercel.app" />
+          <meta property="og:url" content="https://watheia.io" />
           <meta
             property="og:image"
-            content="https://watheia.vercel.app/apple-touch-icon.png"
+            content="https://watheia.io/apple-touch-icon.png"
           />
         </Head>
         <body className="loading">

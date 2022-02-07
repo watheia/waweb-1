@@ -26,6 +26,7 @@
       "@waweb/ui": ["libs/ui/src/index.ts"],
       "@waweb/ui.*": ["libs/ui/src/lib/*"],
       "@waweb/ui.hooks.*": ["libs/ui/src/lib/hooks/*"],
+      "@waweb/ui.icons": ["libs/ui/src/lib/icons/index.ts"],
       "@waweb/ui.icons.*": ["libs/ui/src/lib/icons/*"],
       "@waweb/util": ["libs/util/src/index.ts"],
       "@waweb/util.*": ["libs/util/src/lib/*"]

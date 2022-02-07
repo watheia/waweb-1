@@ -1,5 +1,5 @@
 /**
- * Copyright 2020 Vercel Inc.
+ * Copyright 2022 Watheia Labs, LLC.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,7 +35,7 @@ function StakeholderCard({ stakeholder }: { stakeholder: Stakeholder }) {
         <div className={styles['imageWrapper']}>
           <Image
             alt={stakeholder.name}
-            src={stakeholder.cardImage['url']}
+            src={stakeholder.cardImage?.url}
             className={cn(styles['image'], {
               [styles['silver']]: stakeholder.tier === 'silver',
             })}

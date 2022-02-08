@@ -17,6 +17,8 @@
 import Gatekeeper from '@waweb/ui.gatekeeper';
 import useConfig from '@waweb/ui.hooks/use-config';
 import Page from '@waweb/ui.page';
+import { GetServerSideProps } from 'next';
+import db from '@waweb/store';
 
 export default function IndexPage() {
   const config = useConfig();
@@ -31,3 +33,20 @@ export default function IndexPage() {
     </Page>
   );
 }
+
+/**
+ *
+ * @param ctx Redirect to user home if principal user present
+ * @returns
+ */
+export const getServerSideProps: GetServerSideProps = async (ctx) => {
+  const user = db.auth.api.getUserByCookie(ctx.req);
+  return {
+    redirect: user
+      ? {
+          permanent: false,
+          destination: '/channel/public',
+        }
+      : undefined,
+  };
+};

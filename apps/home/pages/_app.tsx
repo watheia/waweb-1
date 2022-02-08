@@ -6,6 +6,7 @@ import NProgress from '@waweb/ui.nprogress';
 import ResizeHandler from '@waweb/ui.resize-handler';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
+import React from 'react';
 import { useEffect } from 'react';
 import { OverlayProvider, SSRProvider } from 'react-aria';
 import 'tailwindcss/tailwind.css';

@@ -65,7 +65,7 @@ const useStore = (slug: string): StoreApi => {
   useEffect(() => {
     activeChannel &&
       fetchMessages(activeChannel.id, (timeline) => {
-        console.info(slug + ' channel activated.', timeline);
+        // console.info(slug + ' channel activated.', timeline);
         setMessages(timeline);
       });
   }, [channels, slug]);
@@ -73,7 +73,7 @@ const useStore = (slug: string): StoreApi => {
   // New message received from Postgres
   useEffect(() => {
     if (newMessage && newMessage.channel_id === activeChannel?.id) {
-      console.log('Received server message ', newMessage);
+      // console.log('Received server message ', newMessage);
       const handleAsync = async () => {
         const authorId = newMessage.user_id;
         if (users[authorId])
@@ -87,7 +87,7 @@ const useStore = (slug: string): StoreApi => {
   // Deleted message received from postgres
   useEffect(() => {
     if (deletedMessage) {
-      console.log('Removing deleted message ', deletedMessage);
+      // console.log('Removing deleted message ', deletedMessage);
       setMessages(
         messages.filter((message) => message.id !== deletedMessage.id)
       );
@@ -97,7 +97,7 @@ const useStore = (slug: string): StoreApi => {
   // New channel received from Postgres
   useEffect(() => {
     if (newChannel) {
-      console.log('Received server channel ', newChannel);
+      // console.log('Received server channel ', newChannel);
       setChannels(channels.concat(newChannel));
     }
   }, [channels, newChannel]);
@@ -105,7 +105,7 @@ const useStore = (slug: string): StoreApi => {
   // Deleted channel received from postgres
   useEffect(() => {
     if (deletedChannel) {
-      console.log('Removing deleted channel ', deletedChannel);
+      // console.log('Removing deleted channel ', deletedChannel);
       setChannels(
         channels.filter((channel) => channel.id !== deletedChannel.id)
       );
@@ -115,7 +115,7 @@ const useStore = (slug: string): StoreApi => {
   // New or updated user received from Postgres
   useEffect(() => {
     if (newOrUpdatedUser) {
-      console.log('A new or updated user has connected.', newOrUpdatedUser);
+      // console.log('A new or updated user has connected.', newOrUpdatedUser);
       users[newOrUpdatedUser.id] = newOrUpdatedUser;
     }
   }, [users, newOrUpdatedUser]);

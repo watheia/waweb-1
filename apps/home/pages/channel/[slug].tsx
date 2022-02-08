@@ -12,7 +12,6 @@ export interface ChannelsPageProps extends NextAppPageProps {
 }
 
 const ChannelsPage = ({ navigation }: ChannelsPageProps) => {
-  console.log('Channel(navigation)', navigation);
   const router = useRouter();
   const { slug } = router.query;
   const { channels, activeChannel, timeline } = useStore(

@@ -6,7 +6,7 @@ import {
 } from '@supabase/supabase-js';
 import { useMessage } from '@waweb/message';
 import { AppRole, User } from '@waweb/model';
-import api, { fetchUserRoles } from '@waweb/store';
+import supabase, { fetchUserRoles } from '@waweb/supabase';
 import { FunctionComponent, useEffect, useState } from 'react';
 import { AuthContext } from './auth-context';
 
@@ -21,7 +21,7 @@ export const AuthProvider: FunctionComponent = ({ children }) => {
   const signUp = async (payload: UserCredentials) => {
     try {
       setLoading(true);
-      const { error } = await api.auth.signUp(payload);
+      const { error } = await supabase.auth.signUp(payload);
       if (error) {
         handleMessage({ message: error.message, type: 'error' });
       } else {
@@ -44,7 +44,7 @@ export const AuthProvider: FunctionComponent = ({ children }) => {
   const signIn = async (payload: UserCredentials) => {
     try {
       setLoading(true);
-      const { error, user } = await api.auth.signIn(payload);
+      const { error, user } = await supabase.auth.signIn(payload);
       if (error) {
         handleMessage({ message: error.message, type: 'error' });
       } else if (user) {
@@ -69,11 +69,11 @@ export const AuthProvider: FunctionComponent = ({ children }) => {
   };
 
   const signInWithProvider = async (provider: Provider) => {
-    await api.auth.signIn({ provider });
+    await supabase.auth.signIn({ provider });
   };
 
   const signOut = async () => {
-    await api.auth.signOut();
+    await supabase.auth.signOut();
   };
 
   const setServerSession = async (
@@ -89,7 +89,7 @@ export const AuthProvider: FunctionComponent = ({ children }) => {
   };
 
   useEffect(() => {
-    const user = api.auth.user();
+    const user = supabase.auth.user();
     setUserLoading(false);
 
     if (user) {
@@ -100,7 +100,7 @@ export const AuthProvider: FunctionComponent = ({ children }) => {
       });
     }
 
-    const { data: authListener } = api.auth.onAuthStateChange(
+    const { data: authListener } = supabase.auth.onAuthStateChange(
       async (event, session) => {
         console.info('Auth State Changed', event, session);
         const user = session?.user ?? null;

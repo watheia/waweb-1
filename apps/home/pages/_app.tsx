@@ -10,12 +10,8 @@ import React from 'react';
 import { useEffect } from 'react';
 import { OverlayProvider, SSRProvider } from 'react-aria';
 import 'tailwindcss/tailwind.css';
-// import seo from '../next-seo.config';
-// import { DefaultSeo } from 'next-seo';
 
 function CustomApp({ Component, pageProps }: AppProps) {
-  // const pageMeta = (Component as any)?.defaultProps?.meta || {};
-  // const pageSEO = { ...seo, ...pageMeta };
   useEffect(() => {
     document.body.classList?.remove('loading');
   }, []);

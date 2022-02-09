@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import px from '@waweb/util.to-pixels';
+import { toPixels as px } from '@waweb/app.utils';
 import cn from 'clsx';
 import styles from './loading-dots.module.css';
 

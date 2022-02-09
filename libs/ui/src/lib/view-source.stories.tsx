@@ -3,7 +3,7 @@ import ViewSource from './view-source';
 
 export default {
   component: ViewSource,
-  title: 'waweb.app/ui.view-source',
+  title: 'waweb.app/ui/view-source',
 } as Meta;
 
 const Template: Story = (args) => <ViewSource {...args} />;

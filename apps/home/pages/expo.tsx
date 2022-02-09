@@ -17,6 +17,9 @@
 import ComingSoon from '@waweb/ui.coming-soon';
 import useConfig from '@waweb/ui.hooks/use-config';
 import Page from '@waweb/ui.page';
+import Layout from '@waweb/app.ui.layout';
+
+// const Dashboard = lazy(() => import('@waweb/app.ui.dashboard'));
 
 export default function IndexPage() {
   const config = useConfig();
@@ -27,7 +30,9 @@ export default function IndexPage() {
 
   return (
     <Page meta={meta} fullViewport>
-      <ComingSoon />
+      <Layout>
+        <ComingSoon />
+      </Layout>
     </Page>
   );
 }

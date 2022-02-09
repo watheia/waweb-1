@@ -14,39 +14,53 @@
  * limitations under the License.
  */
 
-import Gatekeeper from '@waweb/ui.gatekeeper';
-import useConfig from '@waweb/ui.hooks/use-config';
-import Page from '@waweb/ui.page';
-import { GetServerSideProps } from 'next';
-import db from '@waweb/store';
+import Dashboard from '@waweb/app.ui.dashboard';
+import Layout from '@waweb/app.ui.layout';
+import { Gatekeeper, Page, PageSpinner } from '@waweb/ui';
+import useConfig from '@waweb/ui.hooks.use-config';
+import useLoginStatus from '@waweb/ui.hooks.use-login-status';
+import { useCallback } from 'react';
 
 export default function IndexPage() {
   const config = useConfig();
+  const { loginStatus, mutate } = useLoginStatus();
   const meta = {
-    title: 'Watheia Labs | Gatekeeper',
+    title: 'Watheia Labs',
     description: config.metaDescription,
   };
 
+  const loginHandler = useCallback(() => {
+    mutate('/api/auth');
+  }, [mutate]);
+
   return (
     <Page meta={meta} fullViewport>
-      <Gatekeeper />
+      <Layout useBackdrop>
+        {loginStatus === 'loading' ? (
+          <PageSpinner />
+        ) : loginStatus === 'loggedIn' ? (
+          <Dashboard />
+        ) : (
+          <Gatekeeper onLogin={loginHandler} />
+        )}
+      </Layout>
     </Page>
   );
 }
 
-/**
+/* /**
  *
- * @param ctx Redirect to user home if principal user present
+ * @param ctx Redirect to home if no principal user is authenticated
  * @returns
  */
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
-  const user = db.auth.api.getUserByCookie(ctx.req);
-  return {
-    redirect: user
-      ? {
-          permanent: false,
-          destination: '/channel/public',
-        }
-      : undefined,
-  };
-};
+// export const getServerSideProps: GetServerSideProps = async (ctx) => {
+//   const user = supabase.auth.api.getUserByCookie(ctx.req);
+//   return {
+//     redirect: user
+//       ? undefined
+//       : {
+//           permanent: false,
+//           destination: '/home',
+//         },
+//   };
+// };

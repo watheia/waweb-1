@@ -1,16 +1,22 @@
 {
   "version": 2,
   "projects": {
+    "app-ui-dashboard": "libs/app/ui/dashboard",
+    "app-ui-dashboard-e2e": "apps/app-ui-dashboard-e2e",
+    "app-ui-icons": "libs/app/ui/icons",
+    "app-ui-icons-e2e": "apps/app-ui-icons-e2e",
+    "app-ui-layout": "libs/app/ui/layout",
+    "app-ui-layout-e2e": "apps/app-ui-layout-e2e",
+    "app-utils": "libs/app/utils",
     "auth": "libs/auth",
     "home": "apps/home",
     "home-e2e": "apps/home-e2e",
     "message": "libs/message",
     "model": "libs/model",
     "navigation": "libs/navigation",
-    "store": "libs/store",
+    "supabase": "libs/supabase",
     "theme": "libs/theme",
     "ui": "libs/ui",
-    "ui-e2e": "apps/ui-e2e",
-    "util": "libs/util"
+    "ui-e2e": "apps/ui-e2e"
   }
 }

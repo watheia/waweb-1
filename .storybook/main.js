@@ -12,10 +12,22 @@ module.exports = {
     },
   },
   // uncomment the property below if you want to apply some webpack config globally
-  // webpackFinal: async (config, { configType }) => {
-  //   // Make whatever fine-grained changes you need that should apply to all storybook configs
-
-  //   // Return the altered config
-  //   return config;
-  // },
+  /**
+   *
+   * @param {import('webpack').Configuration} config
+   * @param {'development' | 'production'} configType
+   * @returns
+   */
+  webpackFinal: async (config, { configType }) => {
+    // Make whatever fine-grained changes you need that should apply to all storybook configs
+    config.module.rules = [
+      ...config.module.rules,
+      {
+        test: /\.(png|jpg|jpeg|gif|webp|woff|woff2)$/,
+        use: [{ loader: 'file-loader' }],
+      },
+    ];
+    // Return the altered config
+    return config;
+  },
 };

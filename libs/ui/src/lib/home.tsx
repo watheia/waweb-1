@@ -34,7 +34,6 @@ import {
   ShieldCheckIcon,
 } from '@heroicons/react/outline';
 import { ChevronRightIcon, ExternalLinkIcon } from '@heroicons/react/solid';
-import Layout from './layout';
 
 const features = [
   {
@@ -457,13 +456,13 @@ const CtaSection = () => (
 
 export default function Example() {
   return (
-    <Layout>
+    <>
       <HeroSection />
       <FeatureScreenSection />
       <FeatureGridSection />
       <TestemonialSection />
       <BlogSection />
       <CtaSection />
-    </Layout>
+    </>
   );
 }

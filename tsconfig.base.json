@@ -15,12 +15,16 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@waweb/app.ui.dashboard": ["libs/app/ui/dashboard/src/index.ts"],
+      "@waweb/app.ui.icons": ["libs/app/ui/icons/src/index.ts"],
+      "@waweb/app.ui.layout": ["libs/app/ui/layout/src/index.ts"],
+      "@waweb/app.utils": ["libs/app/utils/src/index.ts"],
       "@waweb/auth": ["libs/auth/src/index.ts"],
       "@waweb/envs": ["libs/envs/src/index.ts"],
       "@waweb/message": ["libs/message/src/index.ts"],
       "@waweb/model": ["libs/model/src/index.ts"],
       "@waweb/navigation": ["libs/navigation/src/index.ts"],
-      "@waweb/store": ["libs/store/src/index.ts"],
+      "@waweb/supabase": ["libs/supabase/src/index.ts"],
       "@waweb/theme": ["libs/theme/src/index.ts"],
       "@waweb/theme.styles/*": ["libs/theme/src/styles/*"],
       "@waweb/ui": ["libs/ui/src/index.ts"],
@@ -28,7 +32,6 @@
       "@waweb/ui.hooks.*": ["libs/ui/src/lib/hooks/*"],
       "@waweb/ui.icons": ["libs/ui/src/lib/icons/index.ts"],
       "@waweb/ui.icons.*": ["libs/ui/src/lib/icons/*"],
-      "@waweb/util": ["libs/util/src/index.ts"],
       "@waweb/util.*": ["libs/util/src/lib/*"]
     }
   },

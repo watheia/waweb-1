@@ -17,7 +17,6 @@
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import Layout from './layout';
 import Link from 'next/link';
 
 const posts = [
@@ -378,9 +377,9 @@ const FeaturedPosts = () => (
 
 export default function Blog() {
   return (
-    <Layout usePadding useBackdrop>
+    <>
       <Hero />
       <FeaturedPosts />
-    </Layout>
+    </>
   );
 }

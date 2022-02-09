@@ -18,7 +18,7 @@ import { Author } from '@waweb/model';
 import cn from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
-import GithubIcon from './icons/icon-github';
+import icons from '@waweb/app.ui.icons';
 import styles from './author-section.module.css';
 
 const TwitterIcon = () => (
@@ -107,11 +107,11 @@ export default function AuthorSection({ author }: Props) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <GithubIcon color="#D8D8D8" size={24} />
+                <icons.Github color="#D8D8D8" size={24} />
               </a>
             ) : (
               <span className={cn(styles['githubIcon'], styles['disabled'])}>
-                <GithubIcon color="#D8D8D8" size={24} />
+                <icons.Github color="#D8D8D8" size={24} />
               </span>
             )}
           </div>

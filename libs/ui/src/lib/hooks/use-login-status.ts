@@ -15,34 +15,46 @@
  */
 
 import useSWR from 'swr';
-import { PublicConfiguration } from 'swr/dist/types';
+import { KeyedMutator, PublicConfiguration } from 'swr/dist/types';
 
-export type LoginStatusRequest = Partial<
-  PublicConfiguration<any, any, (args_0: '/api/auth') => any>
+export const ENDPOINT = '/api/auth';
+
+export type LoginStatusRequest = PublicConfiguration<
+  any,
+  any,
+  (url: string) => any
 >;
 
-export default function useLoginStatus(opts?: LoginStatusRequest) {
-  const { data, error, mutate } = useSWR(
-    `/api/auth`,
-    async (url) => {
-      const res = await fetch(url);
-      if (!res.ok) {
-        throw new Error();
-      }
-      return res.json();
-    },
-    {
-      ...opts,
-      revalidateOnFocus: false,
-    }
-  );
+export type LoginStatus = 'loading' | 'loggedOut' | 'loggedIn';
+
+const fetcher = async (url: string) => {
+  const res = await fetch(url);
+  if (!res.ok) {
+    throw new Error(res.statusText);
+  }
+  return res.json();
+};
+
+export default function useLoginStatus(opts?: LoginStatusRequest): {
+  loginStatus: LoginStatus;
+  mutate: KeyedMutator<any>;
+} {
+  const { data, error, mutate } = useSWR(ENDPOINT, fetcher, {
+    ...opts,
+    revalidateOnFocus: false,
+  });
+
+  if (error) {
+    console.error(error);
+  }
+
+  let loginStatus: LoginStatus = 'loading';
+  if (data) {
+    loginStatus = data['loggedIn'] ? 'loggedIn' : 'loggedOut';
+  }
 
   return {
-    loginStatus: error
-      ? ('loggedOut' as const)
-      : !data
-      ? ('loading' as const)
-      : ('loggedIn' as const),
+    loginStatus,
     mutate,
   };
 }

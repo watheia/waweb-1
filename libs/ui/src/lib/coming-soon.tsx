@@ -1,10 +1,9 @@
 import Link from 'next/link';
-import Layout from './layout';
 
 /* This example requires Tailwind CSS v2.0+ */
 export default function ComingSoon() {
   return (
-    <Layout className="flex flex-col min-h-full pt-16 pb-12">
+    <div className="flex flex-col min-h-full pt-16 pb-12">
       <div className="flex flex-col justify-center flex-grow w-full px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex justify-center flex-shrink-0">
           <a href="/" className="inline-flex">
@@ -68,6 +67,6 @@ export default function ComingSoon() {
           </Link>
         </nav>
       </footer>
-    </Layout>
+    </div>
   );
 }

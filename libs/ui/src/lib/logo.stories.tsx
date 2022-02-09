@@ -3,7 +3,7 @@ import Logo from './logo';
 
 export default {
   component: Logo,
-  title: 'waweb.app/ui.logo',
+  title: 'waweb.app/ui/logo',
 } as Meta;
 
 const Template: Story = (args) => <Logo {...args} />;

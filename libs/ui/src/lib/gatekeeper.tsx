@@ -15,28 +15,29 @@
  */
 
 import { useAuth } from '@waweb/auth';
+import { DivProps } from '@waweb/model';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import Container from './container';
 import Form from './form';
 import Hero from './hero';
-import Layout from './layout';
 import LearnMore from './learn-more';
 
-export default function GatekeeperPage() {
+export interface GatekeeperProps extends DivProps {
+  onLogin: () => void;
+}
+
+export default function Gatekeeper({ onLogin, ...props }: GatekeeperProps) {
   const { isLoggedIn } = useAuth();
-  const router = useRouter();
   useEffect(() => {
-    if (isLoggedIn) router.push('/channel/public');
-  }, [isLoggedIn, router]);
+    if (isLoggedIn) onLogin();
+  }, [isLoggedIn, onLogin]);
 
   return (
-    <Layout useBackdrop>
-      <Container>
-        <Hero />
-        <Form />
-        <LearnMore />
-      </Container>
-    </Layout>
+    <Container {...props}>
+      <Hero />
+      <Form />
+      <LearnMore />
+    </Container>
   );
 }

@@ -1,5 +1,5 @@
 import { User } from '@supabase/supabase-js';
-import supabase from '@waweb/store';
+import supabase from '@waweb/supabase';
 import type { GetServerSidePropsContext } from 'next';
 
 export type ProtectedRouteProps = {

@@ -23,7 +23,7 @@ const Context = createContext<SiteConfig>({
   legalName: 'Watheia Labs, LLC',
   metaDescription:
     'Watheia Labs, LLC is a modern software development and digital design agency located in Washington state',
-  repo: 'https://github.com/drkstr101/watheia',
+  repo: 'https://gitlab.com/watheia/waweb',
   siteDescription: '',
   siteName: 'Watheia Labs',
   legalUrl: '#',

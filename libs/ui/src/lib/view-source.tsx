@@ -14,23 +14,23 @@
  * limitations under the License.
  */
 
-import useConfig from './hooks/use-config';
+// import useConfig from './hooks/use-config';
 import styles from './view-source.module.css';
 
 export default function ViewSource() {
-  const config = useConfig();
+  // const config = useConfig();
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="72"
-      height="72"
+      width="64"
+      height="64"
       viewBox="0 0 250 250"
       fill="#151513"
       className={styles['svg']}
     >
       <a
         title="View Source"
-        href={config.repo}
+        href="https://gitlab.com/watheia/waweb"
         target="_blank"
         rel="noopener noreferrer"
       >

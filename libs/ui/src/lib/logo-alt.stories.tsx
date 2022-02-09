@@ -3,7 +3,7 @@ import LogoAlt from './logo-alt';
 
 export default {
   component: LogoAlt,
-  title: 'waweb.app/ui.logo-alt',
+  title: 'waweb.ui/logo-alt',
 } as Meta;
 
 const Template: Story = (args) => <LogoAlt {...args} />;

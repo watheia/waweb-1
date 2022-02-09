@@ -1,0 +1,43 @@
+{
+  "root": "libs/supabase",
+  "sourceRoot": "libs/supabase/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/supabase",
+        "tsConfig": "libs/supabase/tsconfig.lib.json",
+        "project": "libs/supabase/package.json",
+        "entryFile": "libs/supabase/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "compiler": "babel",
+        "assets": [
+          {
+            "glob": "libs/supabase/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/supabase/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/supabase"],
+      "options": {
+        "jestConfig": "libs/supabase/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

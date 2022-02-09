@@ -17,6 +17,7 @@
 import Blog from '@waweb/ui.blog';
 import useConfig from '@waweb/ui.hooks/use-config';
 import Page from '@waweb/ui.page';
+import Layout from '@waweb/app.ui.layout';
 
 export default function IndexPage() {
   const config = useConfig();
@@ -27,7 +28,9 @@ export default function IndexPage() {
 
   return (
     <Page meta={meta} fullViewport>
-      <Blog />
+      <Layout usePadding>
+        <Blog />
+      </Layout>
     </Page>
   );
 }

@@ -1,9 +1,9 @@
+import icons from '@waweb/app.ui.icons';
 import { Channel, DivProps, User } from '@waweb/model';
 import clsx from 'clsx';
 import Link from 'next/link';
 import React from 'react';
 import styles from './channel-nav.module.css';
-import TrashIcon from './icons/icon-trash';
 
 export type SidebarItemProps = {
   channel: Channel;
@@ -26,7 +26,7 @@ const SidebarItem = ({
       </Link>
       {channel.slug !== 'public' && isAdmin && (
         <button onClick={() => deleteChannel(channel)}>
-          <TrashIcon />
+          <icons.Trash />
         </button>
       )}
     </li>

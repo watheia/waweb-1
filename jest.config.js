@@ -2,5 +2,5 @@ const { getJestProjects } = require('@nrwl/jest');
 
 module.exports = {
   projects: getJestProjects(),
-  setupFiles: ['dotenv/config'],
+  setupFiles: ['jest.config.js'],
 };

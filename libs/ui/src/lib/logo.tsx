@@ -1,7 +1,11 @@
 import * as React from 'react';
 import { SVGProps } from 'react';
 
-const Logo = (props: SVGProps<SVGSVGElement>) => (
+const Logo = ({
+  width = 24,
+  height = 24,
+  ...props
+}: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"

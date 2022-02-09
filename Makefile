@@ -18,7 +18,7 @@ build:
 	nx build home --prod --verbose --skip-nx-cache
 
 docs:
-	yarn depcruise --output-type dot --output-to docs/depgraph.dot --prefix "https://github.com/drkstr101/watheia/blob/main/"
+	yarn depcruise --output-type dot --output-to docs/depgraph.dot --prefix "https://github.com/drkstr101/waweb/blob/main/"
 	cat docs/depgraph.dot | dot -T svg > docs/depgraph.svg.tmp
 	mv docs/depgraph.svg.tmp docs/depgraph.svg
 

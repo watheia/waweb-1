@@ -16,12 +16,11 @@
 
 import { useAuth } from '@waweb/auth';
 import { DivProps } from '@waweb/model';
-import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import Container from './container';
-import Form from './form';
 import Hero from './hero';
 import LearnMore from './learn-more';
+import LoginForm from './login-form';
 
 export interface GatekeeperProps extends DivProps {
   onLogin: () => void;
@@ -36,7 +35,7 @@ export default function Gatekeeper({ onLogin, ...props }: GatekeeperProps) {
   return (
     <Container {...props}>
       <Hero />
-      <Form />
+      <LoginForm />
       <LearnMore />
     </Container>
   );

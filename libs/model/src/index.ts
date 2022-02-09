@@ -13,7 +13,7 @@ export type {
   UserRole,
 } from '@prisma/client';
 
-// export entity types
+// export model types
 ////
 
 export type MessageType = 'comment' | 'alert';
@@ -29,26 +29,13 @@ export type UserModel = User & {
   roles: AppRole[];
 };
 
-// export helper types
-////
-
-export type Children =
-  | boolean
-  | ReactChild
-  | ReactFragment
-  | ReactPortal
-  | null
-  | undefined;
-
-export type DivProps = React.HtmlHTMLAttributes<HTMLDivElement>;
-
-export type {
-  NextAppPageProps,
-  NextAppPageRedirProps,
-  NextAppPageServerSideProps,
-  NextAppPageUserProps,
-  NextAppSEOProps,
-} from './types/app';
+// export type {
+//   NextAppPageProps,
+//   NextAppPageRedirProps,
+//   NextAppPageServerSideProps,
+//   NextAppPageUserProps,
+//   NextAppSEOProps,
+// } from './types/app';
 
 // export auth types
 ////
@@ -72,3 +59,21 @@ export type { Link } from './types/Link';
 export type { Stakeholder } from './types/Stakeholder';
 export type { StakeholderLink } from './types/StakeholderLink';
 export type { Task } from './types/Task';
+
+export type FormState = 'default' | 'loading' | 'error';
+
+export type Children =
+  | boolean
+  | ReactChild
+  | ReactFragment
+  | ReactPortal
+  | null
+  | undefined;
+
+export type DivProps = React.HtmlHTMLAttributes<HTMLDivElement>;
+
+export class FormError extends Error {
+  constructor(public res: Response) {
+    super();
+  }
+}

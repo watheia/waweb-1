@@ -25,7 +25,7 @@ export default function IndexPage() {
   const config = useConfig();
   const { loginStatus, mutate } = useLoginStatus();
   const meta = {
-    title: 'Watheia Labs',
+    title: 'Watheia Realtime',
     description: config.metaDescription,
   };
 

@@ -18,7 +18,7 @@ import { Category } from '@waweb/model';
 import cn from 'clsx';
 import useSWR from 'swr';
 import AppEntry from './app-entry';
-import useLoginStatus from './hooks/use-login-status';
+import { useLoginStatus } from '@waweb/auth';
 import ProjectSidebar from './project-sidebar';
 import styles from './category-container.module.css';
 import styleUtils from './utils.module.css';

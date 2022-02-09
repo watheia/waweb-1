@@ -1,6 +1,6 @@
 {
-  "root": "libs/navigation",
-  "sourceRoot": "libs/navigation/src",
+  "root": "libs/app/config",
+  "sourceRoot": "libs/app/config/src",
   "projectType": "library",
   "tags": [],
   "targets": {
@@ -8,16 +8,16 @@
       "executor": "@nrwl/web:rollup",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/libs/navigation",
-        "tsConfig": "libs/navigation/tsconfig.lib.json",
-        "project": "libs/navigation/package.json",
-        "entryFile": "libs/navigation/src/index.ts",
+        "outputPath": "dist/libs/app/config",
+        "tsConfig": "libs/app/config/tsconfig.lib.json",
+        "project": "libs/app/config/package.json",
+        "entryFile": "libs/app/config/src/index.ts",
         "external": ["react/jsx-runtime"],
         "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
-        "compiler": "swc",
+        "compiler": "babel",
         "assets": [
           {
-            "glob": "libs/navigation/README.md",
+            "glob": "libs/app/config/README.md",
             "input": ".",
             "output": "."
           }
@@ -28,14 +28,14 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/navigation/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["libs/app/config/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/navigation"],
+      "outputs": ["coverage/libs/app/config"],
       "options": {
-        "jestConfig": "libs/navigation/jest.config.js",
+        "jestConfig": "libs/app/config/jest.config.js",
         "passWithNoTests": true
       }
     }

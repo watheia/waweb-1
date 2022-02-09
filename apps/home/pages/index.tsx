@@ -17,8 +17,8 @@
 import Dashboard from '@waweb/app.ui.dashboard';
 import Layout from '@waweb/app.ui.layout';
 import { Gatekeeper, Page, PageSpinner } from '@waweb/ui';
-import useConfig from '@waweb/ui.hooks.use-config';
-import useLoginStatus from '@waweb/ui.hooks.use-login-status';
+import useConfig from '@waweb/app.config';
+import { useLoginStatus } from '@waweb/auth';
 import { useCallback } from 'react';
 
 export default function IndexPage() {

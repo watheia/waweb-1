@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@waweb/app.config": ["libs/app/config/src/index.ts"],
       "@waweb/app.ui.dashboard": ["libs/app/ui/dashboard/src/index.ts"],
       "@waweb/app.ui.icons": ["libs/app/ui/icons/src/index.ts"],
       "@waweb/app.ui.layout": ["libs/app/ui/layout/src/index.ts"],
@@ -23,7 +24,6 @@
       "@waweb/envs": ["libs/envs/src/index.ts"],
       "@waweb/message": ["libs/message/src/index.ts"],
       "@waweb/model": ["libs/model/src/index.ts"],
-      "@waweb/navigation": ["libs/navigation/src/index.ts"],
       "@waweb/supabase": ["libs/supabase/src/index.ts"],
       "@waweb/theme": ["libs/theme/src/index.ts"],
       "@waweb/theme.styles/*": ["libs/theme/src/styles/*"],

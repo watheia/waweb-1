@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "app-config": "libs/app/config",
     "app-ui-dashboard": "libs/app/ui/dashboard",
     "app-ui-dashboard-e2e": "apps/app-ui-dashboard-e2e",
     "app-ui-icons": "libs/app/ui/icons",
@@ -13,7 +14,6 @@
     "home-e2e": "apps/home-e2e",
     "message": "libs/message",
     "model": "libs/model",
-    "navigation": "libs/navigation",
     "supabase": "libs/supabase",
     "theme": "libs/theme",
     "ui": "libs/ui",

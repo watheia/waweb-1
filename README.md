@@ -4,7 +4,7 @@
 
 This project was generated using [Nx](https://nx.dev).
 
-![depgraph](./docs/depgraph.svg)
+![depgraph](./docs/depgraph.png)
 
 ## Adding capabilities to your workspace
 

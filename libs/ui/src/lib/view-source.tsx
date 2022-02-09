@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-// import useConfig from './hooks/use-config';
+// import useConfig from '@waweb/app.config';
 import styles from './view-source.module.css';
 
 export default function ViewSource() {

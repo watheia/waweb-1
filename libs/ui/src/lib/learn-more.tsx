@@ -16,7 +16,7 @@
 
 import cn from 'clsx';
 import styles from './contact.module.css';
-import useConfig from './hooks/use-config';
+import useConfig from '@waweb/app.config';
 import styleUtils from './utils.module.css';
 
 export default function LearnMore() {

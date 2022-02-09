@@ -17,7 +17,7 @@
 import cn from 'clsx';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import useConfig from './hooks/use-config';
+import useConfig from '@waweb/app.config';
 
 type Meta = {
   title: string | null;

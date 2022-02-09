@@ -17,7 +17,7 @@
 import cn from 'clsx';
 import { useCallback, useState } from 'react';
 import styles from './app-entry.module.css';
-import useConfig from './hooks/use-config';
+import useConfig from '@waweb/app.config';
 import LoadingDots from './loading-dots';
 import styleUtils from './utils.module.css';
 

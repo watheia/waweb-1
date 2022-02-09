@@ -15,7 +15,7 @@
  */
 
 import ComingSoon from '@waweb/ui.coming-soon';
-import useConfig from '@waweb/ui.hooks/use-config';
+import useConfig from '@waweb/app.config';
 import Page from '@waweb/ui.page';
 import Layout from '@waweb/app.ui.layout';
 

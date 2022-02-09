@@ -1,5 +1,5 @@
 import { Menu, Transition } from '@headlessui/react';
-import useConfig from '@waweb/ui.hooks.use-config';
+import { storageUrl } from '@waweb/supabase';
 import clsx from 'clsx';
 import React, { Fragment } from 'react';
 
@@ -9,7 +9,7 @@ export interface NavItem {
 }
 
 const UserMenu = ({ navigation }: { navigation: NavItem[] }) => {
-  const config = useConfig();
+  const defaultAvatar = storageUrl('avatars', 'supabot.png');
   return (
     <Menu
       as="div"
@@ -19,11 +19,7 @@ const UserMenu = ({ navigation }: { navigation: NavItem[] }) => {
       <div>
         <Menu.Button className="flex items-center max-w-xs text-sm bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500">
           <span className="sr-only">Open user menu</span>
-          <img
-            className="w-8 h-8 rounded-full"
-            src={config.defaultAvatar}
-            alt=""
-          />
+          <img className="w-8 h-8 rounded-full" src={defaultAvatar} alt="" />
         </Menu.Button>
       </div>
       <Transition

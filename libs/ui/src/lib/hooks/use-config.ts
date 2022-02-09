@@ -14,6 +14,7 @@ interface SiteConfig {
   siteDescription: string;
   siteName: string;
   legalUrl: string;
+  defaultAvatar: string;
   navigation: NavZone[];
 }
 
@@ -27,6 +28,8 @@ const Context = createContext<SiteConfig>({
   siteDescription: '',
   siteName: 'Watheia Labs',
   legalUrl: '#',
+  defaultAvatar:
+    'https://kgkcfphpovhbptsscyyj.supabase.in/storage/v1/object/sign/avatars/supabot.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhdmF0YXJzL3N1cGFib3QucG5nIiwiaWF0IjoxNjQ0Mzc1NDgwLCJleHAiOjE5NTk3MzU0ODB9.4VjLwEr-iwyZ2wdxr3V0aXEY6XIzb3I42cnTfRWkXOY',
   navigation: [
     {
       name: 'Home',

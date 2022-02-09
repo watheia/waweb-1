@@ -19,7 +19,7 @@ const Header = ({ isMenuOpen, setMenuOpen, ...props }: HeaderProps) => (
   <div className="sticky top-0 z-10 flex flex-shrink-0 h-16 shadow" {...props}>
     <button
       type="button"
-      className="px-4 text-gray-500 border-r border-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500"
+      className="px-4 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500"
       onClick={() => setMenuOpen(true)}
     >
       <span className="sr-only">Open sidebar</span>

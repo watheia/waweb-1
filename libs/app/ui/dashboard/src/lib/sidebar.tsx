@@ -107,9 +107,9 @@ const Sidebar = ({ isOpen = false, setIsOpen, navigation }: SidebarProps) => {
             </div>
             <div className="flex-1 h-0 mt-5 overflow-y-auto">
               <nav className="px-2 space-y-1">
-                {navigation.map((item) => (
+                {navigation.map((item, index) => (
                   <SidebarItem
-                    key={item.slug}
+                    key={index}
                     {...item}
                     isActive={isActiveItem(item)}
                   />

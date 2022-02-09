@@ -10,7 +10,7 @@
     "test": "nx run-many --all --target test --coverage --detectOpenHandles",
     "lint": "nx run-many --all --target lint",
     "format": "prettier --write .",
-    "analyze": "cross-env ANALYZE=true yarn nx build home",
+    "analyze": "cross-env ANALYZE=true yarn nx build home --prod",
     "depcruise": "depcruise --config .dependency-cruiser.js .",
     "db:gen": "prisma generate",
     "db:pull": "prisma db pull",

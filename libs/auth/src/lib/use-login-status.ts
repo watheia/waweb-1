@@ -16,6 +16,9 @@
 
 import useSWR from 'swr';
 import { KeyedMutator, PublicConfiguration } from 'swr/dist/types';
+import { getGlobalScope } from '@waweb/app.utils';
+
+const global = getGlobalScope<Window>();
 
 export const ENDPOINT = '/api/auth';
 
@@ -28,7 +31,7 @@ export type LoginStatusRequest = PublicConfiguration<
 export type LoginStatus = 'loading' | 'loggedOut' | 'loggedIn';
 
 const fetcher = async (url: string) => {
-  const res = await fetch(url);
+  const res = await global.fetch(url);
   if (!res.ok) {
     throw new Error(res.statusText);
   }

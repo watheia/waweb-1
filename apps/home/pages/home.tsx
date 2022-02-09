@@ -14,9 +14,8 @@
  * limitations under the License.
  */
 
-import Home from '@waweb/ui.home';
 import useConfig from '@waweb/app.config';
-import Page from '@waweb/ui.page';
+import { Home, Page } from '@waweb/ui';
 import Layout from '@waweb/app.ui.layout';
 
 export default function IndexPage() {

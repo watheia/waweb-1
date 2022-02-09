@@ -8,6 +8,7 @@ export { default as Container } from './lib/container';
 export { default as LoginForm } from './lib/login-form';
 export { default as Gatekeeper } from './lib/gatekeeper';
 export { default as Hero } from './lib/hero';
+export { default as Home } from './lib/home';
 export { default as LearnMore } from './lib/learn-more';
 export { default as LoadingDots } from './lib/loading-dots';
 export { default as Logo } from './lib/logo';

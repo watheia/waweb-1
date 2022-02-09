@@ -14,9 +14,8 @@
  * limitations under the License.
  */
 
-import ComingSoon from '@waweb/ui.coming-soon';
 import useConfig from '@waweb/app.config';
-import Page from '@waweb/ui.page';
+import { ComingSoon, Page } from '@waweb/ui';
 
 export default function IndexPage() {
   const config = useConfig();

@@ -21,6 +21,7 @@ context('Cypress.Commands', () => {
         method = method || 'log';
 
         // log the subject to the console
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore TS7017
         console[method]('The subject is', subject);
 
@@ -31,6 +32,7 @@ context('Cypress.Commands', () => {
       }
     );
 
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore TS2339
     cy.get('button')
       .console('info')

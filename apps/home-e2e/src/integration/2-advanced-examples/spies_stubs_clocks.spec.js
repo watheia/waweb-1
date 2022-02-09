@@ -8,7 +8,9 @@ context('Spies, Stubs, and Clock', () => {
     cy.visit('https://example.cypress.io/commands/spies-stubs-clocks');
 
     const obj = {
-      foo() {},
+      foo() {
+        return void 0;
+      },
     };
 
     const spy = cy.spy(obj, 'foo').as('anyArgs');
@@ -114,11 +116,13 @@ context('Spies, Stubs, and Clock', () => {
       .throws(new Error('Invalid name'));
 
     expect(greeter.greet('World')).to.equal('Hi');
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     expect(() => greeter.greet(42)).to.throw('Invalid name');
     expect(greeter.greet).to.have.been.calledTwice;
 
     // non-matched calls goes the actual method
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     expect(greeter.greet()).to.equal('Hello, undefined!');
   });

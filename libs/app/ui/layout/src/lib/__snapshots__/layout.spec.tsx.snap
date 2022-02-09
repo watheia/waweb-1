@@ -514,12 +514,14 @@ exports[`waweb.app/ui/layout should render successfully 1`] = `
       </main>
       <footer
         class="footer border-t border-dotted border-gray-700 bg-gray-900/75"
+        data-testid="waweb.app/ui/layout/footer"
       >
         <div
           class="footer-legal"
         >
           <div
             class="footer-copyright"
+            data-testid="waweb.app/ui/layout/footer:copyright"
           >
             Copyright © 
             2022 
@@ -533,6 +535,7 @@ exports[`waweb.app/ui/layout should render successfully 1`] = `
             >
               <a
                 class="footer-link"
+                data-testid="waweb.app/ui/layout/footer:view-source"
                 href="https://gitlab.com/watheia/waweb"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -548,6 +551,7 @@ exports[`waweb.app/ui/layout should render successfully 1`] = `
             >
               <a
                 class="footer-link"
+                data-testid="waweb.app/ui/layout/footer:legal"
                 href="#"
                 rel="noopener noreferrer"
                 target="_blank"

@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 
 import Layout from './layout';
-import MockContent from '@waweb/ui.mock-content';
+import { MockContent } from '@waweb/ui';
 
 describe('waweb.app/ui/layout', () => {
   it('should render successfully', () => {

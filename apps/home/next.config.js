@@ -35,7 +35,7 @@ const nextConfig = {
   port: 4200,
   // Prefer loading of ES Modules over CommonJS
   experimental: {
-    concurrentFeatures: true,
+    // concurrentFeatures: true,
     esmExternals: true,
   },
   // Support MDX files as pages:

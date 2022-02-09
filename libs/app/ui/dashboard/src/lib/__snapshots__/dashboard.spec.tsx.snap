@@ -2,9 +2,11 @@
 
 exports[`waweb.app/ui/dashboard should render successfully 1`] = `
 <div>
-  <div>
+  <div
+    class="flex flex-col flex-1 w-full h-full mb-4"
+  >
     <div
-      class="flex flex-col flex-1"
+      class="flex flex-col flex-1 w-full h-full"
     >
       <div
         class="sticky top-0 z-10 flex flex-shrink-0 h-16 shadow"
@@ -147,14 +149,140 @@ exports[`waweb.app/ui/dashboard should render successfully 1`] = `
         </div>
       </div>
       <div
-        class="flex-1"
+        class="flex flex-col flex-1 w-full px-4 mx-auto space-y-2 max-w-7xl sm:px-6 md:px-8"
       >
         <div
-          class="px-4 mx-auto max-w-7xl sm:px-6 md:px-8"
+          class="flex flex-1 border-2 border-gray-500 border-dashed rounded-lg"
+        />
+        <div
+          data-testid="app.ui/message-input"
         >
-          <div
-            class="border-2 border-gray-700 border-dashed rounded-lg h-96"
-          />
+          <form
+            action="#"
+            class="relative"
+          >
+            <div
+              class="overflow-hidden border border-gray-300 rounded-lg shadow-sm focus-within:border-teal-500 focus-within:ring-1 focus-within:ring-teal-500"
+            >
+              <label
+                class="sr-only"
+                for="comment"
+              >
+                Add your comment
+              </label>
+              <textarea
+                class="block w-full py-3 border-0 resize-none focus:ring-0 sm:text-sm"
+                id="comment"
+                name="comment"
+                placeholder="Add your comment..."
+                rows="3"
+              />
+              <div
+                aria-hidden="true"
+                class="py-2"
+              >
+                <div
+                  class="py-px"
+                >
+                  <div
+                    class="h-9"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute inset-x-0 bottom-0 flex justify-between py-2 pl-3 pr-2"
+            >
+              <div
+                class="flex items-center space-x-5"
+              >
+                <div
+                  class="flex items-center"
+                >
+                  <button
+                    class="-m-2.5 w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:text-gray-500"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        clip-rule="evenodd"
+                        d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                    <span
+                      class="sr-only"
+                    >
+                      Attach a file
+                    </span>
+                  </button>
+                </div>
+                <div
+                  class="flex items-center"
+                >
+                  <label
+                    class="sr-only"
+                    id="headlessui-listbox-label-2"
+                  >
+                    Your mood
+                  </label>
+                  <div
+                    class="relative"
+                  >
+                    <button
+                      aria-expanded="false"
+                      aria-haspopup="true"
+                      aria-labelledby="headlessui-listbox-label-2 headlessui-listbox-button-3"
+                      class="relative -m-2.5 w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:text-gray-500"
+                      id="headlessui-listbox-button-3"
+                      type="button"
+                    >
+                      <span
+                        class="flex items-center justify-center"
+                      >
+                        <span>
+                          <svg
+                            aria-hidden="true"
+                            class="flex-shrink-0 w-5 h-5"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              clip-rule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z"
+                              fill-rule="evenodd"
+                            />
+                          </svg>
+                          <span
+                            class="sr-only"
+                          >
+                            Add your mood
+                          </span>
+                        </span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex-shrink-0"
+              >
+                <button
+                  class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-teal-600 border border-transparent rounded-md shadow-sm hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
+                  type="submit"
+                >
+                  Post
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>

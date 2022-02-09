@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
 
-import CommentForm from './comment-form';
+import MessageInput from './message-input';
 
-describe('CommentForm', () => {
+describe('waweb.ui/message-input', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<CommentForm />);
+    const { baseElement } = render(<MessageInput />);
     expect(baseElement).toBeTruthy();
   });
 });

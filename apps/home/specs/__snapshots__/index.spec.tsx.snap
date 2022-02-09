@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Index should render successfully 1`] = `
+exports[`waweb.home should render successfully 1`] = `
 <div>
   <div
     data-overlay-container="true"

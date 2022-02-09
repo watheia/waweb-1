@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react';
+import { Listbox, Transition } from '@headlessui/react';
 import {
   EmojiHappyIcon,
   EmojiSadIcon,
@@ -8,11 +8,15 @@ import {
   ThumbUpIcon,
   XIcon,
 } from '@heroicons/react/solid';
-import { Listbox, Transition } from '@headlessui/react';
-import styles from './message-input.module.css';
 import { DivProps } from '@waweb/model';
-import clsx from 'clsx';
-import { storageUrl } from '@waweb/supabase';
+import clsx, { ClassArray, ClassDictionary } from 'clsx';
+import {
+  Fragment,
+  ReactChild,
+  ReactFragment,
+  ReactPortal,
+  useState,
+} from 'react';
 
 const moods = [
   {
@@ -59,19 +63,118 @@ const moods = [
   },
 ];
 
+interface Mood {
+  value: string | null;
+  bgColor:
+    | string
+    | number
+    | boolean
+    | ClassArray
+    | ClassDictionary
+    | null
+    | undefined;
+  icon: any;
+  name: boolean | ReactChild | ReactFragment | ReactPortal | null | undefined;
+}
+
+interface MoodSelectProps {
+  selected: Mood;
+  setSelected: (value: Mood) => void;
+}
+
+const MoodSelect = ({ selected, setSelected }: MoodSelectProps) => (
+  <Listbox value={selected} onChange={setSelected}>
+    {({ open }) => (
+      <>
+        <Listbox.Label className="sr-only">Your mood</Listbox.Label>
+        <div className="relative">
+          <Listbox.Button className="relative -m-2.5 w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:text-gray-500">
+            <span className="flex items-center justify-center">
+              {selected.value === null ? (
+                <span>
+                  <EmojiHappyIcon
+                    className="flex-shrink-0 w-5 h-5"
+                    aria-hidden="true"
+                  />
+                  <span className="sr-only">Add your mood</span>
+                </span>
+              ) : (
+                <span>
+                  <div
+                    className={clsx(
+                      selected.bgColor,
+                      'w-8 h-8 rounded-full flex items-center justify-center'
+                    )}
+                  >
+                    <selected.icon
+                      className="flex-shrink-0 w-5 h-5 text-white"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <span className="sr-only">{selected.name}</span>
+                </span>
+              )}
+            </span>
+          </Listbox.Button>
+
+          <Transition
+            show={open}
+            as={Fragment}
+            leave="transition ease-in duration-100"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <Listbox.Options className="absolute z-10 py-3 mt-1 -ml-6 text-base bg-white rounded-lg shadow w-60 ring-1 ring-black ring-opacity-5 focus:outline-none sm:ml-auto sm:w-64 sm:text-sm">
+              {moods.map((mood) => (
+                <Listbox.Option
+                  key={mood.value}
+                  className={({ active }) =>
+                    clsx(
+                      active ? 'bg-gray-100' : 'bg-white',
+                      'cursor-default select-none relative py-2 px-3'
+                    )
+                  }
+                  value={mood}
+                >
+                  <div className="flex items-center">
+                    <div
+                      className={clsx(
+                        mood.bgColor,
+                        'w-8 h-8 rounded-full flex items-center justify-center'
+                      )}
+                    >
+                      <mood.icon
+                        className={clsx(
+                          mood.iconColor,
+                          'flex-shrink-0 h-5 w-5'
+                        )}
+                        aria-hidden="true"
+                      />
+                    </div>
+                    <span className="block ml-3 font-medium truncate">
+                      {mood.name}
+                    </span>
+                  </div>
+                </Listbox.Option>
+              ))}
+            </Listbox.Options>
+          </Transition>
+        </div>
+      </>
+    )}
+  </Listbox>
+);
+
 /* eslint-disable-next-line */
 export interface CommentFormProps extends DivProps {}
 
-export function MessageInput({
-  className = 'min-w-0 flex-1',
-  ...props
-}: CommentFormProps) {
-  const [selected, setSelected] = useState(moods[5]);
+export function MessageInput({ className, ...props }: CommentFormProps) {
+  const [selected, setSelected] = useState<Mood>(moods[5]);
 
   return (
     <div className={className} {...props} data-testid="app.ui/message-input">
       <form action="#" className="relative">
-        <div className="border border-gray-300 rounded-lg shadow-sm overflow-hidden focus-within:border-teal-500 focus-within:ring-1 focus-within:ring-teal-500">
+        <div className="overflow-hidden border border-gray-300 rounded-lg shadow-sm focus-within:border-teal-500 focus-within:ring-1 focus-within:ring-teal-500">
           <label htmlFor="comment" className="sr-only">
             Add your comment
           </label>
@@ -93,104 +196,25 @@ export function MessageInput({
           </div>
         </div>
 
-        <div className="absolute bottom-0 inset-x-0 pl-3 pr-2 py-2 flex justify-between">
+        <div className="absolute inset-x-0 bottom-0 flex justify-between py-2 pl-3 pr-2">
           <div className="flex items-center space-x-5">
             <div className="flex items-center">
               <button
                 type="button"
                 className="-m-2.5 w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:text-gray-500"
               >
-                <PaperClipIcon className="h-5 w-5" aria-hidden="true" />
+                <PaperClipIcon className="w-5 h-5" aria-hidden="true" />
                 <span className="sr-only">Attach a file</span>
               </button>
             </div>
             <div className="flex items-center">
-              <Listbox value={selected} onChange={setSelected}>
-                {({ open }) => (
-                  <>
-                    <Listbox.Label className="sr-only">Your mood</Listbox.Label>
-                    <div className="relative">
-                      <Listbox.Button className="relative -m-2.5 w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:text-gray-500">
-                        <span className="flex items-center justify-center">
-                          {selected.value === null ? (
-                            <span>
-                              <EmojiHappyIcon
-                                className="flex-shrink-0 h-5 w-5"
-                                aria-hidden="true"
-                              />
-                              <span className="sr-only">Add your mood</span>
-                            </span>
-                          ) : (
-                            <span>
-                              <div
-                                className={clsx(
-                                  selected.bgColor,
-                                  'w-8 h-8 rounded-full flex items-center justify-center'
-                                )}
-                              >
-                                <selected.icon
-                                  className="flex-shrink-0 h-5 w-5 text-white"
-                                  aria-hidden="true"
-                                />
-                              </div>
-                              <span className="sr-only">{selected.name}</span>
-                            </span>
-                          )}
-                        </span>
-                      </Listbox.Button>
-
-                      <Transition
-                        show={open}
-                        as={Fragment}
-                        leave="transition ease-in duration-100"
-                        leaveFrom="opacity-100"
-                        leaveTo="opacity-0"
-                      >
-                        <Listbox.Options className="absolute z-10 mt-1 -ml-6 w-60 bg-white shadow rounded-lg py-3 text-base ring-1 ring-black ring-opacity-5 focus:outline-none sm:ml-auto sm:w-64 sm:text-sm">
-                          {moods.map((mood) => (
-                            <Listbox.Option
-                              key={mood.value}
-                              className={({ active }) =>
-                                clsx(
-                                  active ? 'bg-gray-100' : 'bg-white',
-                                  'cursor-default select-none relative py-2 px-3'
-                                )
-                              }
-                              value={mood}
-                            >
-                              <div className="flex items-center">
-                                <div
-                                  className={clsx(
-                                    mood.bgColor,
-                                    'w-8 h-8 rounded-full flex items-center justify-center'
-                                  )}
-                                >
-                                  <mood.icon
-                                    className={clsx(
-                                      mood.iconColor,
-                                      'flex-shrink-0 h-5 w-5'
-                                    )}
-                                    aria-hidden="true"
-                                  />
-                                </div>
-                                <span className="ml-3 block font-medium truncate">
-                                  {mood.name}
-                                </span>
-                              </div>
-                            </Listbox.Option>
-                          ))}
-                        </Listbox.Options>
-                      </Transition>
-                    </div>
-                  </>
-                )}
-              </Listbox>
+              <MoodSelect selected={selected} setSelected={setSelected} />
             </div>
           </div>
           <div className="flex-shrink-0">
             <button
               type="submit"
-              className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
+              className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-teal-600 border border-transparent rounded-md shadow-sm hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
             >
               Post
             </button>

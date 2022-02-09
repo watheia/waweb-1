@@ -43,17 +43,17 @@ export const Dashboard = ({ children, ...props }: DashboardProps) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <div {...props}>
+    <div {...props} className="flex flex-col flex-1 w-full h-full mb-4">
       <Sidebar
         isOpen={sidebarOpen}
         setIsOpen={setSidebarOpen}
         navigation={navigation}
       />
 
-      <div className="flex flex-col flex-1">
+      <div className="flex flex-col flex-1 w-full h-full">
         <Header isMenuOpen={sidebarOpen} setMenuOpen={setSidebarOpen} />
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 md:px-8">
-          <div className="border-2 border-gray-700 border-dashed rounded-lg h-96" />
+        <div className="flex flex-col flex-1 w-full px-4 mx-auto space-y-2 max-w-7xl sm:px-6 md:px-8">
+          <div className="flex flex-1 border-2 border-gray-500 border-dashed rounded-lg" />
           <MessageInput />
         </div>
       </div>

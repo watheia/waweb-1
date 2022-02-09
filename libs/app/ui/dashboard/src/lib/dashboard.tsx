@@ -23,6 +23,7 @@ import {
   UsersIcon,
 } from '@heroicons/react/outline';
 import { DivProps } from '@waweb/model';
+import { MessageInput } from '@waweb/ui';
 import { useState } from 'react';
 import Header from './header';
 import Sidebar from './sidebar';
@@ -51,12 +52,9 @@ export const Dashboard = ({ children, ...props }: DashboardProps) => {
 
       <div className="flex flex-col flex-1">
         <Header isMenuOpen={sidebarOpen} setMenuOpen={setSidebarOpen} />
-        <div className="flex-1">
-          <div className="px-4 mx-auto max-w-7xl sm:px-6 md:px-8">
-            {children ?? (
-              <div className="border-2 border-gray-700 border-dashed rounded-lg h-96" />
-            )}
-          </div>
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 md:px-8">
+          <div className="border-2 border-gray-700 border-dashed rounded-lg h-96" />
+          <MessageInput />
         </div>
       </div>
     </div>

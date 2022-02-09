@@ -2,12 +2,10 @@ import { AuthProvider } from '@waweb/auth';
 import { MessageProvider } from '@waweb/message';
 import { Theme } from '@waweb/theme';
 import '@waweb/theme.styles/index.css';
-import NProgress from '@waweb/ui.nprogress';
-import ResizeHandler from '@waweb/ui.resize-handler';
+import { NProgress, ResizeHandler } from '@waweb/ui';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
-import React from 'react';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { OverlayProvider, SSRProvider } from 'react-aria';
 import 'tailwindcss/tailwind.css';
 

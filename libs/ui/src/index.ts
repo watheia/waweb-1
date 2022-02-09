@@ -13,7 +13,7 @@ export { default as LoadingDots } from './lib/loading-dots';
 export { default as Logo } from './lib/logo';
 export { default as LogoAlt } from './lib/logo-alt';
 export { default as MessageInput } from './lib/message-input';
-export { default as Nprogress } from './lib/nprogress';
+export { default as NProgress } from './lib/nprogress';
 export { default as Page } from './lib/page';
 export { default as PageSpinner } from './lib/page-spinner';
 // export { default as ProjectCard } from './lib/project-card';

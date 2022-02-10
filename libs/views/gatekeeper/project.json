@@ -1,0 +1,43 @@
+{
+  "root": "libs/views/gatekeeper",
+  "sourceRoot": "libs/views/gatekeeper/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/views/gatekeeper",
+        "tsConfig": "libs/views/gatekeeper/tsconfig.lib.json",
+        "project": "libs/views/gatekeeper/package.json",
+        "entryFile": "libs/views/gatekeeper/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "compiler": "babel",
+        "assets": [
+          {
+            "glob": "libs/views/gatekeeper/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/views/gatekeeper/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/views/gatekeeper"],
+      "options": {
+        "jestConfig": "libs/views/gatekeeper/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

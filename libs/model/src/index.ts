@@ -1,21 +1,21 @@
-import { AppRole, Channel, Message } from '@prisma/client';
-import { Provider, User } from '@supabase/supabase-js';
+import { AppRole, Channel, Message, User } from '@prisma/client';
+import { Provider } from '@supabase/supabase-js';
 import { ReactChild, ReactFragment, ReactPortal } from 'react';
 
 // export prisma types
 ////
 
-export { AppPermission, AppRole, UserStatus, Prisma } from '@prisma/client';
+export { AppPermission, AppRole, Prisma, UserStatus } from '@prisma/client';
 export type {
   Channel,
   Message,
   RolePermission,
+  User,
   UserRole,
 } from '@prisma/client';
 
 // export model types
 ////
-
 export type MessageType = 'comment' | 'alert';
 export type MessageModel = Message & {
   channel?: Channel;
@@ -29,18 +29,21 @@ export type UserModel = User & {
   roles: AppRole[];
 };
 
-// export type {
-//   NextAppPageProps,
-//   NextAppPageRedirProps,
-//   NextAppPageServerSideProps,
-//   NextAppPageUserProps,
-//   NextAppSEOProps,
-// } from './types/app';
-
 // export auth types
 ////
+export type { User as Principal } from '@supabase/supabase-js';
 
-export type { User } from '@supabase/supabase-js';
+// Misc Types
+////
+
+export type { Category } from './types/Category';
+export type { Image } from './types/Image';
+export type { Link } from './types/Link';
+export type { Post } from './types/Post';
+export type { Project } from './types/Project';
+export type { Stakeholder } from './types/Stakeholder';
+export type { StakeholderLink } from './types/StakeholderLink';
+export type { Task } from './types/Task';
 
 export type SignInRequest = {
   email: string;
@@ -49,16 +52,6 @@ export type SignInRequest = {
   refreshToken?: string;
   provider?: Provider;
 };
-
-// Misc Types
-export type { Author } from './types/Author';
-export type { Project } from './types/Project';
-export type { Category } from './types/Category';
-export type { Image } from './types/Image';
-export type { Link } from './types/Link';
-export type { Stakeholder } from './types/Stakeholder';
-export type { StakeholderLink } from './types/StakeholderLink';
-export type { Task } from './types/Task';
 
 export type FormState = 'default' | 'loading' | 'error';
 

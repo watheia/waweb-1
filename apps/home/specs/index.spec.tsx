@@ -7,7 +7,7 @@ import { OverlayProvider } from '@react-aria/overlays';
 import { Theme } from '@waweb/theme';
 import { MessageProvider } from '@waweb/message';
 import { AuthProvider } from '@waweb/auth';
-import { NProgress, ResizeHandler } from '@waweb/ui';
+import { NProgress, ResizeHandler } from '@waweb/atoms';
 
 describe('waweb.home', () => {
   it('should render successfully', () => {

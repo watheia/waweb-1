@@ -14,22 +14,34 @@
  * limitations under the License.
  */
 
-import useConfig from '@waweb/app.config';
-import { Home, Page } from '@waweb/ui';
-import Layout from '@waweb/app.ui.layout';
+import { Page } from '@waweb/atoms';
+import useConfig from '@waweb/config';
+import Layout from '@waweb/layout';
+import Home, { fixtures } from '@waweb/views.home';
+import { GetStaticProps, InferGetServerSidePropsType } from 'next';
 
-export default function IndexPage() {
+type Props = InferGetServerSidePropsType<typeof getStaticProps>;
+
+export default function HomePage({ features, posts }: Props) {
   const config = useConfig();
   const meta = {
-    title: 'Watheia Labs Homepage',
+    title: 'About Watheia Labs',
     description: config.metaDescription,
   };
 
   return (
     <Page meta={meta} fullViewport>
       <Layout>
-        <Home />
+        <Home features={features} posts={posts} />
       </Layout>
     </Page>
   );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {
+      ...fixtures,
+    },
+  };
+};

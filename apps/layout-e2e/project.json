@@ -1,0 +1,28 @@
+{
+  "root": "apps/layout-e2e",
+  "sourceRoot": "apps/layout-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/layout-e2e/cypress.json",
+        "devServerTarget": "layout:storybook"
+      },
+      "configurations": {
+        "ci": {
+          "devServerTarget": "layout:storybook:ci"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/layout-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["layout"]
+}

@@ -1,9 +1,9 @@
 import { Provider, UserCredentials } from '@supabase/supabase-js';
-import { AppRole, User } from '@waweb/model';
+import { AppRole, Principal } from '@waweb/model';
 import { createContext } from 'react';
 
 export type AuthModel = {
-  user: User | null;
+  user: Principal | null;
   signUp: (payload: UserCredentials) => Promise<void>;
   signIn: (payload: UserCredentials) => Promise<void>;
   signInWithProvider: (provider: Provider) => Promise<void>;

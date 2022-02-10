@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-import useConfig from '@waweb/app.config';
-import { ComingSoon, Page } from '@waweb/ui';
-import Layout from '@waweb/app.ui.layout';
+import useConfig from '@waweb/config';
+import { ComingSoon, Page } from '@waweb/atoms';
+import Layout from '@waweb/layout';
 
 // const Dashboard = lazy(() => import('@waweb/app.ui.dashboard'));
 

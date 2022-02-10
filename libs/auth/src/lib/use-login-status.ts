@@ -16,7 +16,7 @@
 
 import useSWR from 'swr';
 import { KeyedMutator, PublicConfiguration } from 'swr/dist/types';
-import { getGlobalScope } from '@waweb/app.utils';
+import { getGlobalScope } from '@waweb/utils';
 
 const global = getGlobalScope<Window>();
 

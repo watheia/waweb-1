@@ -1,22 +1,25 @@
 {
   "version": 2,
   "projects": {
-    "app-config": "libs/app/config",
-    "app-ui-dashboard": "libs/app/ui/dashboard",
-    "app-ui-dashboard-e2e": "apps/app-ui-dashboard-e2e",
-    "app-ui-icons": "libs/app/ui/icons",
-    "app-ui-icons-e2e": "apps/app-ui-icons-e2e",
-    "app-ui-layout": "libs/app/ui/layout",
-    "app-ui-layout-e2e": "apps/app-ui-layout-e2e",
-    "app-utils": "libs/app/utils",
+    "atoms": "libs/atoms",
+    "atoms-e2e": "apps/atoms-e2e",
     "auth": "libs/auth",
+    "config": "libs/config",
     "home": "apps/home",
     "home-e2e": "apps/home-e2e",
+    "icons": "libs/icons",
+    "icons-e2e": "apps/icons-e2e",
+    "layout": "libs/layout",
+    "layout-e2e": "apps/layout-e2e",
     "message": "libs/message",
     "model": "libs/model",
     "supabase": "libs/supabase",
     "theme": "libs/theme",
-    "ui": "libs/ui",
-    "ui-e2e": "apps/ui-e2e"
+    "utils": "libs/utils",
+    "views-blog": "libs/views/blog",
+    "views-dashboard": "libs/views/dashboard",
+    "views-dashboard-e2e": "apps/views-dashboard-e2e",
+    "views-gatekeeper": "libs/views/gatekeeper",
+    "views-home": "libs/views/home"
   }
 }

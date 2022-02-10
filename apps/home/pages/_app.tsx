@@ -2,7 +2,7 @@ import { AuthProvider } from '@waweb/auth';
 import { MessageProvider } from '@waweb/message';
 import { Theme } from '@waweb/theme';
 import '@waweb/theme.styles/index.css';
-import { NProgress, ResizeHandler } from '@waweb/ui';
+import { NProgress, ResizeHandler } from '@waweb/atoms';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import React, { useEffect } from 'react';

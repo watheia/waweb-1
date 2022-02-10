@@ -57,6 +57,7 @@ model User {
   status     UserStatus? @default(Offline)
   avatar_url String?
   website    String?
+  slug       String      @unique @db.VarChar
   channels   Channel[]
   messages   Message[]
   roles      UserRole[]

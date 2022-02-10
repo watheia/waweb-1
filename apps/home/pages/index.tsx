@@ -14,12 +14,13 @@
  * limitations under the License.
  */
 
-import Dashboard from '@waweb/app.ui.dashboard';
-import Layout from '@waweb/app.ui.layout';
-import { Gatekeeper, Page, PageSpinner } from '@waweb/ui';
-import useConfig from '@waweb/app.config';
+import Dashboard from '@waweb/views.dashboard';
+import Layout from '@waweb/layout';
+import { Page, PageSpinner } from '@waweb/atoms';
+import useConfig from '@waweb/config';
 import { useLoginStatus } from '@waweb/auth';
 import { useCallback } from 'react';
+import Gatekeeper from '@waweb/views.gatekeeper';
 
 export default function IndexPage() {
   const config = useConfig();

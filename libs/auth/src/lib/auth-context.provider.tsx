@@ -5,13 +5,13 @@ import {
   UserCredentials,
 } from '@supabase/supabase-js';
 import { useMessage } from '@waweb/message';
-import { AppRole, User } from '@waweb/model';
+import { AppRole, Principal } from '@waweb/model';
 import supabase, { fetchUserRoles } from '@waweb/supabase';
 import { FunctionComponent, useEffect, useState } from 'react';
 import { AuthContext } from './auth-context';
 
 export const AuthProvider: FunctionComponent = ({ children }) => {
-  const [user, setUser] = useState<User | null>(null);
+  const [user, setUser] = useState<Principal | null>(null);
   const [userRoles, setUserRoles] = useState<AppRole[]>([]);
   const [isLoading, setLoading] = useState<boolean>(false);
   const [isUserLoading, setUserLoading] = useState<boolean>(true);

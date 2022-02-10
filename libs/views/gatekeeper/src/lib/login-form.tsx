@@ -22,7 +22,10 @@ import styles from './login-form.module.css';
 import { LoadingDots } from '@waweb/atoms';
 import styleUtils from '@waweb/theme.styles/utils.module.css';
 
-export default function LoginForm(props: DivProps) {
+export interface LoginFormProps extends DivProps {
+  sharePage?: boolean;
+}
+export default function LoginForm({ sharePage = false }: LoginFormProps) {
   const [email, setEmail] = useState('');
   const [errorMsg] = useState('');
   const [errorTryAgain, setErrorTryAgain] = useState(false);
@@ -60,8 +63,12 @@ export default function LoginForm(props: DivProps) {
   }, [formState, isLoading]);
 
   return formState === 'error' ? (
-    <div className={cn(styles['form'])}>
-      <div className={styles['form-row']} {...props}>
+    <div
+      className={cn(styles['form'], {
+        [styles['share-page']]: sharePage,
+      })}
+    >
+      <div className={styles['form-row']}>
         <div className={cn(styles['input-label'], styles['error'])}>
           <div className={cn(styles['input'], styles['input-text'])}>
             {errorMsg}
@@ -79,7 +86,10 @@ export default function LoginForm(props: DivProps) {
   ) : (
     <form
       className={cn(styles['form'], {
+        [styles['share-page']]: sharePage,
         [styleUtils['appear']]: !errorTryAgain,
+        [styleUtils['appear-fifth']]: !errorTryAgain && !sharePage,
+        [styleUtils['appear-third']]: !errorTryAgain && sharePage,
       })}
       onSubmit={onSubmit}
     >

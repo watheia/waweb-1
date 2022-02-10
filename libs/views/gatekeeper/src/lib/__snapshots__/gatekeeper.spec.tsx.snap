@@ -40,7 +40,7 @@ exports[`waweb.views/gatekeeper should render successfully 1`] = `
       </div>
     </div>
     <form
-      class="form appear"
+      class="form appear appear-fifth"
     >
       <div
         class="form-row"

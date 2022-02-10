@@ -7,7 +7,7 @@
     "start": "nx run-many --all --target serve --parallel 2",
     "build": "nx run-many --all --target build",
     "publish": "nx run-many --all --target publish --configuration production",
-    "test": "nx run-many --all --target test --coverage --detectOpenHandles",
+    "test": "nx run-many --all --target test --coverage --detectOpenHandles=true",
     "lint": "nx run-many --all --target lint",
     "format": "prettier --write .",
     "analyze": "cross-env ANALYZE=true yarn nx build home --prod",

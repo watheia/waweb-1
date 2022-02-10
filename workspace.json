@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "api-utils": "libs/api/utils",
     "atoms": "libs/atoms",
     "atoms-e2e": "apps/atoms-e2e",
     "auth": "libs/auth",

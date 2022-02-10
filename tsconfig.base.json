@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@waweb/api.utils": ["libs/api/utils/src/index.ts"],
       "@waweb/atoms": ["libs/atoms/src/index.ts"],
       "@waweb/auth": ["libs/auth/src/index.ts"],
       "@waweb/config": ["libs/config/src/index.ts"],

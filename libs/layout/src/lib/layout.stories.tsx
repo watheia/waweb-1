@@ -4,7 +4,7 @@ import { MockContent } from '@waweb/atoms';
 
 export default {
   component: Layout,
-  title: 'waweb.app/ui/layout',
+  title: 'waweb.layout',
 } as Meta;
 
 const Template: Story = (args) => (

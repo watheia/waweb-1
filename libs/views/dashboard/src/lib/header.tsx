@@ -4,12 +4,6 @@ import React from 'react';
 import SearchBar from './search-bar';
 import UserMenu from './user-menu';
 
-const userNavigation = [
-  { name: 'Profile', href: '/user/profile' },
-  { name: 'Account', href: '/user/settings' },
-  { name: 'Logout', href: '/user/signout' },
-];
-
 interface HeaderProps extends DivProps {
   isMenuOpen: boolean;
   setMenuOpen: (open: boolean) => void;
@@ -38,7 +32,7 @@ const Header = ({ isMenuOpen, setMenuOpen, ...props }: HeaderProps) => (
           <BellIcon className="w-6 h-6" aria-hidden="true" />
         </button>
 
-        <UserMenu navigation={userNavigation} />
+        <UserMenu />
       </div>
     </div>
   </div>

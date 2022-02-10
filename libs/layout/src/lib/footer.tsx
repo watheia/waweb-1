@@ -20,15 +20,15 @@ import styles from './footer.module.css';
 export default function Footer() {
   return (
     <footer
-      data-testid="waweb.app/ui/layout/footer"
       className={cn(
         styles['footer'],
         'border-t border-dotted border-gray-700 bg-gray-900/75'
       )}
+      data-testid="waweb.layout/footer"
     >
       <div className={styles['footer-legal']}>
         <div
-          data-testid="waweb.app/ui/layout/footer:copyright"
+          data-testid="waweb.layout/footer:copyright"
           className={styles['footer-copyright']}
         >
           Copyright © {`${new Date().getFullYear()} `} Watheia Labs, LLC. All
@@ -37,7 +37,7 @@ export default function Footer() {
         <div className={styles['footer-center-group']}>
           <p className={styles['footer-paragraph']}>
             <a
-              data-testid="waweb.app/ui/layout/footer:view-source"
+              data-testid="waweb.layout/footer:view-source"
               href="https://gitlab.com/watheia/waweb"
               className={styles['footer-link']}
               target="_blank"
@@ -49,7 +49,7 @@ export default function Footer() {
           <div className={styles['footer-separator']} />
           <p className={styles['footer-paragraph']}>
             <a
-              data-testid="waweb.app/ui/layout/footer:legal"
+              data-testid="waweb.layout/footer:legal"
               href="#"
               className={styles['footer-link']}
               target="_blank"

@@ -3,7 +3,7 @@ import Footer from './footer';
 
 export default {
   component: Footer,
-  title: 'waweb.app/ui/layout/footer',
+  title: 'waweb.layout/footer',
 } as Meta;
 
 const Template: Story = (args) => <Footer {...args} />;

@@ -1,7 +1,9 @@
-describe('layout: Layout component', () => {
-  beforeEach(() => cy.visit('/iframe.html?id=layout--primary'));
+import { getTitle } from '../../support/app.po';
+
+describe('waweb.layout', () => {
+  beforeEach(() => cy.visit('/iframe.html?id=waweb-layout--defaults'));
 
   it('should render the component', () => {
-    cy.get('h1').should('contain', 'Welcome to Layout!');
+    getTitle().should('contain', 'IntroducingJavaScript for Beginners');
   });
 });

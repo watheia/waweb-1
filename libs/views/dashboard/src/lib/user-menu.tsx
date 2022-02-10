@@ -8,7 +8,13 @@ export interface NavItem {
   href: string;
 }
 
-const UserMenu = ({ navigation }: { navigation: NavItem[] }) => {
+const defaultItems = [
+  { name: 'Profile', href: '/user/profile' },
+  { name: 'Account', href: '/user/settings' },
+  { name: 'Logout', href: '/user/signout' },
+];
+
+const UserMenu = ({ items = defaultItems }: { items?: NavItem[] }) => {
   const defaultAvatar = storageUrl('avatars', 'supabot.png');
   return (
     <Menu
@@ -32,7 +38,7 @@ const UserMenu = ({ navigation }: { navigation: NavItem[] }) => {
         leaveTo="transform opacity-0 scale-95"
       >
         <Menu.Items className="absolute right-0 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-          {navigation.map((item) => (
+          {items.map((item) => (
             <Menu.Item key={item.name}>
               {({ active }) => (
                 <a

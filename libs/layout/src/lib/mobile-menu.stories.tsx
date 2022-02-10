@@ -3,7 +3,7 @@ import MobileMenu from './mobile-menu';
 
 export default {
   component: MobileMenu,
-  title: 'waweb.app/ui/layout/mobile-menu',
+  title: 'waweb.layout/mobile-menu',
 } as Meta;
 
 const Template: Story = (args) => <MobileMenu {...args} />;

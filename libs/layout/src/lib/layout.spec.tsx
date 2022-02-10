@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 import Layout from './layout';
 import { MockContent } from '@waweb/atoms';
 
-describe('waweb.app/ui/layout', () => {
+describe('waweb.layout', () => {
   it('should render successfully', () => {
     const { container } = render(
       <Layout>

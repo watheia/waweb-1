@@ -4,7 +4,7 @@ import Dashboard from './dashboard';
 
 export default {
   component: Dashboard,
-  title: 'waweb.app/ui.dashboard',
+  title: 'waweb.views/dashboard',
 } as Meta;
 
 const Template: Story = (args) => <Dashboard {...args} />;

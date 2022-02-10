@@ -77,7 +77,7 @@ function ModalDialog(
   );
 }
 
-export default function Overlay() {
+export default function MobileMenu() {
   const state = useOverlayTriggerState({});
   const ref = useRef<HTMLButtonElement | null>(null);
   const { buttonProps } = useButton(

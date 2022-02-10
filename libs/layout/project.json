@@ -6,17 +6,13 @@
   "targets": {
     "build": {
       "executor": "@nrwl/web:rollup",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/libs/layout",
         "tsConfig": "libs/layout/tsconfig.lib.json",
         "project": "libs/layout/package.json",
         "entryFile": "libs/layout/src/index.ts",
-        "external": [
-          "react/jsx-runtime"
-        ],
+        "external": ["react/jsx-runtime"],
         "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
         "compiler": "babel",
         "assets": [
@@ -35,20 +31,14 @@
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
+      "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "libs/layout/**/*.{ts,tsx,js,jsx}"
-        ]
+        "lintFilePatterns": ["libs/layout/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/libs/layout"
-      ],
+      "outputs": ["coverage/libs/layout"],
       "options": {
         "jestConfig": "libs/layout/jest.config.js",
         "passWithNoTests": true
@@ -71,9 +61,7 @@
     },
     "build-storybook": {
       "executor": "@nrwl/storybook:build",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "uiFramework": "@storybook/react",
         "outputPath": "dist/storybook/layout",

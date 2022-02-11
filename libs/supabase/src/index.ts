@@ -7,5 +7,5 @@ export { default as fetchMessages } from './lib/fetch-messages';
 export { default as useStore } from './lib/use-store';
 export { default as fetchUser } from './lib/fetch-user';
 export { default as fetchUserRoles } from './lib/fetch-user-roles';
-export { default as storageUrl } from './lib/storage-url';
+export { default as avatars, defaultAvatar } from './lib/avatars';
 export { default } from './lib/supabase';

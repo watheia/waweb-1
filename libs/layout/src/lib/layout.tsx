@@ -56,7 +56,7 @@ export default function Layout({
               <Link href="/">
                 {/* eslint-disable-next-line */}
                 <a className={styles['logo']}>
-                  <Logo height="100%" />
+                  <Logo />
                 </a>
               </Link>
             </div>

@@ -73,6 +73,7 @@ lint: # This job also runs in the test stage.
   script: yarn lint
 
 chromatic:
+  allow_failure: true
   stage: deploy
   needs: ['build:storybook']
   script: make chromatic

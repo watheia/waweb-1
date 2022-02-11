@@ -35,8 +35,8 @@ ci:
 	nx run-many --all --target lint
 	nx run-many --all --target test --coverage --detectOpenHandles
 	nx run-many --all --target build --prod
-# TODO remove exclude when refactor complete
-	$(MAKE) storybook
-	$(MAKE) chromatic
+# TODO fix storybook builds
+#	$(MAKE) storybook
+#	$(MAKE) chromatic
 
 

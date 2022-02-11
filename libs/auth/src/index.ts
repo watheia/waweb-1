@@ -1,6 +1,7 @@
-export type { SupabaseAuthPayload } from './types';
-export type { AuthModel } from './auth-context';
-export { AuthProvider } from './auth-context.provider';
-export { useAuth } from './use-auth';
-export { useAuthWithRedir } from './use-auth-with-redir';
-export * from './protected-route';
+export type { SupabaseAuthPayload } from './lib/types';
+export type { AuthModel } from './lib/auth-context';
+export { AuthProvider } from './lib/auth-context.provider';
+export { useAuth } from './lib/use-auth';
+export { useAuthWithRedir } from './lib/use-auth-with-redir';
+export { default as useLoginStatus } from './lib/use-login-status';
+export * from './lib/protected-route';

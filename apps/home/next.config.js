@@ -34,7 +34,10 @@ const nextConfig = {
   hostname: 'localhost',
   port: 4200,
   // Prefer loading of ES Modules over CommonJS
-  experimental: { esmExternals: true },
+  experimental: {
+    // concurrentFeatures: true,
+    esmExternals: true,
+  },
   // Support MDX files as pages:
   pageExtensions: ['md', 'mdx', 'tsx', 'ts', 'jsx', 'js'],
   // minify output

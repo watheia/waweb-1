@@ -10,8 +10,14 @@ create type public.user_status as enum ('ONLINE', 'OFFLINE');
 -- USERS
 create table public.users (
   id          uuid not null primary key, -- UUID from auth.users
-  username    text,
+  updated_at  timestamp with time zone,
+  username    text unique,
+  avatar_url  text,
+  website     text,
   status      user_status default 'OFFLINE'::public.user_status
+
+  unique(username),
+  constraint username_length check (char_length(username) >= 3)
 );
 comment on table public.users is 'Profile data for each user.';
 comment on column public.users.id is 'References the internal Supabase Auth user.';
@@ -140,6 +146,22 @@ commit;
 alter publication supabase_realtime add table public.channels;
 alter publication supabase_realtime add table public.messages;
 alter publication supabase_realtime add table public.users;
+
+-- Set up bucket storage
+insert into storage.buckets (id, name)
+values ('avatars', 'avatars');
+
+create policy "Avatars are publicly accessible."
+  on storage.objects for select
+  using ( bucket_id = 'avatars' );
+
+create policy "Anyone can upload an avatar."
+  on storage.objects for insert
+  with check ( bucket_id = 'avatars' );
+
+create policy "Anyone can update an avatar."
+  on storage.objects for update
+  with check ( bucket_id = 'avatars' );
 
 -- DUMMY DATA
 insert into public.users (id, username)

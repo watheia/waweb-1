@@ -15,21 +15,22 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@waweb/api.utils": ["libs/api/utils/src/index.ts"],
+      "@waweb/atoms": ["libs/atoms/src/index.ts"],
       "@waweb/auth": ["libs/auth/src/index.ts"],
-      "@waweb/envs": ["libs/envs/src/index.ts"],
+      "@waweb/config": ["libs/config/src/index.ts"],
+      "@waweb/icons": ["libs/icons/src/index.ts"],
+      "@waweb/layout": ["libs/layout/src/index.ts"],
       "@waweb/message": ["libs/message/src/index.ts"],
       "@waweb/model": ["libs/model/src/index.ts"],
-      "@waweb/navigation": ["libs/navigation/src/index.ts"],
-      "@waweb/store": ["libs/store/src/index.ts"],
+      "@waweb/supabase": ["libs/supabase/src/index.ts"],
       "@waweb/theme": ["libs/theme/src/index.ts"],
       "@waweb/theme.styles/*": ["libs/theme/src/styles/*"],
-      "@waweb/ui": ["libs/ui/src/index.ts"],
-      "@waweb/ui.*": ["libs/ui/src/lib/*"],
-      "@waweb/ui.hooks.*": ["libs/ui/src/lib/hooks/*"],
-      "@waweb/ui.icons": ["libs/ui/src/lib/icons/index.ts"],
-      "@waweb/ui.icons.*": ["libs/ui/src/lib/icons/*"],
-      "@waweb/util": ["libs/util/src/index.ts"],
-      "@waweb/util.*": ["libs/util/src/lib/*"]
+      "@waweb/utils": ["libs/utils/src/index.ts"],
+      "@waweb/views.blog": ["libs/views/blog/src/index.ts"],
+      "@waweb/views.dashboard": ["libs/views/dashboard/src/index.ts"],
+      "@waweb/views.gatekeeper": ["libs/views/gatekeeper/src/index.ts"],
+      "@waweb/views.home": ["libs/views/home/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

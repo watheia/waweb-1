@@ -14,20 +14,32 @@
  * limitations under the License.
  */
 
-import Blog from '@waweb/ui.blog';
-import useConfig from '@waweb/ui.hooks/use-config';
-import Page from '@waweb/ui.page';
+import useConfig from '@waweb/config';
+import { Page } from '@waweb/atoms';
+import Layout from '@waweb/layout';
+import { GetStaticProps, InferGetServerSidePropsType } from 'next';
+import Blog, { fixtures } from '@waweb/views.blog';
 
-export default function IndexPage() {
+type Props = InferGetServerSidePropsType<typeof getStaticProps>;
+
+export default function BlogPage({ categories, posts }: Props) {
   const config = useConfig();
   const meta = {
-    title: 'Watheia Labs | Blog',
+    title: 'Watheia Blog',
     description: config.metaDescription,
   };
 
   return (
     <Page meta={meta} fullViewport>
-      <Blog />
+      <Layout usePadding>
+        <Blog categories={categories} posts={posts} />
+      </Layout>
     </Page>
   );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: fixtures,
+  };
+};

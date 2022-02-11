@@ -7,10 +7,9 @@ import { OverlayProvider } from '@react-aria/overlays';
 import { Theme } from '@waweb/theme';
 import { MessageProvider } from '@waweb/message';
 import { AuthProvider } from '@waweb/auth';
-import ResizeHandler from '@waweb/ui.resize-handler';
-import NProgress from '@waweb/ui.nprogress';
+import { NProgress, ResizeHandler } from '@waweb/atoms';
 
-describe('Index', () => {
+describe('waweb.home', () => {
   it('should render successfully', () => {
     const { container } = render(
       <SSRProvider>

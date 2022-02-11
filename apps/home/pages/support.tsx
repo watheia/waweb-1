@@ -14,9 +14,8 @@
  * limitations under the License.
  */
 
-import ComingSoon from '@waweb/ui.coming-soon';
-import useConfig from '@waweb/ui.hooks/use-config';
-import Page from '@waweb/ui.page';
+import useConfig from '@waweb/config';
+import { ComingSoon, Page } from '@waweb/atoms';
 
 export default function IndexPage() {
   const config = useConfig();

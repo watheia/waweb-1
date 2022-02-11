@@ -1,0 +1,104 @@
+{
+  "root": "apps/screenplay",
+  "sourceRoot": "apps/screenplay/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/screenplay",
+        "index": "apps/screenplay/src/index.html",
+        "baseHref": "/",
+        "main": "apps/screenplay/src/main.tsx",
+        "polyfills": "apps/screenplay/src/polyfills.ts",
+        "tsConfig": "apps/screenplay/tsconfig.app.json",
+        "assets": [
+          "apps/screenplay/src/favicon.ico",
+          "apps/screenplay/src/assets"
+        ],
+        "styles": ["apps/screenplay/src/styles.css"],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/screenplay/src/environments/environment.ts",
+              "with": "apps/screenplay/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "options": {
+        "buildTarget": "screenplay:build",
+        "hmr": true
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "screenplay:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/screenplay/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/screenplay"],
+      "options": {
+        "jestConfig": "apps/screenplay/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "storybook": {
+      "executor": "@nrwl/storybook:storybook",
+      "options": {
+        "uiFramework": "@storybook/react",
+        "port": 4400,
+        "config": {
+          "configFolder": "apps/screenplay/.storybook"
+        }
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@nrwl/storybook:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "uiFramework": "@storybook/react",
+        "outputPath": "dist/storybook",
+        "config": {
+          "configFolder": "apps/screenplay/.storybook"
+        }
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    }
+  },
+  "tags": []
+}

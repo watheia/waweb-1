@@ -14,9 +14,11 @@
  * limitations under the License.
  */
 
-import ComingSoon from '@waweb/ui.coming-soon';
-import useConfig from '@waweb/ui.hooks/use-config';
-import Page from '@waweb/ui.page';
+import useConfig from '@waweb/config';
+import { ComingSoon, Page } from '@waweb/atoms';
+import Layout from '@waweb/layout';
+
+// const Dashboard = lazy(() => import('@waweb/app.ui.dashboard'));
 
 export default function IndexPage() {
   const config = useConfig();
@@ -27,7 +29,9 @@ export default function IndexPage() {
 
   return (
     <Page meta={meta} fullViewport>
-      <ComingSoon />
+      <Layout>
+        <ComingSoon />
+      </Layout>
     </Page>
   );
 }

@@ -25,7 +25,7 @@ setup:
   stage: setup
   script: make setup
   cache:
-    policy: pull-push
+    policy: push
     paths:
       - node_modules/
 
@@ -44,7 +44,18 @@ build: # This job runs in the build stage, which runs first.
     untracked: false
     expire_in: 30 days
     paths:
-      - 'dist/'
+      - 'dist/apps/'
+      - 'dist/libs/'
+
+build:storybook: # This job runs in the build stage, which runs first.
+  stage: build
+  extends: .with_cache
+  script: make storybook
+  artifacts:
+    untracked: false
+    expire_in: 30 days
+    paths:
+      - 'dist/storybook/'
 
 test: # This job runs in the test stage.
   stage: test # It only starts when the job in the build stage completes successfully.
@@ -61,8 +72,8 @@ lint: # This job also runs in the test stage.
   extends: .with_cache
   script: yarn lint
 
-deploy: # This job runs in the deploy stage.
-  stage: deploy # It only runs when *both* jobs in the test stage complete successfully.
-  needs: []
-  script:
-    - echo "TODO not implemented"
+chromatic:
+  allow_failure: true
+  stage: deploy
+  needs: ['build:storybook']
+  script: make chromatic

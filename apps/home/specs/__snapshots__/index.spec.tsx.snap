@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Index should render successfully 1`] = `
+exports[`waweb.home should render successfully 1`] = `
 <div>
   <div
     data-overlay-container="true"
@@ -14,13 +14,13 @@ exports[`Index should render successfully 1`] = `
         <svg
           class="svg"
           fill="#151513"
-          height="72"
+          height="64"
           viewBox="0 0 250 250"
-          width="72"
+          width="64"
           xmlns="http://www.w3.org/2000/svg"
         >
           <a
-            href="https://github.com/drkstr101/watheia"
+            href="https://gitlab.com/watheia/waweb"
             rel="noopener noreferrer"
             target="_blank"
             title="View Source"
@@ -80,7 +80,6 @@ exports[`Index should render successfully 1`] = `
                 href="/"
               >
                 <svg
-                  height="100%"
                   viewBox="0 0 300 106"
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -294,7 +293,7 @@ exports[`Index should render successfully 1`] = `
             class="page"
           >
             <div
-              class="app-messages absolute w-screen top-6 flex flex-col place-items-center justify-center z-10"
+              class="app-messages absolute top-6 z-10 flex w-screen flex-col place-items-center justify-center"
             />
             <div
               data-reach-skip-nav-content=""
@@ -307,103 +306,28 @@ exports[`Index should render successfully 1`] = `
                 class="full"
               >
                 <div
-                  class="container mx-auto sm:px-6 lg:px-8"
+                  class="flex h-full w-full place-items-center justify-center"
                 >
                   <div
-                    class="wrapper"
-                  >
-                    <h2
-                      class="appear appear-third show-on-mobile description"
-                    />
-                    <h1
-                      class="appear appear-third hero"
-                    >
-                      Watheia
-                      <br
-                        class="show-on-desktop"
-                      />
-                       Gatekeeper
-                    </h1>
-                    <h2
-                      class="appear appear-third show-on-tablet description"
-                    />
-                    <div
-                      class="appear appear-fourth info"
-                    >
-                      <p>
-                        guest
-                      </p>
-                      <div
-                        class="description-separator"
-                      />
-                      <p
-                        class="offline"
-                      >
-                        offline
-                      </p>
-                    </div>
-                  </div>
-                  <form
-                    class="form appear appear-fifth"
-                  >
-                    <div
-                      class="form-row"
-                    >
-                      <label
-                        class="input-label"
-                        for="email-input-field"
-                      >
-                        <input
-                          aria-label="Your email address"
-                          autocomplete="off"
-                          class="input"
-                          id="email-input-field"
-                          placeholder="Enter email to get login url"
-                          required=""
-                          type="email"
-                          value=""
-                        />
-                      </label>
-                      <button
-                        class="submit login default"
-                        type="submit"
-                      >
-                        Login
-                      </button>
-                    </div>
-                  </form>
-                  <div
-                    class="appear appear-fifth contact"
-                  >
-                    Learn more on
-                     
-                    <a
-                      class="contact-email"
-                      href="https://github.com/drkstr101/watheia"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      GitHub
-                    </a>
-                    .
-                  </div>
+                    class="gg-spinner xl"
+                  />
                 </div>
               </div>
             </main>
             <footer
-              class="footer border-t border-dotted border-gray-700"
+              class="footer border-t border-dotted border-gray-700 bg-gray-900/75"
+              data-testid="waweb.layout/footer"
             >
               <div
                 class="footer-legal"
               >
                 <div
                   class="footer-copyright"
+                  data-testid="waweb.layout/footer:copyright"
                 >
                   Copyright © 
                   2022 
-                   
-                  Watheia Labs, LLC
-                  . All rights reserved.
+                   Watheia Labs, LLC. All rights reserved.
                 </div>
                 <div
                   class="footer-center-group"
@@ -413,7 +337,8 @@ exports[`Index should render successfully 1`] = `
                   >
                     <a
                       class="footer-link"
-                      href="https://github.com/drkstr101/watheia"
+                      data-testid="waweb.layout/footer:view-source"
+                      href="https://gitlab.com/watheia/waweb"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
@@ -428,6 +353,7 @@ exports[`Index should render successfully 1`] = `
                   >
                     <a
                       class="footer-link"
+                      data-testid="waweb.layout/footer:legal"
                       href="#"
                       rel="noopener noreferrer"
                       target="_blank"

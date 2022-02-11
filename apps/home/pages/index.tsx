@@ -14,39 +14,54 @@
  * limitations under the License.
  */
 
-import Gatekeeper from '@waweb/ui.gatekeeper';
-import useConfig from '@waweb/ui.hooks/use-config';
-import Page from '@waweb/ui.page';
-import { GetServerSideProps } from 'next';
-import db from '@waweb/store';
+import Dashboard from '@waweb/views.dashboard';
+import Layout from '@waweb/layout';
+import { Page, PageSpinner } from '@waweb/atoms';
+import useConfig from '@waweb/config';
+import { useLoginStatus } from '@waweb/auth';
+import { useCallback } from 'react';
+import Gatekeeper from '@waweb/views.gatekeeper';
 
 export default function IndexPage() {
   const config = useConfig();
+  const { loginStatus, mutate } = useLoginStatus();
   const meta = {
-    title: 'Watheia Labs | Gatekeeper',
+    title: 'Watheia Realtime',
     description: config.metaDescription,
   };
 
+  const loginHandler = useCallback(() => {
+    mutate('/api/auth');
+  }, [mutate]);
+
   return (
     <Page meta={meta} fullViewport>
-      <Gatekeeper />
+      <Layout useBackdrop>
+        {loginStatus === 'loading' ? (
+          <PageSpinner />
+        ) : loginStatus === 'loggedIn' ? (
+          <Dashboard />
+        ) : (
+          <Gatekeeper onLogin={loginHandler} />
+        )}
+      </Layout>
     </Page>
   );
 }
 
-/**
+/* /**
  *
- * @param ctx Redirect to user home if principal user present
+ * @param ctx Redirect to home if no principal user is authenticated
  * @returns
  */
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
-  const user = db.auth.api.getUserByCookie(ctx.req);
-  return {
-    redirect: user
-      ? {
-          permanent: false,
-          destination: '/channel/public',
-        }
-      : undefined,
-  };
-};
+// export const getServerSideProps: GetServerSideProps = async (ctx) => {
+//   const user = supabase.auth.api.getUserByCookie(ctx.req);
+//   return {
+//     redirect: user
+//       ? undefined
+//       : {
+//           permanent: false,
+//           destination: '/home',
+//         },
+//   };
+// };

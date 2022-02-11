@@ -1,16 +1,23 @@
 {
   "version": 2,
   "projects": {
+    "api-utils": "libs/api/utils",
+    "atoms": "libs/atoms",
     "auth": "libs/auth",
+    "config": "libs/config",
     "home": "apps/home",
     "home-e2e": "apps/home-e2e",
+    "icons": "libs/icons",
+    "layout": "libs/layout",
     "message": "libs/message",
     "model": "libs/model",
-    "navigation": "libs/navigation",
-    "store": "libs/store",
+    "screenplay": "apps/screenplay",
+    "supabase": "libs/supabase",
     "theme": "libs/theme",
-    "ui": "libs/ui",
-    "ui-e2e": "apps/ui-e2e",
-    "util": "libs/util"
+    "utils": "libs/utils",
+    "views-blog": "libs/views/blog",
+    "views-dashboard": "libs/views/dashboard",
+    "views-gatekeeper": "libs/views/gatekeeper",
+    "views-home": "libs/views/home"
   }
 }

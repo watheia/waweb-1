@@ -1,10 +1,10 @@
 # Watheia Labs Monorepo
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/drkstr101/watheia)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/drkstr101/waweb)
 
 This project was generated using [Nx](https://nx.dev).
 
-![depgraph](./docs/depgraph.svg)
+![depgraph](./docs/depgraph.png)
 
 ## Adding capabilities to your workspace
 

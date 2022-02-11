@@ -27,6 +27,7 @@ import { MessageInput } from '@waweb/atoms';
 import { useState } from 'react';
 import Header from './header';
 import Sidebar from './sidebar';
+import ChannelMessages from './channel-messages';
 
 const navigation = [
   { name: 'Messageboard', slug: '/', icon: HomeIcon, current: true },
@@ -44,16 +45,16 @@ export const Dashboard = ({ children, ...props }: DashboardProps) => {
 
   return (
     <div {...props} className="mb-4 flex h-full w-full flex-1 flex-col">
-      <Sidebar
+      {/* <Sidebar
         isOpen={sidebarOpen}
         setIsOpen={setSidebarOpen}
         navigation={navigation}
-      />
+      /> */}
 
       <div className="flex h-full w-full flex-1 flex-col">
         <Header isMenuOpen={sidebarOpen} setMenuOpen={setSidebarOpen} />
-        <div className="mx-auto flex w-full max-w-7xl flex-1 flex-col space-y-2 px-4 sm:px-6 md:px-8">
-          <div className="flex flex-1 rounded-lg border-2 border-dashed border-gray-500" />
+        <div className="mx-auto flex w-full max-w-7xl flex-1 flex-col space-y-12 px-4 sm:px-6 md:px-8">
+          <ChannelMessages className="pt-6" />
           <MessageInput />
         </div>
       </div>

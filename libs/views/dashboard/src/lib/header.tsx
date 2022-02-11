@@ -11,14 +11,14 @@ interface HeaderProps extends DivProps {
 
 const Header = ({ isMenuOpen, setMenuOpen, ...props }: HeaderProps) => (
   <div className="sticky top-0 z-10 flex h-16 flex-shrink-0 shadow" {...props}>
-    <button
+    {/* <button
       type="button"
       className="px-4 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500"
       onClick={() => setMenuOpen(true)}
     >
       <span className="sr-only">Open sidebar</span>
       <MenuAlt2Icon className="h-6 w-6" aria-hidden="true" />
-    </button>
+    </button> */}
     <div className="flex flex-1 justify-between px-4">
       <div className="flex flex-1">
         <SearchBar />

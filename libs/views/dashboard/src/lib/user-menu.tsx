@@ -15,7 +15,7 @@ const defaultItems = [
 ];
 
 const UserMenu = ({ items = defaultItems }: { items?: NavItem[] }) => {
-  const defaultAvatar = storageUrl('avatars', 'supabot.png');
+  const avatarUrl = storageUrl('avatars', 'supabot.png');
   return (
     <Menu
       as="div"
@@ -25,7 +25,7 @@ const UserMenu = ({ items = defaultItems }: { items?: NavItem[] }) => {
       <div>
         <Menu.Button className="flex max-w-xs items-center rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2">
           <span className="sr-only">Open user menu</span>
-          <img className="h-8 w-8 rounded-full" src={defaultAvatar} alt="" />
+          <img className="h-8 w-8 rounded-full" src={avatarUrl} alt="" />
         </Menu.Button>
       </div>
       <Transition

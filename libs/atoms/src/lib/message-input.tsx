@@ -88,12 +88,12 @@ const MoodSelect = ({ selected, setSelected }: MoodSelectProps) => (
       <>
         <Listbox.Label className="sr-only">Your mood</Listbox.Label>
         <div className="relative">
-          <Listbox.Button className="relative -m-2.5 w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:text-gray-500">
+          <Listbox.Button className="relative -m-2.5 flex h-10 w-10 items-center justify-center rounded-full text-gray-400 hover:text-gray-500">
             <span className="flex items-center justify-center">
               {selected.value === null ? (
                 <span>
                   <EmojiHappyIcon
-                    className="flex-shrink-0 w-5 h-5"
+                    className="h-5 w-5 flex-shrink-0"
                     aria-hidden="true"
                   />
                   <span className="sr-only">Add your mood</span>
@@ -103,11 +103,11 @@ const MoodSelect = ({ selected, setSelected }: MoodSelectProps) => (
                   <div
                     className={clsx(
                       selected.bgColor,
-                      'w-8 h-8 rounded-full flex items-center justify-center'
+                      'flex h-8 w-8 items-center justify-center rounded-full'
                     )}
                   >
                     <selected.icon
-                      className="flex-shrink-0 w-5 h-5 text-white"
+                      className="h-5 w-5 flex-shrink-0 text-white"
                       aria-hidden="true"
                     />
                   </div>
@@ -124,14 +124,14 @@ const MoodSelect = ({ selected, setSelected }: MoodSelectProps) => (
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Listbox.Options className="absolute z-10 py-3 mt-1 -ml-6 text-base bg-white rounded-lg shadow w-60 ring-1 ring-black ring-opacity-5 focus:outline-none sm:ml-auto sm:w-64 sm:text-sm">
+            <Listbox.Options className="absolute z-10 mt-1 -ml-6 w-60 rounded-lg bg-white py-3 text-base shadow ring-1 ring-black ring-opacity-5 focus:outline-none sm:ml-auto sm:w-64 sm:text-sm">
               {moods.map((mood) => (
                 <Listbox.Option
                   key={mood.value}
                   className={({ active }) =>
                     clsx(
                       active ? 'bg-gray-100' : 'bg-white',
-                      'cursor-default select-none relative py-2 px-3'
+                      'relative cursor-default select-none py-2 px-3'
                     )
                   }
                   value={mood}
@@ -140,18 +140,18 @@ const MoodSelect = ({ selected, setSelected }: MoodSelectProps) => (
                     <div
                       className={clsx(
                         mood.bgColor,
-                        'w-8 h-8 rounded-full flex items-center justify-center'
+                        'flex h-8 w-8 items-center justify-center rounded-full'
                       )}
                     >
                       <mood.icon
                         className={clsx(
                           mood.iconColor,
-                          'flex-shrink-0 h-5 w-5'
+                          'h-5 w-5 flex-shrink-0'
                         )}
                         aria-hidden="true"
                       />
                     </div>
-                    <span className="block ml-3 font-medium truncate">
+                    <span className="ml-3 block truncate font-medium">
                       {mood.name}
                     </span>
                   </div>
@@ -174,7 +174,7 @@ export function MessageInput({ className, ...props }: CommentFormProps) {
   return (
     <div className={className} {...props} data-testid="app.ui/message-input">
       <form action="#" className="relative">
-        <div className="overflow-hidden border border-gray-300 rounded-lg shadow-sm focus-within:border-teal-500 focus-within:ring-1 focus-within:ring-teal-500">
+        <div className="overflow-hidden rounded-lg border border-gray-300 shadow-sm focus-within:border-teal-500 focus-within:ring-1 focus-within:ring-teal-500">
           <label htmlFor="comment" className="sr-only">
             Add your comment
           </label>
@@ -182,7 +182,7 @@ export function MessageInput({ className, ...props }: CommentFormProps) {
             rows={3}
             name="comment"
             id="comment"
-            className="block w-full py-3 border-0 resize-none focus:ring-0 sm:text-sm"
+            className="block w-full resize-none border-0 py-3 focus:ring-0 sm:text-sm"
             placeholder="Add your comment..."
             defaultValue={''}
           />
@@ -201,9 +201,9 @@ export function MessageInput({ className, ...props }: CommentFormProps) {
             <div className="flex items-center">
               <button
                 type="button"
-                className="-m-2.5 w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:text-gray-500"
+                className="-m-2.5 flex h-10 w-10 items-center justify-center rounded-full text-gray-400 hover:text-gray-500"
               >
-                <PaperClipIcon className="w-5 h-5" aria-hidden="true" />
+                <PaperClipIcon className="h-5 w-5" aria-hidden="true" />
                 <span className="sr-only">Attach a file</span>
               </button>
             </div>
@@ -214,7 +214,7 @@ export function MessageInput({ className, ...props }: CommentFormProps) {
           <div className="flex-shrink-0">
             <button
               type="submit"
-              className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-teal-600 border border-transparent rounded-md shadow-sm hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
+              className="inline-flex items-center rounded-md border border-transparent bg-teal-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
             >
               Post
             </button>

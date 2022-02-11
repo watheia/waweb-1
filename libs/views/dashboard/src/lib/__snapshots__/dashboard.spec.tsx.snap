@@ -3,13 +3,13 @@
 exports[`waweb.app/ui/dashboard should render successfully 1`] = `
 <div>
   <div
-    class="flex flex-col flex-1 w-full h-full mb-4"
+    class="mb-4 flex h-full w-full flex-1 flex-col"
   >
     <div
-      class="flex flex-col flex-1 w-full h-full"
+      class="flex h-full w-full flex-1 flex-col"
     >
       <div
-        class="sticky top-0 z-10 flex flex-shrink-0 h-16 shadow"
+        class="sticky top-0 z-10 flex h-16 flex-shrink-0 shadow"
       >
         <button
           class="px-4 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500"
@@ -22,7 +22,7 @@ exports[`waweb.app/ui/dashboard should render successfully 1`] = `
           </span>
           <svg
             aria-hidden="true"
-            class="w-6 h-6"
+            class="h-6 w-6"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -37,16 +37,16 @@ exports[`waweb.app/ui/dashboard should render successfully 1`] = `
           </svg>
         </button>
         <div
-          class="flex justify-between flex-1 px-4"
+          class="flex flex-1 justify-between px-4"
         >
           <div
             class="flex flex-1"
           >
             <div
-              class="flex-1 min-w-0 md:px-8 lg:px-0 xl:col-span-6"
+              class="min-w-0 flex-1 md:px-8 lg:px-0 xl:col-span-6"
             >
               <div
-                class="flex items-center px-6 py-4 md:max-w-3xl md:mx-auto lg:max-w-none lg:mx-0 xl:px-0"
+                class="flex items-center px-6 py-4 md:mx-auto md:max-w-3xl lg:mx-0 lg:max-w-none xl:px-0"
               >
                 <div
                   class="w-full"
@@ -61,14 +61,16 @@ exports[`waweb.app/ui/dashboard should render successfully 1`] = `
                     class="relative"
                   >
                     <div
-                      class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+                      class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
                     >
                       <svg
                         aria-hidden="true"
-                        class="w-5 h-5 text-gray-400"
+                        class="h-5 w-5 text-gray-400"
                         fill="none"
+                        height="1rem"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
+                        width="1rem"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
@@ -80,7 +82,7 @@ exports[`waweb.app/ui/dashboard should render successfully 1`] = `
                       </svg>
                     </div>
                     <input
-                      class="block w-full py-2 pl-10 pr-3 text-sm placeholder-gray-500 bg-gray-900 border border-gray-700 rounded-md opacity-75 focus:opacity-100 focus:outline-none focus:text-gray-200 focus:placeholder-gray-400 focus:ring-1 focus:ring-teal-500 focus:border-teal-500"
+                      class="block w-full rounded-md border border-gray-700 bg-gray-900 py-2 pl-10 pr-3 text-sm placeholder-gray-500 opacity-75 focus:border-teal-500 focus:text-gray-200 focus:placeholder-gray-400 focus:opacity-100 focus:outline-none focus:ring-1 focus:ring-teal-500"
                       id="search"
                       name="search"
                       placeholder="Search"
@@ -93,10 +95,10 @@ exports[`waweb.app/ui/dashboard should render successfully 1`] = `
             </div>
           </div>
           <div
-            class="flex items-center ml-4 mr-16 md:ml-6"
+            class="ml-4 mr-16 flex items-center md:ml-6"
           >
             <button
-              class="p-1 text-gray-400 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
+              class="rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
               type="button"
             >
               <span
@@ -106,7 +108,7 @@ exports[`waweb.app/ui/dashboard should render successfully 1`] = `
               </span>
               <svg
                 aria-hidden="true"
-                class="w-6 h-6"
+                class="h-6 w-6"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -128,7 +130,7 @@ exports[`waweb.app/ui/dashboard should render successfully 1`] = `
                 <button
                   aria-expanded="false"
                   aria-haspopup="true"
-                  class="flex items-center max-w-xs text-sm bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
+                  class="flex max-w-xs items-center rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
                   id="headlessui-menu-button-1"
                   type="button"
                 >
@@ -139,7 +141,7 @@ exports[`waweb.app/ui/dashboard should render successfully 1`] = `
                   </span>
                   <img
                     alt=""
-                    class="w-8 h-8 rounded-full"
+                    class="h-8 w-8 rounded-full"
                     src="https://kgkcfphpovhbptsscyyj.supabase.co/storage/v1/object/sign/avatars/supabot.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhdmF0YXJzL3N1cGFib3QucG5nIiwiaWF0IjoxNjQ0Mzc1NDgwLCJleHAiOjE5NTk3MzU0ODB9.4VjLwEr-iwyZ2wdxr3V0aXEY6XIzb3I42cnTfRWkXOY"
                   />
                 </button>
@@ -149,10 +151,10 @@ exports[`waweb.app/ui/dashboard should render successfully 1`] = `
         </div>
       </div>
       <div
-        class="flex flex-col flex-1 w-full px-4 mx-auto space-y-2 max-w-7xl sm:px-6 md:px-8"
+        class="mx-auto flex w-full max-w-7xl flex-1 flex-col space-y-2 px-4 sm:px-6 md:px-8"
       >
         <div
-          class="flex flex-1 border-2 border-gray-500 border-dashed rounded-lg"
+          class="flex flex-1 rounded-lg border-2 border-dashed border-gray-500"
         />
         <div
           data-testid="app.ui/message-input"
@@ -162,7 +164,7 @@ exports[`waweb.app/ui/dashboard should render successfully 1`] = `
             class="relative"
           >
             <div
-              class="overflow-hidden border border-gray-300 rounded-lg shadow-sm focus-within:border-teal-500 focus-within:ring-1 focus-within:ring-teal-500"
+              class="overflow-hidden rounded-lg border border-gray-300 shadow-sm focus-within:border-teal-500 focus-within:ring-1 focus-within:ring-teal-500"
             >
               <label
                 class="sr-only"
@@ -171,7 +173,7 @@ exports[`waweb.app/ui/dashboard should render successfully 1`] = `
                 Add your comment
               </label>
               <textarea
-                class="block w-full py-3 border-0 resize-none focus:ring-0 sm:text-sm"
+                class="block w-full resize-none border-0 py-3 focus:ring-0 sm:text-sm"
                 id="comment"
                 name="comment"
                 placeholder="Add your comment..."
@@ -200,12 +202,12 @@ exports[`waweb.app/ui/dashboard should render successfully 1`] = `
                   class="flex items-center"
                 >
                   <button
-                    class="-m-2.5 w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:text-gray-500"
+                    class="-m-2.5 flex h-10 w-10 items-center justify-center rounded-full text-gray-400 hover:text-gray-500"
                     type="button"
                   >
                     <svg
                       aria-hidden="true"
-                      class="w-5 h-5"
+                      class="h-5 w-5"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg"
@@ -239,7 +241,7 @@ exports[`waweb.app/ui/dashboard should render successfully 1`] = `
                       aria-expanded="false"
                       aria-haspopup="true"
                       aria-labelledby="headlessui-listbox-label-2 headlessui-listbox-button-3"
-                      class="relative -m-2.5 w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:text-gray-500"
+                      class="relative -m-2.5 flex h-10 w-10 items-center justify-center rounded-full text-gray-400 hover:text-gray-500"
                       id="headlessui-listbox-button-3"
                       type="button"
                     >
@@ -249,7 +251,7 @@ exports[`waweb.app/ui/dashboard should render successfully 1`] = `
                         <span>
                           <svg
                             aria-hidden="true"
-                            class="flex-shrink-0 w-5 h-5"
+                            class="h-5 w-5 flex-shrink-0"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg"
@@ -275,7 +277,7 @@ exports[`waweb.app/ui/dashboard should render successfully 1`] = `
                 class="flex-shrink-0"
               >
                 <button
-                  class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-teal-600 border border-transparent rounded-md shadow-sm hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
+                  class="inline-flex items-center rounded-md border border-transparent bg-teal-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
                   type="submit"
                 >
                   Post

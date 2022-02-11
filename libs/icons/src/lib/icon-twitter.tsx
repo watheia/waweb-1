@@ -18,7 +18,7 @@ import styles from './icon-transition.module.css';
 
 type Props = { width?: number | string };
 
-export default function IconTwitter({ width = 24 }: Props) {
+export default function IconTwitter({ width = '1rem' }: Props) {
   return (
     <svg
       width={width}

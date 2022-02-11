@@ -3,13 +3,13 @@ import Link from 'next/link';
 /* This example requires Tailwind CSS v2.0+ */
 export default function ComingSoon() {
   return (
-    <div className="flex flex-col min-h-full pt-16 pb-12">
-      <div className="flex flex-col justify-center flex-grow w-full px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="flex justify-center flex-shrink-0">
+    <div className="flex min-h-full flex-col pt-16 pb-12">
+      <div className="mx-auto flex w-full max-w-7xl flex-grow flex-col justify-center px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-shrink-0 justify-center">
           <a href="/" className="inline-flex">
             <span className="sr-only">Workflow</span>
             <img
-              className="w-auto h-12"
+              className="h-12 w-auto"
               src="https://tailwindui.com/img/logos/workflow-mark.svg?color=teal&shade=600"
               alt=""
             />
@@ -17,7 +17,7 @@ export default function ComingSoon() {
         </div>
         <div className="py-16">
           <div className="text-center">
-            <p className="text-sm font-semibold tracking-wide text-teal-600 uppercase">
+            <p className="text-sm font-semibold uppercase tracking-wide text-teal-600">
               Placeholder
             </p>
             <h1 className="mt-2 text-4xl font-extrabold tracking-tight text-gray-200 sm:text-5xl">
@@ -37,7 +37,7 @@ export default function ComingSoon() {
           </div>
         </div>
       </div>
-      <footer className="flex-shrink-0 w-full px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <footer className="mx-auto w-full max-w-7xl flex-shrink-0 px-4 sm:px-6 lg:px-8">
         <nav className="flex justify-center space-x-4">
           <Link href="/support">
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

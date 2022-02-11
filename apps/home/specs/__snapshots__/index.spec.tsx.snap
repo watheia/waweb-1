@@ -293,7 +293,7 @@ exports[`waweb.home should render successfully 1`] = `
             class="page"
           >
             <div
-              class="app-messages absolute w-screen top-6 flex flex-col place-items-center justify-center z-10"
+              class="app-messages absolute top-6 z-10 flex w-screen flex-col place-items-center justify-center"
             />
             <div
               data-reach-skip-nav-content=""
@@ -306,7 +306,7 @@ exports[`waweb.home should render successfully 1`] = `
                 class="full"
               >
                 <div
-                  class="w-screen h-screen flex justify-center place-items-center"
+                  class="flex h-full w-full place-items-center justify-center"
                 >
                   <div
                     class="gg-spinner xl"

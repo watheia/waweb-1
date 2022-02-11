@@ -72,16 +72,7 @@ lint: # This job also runs in the test stage.
   extends: .with_cache
   script: yarn lint
 
-pages:
+chromatic:
   stage: deploy
   needs: ['build:storybook']
-  only:
-    refs:
-      - main
-  script:
-    - cp -r dist/storybook public
-  artifacts:
-    untracked: false
-    expire_in: 30 days
-    paths:
-      - 'public/'
+  script: make chromatic

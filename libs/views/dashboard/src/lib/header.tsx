@@ -10,26 +10,26 @@ interface HeaderProps extends DivProps {
 }
 
 const Header = ({ isMenuOpen, setMenuOpen, ...props }: HeaderProps) => (
-  <div className="sticky top-0 z-10 flex flex-shrink-0 h-16 shadow" {...props}>
+  <div className="sticky top-0 z-10 flex h-16 flex-shrink-0 shadow" {...props}>
     <button
       type="button"
       className="px-4 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500"
       onClick={() => setMenuOpen(true)}
     >
       <span className="sr-only">Open sidebar</span>
-      <MenuAlt2Icon className="w-6 h-6" aria-hidden="true" />
+      <MenuAlt2Icon className="h-6 w-6" aria-hidden="true" />
     </button>
-    <div className="flex justify-between flex-1 px-4">
+    <div className="flex flex-1 justify-between px-4">
       <div className="flex flex-1">
         <SearchBar />
       </div>
-      <div className="flex items-center ml-4 mr-16 md:ml-6">
+      <div className="ml-4 mr-16 flex items-center md:ml-6">
         <button
           type="button"
-          className="p-1 text-gray-400 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
+          className="rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
         >
           <span className="sr-only">View notifications</span>
-          <BellIcon className="w-6 h-6" aria-hidden="true" />
+          <BellIcon className="h-6 w-6" aria-hidden="true" />
         </button>
 
         <UserMenu />

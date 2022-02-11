@@ -24,7 +24,10 @@ docs:
 	mv docs/depgraph.svg.tmp docs/depgraph.svg
 
 storybook:
-	nx run-many --all --target build-storybook --prod --exclude atoms
+	nx build-storybook screenplay
+
+chromatic:
+	chromatic --ci --project-token=e9e32607e17a --storybook-build-dir dist/storybook
 
 ci:
 	prisma generate
@@ -34,5 +37,6 @@ ci:
 	nx run-many --all --target build --prod
 # TODO remove exclude when refactor complete
 	$(MAKE) storybook
+	$(MAKE) chromatic
 
 

@@ -18,10 +18,10 @@ import React from 'react';
 
 const BlogHeader = () => (
   <h1>
-    <span className="block text-sm font-semibold tracking-wide text-gray-500 uppercase sm:text-base lg:text-sm xl:text-base">
+    <span className="block text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base">
       Coming soon
     </span>
-    <span className="block mt-1 text-4xl font-extrabold tracking-tight sm:text-5xl xl:text-6xl">
+    <span className="mt-1 block text-4xl font-extrabold tracking-tight sm:text-5xl xl:text-6xl">
       <span className="block text-gray-200">Data to enrich your</span>
       <span className="block text-teal-600">online business</span>
     </span>

@@ -17,8 +17,8 @@
 import { SVGProps } from 'react';
 
 export default function IconAvatar({
-  width = 24,
-  height = 24,
+  width = 80,
+  height = 80,
   ...props
 }: SVGProps<SVGSVGElement>) {
   return (

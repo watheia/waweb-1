@@ -2,12 +2,14 @@ import * as React from 'react';
 import { SVGProps } from 'react';
 
 const Search = ({
-  className = 'h-6 w-6',
+  width = '1rem',
+  height = '1rem',
   ...props
 }: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className={className}
+    width={width}
+    height={height}
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"

@@ -1,10 +1,15 @@
 import * as React from 'react';
 import { SVGProps } from 'react';
 
-const IconCalendar = (props: SVGProps<SVGSVGElement>) => (
+const IconCalendar = ({
+  width = '1rem',
+  height = '1rem',
+  ...props
+}: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="w-6 h-6"
+    width={width}
+    height={height}
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"

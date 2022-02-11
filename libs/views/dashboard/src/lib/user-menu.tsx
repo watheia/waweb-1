@@ -23,9 +23,9 @@ const UserMenu = ({ items = defaultItems }: { items?: NavItem[] }) => {
       style={{ minWidth: 32, minHeight: 32 }}
     >
       <div>
-        <Menu.Button className="flex items-center max-w-xs text-sm bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500">
+        <Menu.Button className="flex max-w-xs items-center rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2">
           <span className="sr-only">Open user menu</span>
-          <img className="w-8 h-8 rounded-full" src={defaultAvatar} alt="" />
+          <img className="h-8 w-8 rounded-full" src={defaultAvatar} alt="" />
         </Menu.Button>
       </div>
       <Transition
@@ -37,7 +37,7 @@ const UserMenu = ({ items = defaultItems }: { items?: NavItem[] }) => {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items className="absolute right-0 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           {items.map((item) => (
             <Menu.Item key={item.name}>
               {({ active }) => (

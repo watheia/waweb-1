@@ -7,7 +7,7 @@ exports[`waweb.views/home should render successfully 1`] = `
     data-testid="waweb.views/home"
   >
     <section
-      class="pt-10 bg-gray-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden"
+      class="bg-gray-900 pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14"
     >
       <div
         class="mx-auto max-w-7xl lg:px-8"
@@ -16,17 +16,17 @@ exports[`waweb.views/home should render successfully 1`] = `
           class="lg:grid lg:grid-cols-2 lg:gap-8"
         >
           <div
-            class="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center"
+            class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:flex lg:items-center lg:px-0 lg:text-left"
           >
             <div
               class="lg:py-24"
             >
               <a
-                class="inline-flex items-center p-1 pr-2 text-white bg-black rounded-full sm:text-base lg:text-sm xl:text-base hover:text-gray-200"
+                class="inline-flex items-center rounded-full bg-black p-1 pr-2 text-white hover:text-gray-200 sm:text-base lg:text-sm xl:text-base"
                 href="/careers"
               >
                 <span
-                  class="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-to-r from-teal-500 to-cyan-600 rounded-full"
+                  class="rounded-full bg-gradient-to-r from-teal-500 to-cyan-600 px-3 py-0.5 text-xs font-semibold uppercase leading-5 tracking-wide text-white"
                 >
                   We're hiring
                 </span>
@@ -37,7 +37,7 @@ exports[`waweb.views/home should render successfully 1`] = `
                 </span>
                 <svg
                   aria-hidden="true"
-                  class="w-5 h-5 ml-2 text-gray-500"
+                  class="ml-2 h-5 w-5 text-gray-500"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +58,7 @@ exports[`waweb.views/home should render successfully 1`] = `
                   A better way to
                 </span>
                 <span
-                  class="block pb-3 text-transparent bg-clip-text bg-gradient-to-r from-teal-200 to-cyan-400 sm:pb-5"
+                  class="block bg-gradient-to-r from-teal-200 to-cyan-400 bg-clip-text pb-3 text-transparent sm:pb-5"
                 >
                   ship web apps
                 </span>
@@ -73,13 +73,13 @@ exports[`waweb.views/home should render successfully 1`] = `
               >
                 <form
                   action="#"
-                  class="sm:max-w-xl sm:mx-auto lg:mx-0"
+                  class="sm:mx-auto sm:max-w-xl lg:mx-0"
                 >
                   <div
                     class="sm:flex"
                   >
                     <div
-                      class="flex-1 min-w-0"
+                      class="min-w-0 flex-1"
                     >
                       <label
                         class="sr-only"
@@ -88,7 +88,7 @@ exports[`waweb.views/home should render successfully 1`] = `
                         Email address
                       </label>
                       <input
-                        class="block w-full px-4 py-3 text-base text-gray-900 placeholder-gray-500 border-0 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
+                        class="block w-full rounded-md border-0 px-4 py-3 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-gray-900"
                         id="email"
                         placeholder="Enter your email"
                         type="email"
@@ -98,7 +98,7 @@ exports[`waweb.views/home should render successfully 1`] = `
                       class="mt-3 sm:mt-0 sm:ml-3"
                     >
                       <button
-                        class="block w-full px-4 py-3 font-medium text-white rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
+                        class="block w-full rounded-md bg-gradient-to-r from-teal-500 to-cyan-600 px-4 py-3 font-medium text-white shadow hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-gray-900"
                         type="submit"
                       >
                         Start free trial
@@ -123,10 +123,10 @@ exports[`waweb.views/home should render successfully 1`] = `
             </div>
           </div>
           <div
-            class="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative"
+            class="mt-12 -mb-16 sm:-mb-48 lg:relative lg:m-0"
           >
             <div
-              class="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0"
+              class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0"
             >
               <svg
                 fill="none"
@@ -501,14 +501,14 @@ exports[`waweb.views/home should render successfully 1`] = `
       </div>
     </section>
     <section
-      class="relative pt-16 bg-gray-50 sm:pt-24 lg:pt-32"
+      class="relative bg-gray-50 pt-16 sm:pt-24 lg:pt-32"
     >
       <div
-        class="max-w-md px-4 mx-auto text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl"
+        class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"
       >
         <div>
           <h2
-            class="text-base font-semibold tracking-wider uppercase text-cyan-600"
+            class="text-base font-semibold uppercase tracking-wider text-cyan-600"
           >
             Serverless
           </h2>
@@ -518,7 +518,7 @@ exports[`waweb.views/home should render successfully 1`] = `
             No server? No problem.
           </p>
           <p
-            class="mx-auto mt-5 text-xl text-gray-500 max-w-prose"
+            class="mx-auto mt-5 max-w-prose text-xl text-gray-500"
           >
             Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
           </p>
@@ -535,13 +535,13 @@ exports[`waweb.views/home should render successfully 1`] = `
       </div>
     </section>
     <section
-      class="relative py-16 bg-white sm:py-24 lg:py-32"
+      class="relative bg-white py-16 sm:py-24 lg:py-32"
     >
       <div
-        class="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl"
+        class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"
       >
         <h2
-          class="text-base font-semibold tracking-wider uppercase text-cyan-600"
+          class="text-base font-semibold uppercase tracking-wider text-cyan-600"
         >
           Deploy faster
         </h2>
@@ -551,7 +551,7 @@ exports[`waweb.views/home should render successfully 1`] = `
           Everything you need to deploy your app
         </p>
         <p
-          class="mx-auto mt-5 text-xl text-gray-500 max-w-prose"
+          class="mx-auto mt-5 max-w-prose text-xl text-gray-500"
         >
           Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
         </p>
@@ -565,18 +565,18 @@ exports[`waweb.views/home should render successfully 1`] = `
               class="pt-6"
             >
               <div
-                class="flow-root px-6 pb-8 rounded-lg bg-gray-50"
+                class="flow-root rounded-lg bg-gray-50 px-6 pb-8"
               >
                 <div
                   class="-mt-6"
                 >
                   <div>
                     <span
-                      class="inline-flex items-center justify-center p-3 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-cyan-600"
+                      class="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-teal-500 to-cyan-600 p-3 shadow-lg"
                     >
                       <svg
                         aria-hidden="true"
-                        class="w-6 h-6 text-white"
+                        class="h-6 w-6 text-white"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -608,18 +608,18 @@ exports[`waweb.views/home should render successfully 1`] = `
               class="pt-6"
             >
               <div
-                class="flow-root px-6 pb-8 rounded-lg bg-gray-50"
+                class="flow-root rounded-lg bg-gray-50 px-6 pb-8"
               >
                 <div
                   class="-mt-6"
                 >
                   <div>
                     <span
-                      class="inline-flex items-center justify-center p-3 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-cyan-600"
+                      class="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-teal-500 to-cyan-600 p-3 shadow-lg"
                     >
                       <svg
                         aria-hidden="true"
-                        class="w-6 h-6 text-white"
+                        class="h-6 w-6 text-white"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -651,18 +651,18 @@ exports[`waweb.views/home should render successfully 1`] = `
               class="pt-6"
             >
               <div
-                class="flow-root px-6 pb-8 rounded-lg bg-gray-50"
+                class="flow-root rounded-lg bg-gray-50 px-6 pb-8"
               >
                 <div
                   class="-mt-6"
                 >
                   <div>
                     <span
-                      class="inline-flex items-center justify-center p-3 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-cyan-600"
+                      class="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-teal-500 to-cyan-600 p-3 shadow-lg"
                     >
                       <svg
                         aria-hidden="true"
-                        class="w-6 h-6 text-white"
+                        class="h-6 w-6 text-white"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -694,18 +694,18 @@ exports[`waweb.views/home should render successfully 1`] = `
               class="pt-6"
             >
               <div
-                class="flow-root px-6 pb-8 rounded-lg bg-gray-50"
+                class="flow-root rounded-lg bg-gray-50 px-6 pb-8"
               >
                 <div
                   class="-mt-6"
                 >
                   <div>
                     <span
-                      class="inline-flex items-center justify-center p-3 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-cyan-600"
+                      class="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-teal-500 to-cyan-600 p-3 shadow-lg"
                     >
                       <svg
                         aria-hidden="true"
-                        class="w-6 h-6 text-white"
+                        class="h-6 w-6 text-white"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -737,18 +737,18 @@ exports[`waweb.views/home should render successfully 1`] = `
               class="pt-6"
             >
               <div
-                class="flow-root px-6 pb-8 rounded-lg bg-gray-50"
+                class="flow-root rounded-lg bg-gray-50 px-6 pb-8"
               >
                 <div
                   class="-mt-6"
                 >
                   <div>
                     <span
-                      class="inline-flex items-center justify-center p-3 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-cyan-600"
+                      class="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-teal-500 to-cyan-600 p-3 shadow-lg"
                     >
                       <svg
                         aria-hidden="true"
-                        class="w-6 h-6 text-white"
+                        class="h-6 w-6 text-white"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -786,18 +786,18 @@ exports[`waweb.views/home should render successfully 1`] = `
               class="pt-6"
             >
               <div
-                class="flow-root px-6 pb-8 rounded-lg bg-gray-50"
+                class="flow-root rounded-lg bg-gray-50 px-6 pb-8"
               >
                 <div
                   class="-mt-6"
                 >
                   <div>
                     <span
-                      class="inline-flex items-center justify-center p-3 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-cyan-600"
+                      class="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-teal-500 to-cyan-600 p-3 shadow-lg"
                     >
                       <svg
                         aria-hidden="true"
-                        class="w-6 h-6 text-white"
+                        class="h-6 w-6 text-white"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -830,23 +830,23 @@ exports[`waweb.views/home should render successfully 1`] = `
       </div>
     </section>
     <section
-      class="pb-16 bg-gradient-to-r from-teal-500 to-cyan-600 lg:pb-0 lg:z-10 lg:relative"
+      class="bg-gradient-to-r from-teal-500 to-cyan-600 pb-16 lg:relative lg:z-10 lg:pb-0"
     >
       <div
-        class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8"
+        class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8"
       >
         <div
           class="relative lg:-my-8"
         >
           <div
             aria-hidden="true"
-            class="absolute inset-x-0 top-0 bg-white h-1/2 lg:hidden"
+            class="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden"
           />
           <div
-            class="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full"
+            class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:h-full lg:p-0"
           >
             <div
-              class="overflow-hidden shadow-xl aspect-w-10 aspect-h-6 rounded-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full"
+              class="aspect-w-10 aspect-h-6 sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none overflow-hidden rounded-xl shadow-xl lg:h-full"
             >
               <img
                 alt=""
@@ -857,16 +857,16 @@ exports[`waweb.views/home should render successfully 1`] = `
           </div>
         </div>
         <div
-          class="mt-12 lg:m-0 lg:col-span-2 lg:pl-8"
+          class="mt-12 lg:col-span-2 lg:m-0 lg:pl-8"
         >
           <div
-            class="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 lg:px-0 lg:py-20 lg:max-w-none"
+            class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0 lg:py-20"
           >
             <blockquote>
               <div>
                 <svg
                   aria-hidden="true"
-                  class="w-12 h-12 text-white opacity-25"
+                  class="h-12 w-12 text-white opacity-25"
                   fill="currentColor"
                   viewBox="0 0 32 32"
                 >
@@ -900,16 +900,16 @@ exports[`waweb.views/home should render successfully 1`] = `
       </div>
     </section>
     <section
-      class="relative py-16 bg-gray-50 sm:py-24 lg:py-32"
+      class="relative bg-gray-50 py-16 sm:py-24 lg:py-32"
     >
       <div
         class="relative"
       >
         <div
-          class="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl"
+          class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"
         >
           <h2
-            class="text-base font-semibold tracking-wider uppercase text-cyan-600"
+            class="text-base font-semibold uppercase tracking-wider text-cyan-600"
           >
             Learn
           </h2>
@@ -919,13 +919,13 @@ exports[`waweb.views/home should render successfully 1`] = `
             Helpful Resources
           </p>
           <p
-            class="mx-auto mt-5 text-xl text-gray-500 max-w-prose"
+            class="mx-auto mt-5 max-w-prose text-xl text-gray-500"
           >
             Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
           </p>
         </div>
         <div
-          class="grid max-w-md gap-8 px-4 mx-auto mt-12 sm:max-w-lg sm:px-6 lg:px-8 lg:grid-cols-3 lg:max-w-7xl"
+          class="mx-auto mt-12 grid max-w-md gap-8 px-4 sm:max-w-lg sm:px-6 lg:max-w-7xl lg:grid-cols-3 lg:px-8"
         >
           <div
             class="flex flex-col overflow-hidden rounded-lg shadow-lg"
@@ -935,12 +935,12 @@ exports[`waweb.views/home should render successfully 1`] = `
             >
               <img
                 alt=""
-                class="object-cover w-full h-48"
+                class="h-48 w-full object-cover"
                 src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
               />
             </div>
             <div
-              class="flex flex-col justify-between flex-1 p-6 bg-white"
+              class="flex flex-1 flex-col justify-between bg-white p-6"
             >
               <div
                 class="flex-1"
@@ -956,7 +956,7 @@ exports[`waweb.views/home should render successfully 1`] = `
                   </a>
                 </p>
                 <a
-                  class="block mt-2"
+                  class="mt-2 block"
                   href="/boost-your-conversion-rate"
                 >
                   <p
@@ -972,7 +972,7 @@ exports[`waweb.views/home should render successfully 1`] = `
                 </a>
               </div>
               <div
-                class="flex items-center mt-6"
+                class="mt-6 flex items-center"
               >
                 <div
                   class="flex-shrink-0"
@@ -982,7 +982,7 @@ exports[`waweb.views/home should render successfully 1`] = `
                   >
                     <img
                       alt="Roel Aufderehar"
-                      class="w-10 h-10 rounded-full"
+                      class="h-10 w-10 rounded-full"
                       src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                     />
                   </a>
@@ -1030,12 +1030,12 @@ exports[`waweb.views/home should render successfully 1`] = `
             >
               <img
                 alt=""
-                class="object-cover w-full h-48"
+                class="h-48 w-full object-cover"
                 src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
               />
             </div>
             <div
-              class="flex flex-col justify-between flex-1 p-6 bg-white"
+              class="flex flex-1 flex-col justify-between bg-white p-6"
             >
               <div
                 class="flex-1"
@@ -1051,7 +1051,7 @@ exports[`waweb.views/home should render successfully 1`] = `
                   </a>
                 </p>
                 <a
-                  class="block mt-2"
+                  class="mt-2 block"
                   href="/how-to-use-search-engine-optimization-to-drive-sales"
                 >
                   <p
@@ -1067,7 +1067,7 @@ exports[`waweb.views/home should render successfully 1`] = `
                 </a>
               </div>
               <div
-                class="flex items-center mt-6"
+                class="mt-6 flex items-center"
               >
                 <div
                   class="flex-shrink-0"
@@ -1077,7 +1077,7 @@ exports[`waweb.views/home should render successfully 1`] = `
                   >
                     <img
                       alt="Brenna Goyette"
-                      class="w-10 h-10 rounded-full"
+                      class="h-10 w-10 rounded-full"
                       src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                     />
                   </a>
@@ -1125,12 +1125,12 @@ exports[`waweb.views/home should render successfully 1`] = `
             >
               <img
                 alt=""
-                class="object-cover w-full h-48"
+                class="h-48 w-full object-cover"
                 src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
               />
             </div>
             <div
-              class="flex flex-col justify-between flex-1 p-6 bg-white"
+              class="flex flex-1 flex-col justify-between bg-white p-6"
             >
               <div
                 class="flex-1"
@@ -1146,7 +1146,7 @@ exports[`waweb.views/home should render successfully 1`] = `
                   </a>
                 </p>
                 <a
-                  class="block mt-2"
+                  class="mt-2 block"
                   href="/improve-your-customer-experience"
                 >
                   <p
@@ -1162,7 +1162,7 @@ exports[`waweb.views/home should render successfully 1`] = `
                 </a>
               </div>
               <div
-                class="flex items-center mt-6"
+                class="mt-6 flex items-center"
               >
                 <div
                   class="flex-shrink-0"
@@ -1172,7 +1172,7 @@ exports[`waweb.views/home should render successfully 1`] = `
                   >
                     <img
                       alt="Daniela Metz"
-                      class="w-10 h-10 rounded-full"
+                      class="h-10 w-10 rounded-full"
                       src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                     />
                   </a>
@@ -1223,7 +1223,7 @@ exports[`waweb.views/home should render successfully 1`] = `
       >
         <img
           alt=""
-          class="object-cover w-full h-full"
+          class="h-full w-full object-cover"
           src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&sat=-100"
         />
         <div
@@ -1232,13 +1232,13 @@ exports[`waweb.views/home should render successfully 1`] = `
         />
       </div>
       <div
-        class="relative max-w-md px-4 py-12 mx-auto sm:max-w-7xl sm:px-6 sm:py-20 md:py-28 lg:px-8 lg:py-32"
+        class="relative mx-auto max-w-md px-4 py-12 sm:max-w-7xl sm:px-6 sm:py-20 md:py-28 lg:px-8 lg:py-32"
       >
         <div
           class="md:ml-auto md:w-1/2 md:pl-10"
         >
           <h2
-            class="text-base font-semibold tracking-wider text-gray-300 uppercase"
+            class="text-base font-semibold uppercase tracking-wider text-gray-300"
           >
             Award winning support
           </h2>
@@ -1259,13 +1259,13 @@ exports[`waweb.views/home should render successfully 1`] = `
               class="inline-flex rounded-md shadow"
             >
               <a
-                class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-gray-900 bg-white border border-transparent rounded-md hover:bg-gray-50"
+                class="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-gray-900 hover:bg-gray-50"
                 href="/support/help-center"
               >
                 Visit the help center
                 <svg
                   aria-hidden="true"
-                  class="w-5 h-5 ml-3 -mr-1 text-gray-400"
+                  class="ml-3 -mr-1 h-5 w-5 text-gray-400"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

@@ -16,10 +16,10 @@
 
 type Props = {
   color?: string;
-  size?: number;
+  size?: number | string;
 };
 
-export default function IconCheck({ color = '#111111', size = 24 }: Props) {
+export default function IconCheck({ color = '#111111', size = '1rem' }: Props) {
   return (
     <svg viewBox="0 0 16 16" width={size} height={size}>
       <g fill={color}>

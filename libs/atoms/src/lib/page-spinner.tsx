@@ -23,7 +23,7 @@ export const Spinner: React.FunctionComponent<SpinnerProps> = ({ size }) => (
 export const PageSpinner: React.FunctionComponent<SpinnerProps> = ({
   size = 'xl',
 }) => (
-  <div className="w-screen h-screen flex justify-center place-items-center">
+  <div className="flex h-full w-full place-items-center justify-center">
     <Spinner size={size} />
   </div>
 );

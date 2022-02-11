@@ -36,7 +36,7 @@ const SidebarItem = ({
           isActive
             ? 'bg-gray-100 text-gray-900'
             : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900',
-          'group flex items-center px-2 py-2 text-base font-medium rounded-md shadow-inner'
+          'group flex items-center rounded-md px-2 py-2 text-base font-medium shadow-inner'
         )}
       >
         <Icon
@@ -44,7 +44,7 @@ const SidebarItem = ({
             isActive
               ? 'text-gray-500'
               : 'text-gray-400 group-hover:text-gray-500',
-            'mr-4 flex-shrink-0 h-6 w-6'
+            'mr-4 h-6 w-6 flex-shrink-0'
           )}
           aria-hidden="true"
         />
@@ -81,7 +81,7 @@ const Sidebar = ({ isOpen = false, setIsOpen, navigation }: SidebarProps) => {
           leaveFrom="translate-x-0"
           leaveTo="-translate-x-full"
         >
-          <div className="relative flex flex-col flex-1 w-full max-w-xs pt-5 pb-4 bg-white">
+          <div className="relative flex w-full max-w-xs flex-1 flex-col bg-white pt-5 pb-4">
             <Transition.Child
               as={Fragment}
               enter="ease-in-out duration-300"
@@ -91,22 +91,22 @@ const Sidebar = ({ isOpen = false, setIsOpen, navigation }: SidebarProps) => {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <div className="absolute top-0 right-0 pt-2 -mr-12">
+              <div className="absolute top-0 right-0 -mr-12 pt-2">
                 <button
                   type="button"
-                  className="flex items-center justify-center w-10 h-10 ml-1 rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                  className="ml-1 flex h-10 w-10 items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                   onClick={() => setIsOpen(false)}
                 >
                   <span className="sr-only">Close sidebar</span>
-                  <XIcon className="w-6 h-6 text-white" aria-hidden="true" />
+                  <XIcon className="h-6 w-6 text-white" aria-hidden="true" />
                 </button>
               </div>
             </Transition.Child>
-            <div className="flex items-center flex-shrink-0 px-4">
+            <div className="flex flex-shrink-0 items-center px-4">
               <LogoAlt />
             </div>
-            <div className="flex-1 h-0 mt-5 overflow-y-auto">
-              <nav className="px-2 space-y-1">
+            <div className="mt-5 h-0 flex-1 overflow-y-auto">
+              <nav className="space-y-1 px-2">
                 {navigation.map((item, index) => (
                   <SidebarItem
                     key={index}
@@ -118,7 +118,7 @@ const Sidebar = ({ isOpen = false, setIsOpen, navigation }: SidebarProps) => {
             </div>
           </div>
         </Transition.Child>
-        <div className="flex-shrink-0 w-14" aria-hidden="true">
+        <div className="w-14 flex-shrink-0" aria-hidden="true">
           {/* Dummy element to force sidebar to shrink to fit close icon */}
         </div>
       </Dialog>

@@ -21,20 +21,20 @@ describe('waweb.views.blog', () => {
             <div>
               <nav
                 aria-label="Global"
-                class="relative flex items-center justify-between px-4 mx-auto max-w-7xl sm:px-6"
+                class="relative mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6"
               >
                 <div
-                  class="flex items-center flex-1"
+                  class="flex flex-1 items-center"
                 >
                   <div
-                    class="flex items-center justify-between w-full md:w-auto"
+                    class="flex w-full items-center justify-between md:w-auto"
                   >
                     <div
-                      class="flex items-center -mr-2 md:hidden"
+                      class="-mr-2 flex items-center md:hidden"
                     >
                       <button
                         aria-expanded="false"
-                        class="inline-flex items-center justify-center p-2 text-gray-400 bg-gray-700 rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500"
+                        class="inline-flex items-center justify-center rounded-md bg-gray-700 p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500"
                         id="headlessui-popover-button-1"
                         type="button"
                       >
@@ -45,7 +45,7 @@ describe('waweb.views.blog', () => {
                         </span>
                         <svg
                           aria-hidden="true"
-                          class="w-6 h-6"
+                          class="h-6 w-6"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
@@ -103,22 +103,22 @@ describe('waweb.views.blog', () => {
               </nav>
             </div>
             <div
-              class="px-4 mx-auto mt-16 max-w-7xl sm:mt-24 sm:px-6 lg:mt-32"
+              class="mx-auto mt-16 max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-32"
             >
               <div
                 class="lg:grid lg:grid-cols-12 lg:gap-8"
               >
                 <div
-                  class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left"
+                  class="sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:text-left"
                 >
                   <h1>
                     <span
-                      class="block text-sm font-semibold tracking-wide text-gray-500 uppercase sm:text-base lg:text-sm xl:text-base"
+                      class="block text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base"
                     >
                       Coming soon
                     </span>
                     <span
-                      class="block mt-1 text-4xl font-extrabold tracking-tight sm:text-5xl xl:text-6xl"
+                      class="mt-1 block text-4xl font-extrabold tracking-tight sm:text-5xl xl:text-6xl"
                     >
                       <span
                         class="block text-gray-200"
@@ -138,7 +138,7 @@ describe('waweb.views.blog', () => {
                     Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua ad ad non deserunt sunt.
                   </p>
                   <div
-                    class="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0"
+                    class="mt-8 sm:mx-auto sm:max-w-lg sm:text-center lg:mx-0 lg:text-left"
                   >
                     <p
                       class="text-base font-medium text-gray-200"
@@ -157,14 +157,14 @@ describe('waweb.views.blog', () => {
                         Email
                       </label>
                       <input
-                        class="block w-full py-3 text-base placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500 sm:flex-1"
+                        class="block w-full rounded-md border-gray-300 py-3 text-base placeholder-gray-500 shadow-sm focus:border-teal-500 focus:ring-teal-500 sm:flex-1"
                         id="email"
                         name="email"
                         placeholder="Enter your email"
                         type="email"
                       />
                       <button
-                        class="w-full px-6 py-3 mt-3 text-base font-medium text-white bg-teal-800 border border-transparent rounded-md shadow-sm hover:bg-teal-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
+                        class="mt-3 w-full rounded-md border border-transparent bg-teal-800 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-teal-900 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:inline-flex sm:w-auto sm:flex-shrink-0 sm:items-center"
                         type="submit"
                       >
                         Notify me
@@ -186,11 +186,11 @@ describe('waweb.views.blog', () => {
                   </div>
                 </div>
                 <div
-                  class="relative mt-12 sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center"
+                  class="relative mt-12 sm:mx-auto sm:max-w-lg lg:col-span-6 lg:mx-0 lg:mt-0 lg:flex lg:max-w-none lg:items-center"
                 >
                   <svg
                     aria-hidden="true"
-                    class="absolute top-0 origin-top transform scale-75 -translate-x-1/2 -translate-y-8 left-1/2 sm:scale-100 lg:hidden"
+                    class="absolute top-0 left-1/2 origin-top -translate-x-1/2 -translate-y-8 scale-75 transform sm:scale-100 lg:hidden"
                     fill="none"
                     height="784"
                     viewBox="0 0 640 784"
@@ -230,10 +230,10 @@ describe('waweb.views.blog', () => {
                     />
                   </svg>
                   <div
-                    class="relative w-full mx-auto rounded-lg shadow-lg lg:max-w-md"
+                    class="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md"
                   >
                     <button
-                      class="relative block w-full overflow-hidden bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
+                      class="relative block w-full overflow-hidden rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
                       type="button"
                     >
                       <span
@@ -248,10 +248,10 @@ describe('waweb.views.blog', () => {
                       />
                       <div
                         aria-hidden="true"
-                        class="absolute inset-0 flex items-center justify-center w-full h-full"
+                        class="absolute inset-0 flex h-full w-full items-center justify-center"
                       >
                         <svg
-                          class="w-20 h-20 text-teal-500"
+                          class="h-20 w-20 text-teal-500"
                           fill="currentColor"
                           viewBox="0 0 84 84"
                         >
@@ -295,13 +295,13 @@ describe('waweb.views.blog', () => {
                   Featured posts
                 </h2>
                 <p
-                  class="max-w-2xl mx-auto mt-3 text-xl text-gray-400 sm:mt-4"
+                  class="mx-auto mt-3 max-w-2xl text-xl text-gray-400 sm:mt-4"
                 >
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.
                 </p>
               </div>
               <div
-                class="grid max-w-lg gap-5 mx-auto mt-12 lg:grid-cols-3 lg:max-w-none"
+                class="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3"
               >
                 <div
                   class="flex flex-col overflow-hidden rounded-lg shadow-lg"
@@ -311,12 +311,12 @@ describe('waweb.views.blog', () => {
                   >
                     <img
                       alt=""
-                      class="object-cover w-full h-48"
+                      class="h-48 w-full object-cover"
                       src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
                     />
                   </div>
                   <div
-                    class="flex flex-col justify-between flex-1 p-6 bg-gray-900"
+                    class="flex flex-1 flex-col justify-between bg-gray-900 p-6"
                   >
                     <div
                       class="flex-1"
@@ -332,7 +332,7 @@ describe('waweb.views.blog', () => {
                         </a>
                       </p>
                       <a
-                        class="block mt-2"
+                        class="mt-2 block"
                         href="/blog/post/boost-your-conversion-rate"
                       >
                         <p
@@ -348,7 +348,7 @@ describe('waweb.views.blog', () => {
                       </a>
                     </div>
                     <div
-                      class="flex items-center mt-6"
+                      class="mt-6 flex items-center"
                     >
                       <div
                         class="flex-shrink-0"
@@ -363,7 +363,7 @@ describe('waweb.views.blog', () => {
                           </span>
                           <img
                             alt=""
-                            class="w-10 h-10 rounded-full"
+                            class="h-10 w-10 rounded-full"
                             src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                           />
                         </a>
@@ -411,12 +411,12 @@ describe('waweb.views.blog', () => {
                   >
                     <img
                       alt=""
-                      class="object-cover w-full h-48"
+                      class="h-48 w-full object-cover"
                       src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
                     />
                   </div>
                   <div
-                    class="flex flex-col justify-between flex-1 p-6 bg-gray-900"
+                    class="flex flex-1 flex-col justify-between bg-gray-900 p-6"
                   >
                     <div
                       class="flex-1"
@@ -432,7 +432,7 @@ describe('waweb.views.blog', () => {
                         </a>
                       </p>
                       <a
-                        class="block mt-2"
+                        class="mt-2 block"
                         href="/blog/post/how-to-use-search-engine-optimization-to-drive-sales"
                       >
                         <p
@@ -448,7 +448,7 @@ describe('waweb.views.blog', () => {
                       </a>
                     </div>
                     <div
-                      class="flex items-center mt-6"
+                      class="mt-6 flex items-center"
                     >
                       <div
                         class="flex-shrink-0"
@@ -463,7 +463,7 @@ describe('waweb.views.blog', () => {
                           </span>
                           <img
                             alt=""
-                            class="w-10 h-10 rounded-full"
+                            class="h-10 w-10 rounded-full"
                             src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                           />
                         </a>
@@ -511,12 +511,12 @@ describe('waweb.views.blog', () => {
                   >
                     <img
                       alt=""
-                      class="object-cover w-full h-48"
+                      class="h-48 w-full object-cover"
                       src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
                     />
                   </div>
                   <div
-                    class="flex flex-col justify-between flex-1 p-6 bg-gray-900"
+                    class="flex flex-1 flex-col justify-between bg-gray-900 p-6"
                   >
                     <div
                       class="flex-1"
@@ -532,7 +532,7 @@ describe('waweb.views.blog', () => {
                         </a>
                       </p>
                       <a
-                        class="block mt-2"
+                        class="mt-2 block"
                         href="/blog/post/improve-your-customer-experience"
                       >
                         <p
@@ -548,7 +548,7 @@ describe('waweb.views.blog', () => {
                       </a>
                     </div>
                     <div
-                      class="flex items-center mt-6"
+                      class="mt-6 flex items-center"
                     >
                       <div
                         class="flex-shrink-0"
@@ -563,7 +563,7 @@ describe('waweb.views.blog', () => {
                           </span>
                           <img
                             alt=""
-                            class="w-10 h-10 rounded-full"
+                            class="h-10 w-10 rounded-full"
                             src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                           />
                         </a>

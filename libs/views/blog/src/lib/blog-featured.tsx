@@ -22,12 +22,12 @@ export const BlogFeatured = ({
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-200 sm:text-4xl">
             Featured posts
           </h2>
-          <p className="max-w-2xl mx-auto mt-3 text-xl text-gray-400 sm:mt-4">
+          <p className="mx-auto mt-3 max-w-2xl text-xl text-gray-400 sm:mt-4">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
             libero labore natus atque, ducimus sed.
           </p>
         </div>
-        <div className="grid max-w-lg gap-5 mx-auto mt-12 lg:grid-cols-3 lg:max-w-none">
+        <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
           {posts.map((post) => (
             <div
               key={post.title}
@@ -35,12 +35,12 @@ export const BlogFeatured = ({
             >
               <div className="flex-shrink-0">
                 <img
-                  className="object-cover w-full h-48"
+                  className="h-48 w-full object-cover"
                   src={post.image_url}
                   alt=""
                 />
               </div>
-              <div className="flex flex-col justify-between flex-1 p-6 bg-gray-900">
+              <div className="flex flex-1 flex-col justify-between bg-gray-900 p-6">
                 <div className="flex-1">
                   <p className="text-sm font-medium text-teal-600">
                     <Link href={`/blog/category/${post.category.slug}`}>
@@ -50,7 +50,7 @@ export const BlogFeatured = ({
                   </p>
                   <Link href={`/blog/post/${post.slug}`}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                    <a className="block mt-2">
+                    <a className="mt-2 block">
                       <p className="text-xl font-semibold text-gray-200">
                         {post.title}
                       </p>
@@ -60,12 +60,12 @@ export const BlogFeatured = ({
                     </a>
                   </Link>
                 </div>
-                <div className="flex items-center mt-6">
+                <div className="mt-6 flex items-center">
                   <div className="flex-shrink-0">
                     <a href={`/user/${post.author.slug}`}>
                       <span className="sr-only">{post.author.username}</span>
                       <img
-                        className="w-10 h-10 rounded-full"
+                        className="h-10 w-10 rounded-full"
                         src={post.author.avatar_url ?? defaultAvatar}
                         alt=""
                       />

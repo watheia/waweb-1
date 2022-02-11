@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`waweb.views/profile should render successfully 1`] = `
+<div>
+  <div
+    class="root"
+  >
+    <h1>
+      Welcome to ProfileView!
+    </h1>
+    <ul>
+      <li>
+        <a
+          href="/"
+        >
+          views-profile root
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

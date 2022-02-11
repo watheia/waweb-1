@@ -117,7 +117,7 @@ exports[`waweb.app/ui/dashboard should render successfully 1`] = `
                   <img
                     alt=""
                     class="h-8 w-8 rounded-full"
-                    src="https://kgkcfphpovhbptsscyyj.supabase.co/storage/v1/object/sign/avatars/supabot.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhdmF0YXJzL3N1cGFib3QucG5nIiwiaWF0IjoxNjQ0Mzc1NDgwLCJleHAiOjE5NTk3MzU0ODB9.4VjLwEr-iwyZ2wdxr3V0aXEY6XIzb3I42cnTfRWkXOY"
+                    src="/images/icon.png"
                   />
                 </button>
               </div>

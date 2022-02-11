@@ -1,9 +1,6 @@
 import styles from './adobe-clean-serif.module.scss';
 
-export type {
-  AdobeCleanSerifProps,
-  AdobeCleanSerifClass,
-} from './adobe-clean-serif';
+export type { AdobeCleanSerifClass } from './adobe-clean-serif';
 export * from './adobe-clean-serif';
 
 const { regular, it, bold, boldIt, black, blackIt } = styles;

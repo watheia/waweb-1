@@ -6,7 +6,6 @@ export { default as ComingSoon } from './lib/coming-soon';
 export { default as Container } from './lib/container';
 export { default as LoadingDots } from './lib/loading-dots';
 export { default as Logo } from './lib/logo';
-export { default as LogoAlt } from './lib/logo-alt';
 export { default as MessageInput } from './lib/message-input';
 export { default as MockContent } from './lib/mock-content';
 export { default as NProgress } from './lib/nprogress';

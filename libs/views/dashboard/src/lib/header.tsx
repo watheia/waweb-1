@@ -17,7 +17,7 @@ const Header = ({ isMenuOpen, setMenuOpen, ...props }: HeaderProps) => (
       onClick={() => setMenuOpen(true)}
     >
       <span className="sr-only">Open sidebar</span>
-      <MenuAlt2Icon className="h-6 w-6" aria-hidden="true" />
+      <MenuAlt2Icon className="w-6 h-6" aria-hidden="true" />
     </button> */}
     <div className="flex flex-1 justify-between px-4">
       <div className="flex flex-1">

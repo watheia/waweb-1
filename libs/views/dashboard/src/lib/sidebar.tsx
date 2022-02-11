@@ -2,7 +2,7 @@ import { Dialog, Transition } from '@headlessui/react';
 import { XIcon } from '@heroicons/react/outline';
 import clsx from 'clsx';
 import React, { Fragment } from 'react';
-import { LogoAlt } from '@waweb/atoms';
+import { Logo } from '@waweb/atoms';
 import { DivProps } from '@waweb/model';
 import { ChannelNav } from './ChannelNav';
 import { useRouter } from 'next/router';
@@ -103,7 +103,7 @@ const Sidebar = ({ isOpen = false, setIsOpen, navigation }: SidebarProps) => {
               </div>
             </Transition.Child>
             <div className="flex flex-shrink-0 items-center px-4">
-              <LogoAlt />
+              <Logo alternate />
             </div>
             <div className="mt-5 h-0 flex-1 overflow-y-auto">
               <nav className="space-y-1 px-2">

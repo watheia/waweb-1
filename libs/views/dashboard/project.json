@@ -13,7 +13,7 @@
         "project": "libs/views/dashboard/package.json",
         "entryFile": "libs/views/dashboard/src/index.ts",
         "external": ["react/jsx-runtime"],
-        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "rollupConfig": "rollup.config.js",
         "compiler": "babel",
         "assets": [
           {

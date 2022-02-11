@@ -14,29 +14,20 @@
   }
   ```
 */
-import {
-  CalendarIcon,
-  ChartBarIcon,
-  FolderIcon,
-  HomeIcon,
-  InboxIcon,
-  UsersIcon,
-} from '@heroicons/react/outline';
-import { DivProps } from '@waweb/model';
 import { MessageInput } from '@waweb/atoms';
+import { DivProps } from '@waweb/model';
 import { useState } from 'react';
-import Header from './header';
-import Sidebar from './sidebar';
 import ChannelMessages from './channel-messages';
+import Header from './header';
 
-const navigation = [
-  { name: 'Messageboard', slug: '/', icon: HomeIcon, current: true },
-  { name: 'Team', slug: '#', icon: UsersIcon, current: false },
-  { name: 'Projects', slug: '#', icon: FolderIcon, current: false },
-  { name: 'Calendar', slug: '#', icon: CalendarIcon, current: false },
-  { name: 'Documents', slug: '#', icon: InboxIcon, current: false },
-  { name: 'Reports', slug: '#', icon: ChartBarIcon, current: false },
-];
+// const navigation = [
+//   { name: 'Messageboard', slug: '/', icon: HomeIcon, current: true },
+//   { name: 'Team', slug: '#', icon: UsersIcon, current: false },
+//   { name: 'Projects', slug: '#', icon: FolderIcon, current: false },
+//   { name: 'Calendar', slug: '#', icon: CalendarIcon, current: false },
+//   { name: 'Documents', slug: '#', icon: InboxIcon, current: false },
+//   { name: 'Reports', slug: '#', icon: ChartBarIcon, current: false },
+// ];
 
 export type DashboardProps = DivProps;
 

@@ -1,8 +1,6 @@
 import { DivProps, Post } from '@waweb/model';
 import Link from 'next/link';
-import { storageUrl } from '@waweb/supabase';
-
-const defaultAvatar = storageUrl('avatars', 'supabot.png');
+import { defaultAvatar } from '@waweb/supabase';
 
 export interface BlogSectionProps extends DivProps {
   posts: Post[];

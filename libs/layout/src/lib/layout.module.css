@@ -58,9 +58,8 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   background: var(--sidebar);
-  opacity: 0.7;
   border-bottom: 1px solid var(--accents-7);
   height: var(--header-height);
   z-index: 2;
@@ -93,11 +92,12 @@
 .tabs {
   height: 100%;
   display: none;
+  flex: 1 1 auto;
 }
 
-@media screen and (min-width: 1032px) {
+@media screen and (min-width: 780px) {
   .tabs {
-    margin-right: var(--space-16x, 64px);
+    /* margin-right: var(--space-16x, 64px); */
     display: initial;
   }
 

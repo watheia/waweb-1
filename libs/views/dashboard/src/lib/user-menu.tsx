@@ -1,5 +1,5 @@
 import { Menu, Transition } from '@headlessui/react';
-import { storageUrl } from '@waweb/supabase';
+import { defaultAvatar } from '@waweb/supabase';
 import clsx from 'clsx';
 import React, { Fragment } from 'react';
 
@@ -15,7 +15,6 @@ const defaultItems = [
 ];
 
 const UserMenu = ({ items = defaultItems }: { items?: NavItem[] }) => {
-  const avatarUrl = storageUrl('avatars', 'supabot.png');
   return (
     <Menu
       as="div"
@@ -25,7 +24,7 @@ const UserMenu = ({ items = defaultItems }: { items?: NavItem[] }) => {
       <div>
         <Menu.Button className="flex max-w-xs items-center rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2">
           <span className="sr-only">Open user menu</span>
-          <img className="h-8 w-8 rounded-full" src={avatarUrl} alt="" />
+          <img className="h-8 w-8 rounded-full" src={defaultAvatar} alt="" />
         </Menu.Button>
       </div>
       <Transition

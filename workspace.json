@@ -18,6 +18,7 @@
     "views-blog": "libs/views/blog",
     "views-dashboard": "libs/views/dashboard",
     "views-gatekeeper": "libs/views/gatekeeper",
-    "views-home": "libs/views/home"
+    "views-home": "libs/views/home",
+    "views-profile": "libs/views/profile"
   }
 }

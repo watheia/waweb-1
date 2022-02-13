@@ -13,7 +13,7 @@
         "project": "libs/layout/package.json",
         "entryFile": "libs/layout/src/index.ts",
         "external": ["react/jsx-runtime"],
-        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "rollupConfig": "rollup.config.js",
         "compiler": "babel",
         "assets": [
           {

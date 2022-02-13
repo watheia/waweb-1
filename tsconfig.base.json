@@ -30,7 +30,8 @@
       "@waweb/views.blog": ["libs/views/blog/src/index.ts"],
       "@waweb/views.dashboard": ["libs/views/dashboard/src/index.ts"],
       "@waweb/views.gatekeeper": ["libs/views/gatekeeper/src/index.ts"],
-      "@waweb/views.home": ["libs/views/home/src/index.ts"]
+      "@waweb/views.home": ["libs/views/home/src/index.ts"],
+      "@waweb/views.profile": ["libs/views/profile/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -16,6 +16,7 @@
 
 import { SkipNavContent } from '@reach/skip-nav';
 import { MessageList, useMessage } from '@waweb/message';
+import { BellIcon } from '@heroicons/react/outline';
 import cn from 'clsx';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -25,6 +26,8 @@ import styles from './layout.module.css';
 import MobileMenu from './mobile-menu';
 import { Logo, ViewSource } from '@waweb/atoms';
 import { DivProps } from '@waweb/model';
+import UserMenu from './user-menu';
+import { useAuth } from '@waweb/auth';
 
 export interface LayoutProps extends DivProps {
   hideNav?: boolean;
@@ -44,6 +47,7 @@ export default function Layout({
   const router = useRouter();
   const activeRoute = router?.asPath ?? '/';
   const { messages } = useMessage();
+  const { isLoggedIn } = useAuth();
 
   return (
     <>
@@ -56,7 +60,7 @@ export default function Layout({
               <Link href="/">
                 {/* eslint-disable-next-line */}
                 <a className={styles['logo']}>
-                  <Logo height="100%" />
+                  <Logo />
                 </a>
               </Link>
             </div>
@@ -74,6 +78,19 @@ export default function Layout({
                 </Link>
               ))}
             </div>
+            {isLoggedIn && (
+              <div className="ml-4 mr-16 flex items-center md:ml-6">
+                <button
+                  type="button"
+                  className="rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+                >
+                  <span className="sr-only">View notifications</span>
+                  <BellIcon className="h-6 w-6" aria-hidden="true" />
+                </button>
+
+                <UserMenu />
+              </div>
+            )}
           </header>
         )}
         <div className={styles['page']}>
@@ -82,7 +99,7 @@ export default function Layout({
           <main
             className={cn(
               styles['main'],
-              usePadding && 'px-2 py-1 sm:px-6 lg:px-8'
+              usePadding && 'px-2 py-6 sm:px-6 lg:px-8'
             )}
             style={layoutStyles}
           >

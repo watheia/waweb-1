@@ -1,2 +1,2 @@
-require('dotenv').config({ debug: true, path: `${__dirname}/.env` });
+require('dotenv').config();
 require('jest-fetch-mock').enableMocks();

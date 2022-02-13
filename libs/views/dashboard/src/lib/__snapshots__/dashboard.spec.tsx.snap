@@ -3,575 +3,450 @@
 exports[`waweb.app/ui/dashboard should render successfully 1`] = `
 <div>
   <div
-    class="mb-4 flex h-full w-full flex-1 flex-col"
+    class="mx-auto flex w-full max-w-7xl flex-1 flex-col space-y-12 px-4 sm:px-6 md:px-8"
   >
     <div
-      class="flex h-full w-full flex-1 flex-col"
+      class="flow-root pr-8 pt-6"
     >
-      <div
-        class="sticky top-0 z-10 flex h-16 flex-shrink-0 shadow"
+      <ul
+        class="-mb-8"
       >
-        <div
-          class="flex flex-1 justify-between px-4"
-        >
+        <li>
           <div
-            class="flex flex-1"
+            class="relative pb-8"
           >
+            <span
+              aria-hidden="true"
+              class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-500"
+            />
             <div
-              class="min-w-0 flex-1 md:px-8 lg:px-0 xl:col-span-6"
+              class="relative flex items-start space-x-3"
             >
               <div
-                class="flex items-center px-6 py-4 md:mx-auto md:max-w-3xl lg:mx-0 lg:max-w-none xl:px-0"
+                class="relative"
               >
-                <div
-                  class="w-full"
+                <img
+                  alt=""
+                  class="flex h-10 w-10 items-center justify-center rounded-full bg-gray-400 ring-4 ring-gray-500"
+                  src="https://images.unsplash.com/photo-1520785643438-5bf77931f493?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80"
+                />
+                <span
+                  class="absolute -bottom-0.5 -right-1 rounded-tl bg-white px-0.5 py-px"
                 >
-                  <label
-                    class="sr-only"
-                    for="search"
+                  <svg
+                    aria-hidden="true"
+                    class="h-5 w-5 text-gray-900"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    Search
-                  </label>
-                  <div
-                    class="relative"
-                  >
-                    <div
-                      class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="h-5 w-5 text-gray-400"
-                        fill="none"
-                        height="1rem"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        width="1rem"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="m21 21-6-6m2-5a7 7 0 1 1-14 0 7 7 0 0 1 14 0z"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                        />
-                      </svg>
-                    </div>
-                    <input
-                      class="block w-full rounded-md border border-gray-700 bg-gray-900 py-2 pl-10 pr-3 text-sm placeholder-gray-500 opacity-75 focus:border-teal-500 focus:text-gray-200 focus:placeholder-gray-400 focus:opacity-100 focus:outline-none focus:ring-1 focus:ring-teal-500"
-                      id="search"
-                      name="search"
-                      placeholder="Search"
-                      style="min-width: 120px;"
-                      type="search"
+                    <path
+                      clip-rule="evenodd"
+                      d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z"
+                      fill-rule="evenodd"
                     />
+                  </svg>
+                </span>
+              </div>
+              <div
+                class="min-w-0 flex-1"
+              >
+                <div>
+                  <div
+                    class="text-sm"
+                  >
+                    <a
+                      class="font-medium text-gray-100"
+                      href="#"
+                    >
+                      Eduardo Benz
+                    </a>
                   </div>
+                  <p
+                    class="mt-0.5 text-sm text-gray-300"
+                  >
+                    Commented 
+                    6d ago
+                  </p>
+                </div>
+                <div
+                  class="mt-2 text-sm text-gray-400"
+                >
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt nunc ipsum tempor purus vitae id. Morbi in vestibulum nec varius. Et diam cursus quis sed purus nam. 
+                  </p>
                 </div>
               </div>
             </div>
           </div>
+        </li>
+        <li>
           <div
-            class="ml-4 mr-16 flex items-center md:ml-6"
+            class="relative pb-8"
           >
-            <button
-              class="rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
-              type="button"
-            >
-              <span
-                class="sr-only"
-              >
-                View notifications
-              </span>
-              <svg
-                aria-hidden="true"
-                class="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                />
-              </svg>
-            </button>
+            <span
+              aria-hidden="true"
+              class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-500"
+            />
             <div
-              class="relative ml-3"
-              style="min-width: 32px; min-height: 32px;"
+              class="relative flex items-start space-x-3"
             >
               <div>
-                <button
-                  aria-expanded="false"
-                  aria-haspopup="true"
-                  class="flex max-w-xs items-center rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
-                  id="headlessui-menu-button-1"
-                  type="button"
-                >
-                  <span
-                    class="sr-only"
-                  >
-                    Open user menu
-                  </span>
-                  <img
-                    alt=""
-                    class="h-8 w-8 rounded-full"
-                    src="https://kgkcfphpovhbptsscyyj.supabase.co/storage/v1/object/sign/avatars/supabot.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhdmF0YXJzL3N1cGFib3QucG5nIiwiaWF0IjoxNjQ0Mzc1NDgwLCJleHAiOjE5NTk3MzU0ODB9.4VjLwEr-iwyZ2wdxr3V0aXEY6XIzb3I42cnTfRWkXOY"
-                  />
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="mx-auto flex w-full max-w-7xl flex-1 flex-col space-y-12 px-4 sm:px-6 md:px-8"
-      >
-        <div
-          class="flow-root pr-8 pt-6"
-        >
-          <ul
-            class="-mb-8"
-          >
-            <li>
-              <div
-                class="relative pb-8"
-              >
-                <span
-                  aria-hidden="true"
-                  class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-500"
-                />
                 <div
-                  class="relative flex items-start space-x-3"
+                  class="relative px-1"
                 >
                   <div
-                    class="relative"
-                  >
-                    <img
-                      alt=""
-                      class="flex h-10 w-10 items-center justify-center rounded-full bg-gray-400 ring-4 ring-gray-500"
-                      src="https://images.unsplash.com/photo-1520785643438-5bf77931f493?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80"
-                    />
-                    <span
-                      class="absolute -bottom-0.5 -right-1 rounded-tl bg-white px-0.5 py-px"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="h-5 w-5 text-gray-900"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          clip-rule="evenodd"
-                          d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z"
-                          fill-rule="evenodd"
-                        />
-                      </svg>
-                    </span>
-                  </div>
-                  <div
-                    class="min-w-0 flex-1"
-                  >
-                    <div>
-                      <div
-                        class="text-sm"
-                      >
-                        <a
-                          class="font-medium text-gray-100"
-                          href="#"
-                        >
-                          Eduardo Benz
-                        </a>
-                      </div>
-                      <p
-                        class="mt-0.5 text-sm text-gray-300"
-                      >
-                        Commented 
-                        6d ago
-                      </p>
-                    </div>
-                    <div
-                      class="mt-2 text-sm text-gray-400"
-                    >
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt nunc ipsum tempor purus vitae id. Morbi in vestibulum nec varius. Et diam cursus quis sed purus nam. 
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div
-                class="relative pb-8"
-              >
-                <span
-                  aria-hidden="true"
-                  class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-500"
-                />
-                <div
-                  class="relative flex items-start space-x-3"
-                >
-                  <div>
-                    <div
-                      class="relative px-1"
-                    >
-                      <div
-                        class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 ring-4 ring-white"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          class="h-6 w-6 text-gray-900"
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            clip-rule="evenodd"
-                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
-                            fill-rule="evenodd"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="min-w-0 flex-1 py-1.5"
-                  >
-                    <div
-                      class="text-sm text-gray-300"
-                    >
-                      <a
-                        class="font-medium text-gray-100"
-                        href="#"
-                      >
-                        Hilary Mahy
-                      </a>
-                       
-                      assigned
-                       
-                      <a
-                        class="font-medium text-gray-100"
-                        href="#"
-                      >
-                        Kristin Watson
-                      </a>
-                       
-                      <span
-                        class="whitespace-nowrap"
-                      >
-                        2d ago
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div
-                class="relative pb-8"
-              >
-                <span
-                  aria-hidden="true"
-                  class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-500"
-                />
-                <div
-                  class="relative flex items-start space-x-3"
-                >
-                  <div>
-                    <div
-                      class="relative px-1"
-                    >
-                      <div
-                        class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 ring-4 ring-white"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          class="h-6 w-6 text-gray-900"
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            clip-rule="evenodd"
-                            d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z"
-                            fill-rule="evenodd"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="min-w-0 flex-1 py-0"
-                  >
-                    <div
-                      class="text-sm leading-8 text-gray-300"
-                    >
-                      <span
-                        class="mr-0.5"
-                      >
-                        <a
-                          class="font-medium text-gray-100"
-                          href="#"
-                        >
-                          Hilary Mahy
-                        </a>
-                         
-                        added tags
-                      </span>
-                       
-                      <span
-                        class="mr-0.5"
-                      >
-                        <a
-                          class="relative inline-flex items-center rounded-full border border-gray-300 px-3 py-0.5 text-sm"
-                          href="#"
-                        >
-                          <span
-                            class="absolute flex flex-shrink-0 items-center justify-center"
-                          >
-                            <span
-                              aria-hidden="true"
-                              class="bg-rose-500 h-1.5 w-1.5 rounded-full"
-                            />
-                          </span>
-                          <span
-                            class="ml-3.5 font-medium text-gray-100"
-                          >
-                            Bug
-                          </span>
-                        </a>
-                         
-                        <a
-                          class="relative inline-flex items-center rounded-full border border-gray-300 px-3 py-0.5 text-sm"
-                          href="#"
-                        >
-                          <span
-                            class="absolute flex flex-shrink-0 items-center justify-center"
-                          >
-                            <span
-                              aria-hidden="true"
-                              class="bg-indigo-500 h-1.5 w-1.5 rounded-full"
-                            />
-                          </span>
-                          <span
-                            class="ml-3.5 font-medium text-gray-100"
-                          >
-                            Accessibility
-                          </span>
-                        </a>
-                         
-                      </span>
-                      <span
-                        class="whitespace-nowrap"
-                      >
-                        6h ago
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div
-                class="relative pb-8"
-              >
-                <div
-                  class="relative flex items-start space-x-3"
-                >
-                  <div
-                    class="relative"
-                  >
-                    <img
-                      alt=""
-                      class="flex h-10 w-10 items-center justify-center rounded-full bg-gray-400 ring-4 ring-gray-500"
-                      src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80"
-                    />
-                    <span
-                      class="absolute -bottom-0.5 -right-1 rounded-tl bg-white px-0.5 py-px"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="h-5 w-5 text-gray-900"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          clip-rule="evenodd"
-                          d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z"
-                          fill-rule="evenodd"
-                        />
-                      </svg>
-                    </span>
-                  </div>
-                  <div
-                    class="min-w-0 flex-1"
-                  >
-                    <div>
-                      <div
-                        class="text-sm"
-                      >
-                        <a
-                          class="font-medium text-gray-100"
-                          href="#"
-                        >
-                          Jason Meyers
-                        </a>
-                      </div>
-                      <p
-                        class="mt-0.5 text-sm text-gray-300"
-                      >
-                        Commented 
-                        2h ago
-                      </p>
-                    </div>
-                    <div
-                      class="mt-2 text-sm text-gray-400"
-                    >
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt nunc ipsum tempor purus vitae id. Morbi in vestibulum nec varius. Et diam cursus quis sed purus nam. Scelerisque amet elit non sit ut tincidunt condimentum. Nisl ultrices eu venenatis diam.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div
-          data-testid="app.ui/message-input"
-        >
-          <form
-            action="#"
-            class="relative"
-          >
-            <div
-              class="overflow-hidden rounded-lg border border-gray-300 shadow-sm focus-within:border-teal-500 focus-within:ring-1 focus-within:ring-teal-500"
-            >
-              <label
-                class="sr-only"
-                for="comment"
-              >
-                Add your comment
-              </label>
-              <textarea
-                class="block w-full resize-none border-0 py-3 focus:ring-0 sm:text-sm"
-                id="comment"
-                name="comment"
-                placeholder="Add your comment..."
-                rows="3"
-              />
-              <div
-                aria-hidden="true"
-                class="py-2"
-              >
-                <div
-                  class="py-px"
-                >
-                  <div
-                    class="h-9"
-                  />
-                </div>
-              </div>
-            </div>
-            <div
-              class="absolute inset-x-0 bottom-0 flex justify-between py-2 pl-3 pr-2"
-            >
-              <div
-                class="flex items-center space-x-5"
-              >
-                <div
-                  class="flex items-center"
-                >
-                  <button
-                    class="-m-2.5 flex h-10 w-10 items-center justify-center rounded-full text-gray-400 hover:text-gray-500"
-                    type="button"
+                    class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 ring-4 ring-white"
                   >
                     <svg
                       aria-hidden="true"
-                      class="h-5 w-5"
+                      class="h-6 w-6 text-gray-900"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
                         clip-rule="evenodd"
-                        d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
                         fill-rule="evenodd"
                       />
                     </svg>
-                    <span
-                      class="sr-only"
-                    >
-                      Attach a file
-                    </span>
-                  </button>
-                </div>
-                <div
-                  class="flex items-center"
-                >
-                  <label
-                    class="sr-only"
-                    id="headlessui-listbox-label-2"
-                  >
-                    Your mood
-                  </label>
-                  <div
-                    class="relative"
-                  >
-                    <button
-                      aria-expanded="false"
-                      aria-haspopup="true"
-                      aria-labelledby="headlessui-listbox-label-2 headlessui-listbox-button-3"
-                      class="relative -m-2.5 flex h-10 w-10 items-center justify-center rounded-full text-gray-400 hover:text-gray-500"
-                      id="headlessui-listbox-button-3"
-                      type="button"
-                    >
-                      <span
-                        class="flex items-center justify-center"
-                      >
-                        <span>
-                          <svg
-                            aria-hidden="true"
-                            class="h-5 w-5 flex-shrink-0"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              clip-rule="evenodd"
-                              d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z"
-                              fill-rule="evenodd"
-                            />
-                          </svg>
-                          <span
-                            class="sr-only"
-                          >
-                            Add your mood
-                          </span>
-                        </span>
-                      </span>
-                    </button>
                   </div>
                 </div>
               </div>
               <div
-                class="flex-shrink-0"
+                class="min-w-0 flex-1 py-1.5"
+              >
+                <div
+                  class="text-sm text-gray-300"
+                >
+                  <a
+                    class="font-medium text-gray-100"
+                    href="#"
+                  >
+                    Hilary Mahy
+                  </a>
+                   
+                  assigned
+                   
+                  <a
+                    class="font-medium text-gray-100"
+                    href="#"
+                  >
+                    Kristin Watson
+                  </a>
+                   
+                  <span
+                    class="whitespace-nowrap"
+                  >
+                    2d ago
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div
+            class="relative pb-8"
+          >
+            <span
+              aria-hidden="true"
+              class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-500"
+            />
+            <div
+              class="relative flex items-start space-x-3"
+            >
+              <div>
+                <div
+                  class="relative px-1"
+                >
+                  <div
+                    class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 ring-4 ring-white"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="h-6 w-6 text-gray-900"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        clip-rule="evenodd"
+                        d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="min-w-0 flex-1 py-0"
+              >
+                <div
+                  class="text-sm leading-8 text-gray-300"
+                >
+                  <span
+                    class="mr-0.5"
+                  >
+                    <a
+                      class="font-medium text-gray-100"
+                      href="#"
+                    >
+                      Hilary Mahy
+                    </a>
+                     
+                    added tags
+                  </span>
+                   
+                  <span
+                    class="mr-0.5"
+                  >
+                    <a
+                      class="relative inline-flex items-center rounded-full border border-gray-300 px-3 py-0.5 text-sm"
+                      href="#"
+                    >
+                      <span
+                        class="absolute flex flex-shrink-0 items-center justify-center"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="bg-rose-500 h-1.5 w-1.5 rounded-full"
+                        />
+                      </span>
+                      <span
+                        class="ml-3.5 font-medium text-gray-100"
+                      >
+                        Bug
+                      </span>
+                    </a>
+                     
+                    <a
+                      class="relative inline-flex items-center rounded-full border border-gray-300 px-3 py-0.5 text-sm"
+                      href="#"
+                    >
+                      <span
+                        class="absolute flex flex-shrink-0 items-center justify-center"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="bg-indigo-500 h-1.5 w-1.5 rounded-full"
+                        />
+                      </span>
+                      <span
+                        class="ml-3.5 font-medium text-gray-100"
+                      >
+                        Accessibility
+                      </span>
+                    </a>
+                     
+                  </span>
+                  <span
+                    class="whitespace-nowrap"
+                  >
+                    6h ago
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div
+            class="relative pb-8"
+          >
+            <div
+              class="relative flex items-start space-x-3"
+            >
+              <div
+                class="relative"
+              >
+                <img
+                  alt=""
+                  class="flex h-10 w-10 items-center justify-center rounded-full bg-gray-400 ring-4 ring-gray-500"
+                  src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80"
+                />
+                <span
+                  class="absolute -bottom-0.5 -right-1 rounded-tl bg-white px-0.5 py-px"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="h-5 w-5 text-gray-900"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      clip-rule="evenodd"
+                      d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                class="min-w-0 flex-1"
+              >
+                <div>
+                  <div
+                    class="text-sm"
+                  >
+                    <a
+                      class="font-medium text-gray-100"
+                      href="#"
+                    >
+                      Jason Meyers
+                    </a>
+                  </div>
+                  <p
+                    class="mt-0.5 text-sm text-gray-300"
+                  >
+                    Commented 
+                    2h ago
+                  </p>
+                </div>
+                <div
+                  class="mt-2 text-sm text-gray-400"
+                >
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt nunc ipsum tempor purus vitae id. Morbi in vestibulum nec varius. Et diam cursus quis sed purus nam. Scelerisque amet elit non sit ut tincidunt condimentum. Nisl ultrices eu venenatis diam.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div
+      data-testid="app.ui/message-input"
+    >
+      <form
+        action="#"
+        class="relative"
+      >
+        <div
+          class="overflow-hidden rounded-lg border border-gray-300 shadow-sm focus-within:border-teal-500 focus-within:ring-1 focus-within:ring-teal-500"
+        >
+          <label
+            class="sr-only"
+            for="comment"
+          >
+            Add your comment
+          </label>
+          <textarea
+            class="block w-full resize-none border-0 py-3 focus:ring-0 sm:text-sm"
+            id="comment"
+            name="comment"
+            placeholder="Add your comment..."
+            rows="3"
+          />
+          <div
+            aria-hidden="true"
+            class="py-2"
+          >
+            <div
+              class="py-px"
+            >
+              <div
+                class="h-9"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute inset-x-0 bottom-0 flex justify-between py-2 pl-3 pr-2"
+        >
+          <div
+            class="flex items-center space-x-5"
+          >
+            <div
+              class="flex items-center"
+            >
+              <button
+                class="-m-2.5 flex h-10 w-10 items-center justify-center rounded-full text-gray-400 hover:text-gray-500"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="h-5 w-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <span
+                  class="sr-only"
+                >
+                  Attach a file
+                </span>
+              </button>
+            </div>
+            <div
+              class="flex items-center"
+            >
+              <label
+                class="sr-only"
+                id="headlessui-listbox-label-1"
+              >
+                Your mood
+              </label>
+              <div
+                class="relative"
               >
                 <button
-                  class="inline-flex items-center rounded-md border border-transparent bg-teal-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
-                  type="submit"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                  aria-labelledby="headlessui-listbox-label-1 headlessui-listbox-button-2"
+                  class="relative -m-2.5 flex h-10 w-10 items-center justify-center rounded-full text-gray-400 hover:text-gray-500"
+                  id="headlessui-listbox-button-2"
+                  type="button"
                 >
-                  Post
+                  <span
+                    class="flex items-center justify-center"
+                  >
+                    <span>
+                      <svg
+                        aria-hidden="true"
+                        class="h-5 w-5 flex-shrink-0"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                      <span
+                        class="sr-only"
+                      >
+                        Add your mood
+                      </span>
+                    </span>
+                  </span>
                 </button>
               </div>
             </div>
-          </form>
+          </div>
+          <div
+            class="flex-shrink-0"
+          >
+            <button
+              class="inline-flex items-center rounded-md border border-transparent bg-teal-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+              type="submit"
+            >
+              Post
+            </button>
+          </div>
         </div>
-      </div>
+      </form>
     </div>
   </div>
 </div>

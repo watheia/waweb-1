@@ -1,5 +1,5 @@
 import { DivProps, Post } from '@waweb/model';
-import { storageUrl } from '@waweb/supabase';
+import { defaultAvatar } from '@waweb/supabase';
 import Link from 'next/link';
 
 export interface BlogFeaturedProps extends DivProps {
@@ -11,7 +11,6 @@ export const BlogFeatured = ({
   posts,
   ...props
 }: BlogFeaturedProps) => {
-  const defaultAvatar = storageUrl('avatars', 'supabot.png');
   return (
     <div className={className} {...props}>
       <div className="absolute inset-0">

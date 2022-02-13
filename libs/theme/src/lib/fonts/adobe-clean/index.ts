@@ -1,6 +1,6 @@
-import _styles from './adobe-clean.module.scss';
+import styles from './adobe-clean.module.scss';
 
-export type { AdobeCleanProps, FontWeight, FontStyle } from './adobe-clean';
+export type { FontWeight, FontStyle } from './adobe-clean';
 export * from './adobe-clean';
 
 const {
@@ -16,7 +16,7 @@ const {
   extraBoldIt,
   black,
   blackIt,
-} = _styles;
+} = styles;
 
 export const adobeClean = {
   light,

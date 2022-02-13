@@ -1,0 +1,287 @@
+{
+  "data": {
+    "site": {
+      "favicon": [
+        {
+          "attributes": {
+            "sizes": "16x16",
+            "type": "image/png",
+            "rel": "icon",
+            "href": "https://www.datocms-assets.com/63265/1642673719-location-map-marker-point-tag-icon-1320168269016398252_512.png?h=16&w=16"
+          },
+          "content": null,
+          "tag": "link"
+        },
+        {
+          "attributes": {
+            "sizes": "32x32",
+            "type": "image/png",
+            "rel": "icon",
+            "href": "https://www.datocms-assets.com/63265/1642673719-location-map-marker-point-tag-icon-1320168269016398252_512.png?h=32&w=32"
+          },
+          "content": null,
+          "tag": "link"
+        },
+        {
+          "attributes": {
+            "sizes": "96x96",
+            "type": "image/png",
+            "rel": "icon",
+            "href": "https://www.datocms-assets.com/63265/1642673719-location-map-marker-point-tag-icon-1320168269016398252_512.png?h=96&w=96"
+          },
+          "content": null,
+          "tag": "link"
+        },
+        {
+          "attributes": {
+            "sizes": "192x192",
+            "type": "image/png",
+            "rel": "icon",
+            "href": "https://www.datocms-assets.com/63265/1642673719-location-map-marker-point-tag-icon-1320168269016398252_512.png?h=192&w=192"
+          },
+          "content": null,
+          "tag": "link"
+        }
+      ]
+    },
+    "blog": {
+      "seo": [
+        {
+          "attributes": null,
+          "content": "Blog Example with DatoCMS",
+          "tag": "title"
+        },
+        {
+          "attributes": {
+            "property": "og:title",
+            "content": "Blog Example with DatoCMS"
+          },
+          "content": null,
+          "tag": "meta"
+        },
+        {
+          "attributes": {
+            "name": "twitter:title",
+            "content": "Blog Example with DatoCMS"
+          },
+          "content": null,
+          "tag": "meta"
+        },
+        {
+          "attributes": {
+            "name": "description",
+            "content": "A statically generated blog example using Next.js and DatoCMS"
+          },
+          "content": null,
+          "tag": "meta"
+        },
+        {
+          "attributes": {
+            "property": "og:description",
+            "content": "A statically generated blog example using Next.js and DatoCMS"
+          },
+          "content": null,
+          "tag": "meta"
+        },
+        {
+          "attributes": {
+            "name": "twitter:description",
+            "content": "A statically generated blog example using Next.js and DatoCMS"
+          },
+          "content": null,
+          "tag": "meta"
+        },
+        {
+          "attributes": {
+            "property": "og:locale",
+            "content": "en"
+          },
+          "content": null,
+          "tag": "meta"
+        },
+        {
+          "attributes": {
+            "property": "og:type",
+            "content": "website"
+          },
+          "content": null,
+          "tag": "meta"
+        },
+        {
+          "attributes": {
+            "property": "og:site_name",
+            "content": "Blog Example"
+          },
+          "content": null,
+          "tag": "meta"
+        },
+        {
+          "attributes": {
+            "property": "article:modified_time",
+            "content": "2021-02-05T12:47:46Z"
+          },
+          "content": null,
+          "tag": "meta"
+        },
+        {
+          "attributes": {
+            "name": "twitter:card",
+            "content": "summary"
+          },
+          "content": null,
+          "tag": "meta"
+        }
+      ]
+    },
+    "allPosts": [
+      {
+        "title": "Mistakes Tourists Make on Their First Trip Abroad",
+        "slug": "mistakes-tourists-make-on-their-first-trip-abroad",
+        "excerpt": "Follow these simple rules to not get into trouble while traveling.",
+        "date": "2020-03-26",
+        "coverImage": {
+          "responsiveImage": {
+            "srcSet": "https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?dpr=0.25&fit=crop&fm=jpg&h=1000&w=2000 500w,https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?dpr=0.5&fit=crop&fm=jpg&h=1000&w=2000 1000w,https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?dpr=0.75&fit=crop&fm=jpg&h=1000&w=2000 1500w,https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?fit=crop&fm=jpg&h=1000&w=2000 2000w",
+            "webpSrcSet": "https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?dpr=0.25&fit=crop&fm=webp&h=1000&w=2000 500w,https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?dpr=0.5&fit=crop&fm=webp&h=1000&w=2000 1000w,https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?dpr=0.75&fit=crop&fm=webp&h=1000&w=2000 1500w,https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?fit=crop&fm=webp&h=1000&w=2000 2000w",
+            "sizes": "(max-width: 2000px) 100vw, 2000px",
+            "src": "https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?fit=crop&fm=jpg&h=1000&w=2000",
+            "width": 2000,
+            "height": 1000,
+            "aspectRatio": 2,
+            "alt": null,
+            "title": null,
+            "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgLCgoLDhgXDg0NDh0VFh0dIx8lGC4lHiEaKyslJSUoKS0uJDUlLS0vMjIyJSI4PTcwPDcxMi8BCgsLDg0OHBAQHDsoIig7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7NTs7Lzs7Oy87LzsvNTsvOzU7OzsvOzsvNS87O//AABEIAAwAGAMBIgACEQEDEQH/xAAYAAACAwAAAAAAAAAAAAAAAAAABgQHCP/EACIQAAAFAwQDAAAAAAAAAAAAAAABAgMEBhFRISIxQQUSE//EABUBAQEAAAAAAAAAAAAAAAAAAAQD/8QAGxEAAgMAAwAAAAAAAAAAAAAAAQMAAhEEEjH/2gAMAwEAAhEDEQA/AJ1OVOwTheqyPXIfGKjZcaI7lcZzpyQ6qcnd10LRgLV8S1PgEDLdsj+QtYO1jdM8+3fkAS561ZAL6ZCq1keT/9k="
+          }
+        },
+        "author": {
+          "name": "Supabot",
+          "picture": {
+            "responsiveImage": {
+              "srcSet": "https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.5&fit=crop&fm=jpg&h=100&sat=-100&w=100 50w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.75&fit=crop&fm=jpg&h=100&sat=-100&w=100 75w,https://www.datocms-assets.com/63265/1644788631-icon.png?fit=crop&fm=jpg&h=100&sat=-100&w=100 100w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=1.5&fit=crop&fm=jpg&h=100&sat=-100&w=100 150w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=2&fit=crop&fm=jpg&h=100&sat=-100&w=100 200w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=3&fit=crop&fm=jpg&h=100&sat=-100&w=100 300w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=4&fit=crop&fm=jpg&h=100&sat=-100&w=100 400w",
+              "webpSrcSet": "https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.5&fit=crop&fm=webp&h=100&sat=-100&w=100 50w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.75&fit=crop&fm=webp&h=100&sat=-100&w=100 75w,https://www.datocms-assets.com/63265/1644788631-icon.png?fit=crop&fm=webp&h=100&sat=-100&w=100 100w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=1.5&fit=crop&fm=webp&h=100&sat=-100&w=100 150w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=2&fit=crop&fm=webp&h=100&sat=-100&w=100 200w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=3&fit=crop&fm=webp&h=100&sat=-100&w=100 300w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=4&fit=crop&fm=webp&h=100&sat=-100&w=100 400w",
+              "sizes": "(max-width: 100px) 100vw, 100px",
+              "src": "https://www.datocms-assets.com/63265/1644788631-icon.png?fit=crop&fm=jpg&h=100&sat=-100&w=100",
+              "width": 100,
+              "height": 100,
+              "aspectRatio": 1,
+              "alt": null,
+              "title": null,
+              "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoIDQ8QDQ0KDhANDQ4NDhENFg0NFxMZGBYTIiEaHysjGh0oHRUWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLBQUFEAUFEC8cFhwvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABgAGAMBIgACEQEDEQH/xAAZAAACAwEAAAAAAAAAAAAAAAAABgQFBwH/xAAgEAACAgEDBQAAAAAAAAAAAAAAAQMEAgUREhMhI2GB/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANdu5rGFi7lKusWmpTNRMV8rPn+gNNWZcUBWVZnxR0CXrHaFias27W3sAAY6OO8aAAA//9k="
+            }
+          }
+        }
+      },
+      {
+        "title": "How to Spend a Perfect Weekend Together",
+        "slug": "spicy-jalapeno-bacon",
+        "excerpt": "Essential things you need to know when planning a vacation abroad",
+        "date": "2020-03-10",
+        "coverImage": {
+          "responsiveImage": {
+            "srcSet": "https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?dpr=0.25&fit=crop&fm=jpg&h=1000&w=2000 500w,https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?dpr=0.5&fit=crop&fm=jpg&h=1000&w=2000 1000w,https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?dpr=0.75&fit=crop&fm=jpg&h=1000&w=2000 1500w,https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?fit=crop&fm=jpg&h=1000&w=2000 2000w",
+            "webpSrcSet": "https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?dpr=0.25&fit=crop&fm=webp&h=1000&w=2000 500w,https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?dpr=0.5&fit=crop&fm=webp&h=1000&w=2000 1000w,https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?dpr=0.75&fit=crop&fm=webp&h=1000&w=2000 1500w,https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?fit=crop&fm=webp&h=1000&w=2000 2000w",
+            "sizes": "(max-width: 2000px) 100vw, 2000px",
+            "src": "https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?fit=crop&fm=jpg&h=1000&w=2000",
+            "width": 2000,
+            "height": 1000,
+            "aspectRatio": 2,
+            "alt": null,
+            "title": null,
+            "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgLChYLDhUWDhUWDh0NFhENFxMdGBYTFhUdHy0jGh0oHSEWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OHBAQHDsoIig7Oy8vOzs7Ozs1Ly8vLy8vLy8vLy87Oy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIAAwAGAMBIgACEQEDEQH/xAAYAAACAwAAAAAAAAAAAAAAAAAABQMGB//EACAQAAEEAAcBAAAAAAAAAAAAAAEAAgMFBBESISIxMgb/xAAVAQEBAAAAAAAAAAAAAAAAAAAEAv/EABgRAQADAQAAAAAAAAAAAAAAAAEAAhES/9oADAMBAAIRAxEAPwBxgfo49XoJhiLhs0XazWme5zhmSrKXERbFCRq5F4JIrO1bC4nNCRW3MkOQqbWhnkZ//9k="
+          }
+        },
+        "author": {
+          "name": "Supabot",
+          "picture": {
+            "responsiveImage": {
+              "srcSet": "https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.5&fit=crop&fm=jpg&h=100&sat=-100&w=100 50w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.75&fit=crop&fm=jpg&h=100&sat=-100&w=100 75w,https://www.datocms-assets.com/63265/1644788631-icon.png?fit=crop&fm=jpg&h=100&sat=-100&w=100 100w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=1.5&fit=crop&fm=jpg&h=100&sat=-100&w=100 150w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=2&fit=crop&fm=jpg&h=100&sat=-100&w=100 200w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=3&fit=crop&fm=jpg&h=100&sat=-100&w=100 300w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=4&fit=crop&fm=jpg&h=100&sat=-100&w=100 400w",
+              "webpSrcSet": "https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.5&fit=crop&fm=webp&h=100&sat=-100&w=100 50w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.75&fit=crop&fm=webp&h=100&sat=-100&w=100 75w,https://www.datocms-assets.com/63265/1644788631-icon.png?fit=crop&fm=webp&h=100&sat=-100&w=100 100w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=1.5&fit=crop&fm=webp&h=100&sat=-100&w=100 150w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=2&fit=crop&fm=webp&h=100&sat=-100&w=100 200w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=3&fit=crop&fm=webp&h=100&sat=-100&w=100 300w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=4&fit=crop&fm=webp&h=100&sat=-100&w=100 400w",
+              "sizes": "(max-width: 100px) 100vw, 100px",
+              "src": "https://www.datocms-assets.com/63265/1644788631-icon.png?fit=crop&fm=jpg&h=100&sat=-100&w=100",
+              "width": 100,
+              "height": 100,
+              "aspectRatio": 1,
+              "alt": null,
+              "title": null,
+              "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoIDQ8QDQ0KDhANDQ4NDhENFg0NFxMZGBYTIiEaHysjGh0oHRUWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLBQUFEAUFEC8cFhwvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABgAGAMBIgACEQEDEQH/xAAZAAACAwEAAAAAAAAAAAAAAAAABgQFBwH/xAAgEAACAgEDBQAAAAAAAAAAAAAAAQMEAgUREhMhI2GB/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANdu5rGFi7lKusWmpTNRMV8rPn+gNNWZcUBWVZnxR0CXrHaFias27W3sAAY6OO8aAAA//9k="
+            }
+          }
+        }
+      },
+      {
+        "title": "Unforgettable Trip to The Great Wall in China",
+        "slug": "unforgettable-trip-to-the-great-wall-in-china",
+        "excerpt": "Our recommendations for your trip to the Great Wall in China.",
+        "date": "2020-03-06",
+        "coverImage": {
+          "responsiveImage": {
+            "srcSet": "https://www.datocms-assets.com/63265/1585207017-image-30-copyright.jpg?dpr=0.25&fit=crop&fm=jpg&h=1000&w=2000 500w,https://www.datocms-assets.com/63265/1585207017-image-30-copyright.jpg?dpr=0.5&fit=crop&fm=jpg&h=1000&w=2000 1000w,https://www.datocms-assets.com/63265/1585207017-image-30-copyright.jpg?dpr=0.75&fit=crop&fm=jpg&h=1000&w=2000 1500w,https://www.datocms-assets.com/63265/1585207017-image-30-copyright.jpg?fit=crop&fm=jpg&h=1000&w=2000 2000w",
+            "webpSrcSet": "https://www.datocms-assets.com/63265/1585207017-image-30-copyright.jpg?dpr=0.25&fit=crop&fm=webp&h=1000&w=2000 500w,https://www.datocms-assets.com/63265/1585207017-image-30-copyright.jpg?dpr=0.5&fit=crop&fm=webp&h=1000&w=2000 1000w,https://www.datocms-assets.com/63265/1585207017-image-30-copyright.jpg?dpr=0.75&fit=crop&fm=webp&h=1000&w=2000 1500w,https://www.datocms-assets.com/63265/1585207017-image-30-copyright.jpg?fit=crop&fm=webp&h=1000&w=2000 2000w",
+            "sizes": "(max-width: 2000px) 100vw, 2000px",
+            "src": "https://www.datocms-assets.com/63265/1585207017-image-30-copyright.jpg?fit=crop&fm=jpg&h=1000&w=2000",
+            "width": 2000,
+            "height": 1000,
+            "aspectRatio": 2,
+            "alt": null,
+            "title": null,
+            "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgLCgoLDiEQDhUNDh0VFhUdLyodJCIVIiElKysvHR0oHRoiMDUlNC07MjIyGSI4PTc1PCsxMi8BCgsLDg0OHBAQHDsoIig7Ozs1Ozs7Ozs7Ozs7Oy87Oy8vOzs7Oy8vLy81Ly8vNS8vOy8vLzUvLy8vNS8vLy8vL//AABEIAAwAGAMBIgACEQEDEQH/xAAaAAABBQEAAAAAAAAAAAAAAAAEAQMFBgcA/8QAIRAAAgEDAwUAAAAAAAAAAAAAAQMAAgQhBQYSERQiUZH/xAAWAQADAAAAAAAAAAAAAAAAAAACAwX/xAAbEQABBAMAAAAAAAAAAAAAAAABAAIDIQQRUf/aAAwDAQACEQMRAD8An1b1S3ArEZvNwLdScylWNuuk4B+wm88FHjjEnSjJ3RCaHg2jn6svmepiTNdW1G67utYaaaR6nQxBkat6Ivj4v//Z"
+          }
+        },
+        "author": {
+          "name": "Supabot",
+          "picture": {
+            "responsiveImage": {
+              "srcSet": "https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.5&fit=crop&fm=jpg&h=100&sat=-100&w=100 50w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.75&fit=crop&fm=jpg&h=100&sat=-100&w=100 75w,https://www.datocms-assets.com/63265/1644788631-icon.png?fit=crop&fm=jpg&h=100&sat=-100&w=100 100w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=1.5&fit=crop&fm=jpg&h=100&sat=-100&w=100 150w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=2&fit=crop&fm=jpg&h=100&sat=-100&w=100 200w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=3&fit=crop&fm=jpg&h=100&sat=-100&w=100 300w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=4&fit=crop&fm=jpg&h=100&sat=-100&w=100 400w",
+              "webpSrcSet": "https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.5&fit=crop&fm=webp&h=100&sat=-100&w=100 50w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.75&fit=crop&fm=webp&h=100&sat=-100&w=100 75w,https://www.datocms-assets.com/63265/1644788631-icon.png?fit=crop&fm=webp&h=100&sat=-100&w=100 100w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=1.5&fit=crop&fm=webp&h=100&sat=-100&w=100 150w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=2&fit=crop&fm=webp&h=100&sat=-100&w=100 200w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=3&fit=crop&fm=webp&h=100&sat=-100&w=100 300w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=4&fit=crop&fm=webp&h=100&sat=-100&w=100 400w",
+              "sizes": "(max-width: 100px) 100vw, 100px",
+              "src": "https://www.datocms-assets.com/63265/1644788631-icon.png?fit=crop&fm=jpg&h=100&sat=-100&w=100",
+              "width": 100,
+              "height": 100,
+              "aspectRatio": 1,
+              "alt": null,
+              "title": null,
+              "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoIDQ8QDQ0KDhANDQ4NDhENFg0NFxMZGBYTIiEaHysjGh0oHRUWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLBQUFEAUFEC8cFhwvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABgAGAMBIgACEQEDEQH/xAAZAAACAwEAAAAAAAAAAAAAAAAABgQFBwH/xAAgEAACAgEDBQAAAAAAAAAAAAAAAQMEAgUREhMhI2GB/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANdu5rGFi7lKusWmpTNRMV8rPn+gNNWZcUBWVZnxR0CXrHaFias27W3sAAY6OO8aAAA//9k="
+            }
+          }
+        }
+      },
+      {
+        "title": "Tips on How to See More and Stay Safe in Asia",
+        "slug": "tips-on-how-to-see-more-and-stay-safe-in-asia",
+        "excerpt": "Our recommendations on how to travel and stay safe in Asia.",
+        "date": "2020-03-05",
+        "coverImage": {
+          "responsiveImage": {
+            "srcSet": "https://www.datocms-assets.com/63265/1585207093-image-26-copyright.jpg?dpr=0.25&fit=crop&fm=jpg&h=1000&w=2000 500w,https://www.datocms-assets.com/63265/1585207093-image-26-copyright.jpg?dpr=0.5&fit=crop&fm=jpg&h=1000&w=2000 1000w,https://www.datocms-assets.com/63265/1585207093-image-26-copyright.jpg?dpr=0.75&fit=crop&fm=jpg&h=1000&w=2000 1500w,https://www.datocms-assets.com/63265/1585207093-image-26-copyright.jpg?fit=crop&fm=jpg&h=1000&w=2000 2000w",
+            "webpSrcSet": "https://www.datocms-assets.com/63265/1585207093-image-26-copyright.jpg?dpr=0.25&fit=crop&fm=webp&h=1000&w=2000 500w,https://www.datocms-assets.com/63265/1585207093-image-26-copyright.jpg?dpr=0.5&fit=crop&fm=webp&h=1000&w=2000 1000w,https://www.datocms-assets.com/63265/1585207093-image-26-copyright.jpg?dpr=0.75&fit=crop&fm=webp&h=1000&w=2000 1500w,https://www.datocms-assets.com/63265/1585207093-image-26-copyright.jpg?fit=crop&fm=webp&h=1000&w=2000 2000w",
+            "sizes": "(max-width: 2000px) 100vw, 2000px",
+            "src": "https://www.datocms-assets.com/63265/1585207093-image-26-copyright.jpg?fit=crop&fm=jpg&h=1000&w=2000",
+            "width": 2000,
+            "height": 1000,
+            "aspectRatio": 2,
+            "alt": null,
+            "title": null,
+            "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgLCgoLDhgQDhkNDikhFhEbLx8lHRwfFhsaHzovJjItHSEiJDUlKC0vMjIyHSI4PTcwPCsxMi8BCgsLDg0OHBAQHDsoIig7Ozs7Ozs7Ozs7Ozs7Ozs7Ly8vOzs7OzU7Ly81LzsvLy8vOzsvLy8vLzUvOy8vNS8vL//AABEIAAwAGAMBIgACEQEDEQH/xAAXAAADAQAAAAAAAAAAAAAAAAAABgcE/8QAHxAAAQQBBQEAAAAAAAAAAAAAAQACAwUEBhExMkES/8QAFQEBAQAAAAAAAAAAAAAAAAAABAP/xAAbEQABBAMAAAAAAAAAAAAAAAABAAIRIQMTIv/aAAwDAQACEQMRAD8Az0t/HkPBDgQnXGuI2Qg/Q4Ubpt4XAMJCa48mUw9vEFzg48pJx6zBTFb6rhxwS54AQpfquR7oTu48oScYMWoPmaX/2Q=="
+          }
+        },
+        "author": {
+          "name": "Supabot",
+          "picture": {
+            "responsiveImage": {
+              "srcSet": "https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.5&fit=crop&fm=jpg&h=100&sat=-100&w=100 50w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.75&fit=crop&fm=jpg&h=100&sat=-100&w=100 75w,https://www.datocms-assets.com/63265/1644788631-icon.png?fit=crop&fm=jpg&h=100&sat=-100&w=100 100w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=1.5&fit=crop&fm=jpg&h=100&sat=-100&w=100 150w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=2&fit=crop&fm=jpg&h=100&sat=-100&w=100 200w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=3&fit=crop&fm=jpg&h=100&sat=-100&w=100 300w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=4&fit=crop&fm=jpg&h=100&sat=-100&w=100 400w",
+              "webpSrcSet": "https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.5&fit=crop&fm=webp&h=100&sat=-100&w=100 50w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.75&fit=crop&fm=webp&h=100&sat=-100&w=100 75w,https://www.datocms-assets.com/63265/1644788631-icon.png?fit=crop&fm=webp&h=100&sat=-100&w=100 100w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=1.5&fit=crop&fm=webp&h=100&sat=-100&w=100 150w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=2&fit=crop&fm=webp&h=100&sat=-100&w=100 200w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=3&fit=crop&fm=webp&h=100&sat=-100&w=100 300w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=4&fit=crop&fm=webp&h=100&sat=-100&w=100 400w",
+              "sizes": "(max-width: 100px) 100vw, 100px",
+              "src": "https://www.datocms-assets.com/63265/1644788631-icon.png?fit=crop&fm=jpg&h=100&sat=-100&w=100",
+              "width": 100,
+              "height": 100,
+              "aspectRatio": 1,
+              "alt": null,
+              "title": null,
+              "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoIDQ8QDQ0KDhANDQ4NDhENFg0NFxMZGBYTIiEaHysjGh0oHRUWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLBQUFEAUFEC8cFhwvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABgAGAMBIgACEQEDEQH/xAAZAAACAwEAAAAAAAAAAAAAAAAABgQFBwH/xAAgEAACAgEDBQAAAAAAAAAAAAAAAQMEAgUREhMhI2GB/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANdu5rGFi7lKusWmpTNRMV8rPn+gNNWZcUBWVZnxR0CXrHaFias27W3sAAY6OO8aAAA//9k="
+            }
+          }
+        }
+      }
+    ]
+  }
+}

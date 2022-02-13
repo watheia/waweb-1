@@ -48,6 +48,9 @@ const nextConfig = {
     // See: https://github.com/gregberge/svgr
     svgr: true,
   },
+  env: {
+    NEXT_DATOCMS_API_TOKEN: process.env.NEXT_DATOCMS_API_TOKEN,
+  },
   images: {
     domains: [
       'www.datocms-assets.com',

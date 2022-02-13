@@ -6,7 +6,7 @@ export default {
   title: 'waweb.icons/chat',
 } as Meta;
 
-const Template: Story = (args) => <Chat {...args} />;
+const Template: Story = (args) => <Chat style={{ color: 'white' }} {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {};

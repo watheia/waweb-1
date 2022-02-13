@@ -6,7 +6,9 @@ export default {
   title: 'waweb.icons/chartbar',
 } as Meta;
 
-const Template: Story = (args) => <ChartBar {...args} />;
+const Template: Story = (args) => (
+  <ChartBar style={{ color: 'white' }} {...args} />
+);
 
 export const Primary = Template.bind({});
 Primary.args = {};

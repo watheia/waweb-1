@@ -6,7 +6,9 @@ export default {
   title: 'waweb.icons/download',
 } as Meta;
 
-const Template: Story = (args) => <Download {...args} />;
+const Template: Story = (args) => (
+  <Download style={{ color: 'white' }} {...args} />
+);
 
 export const Primary = Template.bind({});
 Primary.args = {};

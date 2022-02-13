@@ -6,7 +6,7 @@ export default {
   title: 'waweb.icons/github',
 } as Meta;
 
-const Template: Story = (args) => <Github {...args} />;
+const Template: Story = (args) => <Github color="white" {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {};

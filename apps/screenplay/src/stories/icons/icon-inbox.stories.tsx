@@ -6,7 +6,9 @@ export default {
   title: 'waweb.icons/inbox',
 } as Meta;
 
-const Template: Story = (args) => <Inbox {...args} />;
+const Template: Story = (args) => (
+  <Inbox style={{ color: 'white' }} {...args} />
+);
 
 export const Primary = Template.bind({});
 Primary.args = {};

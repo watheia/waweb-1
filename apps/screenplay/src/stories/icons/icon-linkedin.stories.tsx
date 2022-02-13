@@ -6,7 +6,9 @@ export default {
   title: 'waweb.icons/linkedin',
 } as Meta;
 
-const Template: Story = (args) => <Linkedin {...args} />;
+const Template: Story = (args) => (
+  <Linkedin style={{ color: 'white' }} {...args} />
+);
 
 export const Primary = Template.bind({});
 Primary.args = {};

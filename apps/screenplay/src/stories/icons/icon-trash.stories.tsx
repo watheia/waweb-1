@@ -6,7 +6,9 @@ export default {
   title: 'waweb.icons/trash',
 } as Meta;
 
-const Template: Story = (args) => <Trash {...args} />;
+const Template: Story = (args) => (
+  <Trash style={{ color: 'white' }} {...args} />
+);
 
 export const Primary = Template.bind({});
 Primary.args = {};

@@ -16,7 +16,7 @@ setup:
 
 build:
 	@echo "~~~> Build home bundle..."
-	nx build home --prod --verbose --skip-nx-cache
+	nx build home --prod --verbose
 
 docs:
 	yarn depcruise --output-type dot --output-to docs/depgraph.dot --prefix "https://github.com/drkstr101/waweb/blob/main/"

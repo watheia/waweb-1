@@ -29,7 +29,7 @@ export default function IndexPage() {
 
   return (
     <Page meta={meta} fullViewport>
-      <Layout>
+      <Layout usePadding>
         <ComingSoon />
       </Layout>
     </Page>

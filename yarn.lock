@@ -6645,16 +6645,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/typography@npm:^0.5.1":
-  version: 0.5.1
-  resolution: "@tailwindcss/typography@npm:0.5.1"
+"@tailwindcss/typography@npm:^0.5.2":
+  version: 0.5.2
+  resolution: "@tailwindcss/typography@npm:0.5.2"
   dependencies:
     lodash.castarray: ^4.4.0
     lodash.isplainobject: ^4.0.6
     lodash.merge: ^4.6.2
   peerDependencies:
     tailwindcss: "*"
-  checksum: 894bab9a14a5bc4071573618ca9fd6b5bbe53e3c26af8aa1de440b8be59a63cf105f9fb1b12611bf446b4b054c6a48e8ff5c7c85ff233c5f78d70ffb7e53b5d9
+  checksum: f6c27e32c9b48b0e906561d1e9dd3eec8fd5efc9792fd691269ceaa9d30d35bc715023215ec83ff8e5475c38af69e164d577672d935813b70e04b1c820b2ea8e
   languageName: node
   linkType: hard
 
@@ -22088,9 +22088,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"puppeteer-core@npm:^13.3.1":
-  version: 13.3.1
-  resolution: "puppeteer-core@npm:13.3.1"
+"puppeteer-core@npm:^13.3.2":
+  version: 13.3.2
+  resolution: "puppeteer-core@npm:13.3.2"
   dependencies:
     cross-fetch: 3.1.5
     debug: 4.3.3
@@ -22104,7 +22104,7 @@ __metadata:
     tar-fs: 2.1.1
     unbzip2-stream: 1.4.3
     ws: 8.5.0
-  checksum: 1695bef8ca41044748f34b08d6a176027a7574aadf853c1a46c7238cc15f988f37465e1d69aa53b6bf2999fe2e06626e3edd3513221336584f94cf08aebde72c
+  checksum: f3f58e258304f90d6699e06d43826544c98a3c8e1adcc379c8134915a310176c989217e78cbd052f0f02c6507e553fecaf5f08625bfb93dd3fcdecc232e19d91
   languageName: node
   linkType: hard
 
@@ -26771,7 +26771,7 @@ __metadata:
     "@swc/jest": 0.2.17
     "@tailwindcss/aspect-ratio": ^0.4.0
     "@tailwindcss/forms": ^0.4.0
-    "@tailwindcss/typography": ^0.5.1
+    "@tailwindcss/typography": ^0.5.2
     "@testing-library/react": ^13.0.0-alpha.5
     "@testing-library/react-hooks": ^8.0.0-alpha.1
     "@tsndr/cloudflare-worker-jwt": ^1.1.5
@@ -26841,7 +26841,7 @@ __metadata:
     prettier: ^2.5.1
     prisma: ^3.9.2
     prop-types: ^15.8.1
-    puppeteer-core: ^13.3.1
+    puppeteer-core: ^13.3.2
     react: ^18.0.0-rc.0-next-fe905f152-20220107
     react-aria: ^3.12.0
     react-datocms: ^3.0.8

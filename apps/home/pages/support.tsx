@@ -16,6 +16,7 @@
 
 import useConfig from '@waweb/config';
 import { ComingSoon, Page } from '@waweb/atoms';
+import Layout from '@waweb/layout';
 
 export default function IndexPage() {
   const config = useConfig();
@@ -26,7 +27,9 @@ export default function IndexPage() {
 
   return (
     <Page meta={meta} fullViewport>
-      <ComingSoon />
+      <Layout usePadding>
+        <ComingSoon />
+      </Layout>
     </Page>
   );
 }

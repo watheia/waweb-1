@@ -14,14 +14,20 @@
  * limitations under the License.
  */
 
+import { SVGProps } from 'react';
+
 type Props = {
   color?: string;
   size?: number | string;
-};
+} & SVGProps<SVGSVGElement>;
 
-export default function IconCheck({ color = '#111111', size = '1rem' }: Props) {
+export default function IconCheck({
+  color = '#111111',
+  size = '1rem',
+  ...props
+}: Props) {
   return (
-    <svg viewBox="0 0 16 16" width={size} height={size}>
+    <svg viewBox="0 0 16 16" width={size} height={size} {...props}>
       <g fill={color}>
         <path
           fill={color}

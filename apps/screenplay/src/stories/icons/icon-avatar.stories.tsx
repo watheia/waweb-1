@@ -6,7 +6,9 @@ export default {
   title: 'waweb.icons/avatar',
 } as Meta;
 
-const Template: Story = (args) => <Avatar {...args} />;
+const Template: Story = (args) => (
+  <Avatar style={{ color: 'white' }} {...args} />
+);
 
 export const Primary = Template.bind({});
 Primary.args = {};

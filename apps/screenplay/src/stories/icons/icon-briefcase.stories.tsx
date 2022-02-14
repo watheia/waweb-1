@@ -6,7 +6,11 @@ export default {
   title: 'waweb.icons/briefcase',
 } as Meta;
 
-const Template: Story = (args) => <Briefcase {...args} />;
+const Template: Story = (args) => (
+  <div style={{ color: 'white' }}>
+    <Briefcase {...args} />
+  </div>
+);
 
 export const Primary = Template.bind({});
 Primary.args = {};

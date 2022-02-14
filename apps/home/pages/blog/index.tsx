@@ -14,32 +14,43 @@
  * limitations under the License.
  */
 
-import useConfig from '@waweb/config';
 import { Page } from '@waweb/atoms';
+import { getAllPostsForHome } from '@waweb/datocms';
 import Layout from '@waweb/layout';
+import { BlogView } from '@waweb/views.blog';
 import { GetStaticProps, InferGetServerSidePropsType } from 'next';
-import Blog, { fixtures } from '@waweb/views.blog';
 
 type Props = InferGetServerSidePropsType<typeof getStaticProps>;
 
-export default function BlogPage({ categories, posts }: Props) {
-  const config = useConfig();
+export default function BlogPage({ subscription, preview }: Props) {
   const meta = {
     title: 'Watheia Blog',
-    description: config.metaDescription,
+    description: 'Musings on technology, design, business and more.',
   };
 
   return (
     <Page meta={meta} fullViewport>
-      <Layout usePadding>
-        <Blog categories={categories} posts={posts} />
+      <Layout>
+        <BlogView subscription={subscription} preview={preview} />
       </Layout>
     </Page>
   );
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async ({ preview }) => {
   return {
-    props: fixtures,
+    props: {
+      subscription: preview
+        ? {
+            preview: true,
+            initialData: await getAllPostsForHome(preview),
+            token: process.env['NEXT_DATOCMS_API_TOKEN'],
+            environment: process.env['NEXT_DATOCMS_ENVIRONMENT'] || 'main',
+          }
+        : {
+            enabled: false,
+            initialData: await getAllPostsForHome(preview),
+          },
+    },
   };
 };

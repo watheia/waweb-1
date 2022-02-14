@@ -6,7 +6,7 @@ export default {
   title: 'waweb.icons/check',
 } as Meta;
 
-const Template: Story = (args) => <Check {...args} />;
+const Template: Story = (args) => <Check color="white" {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {};

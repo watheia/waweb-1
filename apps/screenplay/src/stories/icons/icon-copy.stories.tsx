@@ -6,7 +6,7 @@ export default {
   title: 'waweb.icons/copy',
 } as Meta;
 
-const Template: Story = (args) => <Copy {...args} />;
+const Template: Story = (args) => <Copy style={{ color: 'white' }} {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {};

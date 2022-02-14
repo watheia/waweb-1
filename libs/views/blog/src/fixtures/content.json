@@ -1,0 +1,858 @@
+{
+  "data": {
+    "site": {
+      "favicon": [
+        {
+          "attributes": {
+            "sizes": "16x16",
+            "type": "image/png",
+            "rel": "icon",
+            "href": "https://www.datocms-assets.com/63265/1642673719-location-map-marker-point-tag-icon-1320168269016398252_512.png?h=16&w=16"
+          },
+          "content": null,
+          "tag": "link"
+        },
+        {
+          "attributes": {
+            "sizes": "32x32",
+            "type": "image/png",
+            "rel": "icon",
+            "href": "https://www.datocms-assets.com/63265/1642673719-location-map-marker-point-tag-icon-1320168269016398252_512.png?h=32&w=32"
+          },
+          "content": null,
+          "tag": "link"
+        },
+        {
+          "attributes": {
+            "sizes": "96x96",
+            "type": "image/png",
+            "rel": "icon",
+            "href": "https://www.datocms-assets.com/63265/1642673719-location-map-marker-point-tag-icon-1320168269016398252_512.png?h=96&w=96"
+          },
+          "content": null,
+          "tag": "link"
+        },
+        {
+          "attributes": {
+            "sizes": "192x192",
+            "type": "image/png",
+            "rel": "icon",
+            "href": "https://www.datocms-assets.com/63265/1642673719-location-map-marker-point-tag-icon-1320168269016398252_512.png?h=192&w=192"
+          },
+          "content": null,
+          "tag": "link"
+        }
+      ]
+    },
+    "post": {
+      "seo": [
+        {
+          "attributes": null,
+          "content": "Mistakes Tourists Make on Their First Trip Abroad",
+          "tag": "title"
+        },
+        {
+          "attributes": {
+            "property": "og:title",
+            "content": "Mistakes Tourists Make on Their First Trip Abroad"
+          },
+          "content": null,
+          "tag": "meta"
+        },
+        {
+          "attributes": {
+            "name": "twitter:title",
+            "content": "Mistakes Tourists Make on Their First Trip Abroad"
+          },
+          "content": null,
+          "tag": "meta"
+        },
+        {
+          "attributes": {
+            "name": "description",
+            "content": "A statically generated blog example using Next.js and DatoCMS"
+          },
+          "content": null,
+          "tag": "meta"
+        },
+        {
+          "attributes": {
+            "property": "og:description",
+            "content": "A statically generated blog example using Next.js and DatoCMS"
+          },
+          "content": null,
+          "tag": "meta"
+        },
+        {
+          "attributes": {
+            "name": "twitter:description",
+            "content": "A statically generated blog example using Next.js and DatoCMS"
+          },
+          "content": null,
+          "tag": "meta"
+        },
+        {
+          "attributes": {
+            "property": "og:image",
+            "content": "https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?fit=max&fm=jpg&w=1000"
+          },
+          "content": null,
+          "tag": "meta"
+        },
+        {
+          "attributes": {
+            "property": "og:image:width",
+            "content": "1920"
+          },
+          "content": null,
+          "tag": "meta"
+        },
+        {
+          "attributes": {
+            "property": "og:image:height",
+            "content": "1080"
+          },
+          "content": null,
+          "tag": "meta"
+        },
+        {
+          "attributes": {
+            "name": "twitter:image",
+            "content": "https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?fit=max&fm=jpg&w=1000"
+          },
+          "content": null,
+          "tag": "meta"
+        },
+        {
+          "attributes": {
+            "property": "og:locale",
+            "content": "en"
+          },
+          "content": null,
+          "tag": "meta"
+        },
+        {
+          "attributes": {
+            "property": "og:type",
+            "content": "article"
+          },
+          "content": null,
+          "tag": "meta"
+        },
+        {
+          "attributes": {
+            "property": "og:site_name",
+            "content": "Blog Example"
+          },
+          "content": null,
+          "tag": "meta"
+        },
+        {
+          "attributes": {
+            "property": "article:modified_time",
+            "content": "2022-01-20T11:51:51Z"
+          },
+          "content": null,
+          "tag": "meta"
+        },
+        {
+          "attributes": {
+            "name": "twitter:card",
+            "content": "summary"
+          },
+          "content": null,
+          "tag": "meta"
+        }
+      ],
+      "title": "Mistakes Tourists Make on Their First Trip Abroad",
+      "slug": "mistakes-tourists-make-on-their-first-trip-abroad",
+      "content": {
+        "value": {
+          "schema": "dast",
+          "document": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si quae forte-possumus. Ita multa dicunt, quae vix intellegam. Ita prorsus, inquam; Duo Reges: constructio interrete. Sullae consulatum? Ita prorsus, inquam;"
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "style": "bulleted",
+                "children": [
+                  {
+                    "type": "listItem",
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "children": [
+                          {
+                            "type": "span",
+                            "value": "Hic quoque suus est de summoque bono dissentiens dici vere Peripateticus non potest."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "listItem",
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "children": [
+                          {
+                            "type": "span",
+                            "value": "Et ais, si una littera commota sit, fore tota ut labet disciplina."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "listItem",
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "children": [
+                          {
+                            "type": "span",
+                            "value": "Tollenda est atque extrahenda radicitus."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "Quae cum dixisset, finem ille."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "Iubet igitur nos Pythius Apollo noscere nosmet ipsos. Efficiens dici potest. Primum quid tu dicis breve? Quae duo sunt, unum facit. Aliter autem vobis placet. Aperiendum est igitur, quid sit voluptas;"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "Nam ista vestra: Si gravis, brevis; "
+                  },
+                  {
+                    "type": "span",
+                    "marks": ["emphasis"],
+                    "value": "Si enim ad populum me vocas, eum."
+                  },
+                  {
+                    "type": "span",
+                    "value": " Si id dicis, vicimus. Qua tu etiam inprudens utebare non numquam."
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "style": "bulleted",
+                "children": [
+                  {
+                    "type": "listItem",
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "children": [
+                          {
+                            "type": "span",
+                            "value": "Equidem e Cn."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "listItem",
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "children": [
+                          {
+                            "type": "span",
+                            "value": "Qui autem esse poteris, nisi te amor ipse ceperit?"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 5,
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "A mene tu?"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "Qua tu etiam inprudens utebare non numquam. Haec quo modo conveniant, non sane intellego. "
+                  },
+                  {
+                    "url": "http://loripsum.net/",
+                    "type": "link",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Quod ea non occurrentia fingunt, vincunt Aristonem;"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "span",
+                    "value": " Sed nimis multa."
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 4,
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "Quid est enim aliud esse versutum?"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "Terram, mihi crede, ea lanx et maria deprimet. "
+                  },
+                  {
+                    "type": "span",
+                    "marks": ["strong"],
+                    "value": "Efficiens dici potest."
+                  },
+                  {
+                    "type": "span",
+                    "value": " "
+                  },
+                  {
+                    "type": "span",
+                    "marks": ["emphasis"],
+                    "value": "Cur iustitia laudatur?"
+                  },
+                  {
+                    "type": "span",
+                    "value": " Quid ad utilitatem tantae pecuniae? Sint modo partes vitae beatae. Eam stabilem appellas."
+                  }
+                ]
+              },
+              {
+                "item": "107602118",
+                "type": "block"
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "Primum quid tu dicis breve? Egone quaeris, inquit, quid sentiam? De quibus cupio scire quid sentias. Hic nihil fuit, quod quaereremus."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "Summae mihi videtur inscitiae. Haec dicuntur inconstantissime. Tanta vis admonitionis inest in locis; Verum hoc idem saepe faciamus. Hunc vos beatum;"
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "style": "bulleted",
+                "children": [
+                  {
+                    "type": "listItem",
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "children": [
+                          {
+                            "type": "span",
+                            "value": "Ut aliquid scire se gaudeant?"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "listItem",
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "children": [
+                          {
+                            "type": "span",
+                            "value": "Suo genere perveniant ad extremum;"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "listItem",
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "children": [
+                          {
+                            "type": "span",
+                            "value": "Nihilne te delectat umquam -video, quicum loquar-, te igitur, Torquate, ipsum per se nihil delectat?"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "listItem",
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "children": [
+                          {
+                            "type": "span",
+                            "value": "Atque haec ita iustitiae propria sunt, ut sint virtutum reliquarum communia."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "listItem",
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "children": [
+                          {
+                            "type": "span",
+                            "value": "Nam si quae sunt aliae, falsum est omnis animi voluptates esse e corporis societate."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "Bonum incolumis acies: misera caecitas. Quae cum dixisset paulumque institisset, Quid est?"
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 1,
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "Si de re disceptari oportet, nulla mihi tecum, Cato, potest esse dissensio"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "Faceres tu quidem, Torquate, haec omnia; Polycratem Samium felicem appellabant. Quid ad utilitatem tantae pecuniae? "
+                  },
+                  {
+                    "type": "span",
+                    "marks": ["strong"],
+                    "value": "Et quod est munus, quod opus sapientiae?"
+                  },
+                  {
+                    "type": "span",
+                    "value": " Ut aliquid scire se gaudeant? Tamen a proposito, inquam, aberramus."
+                  }
+                ]
+              },
+              {
+                "item": "107602119",
+                "type": "block"
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "marks": ["emphasis"],
+                    "value": "Honesta oratio, Socratica, Platonis etiam."
+                  },
+                  {
+                    "type": "span",
+                    "value": " "
+                  },
+                  {
+                    "type": "span",
+                    "marks": ["strong"],
+                    "value": "In schola desinis."
+                  },
+                  {
+                    "type": "span",
+                    "value": " "
+                  },
+                  {
+                    "type": "span",
+                    "marks": ["strong"],
+                    "value": "Ostendit pedes et pectus."
+                  },
+                  {
+                    "type": "span",
+                    "value": " "
+                  },
+                  {
+                    "type": "span",
+                    "marks": ["emphasis"],
+                    "value": "Ut proverbia non nulla veriora sint quam vestra dogmata."
+                  },
+                  {
+                    "type": "span",
+                    "value": " "
+                  },
+                  {
+                    "url": "http://loripsum.net/",
+                    "type": "link",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Quorum altera prosunt, nocent altera."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "span",
+                    "value": " Beatus sibi videtur esse moriens. Negat esse eam, inquit, propter se expetendam. An tu me de L."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "Pollicetur certe. Primum divisit ineleganter; Traditur, inquit, ab Epicuro ratio neglegendi doloris. "
+                  },
+                  {
+                    "type": "span",
+                    "marks": ["emphasis"],
+                    "value": "Quod autem ratione actum est, id officium appellamus."
+                  },
+                  {
+                    "type": "span",
+                    "value": " Sit enim idem caecus, debilis. "
+                  },
+                  {
+                    "type": "span",
+                    "marks": ["strong"],
+                    "value": "Quis est tam dissimile homini."
+                  },
+                  {
+                    "type": "span",
+                    "value": " Nemo igitur esse beatus potest."
+                  }
+                ]
+              },
+              {
+                "type": "blockquote",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Nam si quae sunt aliae, falsum est omnis animi voluptates esse e corporis. Restatis igitur vos."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "Haec dicuntur fortasse ieiunius; "
+                  },
+                  {
+                    "url": "http://loripsum.net/",
+                    "type": "link",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Non autem hoc: igitur ne illud quidem."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "span",
+                    "value": " Quamquam te quidem video minime esse deterritum. Sed quod proximum fuit non vidit. Honesta oratio, Socratica, Platonis etiam. Ita prorsus, inquam;"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "url": "http://loripsum.net/",
+                    "type": "link",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Si verbum sequimur, primum longius verbum praepositum quam bonum."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "span",
+                    "value": " Cave putes quicquam esse verius. Conferam avum tuum Drusum cum C."
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "style": "bulleted",
+                "children": [
+                  {
+                    "type": "listItem",
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "children": [
+                          {
+                            "type": "span",
+                            "value": "Maximas vero virtutes iacere omnis necesse est voluptate dominante."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "listItem",
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "children": [
+                          {
+                            "type": "span",
+                            "value": "Familiares nostros, credo, Sironem dicis et Philodemum, cum optimos viros, tum homines doctissimos."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 3,
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "Idem iste, inquam, de voluptate quid sentit?"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "Restatis igitur vos; Quo tandem modo? Faceres tu quidem, Torquate, haec omnia;"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "blocks": [
+          {
+            "__typename": "ImageBlockRecord",
+            "id": "107602118",
+            "image": {
+              "responsiveImage": {
+                "srcSet": "https://www.datocms-assets.com/63265/1612503468-jairph-ypl0a8v9qgo-unsplash.jpg?dpr=0.25&fit=crop&fm=jpg&h=1000&w=2000 500w,https://www.datocms-assets.com/63265/1612503468-jairph-ypl0a8v9qgo-unsplash.jpg?dpr=0.5&fit=crop&fm=jpg&h=1000&w=2000 1000w,https://www.datocms-assets.com/63265/1612503468-jairph-ypl0a8v9qgo-unsplash.jpg?dpr=0.75&fit=crop&fm=jpg&h=1000&w=2000 1500w,https://www.datocms-assets.com/63265/1612503468-jairph-ypl0a8v9qgo-unsplash.jpg?fit=crop&fm=jpg&h=1000&w=2000 2000w,https://www.datocms-assets.com/63265/1612503468-jairph-ypl0a8v9qgo-unsplash.jpg?dpr=1.5&fit=crop&fm=jpg&h=1000&w=2000 3000w,https://www.datocms-assets.com/63265/1612503468-jairph-ypl0a8v9qgo-unsplash.jpg?dpr=2&fit=crop&fm=jpg&h=1000&w=2000 4000w",
+                "webpSrcSet": "https://www.datocms-assets.com/63265/1612503468-jairph-ypl0a8v9qgo-unsplash.jpg?dpr=0.25&fit=crop&fm=webp&h=1000&w=2000 500w,https://www.datocms-assets.com/63265/1612503468-jairph-ypl0a8v9qgo-unsplash.jpg?dpr=0.5&fit=crop&fm=webp&h=1000&w=2000 1000w,https://www.datocms-assets.com/63265/1612503468-jairph-ypl0a8v9qgo-unsplash.jpg?dpr=0.75&fit=crop&fm=webp&h=1000&w=2000 1500w,https://www.datocms-assets.com/63265/1612503468-jairph-ypl0a8v9qgo-unsplash.jpg?fit=crop&fm=webp&h=1000&w=2000 2000w,https://www.datocms-assets.com/63265/1612503468-jairph-ypl0a8v9qgo-unsplash.jpg?dpr=1.5&fit=crop&fm=webp&h=1000&w=2000 3000w,https://www.datocms-assets.com/63265/1612503468-jairph-ypl0a8v9qgo-unsplash.jpg?dpr=2&fit=crop&fm=webp&h=1000&w=2000 4000w",
+                "sizes": "(max-width: 2000px) 100vw, 2000px",
+                "src": "https://www.datocms-assets.com/63265/1612503468-jairph-ypl0a8v9qgo-unsplash.jpg?fit=crop&fm=jpg&h=1000&w=2000",
+                "width": 2000,
+                "height": 1000,
+                "aspectRatio": 2,
+                "alt": null,
+                "title": null,
+                "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgLCgoLDhUVFRIWGh0VFRUYFxUZGBYVFhUdIysjGh0oHSEWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OFRAQHC8oIig7Ly8vOy8vOy8vLy8vLy8vLy8vLy81Ly8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIAAwAGAMBIgACEQEDEQH/xAAYAAACAwAAAAAAAAAAAAAAAAADBQABBv/EAB4QAAICAQUBAAAAAAAAAAAAAAEDAAIRBAUhIiMG/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgEA/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAIBEgMxUf/aAAwDAQACEQMRAD8A2T9yBHYwadaCepijfLFKs0OJXzl7PPoczS0ijEux4xxuOZIbVLrVeQJIbMWqcP/Z"
+              }
+            }
+          },
+          {
+            "__typename": "ImageBlockRecord",
+            "id": "107602119",
+            "image": {
+              "responsiveImage": {
+                "srcSet": "https://www.datocms-assets.com/63265/1612503497-ferran-feixas-ubflzcoxst8-unsplash.jpg?dpr=0.25&fit=crop&fm=jpg&h=1000&w=2000 500w,https://www.datocms-assets.com/63265/1612503497-ferran-feixas-ubflzcoxst8-unsplash.jpg?dpr=0.5&fit=crop&fm=jpg&h=1000&w=2000 1000w,https://www.datocms-assets.com/63265/1612503497-ferran-feixas-ubflzcoxst8-unsplash.jpg?dpr=0.75&fit=crop&fm=jpg&h=1000&w=2000 1500w,https://www.datocms-assets.com/63265/1612503497-ferran-feixas-ubflzcoxst8-unsplash.jpg?fit=crop&fm=jpg&h=1000&w=2000 2000w,https://www.datocms-assets.com/63265/1612503497-ferran-feixas-ubflzcoxst8-unsplash.jpg?dpr=1.5&fit=crop&fm=jpg&h=1000&w=2000 3000w",
+                "webpSrcSet": "https://www.datocms-assets.com/63265/1612503497-ferran-feixas-ubflzcoxst8-unsplash.jpg?dpr=0.25&fit=crop&fm=webp&h=1000&w=2000 500w,https://www.datocms-assets.com/63265/1612503497-ferran-feixas-ubflzcoxst8-unsplash.jpg?dpr=0.5&fit=crop&fm=webp&h=1000&w=2000 1000w,https://www.datocms-assets.com/63265/1612503497-ferran-feixas-ubflzcoxst8-unsplash.jpg?dpr=0.75&fit=crop&fm=webp&h=1000&w=2000 1500w,https://www.datocms-assets.com/63265/1612503497-ferran-feixas-ubflzcoxst8-unsplash.jpg?fit=crop&fm=webp&h=1000&w=2000 2000w,https://www.datocms-assets.com/63265/1612503497-ferran-feixas-ubflzcoxst8-unsplash.jpg?dpr=1.5&fit=crop&fm=webp&h=1000&w=2000 3000w",
+                "sizes": "(max-width: 2000px) 100vw, 2000px",
+                "src": "https://www.datocms-assets.com/63265/1612503497-ferran-feixas-ubflzcoxst8-unsplash.jpg?fit=crop&fm=jpg&h=1000&w=2000",
+                "width": 2000,
+                "height": 1000,
+                "aspectRatio": 2,
+                "alt": null,
+                "title": null,
+                "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBhUPCAgLFg0JGhgNDhQNDh0VDg0NFxUZGBYTFhUmKysjGh0oHRUWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg4OEA0QEC8cFhwvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIAAwAGAMBIgACEQEDEQH/xAAXAAEAAwAAAAAAAAAAAAAAAAAHAAIE/8QAHhAAAQMEAwAAAAAAAAAAAAAAAQADBQIEM1IRMUP/xAAUAQEAAAAAAAAAAAAAAAAAAAAB/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAMAwEAAhEDEQA/AFWqXZHRCqJhrYI2rkroDIstcrdj0QYTnZprYKImdmL3nIoil//Z"
+              }
+            }
+          }
+        ]
+      },
+      "date": "2020-03-26",
+      "ogImage": {
+        "url": "https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?fit=crop&fm=jpg&h=1000&w=2000"
+      },
+      "coverImage": {
+        "responsiveImage": {
+          "srcSet": "https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?dpr=0.25&fit=crop&fm=jpg&h=1000&w=2000 500w,https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?dpr=0.5&fit=crop&fm=jpg&h=1000&w=2000 1000w,https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?dpr=0.75&fit=crop&fm=jpg&h=1000&w=2000 1500w,https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?fit=crop&fm=jpg&h=1000&w=2000 2000w",
+          "webpSrcSet": "https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?dpr=0.25&fit=crop&fm=webp&h=1000&w=2000 500w,https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?dpr=0.5&fit=crop&fm=webp&h=1000&w=2000 1000w,https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?dpr=0.75&fit=crop&fm=webp&h=1000&w=2000 1500w,https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?fit=crop&fm=webp&h=1000&w=2000 2000w",
+          "sizes": "(max-width: 2000px) 100vw, 2000px",
+          "src": "https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?fit=crop&fm=jpg&h=1000&w=2000",
+          "width": 2000,
+          "height": 1000,
+          "aspectRatio": 2,
+          "alt": null,
+          "title": null,
+          "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgLCgoLDhgXDg0NDh0VFh0dIx8lGC4lHiEaKyslJSUoKS0uJDUlLS0vMjIyJSI4PTcwPDcxMi8BCgsLDg0OHBAQHDsoIig7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7NTs7Lzs7Oy87LzsvNTsvOzU7OzsvOzsvNS87O//AABEIAAwAGAMBIgACEQEDEQH/xAAYAAACAwAAAAAAAAAAAAAAAAAABgQHCP/EACIQAAAFAwQDAAAAAAAAAAAAAAABAgMEBhFRISIxQQUSE//EABUBAQEAAAAAAAAAAAAAAAAAAAQD/8QAGxEAAgMAAwAAAAAAAAAAAAAAAQMAAhEEEjH/2gAMAwEAAhEDEQA/AJ1OVOwTheqyPXIfGKjZcaI7lcZzpyQ6qcnd10LRgLV8S1PgEDLdsj+QtYO1jdM8+3fkAS561ZAL6ZCq1keT/9k="
+        }
+      },
+      "author": {
+        "name": " Kurtis Lowe ",
+        "picture": {
+          "responsiveImage": {
+            "srcSet": "https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=0.5&fit=crop&fm=jpg&h=100&sat=-100&w=100 50w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=0.75&fit=crop&fm=jpg&h=100&sat=-100&w=100 75w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?fit=crop&fm=jpg&h=100&sat=-100&w=100 100w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=1.5&fit=crop&fm=jpg&h=100&sat=-100&w=100 150w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=2&fit=crop&fm=jpg&h=100&sat=-100&w=100 200w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=3&fit=crop&fm=jpg&h=100&sat=-100&w=100 300w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=4&fit=crop&fm=jpg&h=100&sat=-100&w=100 400w",
+            "webpSrcSet": "https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=0.5&fit=crop&fm=webp&h=100&sat=-100&w=100 50w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=0.75&fit=crop&fm=webp&h=100&sat=-100&w=100 75w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?fit=crop&fm=webp&h=100&sat=-100&w=100 100w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=1.5&fit=crop&fm=webp&h=100&sat=-100&w=100 150w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=2&fit=crop&fm=webp&h=100&sat=-100&w=100 200w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=3&fit=crop&fm=webp&h=100&sat=-100&w=100 300w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=4&fit=crop&fm=webp&h=100&sat=-100&w=100 400w",
+            "sizes": "(max-width: 100px) 100vw, 100px",
+            "src": "https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?fit=crop&fm=jpg&h=100&sat=-100&w=100",
+            "width": 100,
+            "height": 100,
+            "aspectRatio": 1,
+            "alt": null,
+            "title": null,
+            "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgLCgoLDiMQGRgNGhUVDxsdHR8dMCIVIB0dHysvIikoHSEdJTUlKC0vMjIyGSU4PTcwSDcxMi8BCgsLBQUFEAUFEC8cFhwvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABgAGAMBIgACEQEDEQH/xAAZAAACAwEAAAAAAAAAAAAAAAAABQQGBwH/xAAgEAACAgEDBQAAAAAAAAAAAAABAgADIQQFEQYSEyIx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AMorTmwR7pNMTWDEyHsvAbEtG3lTUICLeC1FeR9xCSOoqmsq9F54PMIEDdavGodcEGN9kY21KWMIQGeq0quuROQhA//Z"
+          }
+        }
+      }
+    },
+    "morePosts": [
+      {
+        "title": "Mistakes Tourists Make on Their First Trip Abroad",
+        "slug": "mistakes-tourists-make-on-their-first-trip-abroad",
+        "excerpt": "Follow these simple rules to not get into trouble while traveling.",
+        "date": "2020-03-26",
+        "coverImage": {
+          "responsiveImage": {
+            "srcSet": "https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?dpr=0.25&fit=crop&fm=jpg&h=1000&w=2000 500w,https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?dpr=0.5&fit=crop&fm=jpg&h=1000&w=2000 1000w,https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?dpr=0.75&fit=crop&fm=jpg&h=1000&w=2000 1500w,https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?fit=crop&fm=jpg&h=1000&w=2000 2000w",
+            "webpSrcSet": "https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?dpr=0.25&fit=crop&fm=webp&h=1000&w=2000 500w,https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?dpr=0.5&fit=crop&fm=webp&h=1000&w=2000 1000w,https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?dpr=0.75&fit=crop&fm=webp&h=1000&w=2000 1500w,https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?fit=crop&fm=webp&h=1000&w=2000 2000w",
+            "sizes": "(max-width: 2000px) 100vw, 2000px",
+            "src": "https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?fit=crop&fm=jpg&h=1000&w=2000",
+            "width": 2000,
+            "height": 1000,
+            "aspectRatio": 2,
+            "alt": null,
+            "title": null,
+            "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgLCgoLDhgXDg0NDh0VFh0dIx8lGC4lHiEaKyslJSUoKS0uJDUlLS0vMjIyJSI4PTcwPDcxMi8BCgsLDg0OHBAQHDsoIig7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7NTs7Lzs7Oy87LzsvNTsvOzU7OzsvOzsvNS87O//AABEIAAwAGAMBIgACEQEDEQH/xAAYAAACAwAAAAAAAAAAAAAAAAAABgQHCP/EACIQAAAFAwQDAAAAAAAAAAAAAAABAgMEBhFRISIxQQUSE//EABUBAQEAAAAAAAAAAAAAAAAAAAQD/8QAGxEAAgMAAwAAAAAAAAAAAAAAAQMAAhEEEjH/2gAMAwEAAhEDEQA/AJ1OVOwTheqyPXIfGKjZcaI7lcZzpyQ6qcnd10LRgLV8S1PgEDLdsj+QtYO1jdM8+3fkAS561ZAL6ZCq1keT/9k="
+          }
+        },
+        "author": {
+          "name": " Kurtis Lowe ",
+          "picture": {
+            "responsiveImage": {
+              "srcSet": "https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=0.5&fit=crop&fm=jpg&h=100&sat=-100&w=100 50w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=0.75&fit=crop&fm=jpg&h=100&sat=-100&w=100 75w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?fit=crop&fm=jpg&h=100&sat=-100&w=100 100w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=1.5&fit=crop&fm=jpg&h=100&sat=-100&w=100 150w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=2&fit=crop&fm=jpg&h=100&sat=-100&w=100 200w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=3&fit=crop&fm=jpg&h=100&sat=-100&w=100 300w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=4&fit=crop&fm=jpg&h=100&sat=-100&w=100 400w",
+              "webpSrcSet": "https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=0.5&fit=crop&fm=webp&h=100&sat=-100&w=100 50w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=0.75&fit=crop&fm=webp&h=100&sat=-100&w=100 75w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?fit=crop&fm=webp&h=100&sat=-100&w=100 100w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=1.5&fit=crop&fm=webp&h=100&sat=-100&w=100 150w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=2&fit=crop&fm=webp&h=100&sat=-100&w=100 200w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=3&fit=crop&fm=webp&h=100&sat=-100&w=100 300w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=4&fit=crop&fm=webp&h=100&sat=-100&w=100 400w",
+              "sizes": "(max-width: 100px) 100vw, 100px",
+              "src": "https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?fit=crop&fm=jpg&h=100&sat=-100&w=100",
+              "width": 100,
+              "height": 100,
+              "aspectRatio": 1,
+              "alt": null,
+              "title": null,
+              "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgLCgoLDiMQGRgNGhUVDxsdHR8dMCIVIB0dHysvIikoHSEdJTUlKC0vMjIyGSU4PTcwSDcxMi8BCgsLBQUFEAUFEC8cFhwvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABgAGAMBIgACEQEDEQH/xAAZAAACAwEAAAAAAAAAAAAAAAAABQQGBwH/xAAgEAACAgEDBQAAAAAAAAAAAAABAgADIQQFEQYSEyIx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AMorTmwR7pNMTWDEyHsvAbEtG3lTUICLeC1FeR9xCSOoqmsq9F54PMIEDdavGodcEGN9kY21KWMIQGeq0quuROQhA//Z"
+            }
+          }
+        }
+      },
+      {
+        "title": "How to Spend a Perfect Weekend Together",
+        "slug": "spicy-jalapeno-bacon",
+        "excerpt": "Essential things you need to know when planning a vacation abroad",
+        "date": "2020-03-10",
+        "coverImage": {
+          "responsiveImage": {
+            "srcSet": "https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?dpr=0.25&fit=crop&fm=jpg&h=1000&w=2000 500w,https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?dpr=0.5&fit=crop&fm=jpg&h=1000&w=2000 1000w,https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?dpr=0.75&fit=crop&fm=jpg&h=1000&w=2000 1500w,https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?fit=crop&fm=jpg&h=1000&w=2000 2000w",
+            "webpSrcSet": "https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?dpr=0.25&fit=crop&fm=webp&h=1000&w=2000 500w,https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?dpr=0.5&fit=crop&fm=webp&h=1000&w=2000 1000w,https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?dpr=0.75&fit=crop&fm=webp&h=1000&w=2000 1500w,https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?fit=crop&fm=webp&h=1000&w=2000 2000w",
+            "sizes": "(max-width: 2000px) 100vw, 2000px",
+            "src": "https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?fit=crop&fm=jpg&h=1000&w=2000",
+            "width": 2000,
+            "height": 1000,
+            "aspectRatio": 2,
+            "alt": null,
+            "title": null,
+            "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgLChYLDhUWDhUWDh0NFhENFxMdGBYTFhUdHy0jGh0oHSEWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OHBAQHDsoIig7Oy8vOzs7Ozs1Ly8vLy8vLy8vLy87Oy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIAAwAGAMBIgACEQEDEQH/xAAYAAACAwAAAAAAAAAAAAAAAAAABQMGB//EACAQAAEEAAcBAAAAAAAAAAAAAAEAAgMFBBESISIxMgb/xAAVAQEBAAAAAAAAAAAAAAAAAAAEAv/EABgRAQADAQAAAAAAAAAAAAAAAAEAAhES/9oADAMBAAIRAxEAPwBxgfo49XoJhiLhs0XazWme5zhmSrKXERbFCRq5F4JIrO1bC4nNCRW3MkOQqbWhnkZ//9k="
+          }
+        },
+        "author": {
+          "name": " Kurtis Lowe ",
+          "picture": {
+            "responsiveImage": {
+              "srcSet": "https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=0.5&fit=crop&fm=jpg&h=100&sat=-100&w=100 50w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=0.75&fit=crop&fm=jpg&h=100&sat=-100&w=100 75w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?fit=crop&fm=jpg&h=100&sat=-100&w=100 100w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=1.5&fit=crop&fm=jpg&h=100&sat=-100&w=100 150w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=2&fit=crop&fm=jpg&h=100&sat=-100&w=100 200w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=3&fit=crop&fm=jpg&h=100&sat=-100&w=100 300w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=4&fit=crop&fm=jpg&h=100&sat=-100&w=100 400w",
+              "webpSrcSet": "https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=0.5&fit=crop&fm=webp&h=100&sat=-100&w=100 50w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=0.75&fit=crop&fm=webp&h=100&sat=-100&w=100 75w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?fit=crop&fm=webp&h=100&sat=-100&w=100 100w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=1.5&fit=crop&fm=webp&h=100&sat=-100&w=100 150w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=2&fit=crop&fm=webp&h=100&sat=-100&w=100 200w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=3&fit=crop&fm=webp&h=100&sat=-100&w=100 300w,https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?dpr=4&fit=crop&fm=webp&h=100&sat=-100&w=100 400w",
+              "sizes": "(max-width: 100px) 100vw, 100px",
+              "src": "https://www.datocms-assets.com/63265/1583844698-gift-habeshaw-pgxxjrtfnjq-unsplash-edited.png?fit=crop&fm=jpg&h=100&sat=-100&w=100",
+              "width": 100,
+              "height": 100,
+              "aspectRatio": 1,
+              "alt": null,
+              "title": null,
+              "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgLCgoLDiMQGRgNGhUVDxsdHR8dMCIVIB0dHysvIikoHSEdJTUlKC0vMjIyGSU4PTcwSDcxMi8BCgsLBQUFEAUFEC8cFhwvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABgAGAMBIgACEQEDEQH/xAAZAAACAwEAAAAAAAAAAAAAAAAABQQGBwH/xAAgEAACAgEDBQAAAAAAAAAAAAABAgADIQQFEQYSEyIx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AMorTmwR7pNMTWDEyHsvAbEtG3lTUICLeC1FeR9xCSOoqmsq9F54PMIEDdavGodcEGN9kY21KWMIQGeq0quuROQhA//Z"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,545 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`waweb.views.blog should render successfully 1`] = `
+<div>
+  <div>
+    <div
+      class="bg-accent-7 border-accent-7 border-b text-gray-400"
+    >
+      <div
+        class="container mx-auto px-5"
+      >
+        <div
+          class="py-2 text-center text-sm"
+        >
+          This is page is showing published content.
+           
+          <a
+            class="text-white underline transition-colors duration-200 hover:text-teal-500"
+            href="/api/preview"
+          >
+            Click here
+          </a>
+           
+          to enter preview mode!
+        </div>
+      </div>
+    </div>
+    <article>
+      <div
+        class="container mx-auto px-5"
+      >
+        <section
+          class="mt-8 mb-16 flex flex-col items-center md:mb-12 md:flex-row md:justify-between"
+        >
+          <h1
+            class="text-6xl font-bold leading-tight tracking-tighter text-white md:pr-8 md:text-8xl"
+          >
+            Watheia Blog
+          </h1>
+          <h4
+            class="mt-5 text-center text-lg text-gray-300 md:pl-8 md:text-left"
+          >
+            Musings on technology, design, business and more.
+          </h4>
+        </section>
+        <section>
+          <div
+            class="mb-8 md:mb-16"
+          >
+            <div
+              class="-mx-5 sm:mx-0"
+            >
+              <a
+                aria-label="Mistakes Tourists Make on Their First Trip Abroad"
+                href="/posts/mistakes-tourists-make-on-their-first-trip-abroad"
+              >
+                <div
+                  class="shadow-small hover:shadow-medium transition-shadow duration-200"
+                  style="overflow: hidden; position: relative; width: 100%; max-width: 2000px;"
+                >
+                  <img
+                    aria-hidden="true"
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAwIiBoZWlnaHQ9IjEwMDAiPjwvc3ZnPg=="
+                    style="display: block; width: 100%;"
+                  />
+                  <img
+                    aria-hidden="true"
+                    role="presentation"
+                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgLCgoLDhgXDg0NDh0VFh0dIx8lGC4lHiEaKyslJSUoKS0uJDUlLS0vMjIyJSI4PTcwPDcxMi8BCgsLDg0OHBAQHDsoIig7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7NTs7Lzs7Oy87LzsvNTsvOzU7OzsvOzsvNS87O//AABEIAAwAGAMBIgACEQEDEQH/xAAYAAACAwAAAAAAAAAAAAAAAAAABgQHCP/EACIQAAAFAwQDAAAAAAAAAAAAAAABAgMEBhFRISIxQQUSE//EABUBAQEAAAAAAAAAAAAAAAAAAAQD/8QAGxEAAgMAAwAAAAAAAAAAAAAAAQMAAhEEEjH/2gAMAwEAAhEDEQA/AJ1OVOwTheqyPXIfGKjZcaI7lcZzpyQ6qcnd10LRgLV8S1PgEDLdsj+QtYO1jdM8+3fkAS561ZAL6ZCq1keT/9k="
+                    style="opacity: 0; transition: opacity 500ms; position: absolute; left: 0px; top: 0px; width: 100%;"
+                  />
+                  <picture>
+                    <source
+                      sizes="(max-width: 2000px) 100vw, 2000px"
+                      srcset="https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?dpr=0.25&fit=crop&fm=webp&h=1000&w=2000 500w,https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?dpr=0.5&fit=crop&fm=webp&h=1000&w=2000 1000w,https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?dpr=0.75&fit=crop&fm=webp&h=1000&w=2000 1500w,https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?fit=crop&fm=webp&h=1000&w=2000 2000w"
+                      type="image/webp"
+                    />
+                    <source
+                      sizes="(max-width: 2000px) 100vw, 2000px"
+                      srcset="https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?dpr=0.25&fit=crop&fm=jpg&h=1000&w=2000 500w,https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?dpr=0.5&fit=crop&fm=jpg&h=1000&w=2000 1000w,https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?dpr=0.75&fit=crop&fm=jpg&h=1000&w=2000 1500w,https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?fit=crop&fm=jpg&h=1000&w=2000 2000w"
+                    />
+                    <img
+                      alt="Cover Image for Mistakes Tourists Make on Their First Trip Abroad"
+                      src="https://www.datocms-assets.com/63265/1585207275-image-33-copyright.jpg?fit=crop&fm=jpg&h=1000&w=2000"
+                      style="opacity: 1; transition: opacity 500ms; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"
+                    />
+                  </picture>
+                  <noscript />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="mb-20 md:mb-28 md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8"
+          >
+            <div>
+              <h3
+                class="mb-4 text-4xl leading-tight text-gray-300 lg:text-6xl"
+              >
+                <a
+                  class="hover:underline"
+                  href="/blog/posts/mistakes-tourists-make-on-their-first-trip-abroad"
+                >
+                  Mistakes Tourists Make on Their First Trip Abroad
+                </a>
+              </h3>
+              <div
+                class="mb-4 text-lg md:mb-0"
+              >
+                <time
+                  class="text-gray-400"
+                  datetime="2020-03-26"
+                >
+                  March	26, 2020
+                </time>
+              </div>
+            </div>
+            <div>
+              <p
+                class="mb-4 text-lg leading-relaxed text-gray-300"
+              >
+                Follow these simple rules to not get into trouble while traveling.
+              </p>
+              <div
+                class="flex items-center"
+              >
+                <div
+                  class="mr-4 h-12 w-12"
+                >
+                  <div
+                    class="rounded-full"
+                    style="overflow: hidden; position: relative; width: 100%; max-width: 100px;"
+                  >
+                    <img
+                      aria-hidden="true"
+                      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj48L3N2Zz4="
+                      style="display: block; width: 100%;"
+                    />
+                    <img
+                      aria-hidden="true"
+                      role="presentation"
+                      src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoIDQ8QDQ0KDhANDQ4NDhENFg0NFxMZGBYTIiEaHysjGh0oHRUWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLBQUFEAUFEC8cFhwvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABgAGAMBIgACEQEDEQH/xAAZAAACAwEAAAAAAAAAAAAAAAAABgQFBwH/xAAgEAACAgEDBQAAAAAAAAAAAAAAAQMEAgUREhMhI2GB/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANdu5rGFi7lKusWmpTNRMV8rPn+gNNWZcUBWVZnxR0CXrHaFias27W3sAAY6OO8aAAA//9k="
+                      style="opacity: 0; transition: opacity 500ms; position: absolute; left: 0px; top: 0px; width: 100%;"
+                    />
+                    <picture>
+                      <source
+                        sizes="(max-width: 100px) 100vw, 100px"
+                        srcset="https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.5&fit=crop&fm=webp&h=100&sat=-100&w=100 50w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.75&fit=crop&fm=webp&h=100&sat=-100&w=100 75w,https://www.datocms-assets.com/63265/1644788631-icon.png?fit=crop&fm=webp&h=100&sat=-100&w=100 100w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=1.5&fit=crop&fm=webp&h=100&sat=-100&w=100 150w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=2&fit=crop&fm=webp&h=100&sat=-100&w=100 200w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=3&fit=crop&fm=webp&h=100&sat=-100&w=100 300w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=4&fit=crop&fm=webp&h=100&sat=-100&w=100 400w"
+                        type="image/webp"
+                      />
+                      <source
+                        sizes="(max-width: 100px) 100vw, 100px"
+                        srcset="https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.5&fit=crop&fm=jpg&h=100&sat=-100&w=100 50w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.75&fit=crop&fm=jpg&h=100&sat=-100&w=100 75w,https://www.datocms-assets.com/63265/1644788631-icon.png?fit=crop&fm=jpg&h=100&sat=-100&w=100 100w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=1.5&fit=crop&fm=jpg&h=100&sat=-100&w=100 150w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=2&fit=crop&fm=jpg&h=100&sat=-100&w=100 200w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=3&fit=crop&fm=jpg&h=100&sat=-100&w=100 300w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=4&fit=crop&fm=jpg&h=100&sat=-100&w=100 400w"
+                      />
+                      <img
+                        alt=""
+                        src="https://www.datocms-assets.com/63265/1644788631-icon.png?fit=crop&fm=jpg&h=100&sat=-100&w=100"
+                        style="opacity: 1; transition: opacity 500ms; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"
+                      />
+                    </picture>
+                    <noscript />
+                  </div>
+                </div>
+                <div
+                  class="text-xl font-bold text-white"
+                >
+                  Supabot
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2
+            class="mb-8 text-6xl font-bold leading-tight tracking-tighter text-gray-400 md:text-7xl"
+          >
+            More Stories
+          </h2>
+          <div
+            class="mb-32 grid grid-cols-1 gap-y-20 md:grid-cols-2 md:gap-x-16 md:gap-y-32 lg:gap-x-32"
+          >
+            <div>
+              <div
+                class="mb-5"
+              >
+                <div
+                  class="-mx-5 sm:mx-0"
+                >
+                  <a
+                    aria-label="How to Spend a Perfect Weekend Together"
+                    href="/posts/spicy-jalapeno-bacon"
+                  >
+                    <div
+                      class="shadow-small hover:shadow-medium transition-shadow duration-200"
+                      style="overflow: hidden; position: relative; width: 100%; max-width: 2000px;"
+                    >
+                      <img
+                        aria-hidden="true"
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAwIiBoZWlnaHQ9IjEwMDAiPjwvc3ZnPg=="
+                        style="display: block; width: 100%;"
+                      />
+                      <img
+                        aria-hidden="true"
+                        role="presentation"
+                        src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgLChYLDhUWDhUWDh0NFhENFxMdGBYTFhUdHy0jGh0oHSEWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OHBAQHDsoIig7Oy8vOzs7Ozs1Ly8vLy8vLy8vLy87Oy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIAAwAGAMBIgACEQEDEQH/xAAYAAACAwAAAAAAAAAAAAAAAAAABQMGB//EACAQAAEEAAcBAAAAAAAAAAAAAAEAAgMFBBESISIxMgb/xAAVAQEBAAAAAAAAAAAAAAAAAAAEAv/EABgRAQADAQAAAAAAAAAAAAAAAAEAAhES/9oADAMBAAIRAxEAPwBxgfo49XoJhiLhs0XazWme5zhmSrKXERbFCRq5F4JIrO1bC4nNCRW3MkOQqbWhnkZ//9k="
+                        style="opacity: 0; transition: opacity 500ms; position: absolute; left: 0px; top: 0px; width: 100%;"
+                      />
+                      <picture>
+                        <source
+                          sizes="(max-width: 2000px) 100vw, 2000px"
+                          srcset="https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?dpr=0.25&fit=crop&fm=webp&h=1000&w=2000 500w,https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?dpr=0.5&fit=crop&fm=webp&h=1000&w=2000 1000w,https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?dpr=0.75&fit=crop&fm=webp&h=1000&w=2000 1500w,https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?fit=crop&fm=webp&h=1000&w=2000 2000w"
+                          type="image/webp"
+                        />
+                        <source
+                          sizes="(max-width: 2000px) 100vw, 2000px"
+                          srcset="https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?dpr=0.25&fit=crop&fm=jpg&h=1000&w=2000 500w,https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?dpr=0.5&fit=crop&fm=jpg&h=1000&w=2000 1000w,https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?dpr=0.75&fit=crop&fm=jpg&h=1000&w=2000 1500w,https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?fit=crop&fm=jpg&h=1000&w=2000 2000w"
+                        />
+                        <img
+                          alt="Cover Image for How to Spend a Perfect Weekend Together"
+                          src="https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?fit=crop&fm=jpg&h=1000&w=2000"
+                          style="opacity: 1; transition: opacity 500ms; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"
+                        />
+                      </picture>
+                      <noscript />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <h3
+                class="mb-3 text-3xl leading-snug text-gray-300"
+              >
+                <a
+                  class="hover:underline"
+                  href="/blog/posts/spicy-jalapeno-bacon"
+                >
+                  How to Spend a Perfect Weekend Together
+                </a>
+              </h3>
+              <div
+                class="mb-4 text-lg text-gray-400"
+              >
+                <time
+                  class="text-gray-400"
+                  datetime="2020-03-10"
+                >
+                  March	10, 2020
+                </time>
+              </div>
+              <p
+                class="mb-4 text-lg leading-relaxed text-gray-300"
+              >
+                Essential things you need to know when planning a vacation abroad
+              </p>
+              <div
+                class="flex items-center"
+              >
+                <div
+                  class="mr-4 h-12 w-12"
+                >
+                  <div
+                    class="rounded-full"
+                    style="overflow: hidden; position: relative; width: 100%; max-width: 100px;"
+                  >
+                    <img
+                      aria-hidden="true"
+                      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj48L3N2Zz4="
+                      style="display: block; width: 100%;"
+                    />
+                    <img
+                      aria-hidden="true"
+                      role="presentation"
+                      src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoIDQ8QDQ0KDhANDQ4NDhENFg0NFxMZGBYTIiEaHysjGh0oHRUWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLBQUFEAUFEC8cFhwvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABgAGAMBIgACEQEDEQH/xAAZAAACAwEAAAAAAAAAAAAAAAAABgQFBwH/xAAgEAACAgEDBQAAAAAAAAAAAAAAAQMEAgUREhMhI2GB/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANdu5rGFi7lKusWmpTNRMV8rPn+gNNWZcUBWVZnxR0CXrHaFias27W3sAAY6OO8aAAA//9k="
+                      style="opacity: 0; transition: opacity 500ms; position: absolute; left: 0px; top: 0px; width: 100%;"
+                    />
+                    <picture>
+                      <source
+                        sizes="(max-width: 100px) 100vw, 100px"
+                        srcset="https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.5&fit=crop&fm=webp&h=100&sat=-100&w=100 50w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.75&fit=crop&fm=webp&h=100&sat=-100&w=100 75w,https://www.datocms-assets.com/63265/1644788631-icon.png?fit=crop&fm=webp&h=100&sat=-100&w=100 100w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=1.5&fit=crop&fm=webp&h=100&sat=-100&w=100 150w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=2&fit=crop&fm=webp&h=100&sat=-100&w=100 200w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=3&fit=crop&fm=webp&h=100&sat=-100&w=100 300w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=4&fit=crop&fm=webp&h=100&sat=-100&w=100 400w"
+                        type="image/webp"
+                      />
+                      <source
+                        sizes="(max-width: 100px) 100vw, 100px"
+                        srcset="https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.5&fit=crop&fm=jpg&h=100&sat=-100&w=100 50w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.75&fit=crop&fm=jpg&h=100&sat=-100&w=100 75w,https://www.datocms-assets.com/63265/1644788631-icon.png?fit=crop&fm=jpg&h=100&sat=-100&w=100 100w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=1.5&fit=crop&fm=jpg&h=100&sat=-100&w=100 150w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=2&fit=crop&fm=jpg&h=100&sat=-100&w=100 200w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=3&fit=crop&fm=jpg&h=100&sat=-100&w=100 300w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=4&fit=crop&fm=jpg&h=100&sat=-100&w=100 400w"
+                      />
+                      <img
+                        alt=""
+                        src="https://www.datocms-assets.com/63265/1644788631-icon.png?fit=crop&fm=jpg&h=100&sat=-100&w=100"
+                        style="opacity: 1; transition: opacity 500ms; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"
+                      />
+                    </picture>
+                    <noscript />
+                  </div>
+                </div>
+                <div
+                  class="text-xl font-bold text-white"
+                >
+                  Supabot
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="mb-5"
+              >
+                <div
+                  class="-mx-5 sm:mx-0"
+                >
+                  <a
+                    aria-label="Unforgettable Trip to The Great Wall in China"
+                    href="/posts/unforgettable-trip-to-the-great-wall-in-china"
+                  >
+                    <div
+                      class="shadow-small hover:shadow-medium transition-shadow duration-200"
+                      style="overflow: hidden; position: relative; width: 100%; max-width: 2000px;"
+                    >
+                      <img
+                        aria-hidden="true"
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAwIiBoZWlnaHQ9IjEwMDAiPjwvc3ZnPg=="
+                        style="display: block; width: 100%;"
+                      />
+                      <img
+                        aria-hidden="true"
+                        role="presentation"
+                        src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgLCgoLDiEQDhUNDh0VFhUdLyodJCIVIiElKysvHR0oHRoiMDUlNC07MjIyGSI4PTc1PCsxMi8BCgsLDg0OHBAQHDsoIig7Ozs1Ozs7Ozs7Ozs7Oy87Oy8vOzs7Oy8vLy81Ly8vNS8vOy8vLzUvLy8vNS8vLy8vL//AABEIAAwAGAMBIgACEQEDEQH/xAAaAAABBQEAAAAAAAAAAAAAAAAEAQMFBgcA/8QAIRAAAgEDAwUAAAAAAAAAAAAAAQMAAgQhBQYSERQiUZH/xAAWAQADAAAAAAAAAAAAAAAAAAACAwX/xAAbEQABBAMAAAAAAAAAAAAAAAABAAIDIQQRUf/aAAwDAQACEQMRAD8An1b1S3ArEZvNwLdScylWNuuk4B+wm88FHjjEnSjJ3RCaHg2jn6svmepiTNdW1G67utYaaaR6nQxBkat6Ivj4v//Z"
+                        style="opacity: 0; transition: opacity 500ms; position: absolute; left: 0px; top: 0px; width: 100%;"
+                      />
+                      <picture>
+                        <source
+                          sizes="(max-width: 2000px) 100vw, 2000px"
+                          srcset="https://www.datocms-assets.com/63265/1585207017-image-30-copyright.jpg?dpr=0.25&fit=crop&fm=webp&h=1000&w=2000 500w,https://www.datocms-assets.com/63265/1585207017-image-30-copyright.jpg?dpr=0.5&fit=crop&fm=webp&h=1000&w=2000 1000w,https://www.datocms-assets.com/63265/1585207017-image-30-copyright.jpg?dpr=0.75&fit=crop&fm=webp&h=1000&w=2000 1500w,https://www.datocms-assets.com/63265/1585207017-image-30-copyright.jpg?fit=crop&fm=webp&h=1000&w=2000 2000w"
+                          type="image/webp"
+                        />
+                        <source
+                          sizes="(max-width: 2000px) 100vw, 2000px"
+                          srcset="https://www.datocms-assets.com/63265/1585207017-image-30-copyright.jpg?dpr=0.25&fit=crop&fm=jpg&h=1000&w=2000 500w,https://www.datocms-assets.com/63265/1585207017-image-30-copyright.jpg?dpr=0.5&fit=crop&fm=jpg&h=1000&w=2000 1000w,https://www.datocms-assets.com/63265/1585207017-image-30-copyright.jpg?dpr=0.75&fit=crop&fm=jpg&h=1000&w=2000 1500w,https://www.datocms-assets.com/63265/1585207017-image-30-copyright.jpg?fit=crop&fm=jpg&h=1000&w=2000 2000w"
+                        />
+                        <img
+                          alt="Cover Image for Unforgettable Trip to The Great Wall in China"
+                          src="https://www.datocms-assets.com/63265/1585207017-image-30-copyright.jpg?fit=crop&fm=jpg&h=1000&w=2000"
+                          style="opacity: 1; transition: opacity 500ms; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"
+                        />
+                      </picture>
+                      <noscript />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <h3
+                class="mb-3 text-3xl leading-snug text-gray-300"
+              >
+                <a
+                  class="hover:underline"
+                  href="/blog/posts/unforgettable-trip-to-the-great-wall-in-china"
+                >
+                  Unforgettable Trip to The Great Wall in China
+                </a>
+              </h3>
+              <div
+                class="mb-4 text-lg text-gray-400"
+              >
+                <time
+                  class="text-gray-400"
+                  datetime="2020-03-06"
+                >
+                  March	6, 2020
+                </time>
+              </div>
+              <p
+                class="mb-4 text-lg leading-relaxed text-gray-300"
+              >
+                Our recommendations for your trip to the Great Wall in China.
+              </p>
+              <div
+                class="flex items-center"
+              >
+                <div
+                  class="mr-4 h-12 w-12"
+                >
+                  <div
+                    class="rounded-full"
+                    style="overflow: hidden; position: relative; width: 100%; max-width: 100px;"
+                  >
+                    <img
+                      aria-hidden="true"
+                      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj48L3N2Zz4="
+                      style="display: block; width: 100%;"
+                    />
+                    <img
+                      aria-hidden="true"
+                      role="presentation"
+                      src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoIDQ8QDQ0KDhANDQ4NDhENFg0NFxMZGBYTIiEaHysjGh0oHRUWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLBQUFEAUFEC8cFhwvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABgAGAMBIgACEQEDEQH/xAAZAAACAwEAAAAAAAAAAAAAAAAABgQFBwH/xAAgEAACAgEDBQAAAAAAAAAAAAAAAQMEAgUREhMhI2GB/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANdu5rGFi7lKusWmpTNRMV8rPn+gNNWZcUBWVZnxR0CXrHaFias27W3sAAY6OO8aAAA//9k="
+                      style="opacity: 0; transition: opacity 500ms; position: absolute; left: 0px; top: 0px; width: 100%;"
+                    />
+                    <picture>
+                      <source
+                        sizes="(max-width: 100px) 100vw, 100px"
+                        srcset="https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.5&fit=crop&fm=webp&h=100&sat=-100&w=100 50w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.75&fit=crop&fm=webp&h=100&sat=-100&w=100 75w,https://www.datocms-assets.com/63265/1644788631-icon.png?fit=crop&fm=webp&h=100&sat=-100&w=100 100w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=1.5&fit=crop&fm=webp&h=100&sat=-100&w=100 150w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=2&fit=crop&fm=webp&h=100&sat=-100&w=100 200w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=3&fit=crop&fm=webp&h=100&sat=-100&w=100 300w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=4&fit=crop&fm=webp&h=100&sat=-100&w=100 400w"
+                        type="image/webp"
+                      />
+                      <source
+                        sizes="(max-width: 100px) 100vw, 100px"
+                        srcset="https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.5&fit=crop&fm=jpg&h=100&sat=-100&w=100 50w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.75&fit=crop&fm=jpg&h=100&sat=-100&w=100 75w,https://www.datocms-assets.com/63265/1644788631-icon.png?fit=crop&fm=jpg&h=100&sat=-100&w=100 100w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=1.5&fit=crop&fm=jpg&h=100&sat=-100&w=100 150w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=2&fit=crop&fm=jpg&h=100&sat=-100&w=100 200w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=3&fit=crop&fm=jpg&h=100&sat=-100&w=100 300w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=4&fit=crop&fm=jpg&h=100&sat=-100&w=100 400w"
+                      />
+                      <img
+                        alt=""
+                        src="https://www.datocms-assets.com/63265/1644788631-icon.png?fit=crop&fm=jpg&h=100&sat=-100&w=100"
+                        style="opacity: 1; transition: opacity 500ms; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"
+                      />
+                    </picture>
+                    <noscript />
+                  </div>
+                </div>
+                <div
+                  class="text-xl font-bold text-white"
+                >
+                  Supabot
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="mb-5"
+              >
+                <div
+                  class="-mx-5 sm:mx-0"
+                >
+                  <a
+                    aria-label="Tips on How to See More and Stay Safe in Asia"
+                    href="/posts/tips-on-how-to-see-more-and-stay-safe-in-asia"
+                  >
+                    <div
+                      class="shadow-small hover:shadow-medium transition-shadow duration-200"
+                      style="overflow: hidden; position: relative; width: 100%; max-width: 2000px;"
+                    >
+                      <img
+                        aria-hidden="true"
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAwIiBoZWlnaHQ9IjEwMDAiPjwvc3ZnPg=="
+                        style="display: block; width: 100%;"
+                      />
+                      <img
+                        aria-hidden="true"
+                        role="presentation"
+                        src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgLCgoLDhgQDhkNDikhFhEbLx8lHRwfFhsaHzovJjItHSEiJDUlKC0vMjIyHSI4PTcwPCsxMi8BCgsLDg0OHBAQHDsoIig7Ozs7Ozs7Ozs7Ozs7Ozs7Ly8vOzs7OzU7Ly81LzsvLy8vOzsvLy8vLzUvOy8vNS8vL//AABEIAAwAGAMBIgACEQEDEQH/xAAXAAADAQAAAAAAAAAAAAAAAAAABgcE/8QAHxAAAQQBBQEAAAAAAAAAAAAAAQACAwUEBhExMkES/8QAFQEBAQAAAAAAAAAAAAAAAAAABAP/xAAbEQABBAMAAAAAAAAAAAAAAAABAAIRIQMTIv/aAAwDAQACEQMRAD8Az0t/HkPBDgQnXGuI2Qg/Q4Ubpt4XAMJCa48mUw9vEFzg48pJx6zBTFb6rhxwS54AQpfquR7oTu48oScYMWoPmaX/2Q=="
+                        style="opacity: 0; transition: opacity 500ms; position: absolute; left: 0px; top: 0px; width: 100%;"
+                      />
+                      <picture>
+                        <source
+                          sizes="(max-width: 2000px) 100vw, 2000px"
+                          srcset="https://www.datocms-assets.com/63265/1585207093-image-26-copyright.jpg?dpr=0.25&fit=crop&fm=webp&h=1000&w=2000 500w,https://www.datocms-assets.com/63265/1585207093-image-26-copyright.jpg?dpr=0.5&fit=crop&fm=webp&h=1000&w=2000 1000w,https://www.datocms-assets.com/63265/1585207093-image-26-copyright.jpg?dpr=0.75&fit=crop&fm=webp&h=1000&w=2000 1500w,https://www.datocms-assets.com/63265/1585207093-image-26-copyright.jpg?fit=crop&fm=webp&h=1000&w=2000 2000w"
+                          type="image/webp"
+                        />
+                        <source
+                          sizes="(max-width: 2000px) 100vw, 2000px"
+                          srcset="https://www.datocms-assets.com/63265/1585207093-image-26-copyright.jpg?dpr=0.25&fit=crop&fm=jpg&h=1000&w=2000 500w,https://www.datocms-assets.com/63265/1585207093-image-26-copyright.jpg?dpr=0.5&fit=crop&fm=jpg&h=1000&w=2000 1000w,https://www.datocms-assets.com/63265/1585207093-image-26-copyright.jpg?dpr=0.75&fit=crop&fm=jpg&h=1000&w=2000 1500w,https://www.datocms-assets.com/63265/1585207093-image-26-copyright.jpg?fit=crop&fm=jpg&h=1000&w=2000 2000w"
+                        />
+                        <img
+                          alt="Cover Image for Tips on How to See More and Stay Safe in Asia"
+                          src="https://www.datocms-assets.com/63265/1585207093-image-26-copyright.jpg?fit=crop&fm=jpg&h=1000&w=2000"
+                          style="opacity: 1; transition: opacity 500ms; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"
+                        />
+                      </picture>
+                      <noscript />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <h3
+                class="mb-3 text-3xl leading-snug text-gray-300"
+              >
+                <a
+                  class="hover:underline"
+                  href="/blog/posts/tips-on-how-to-see-more-and-stay-safe-in-asia"
+                >
+                  Tips on How to See More and Stay Safe in Asia
+                </a>
+              </h3>
+              <div
+                class="mb-4 text-lg text-gray-400"
+              >
+                <time
+                  class="text-gray-400"
+                  datetime="2020-03-05"
+                >
+                  March	5, 2020
+                </time>
+              </div>
+              <p
+                class="mb-4 text-lg leading-relaxed text-gray-300"
+              >
+                Our recommendations on how to travel and stay safe in Asia.
+              </p>
+              <div
+                class="flex items-center"
+              >
+                <div
+                  class="mr-4 h-12 w-12"
+                >
+                  <div
+                    class="rounded-full"
+                    style="overflow: hidden; position: relative; width: 100%; max-width: 100px;"
+                  >
+                    <img
+                      aria-hidden="true"
+                      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj48L3N2Zz4="
+                      style="display: block; width: 100%;"
+                    />
+                    <img
+                      aria-hidden="true"
+                      role="presentation"
+                      src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoIDQ8QDQ0KDhANDQ4NDhENFg0NFxMZGBYTIiEaHysjGh0oHRUWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLBQUFEAUFEC8cFhwvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABgAGAMBIgACEQEDEQH/xAAZAAACAwEAAAAAAAAAAAAAAAAABgQFBwH/xAAgEAACAgEDBQAAAAAAAAAAAAAAAQMEAgUREhMhI2GB/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANdu5rGFi7lKusWmpTNRMV8rPn+gNNWZcUBWVZnxR0CXrHaFias27W3sAAY6OO8aAAA//9k="
+                      style="opacity: 0; transition: opacity 500ms; position: absolute; left: 0px; top: 0px; width: 100%;"
+                    />
+                    <picture>
+                      <source
+                        sizes="(max-width: 100px) 100vw, 100px"
+                        srcset="https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.5&fit=crop&fm=webp&h=100&sat=-100&w=100 50w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.75&fit=crop&fm=webp&h=100&sat=-100&w=100 75w,https://www.datocms-assets.com/63265/1644788631-icon.png?fit=crop&fm=webp&h=100&sat=-100&w=100 100w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=1.5&fit=crop&fm=webp&h=100&sat=-100&w=100 150w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=2&fit=crop&fm=webp&h=100&sat=-100&w=100 200w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=3&fit=crop&fm=webp&h=100&sat=-100&w=100 300w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=4&fit=crop&fm=webp&h=100&sat=-100&w=100 400w"
+                        type="image/webp"
+                      />
+                      <source
+                        sizes="(max-width: 100px) 100vw, 100px"
+                        srcset="https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.5&fit=crop&fm=jpg&h=100&sat=-100&w=100 50w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=0.75&fit=crop&fm=jpg&h=100&sat=-100&w=100 75w,https://www.datocms-assets.com/63265/1644788631-icon.png?fit=crop&fm=jpg&h=100&sat=-100&w=100 100w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=1.5&fit=crop&fm=jpg&h=100&sat=-100&w=100 150w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=2&fit=crop&fm=jpg&h=100&sat=-100&w=100 200w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=3&fit=crop&fm=jpg&h=100&sat=-100&w=100 300w,https://www.datocms-assets.com/63265/1644788631-icon.png?dpr=4&fit=crop&fm=jpg&h=100&sat=-100&w=100 400w"
+                      />
+                      <img
+                        alt=""
+                        src="https://www.datocms-assets.com/63265/1644788631-icon.png?fit=crop&fm=jpg&h=100&sat=-100&w=100"
+                        style="opacity: 1; transition: opacity 500ms; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"
+                      />
+                    </picture>
+                    <noscript />
+                  </div>
+                </div>
+                <div
+                  class="text-xl font-bold text-white"
+                >
+                  Supabot
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </article>
+  </div>
+</div>
+`;

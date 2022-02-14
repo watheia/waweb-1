@@ -17,6 +17,7 @@
 import useSWR from 'swr';
 import { KeyedMutator, PublicConfiguration } from 'swr/dist/types';
 import { getGlobalScope } from '@waweb/utils';
+import { User } from '@supabase/supabase-js';
 
 const global = getGlobalScope<Window>();
 
@@ -41,6 +42,7 @@ const fetcher = async (url: string) => {
 export default function useLoginStatus(opts?: LoginStatusRequest): {
   loginStatus: LoginStatus;
   mutate: KeyedMutator<any>;
+  principal: User | null;
 } {
   const { data, error, mutate } = useSWR(ENDPOINT, fetcher, {
     ...opts,
@@ -52,12 +54,15 @@ export default function useLoginStatus(opts?: LoginStatusRequest): {
   }
 
   let loginStatus: LoginStatus = 'loading';
+  let principal = null;
   if (data) {
     loginStatus = data['loggedIn'] ? 'loggedIn' : 'loggedOut';
+    principal = data['principal'] ?? null;
   }
 
   return {
     loginStatus,
     mutate,
+    principal,
   };
 }

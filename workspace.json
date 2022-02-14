@@ -5,6 +5,7 @@
     "atoms": "libs/atoms",
     "auth": "libs/auth",
     "config": "libs/config",
+    "datocms": "libs/datocms",
     "home": "apps/home",
     "home-e2e": "apps/home-e2e",
     "icons": "libs/icons",

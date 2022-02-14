@@ -6,7 +6,11 @@ export default {
   title: 'waweb.icons/calendar',
 } as Meta;
 
-const Template: Story = (args) => <Calendar {...args} />;
+const Template: Story = (args) => (
+  <div style={{ color: 'white' }}>
+    <Calendar {...args} />
+  </div>
+);
 
 export const Primary = Template.bind({});
 Primary.args = {};

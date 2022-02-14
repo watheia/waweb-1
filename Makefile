@@ -16,7 +16,7 @@ setup:
 
 build:
 	@echo "~~~> Build home bundle..."
-	nx build home --prod --verbose --skip-nx-cache
+	nx build home --prod --verbose
 
 docs:
 	yarn depcruise --output-type dot --output-to docs/depgraph.dot --prefix "https://github.com/drkstr101/waweb/blob/main/"
@@ -33,7 +33,7 @@ ci:
 	prisma generate
 	nx format
 	nx run-many --all --target lint
-	nx run-many --all --target test --coverage --detectOpenHandles
+	nx run-many --all --target test --coverage --detectOpenHandles=true --u=true
 	nx run-many --all --target build --prod
 # TODO fix storybook builds
 #	$(MAKE) storybook

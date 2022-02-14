@@ -1,0 +1,43 @@
+{
+  "root": "libs/datocms",
+  "sourceRoot": "libs/datocms/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/datocms",
+        "tsConfig": "libs/datocms/tsconfig.lib.json",
+        "project": "libs/datocms/package.json",
+        "entryFile": "libs/datocms/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "compiler": "babel",
+        "assets": [
+          {
+            "glob": "libs/datocms/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/datocms/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/datocms"],
+      "options": {
+        "jestConfig": "libs/datocms/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

@@ -27,7 +27,7 @@ export default function Blog({ subscription, preview, ...props }: BlogProps) {
     handleMessage({ type: 'error', message: error.message });
   }
 
-  const heroPost = data?.allPosts?.at(0);
+  const heroPost = data?.allPosts[0];
   const morePosts = data?.allPosts.slice(1) ?? [];
   const metaTags = data?.blog.seo;
   return (

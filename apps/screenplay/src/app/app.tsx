@@ -2,7 +2,7 @@
 import styles from './app.module.css';
 import NxWelcome from './nx-welcome';
 
-import { Switch, Route, Link } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import ProfileView from '@waweb/views.profile';
 
 export function App() {
@@ -30,23 +30,6 @@ export function App() {
           </li>
         </ul>
       </div>
-      <Switch>
-        <Route path="/profile">
-          <ProfileView />
-        </Route>
-        <Route path="/">
-          <div>
-            This is the generated root route.{' '}
-            <Link to="/page-2">Click here for page 2.</Link>
-          </div>
-        </Route>
-        <Route path="/page-2">
-          <div>
-            <Link to="/">Click here to go back to root page.</Link>
-          </div>
-        </Route>
-        {/* END: routes */}
-      </Switch>
     </>
   );
 }

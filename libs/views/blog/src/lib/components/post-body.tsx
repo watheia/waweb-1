@@ -15,8 +15,8 @@ export interface PostBodyProps {
 }
 export default function PostBody(props: PostBodyProps) {
   return (
-    <div className="mx-auto max-w-2xl">
-      <div className="prose prose-lg prose-blue">
+    <div className="max-w-2xl mx-auto">
+      <div className="prose prose-lg prose-blue prose-invert">
         <StructuredText
           data={props.content}
           renderBlock={({ record }: { record: any }) => {

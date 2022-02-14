@@ -1,18 +1,9 @@
-import {
-  metaTagsFragment,
-  responsiveImageFragment,
-  request,
-  BlogPostView,
-} from '@waweb/views.blog';
-import {
-  GetStaticPaths,
-  GetStaticProps,
-  InferGetServerSidePropsType,
-} from 'next';
-import { Page } from '@waweb/atoms';
-import Layout from '@waweb/layout';
+import { metaTagsFragment, responsiveImageFragment } from './fragments';
+import { request } from './request';
 
-const query = `
+export default async function getPostAndMore(slug: string, preview: boolean) {
+  const data = await request(
+    `
   query PostBySlug($slug: String) {
     site: _site {
       favicon: faviconMetaTags {
@@ -81,59 +72,13 @@ const query = `
 
   ${responsiveImageFragment}
   ${metaTagsFragment}
-`;
-
-type Props = InferGetServerSidePropsType<typeof getStaticProps>;
-
-export default function BlogPostPage({ subscription, preview }: Props) {
-  const meta = {
-    title: 'Watheia Blog',
-    description: 'Musings on technology, design, business and more.',
-  };
-
-  return (
-    <Page meta={meta} fullViewport>
-      <Layout usePadding>
-        <BlogPostView subscription={subscription} preview={preview} />
-      </Layout>
-    </Page>
-  );
-}
-
-export const getStaticPaths: GetStaticPaths = async () => {
-  const data = await request({
-    query: `{ allPosts { slug } }`,
-    preview: false,
-    variables: {},
-  });
-
-  return {
-    paths: data.allPosts.map((post) => `/blog/posts/${post.slug}`),
-    fallback: false,
-  };
-};
-
-export const getStaticProps: GetStaticProps = async ({ params, preview }) => {
-  const { slug } = params;
-  const graphqlRequest = {
-    query,
-    preview,
-    variables: { slug },
-  };
-
-  return {
-    props: {
-      subscription: preview
-        ? {
-            ...graphqlRequest,
-            initialData: await request(graphqlRequest),
-            token: process.env.NEXT_DATOCMS_API_TOKEN,
-          }
-        : {
-            enabled: false,
-            initialData: await request(graphqlRequest),
-          },
+  `,
+    {
       preview,
-    },
-  };
-};
+      variables: {
+        slug,
+      },
+    }
+  );
+  return data;
+}

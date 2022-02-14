@@ -68,7 +68,7 @@
   display: block;
 }
 
-@media (min-width: 1032px) {
+@media (min-width: 780px) {
   .button {
     display: none;
   }

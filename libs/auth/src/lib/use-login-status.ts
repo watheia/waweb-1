@@ -14,55 +14,55 @@
  * limitations under the License.
  */
 
-import useSWR from 'swr';
-import { KeyedMutator, PublicConfiguration } from 'swr/dist/types';
-import { getGlobalScope } from '@waweb/utils';
-import { User } from '@supabase/supabase-js';
+// import useSWR from 'swr';
+// import { KeyedMutator, PublicConfiguration } from 'swr/dist/types';
+// import { getGlobalScope } from '@waweb/utils';
+// import { Principal } from '@waweb/model';
 
-const global = getGlobalScope<Window>();
+// const global = getGlobalScope<Window>();
 
-export const ENDPOINT = '/api/auth';
+// export const ENDPOINT = '/api/auth';
 
-export type LoginStatusRequest = PublicConfiguration<
-  any,
-  any,
-  (url: string) => any
->;
+// export type LoginStatusRequest = PublicConfiguration<
+//   any,
+//   any,
+//   (url: string) => any
+// >;
 
-export type LoginStatus = 'loading' | 'loggedOut' | 'loggedIn';
+// export type LoginStatus = 'loading' | 'loggedOut' | 'loggedIn';
 
-const fetcher = async (url: string) => {
-  const res = await global.fetch(url);
-  if (!res.ok) {
-    throw new Error(res.statusText);
-  }
-  return res.json();
-};
+// const fetcher = async (url: string) => {
+//   const res = await global.fetch(url);
+//   if (!res.ok) {
+//     throw new Error(res.statusText);
+//   }
+//   return res.json();
+// };
 
-export default function useLoginStatus(opts?: LoginStatusRequest): {
-  loginStatus: LoginStatus;
-  mutate: KeyedMutator<any>;
-  principal: User | null;
-} {
-  const { data, error, mutate } = useSWR(ENDPOINT, fetcher, {
-    ...opts,
-    revalidateOnFocus: false,
-  });
+// export default function useLoginStatus(opts?: LoginStatusRequest): {
+//   loginStatus: LoginStatus;
+//   mutate: KeyedMutator<any>;
+//   principal: Principal | null;
+// } {
+//   const { data, error, mutate } = useSWR(ENDPOINT, fetcher, {
+//     ...opts,
+//     revalidateOnFocus: false,
+//   });
 
-  if (error) {
-    console.error(error);
-  }
+//   if (error) {
+//     console.error(error);
+//   }
 
-  let loginStatus: LoginStatus = 'loading';
-  let principal = null;
-  if (data) {
-    loginStatus = data['loggedIn'] ? 'loggedIn' : 'loggedOut';
-    principal = data['principal'] ?? null;
-  }
+//   let loginStatus: LoginStatus = 'loading';
+//   let principal = null;
+//   if (data) {
+//     loginStatus = data['loggedIn'] ? 'loggedIn' : 'loggedOut';
+//     principal = data['principal'] ?? null;
+//   }
 
-  return {
-    loginStatus,
-    mutate,
-    principal,
-  };
-}
+//   return {
+//     loginStatus,
+//     mutate,
+//     principal,
+//   };
+// }

@@ -148,11 +148,86 @@ exports[`waweb.home should render successfully 1`] = `
                 class="full"
               >
                 <div
-                  class="flex h-full w-full place-items-center justify-center"
+                  class="container mx-auto sm:px-6 lg:px-8 root"
                 >
                   <div
-                    class="gg-spinner xl"
-                  />
+                    class="wrapper"
+                  >
+                    <h2
+                      class="appear appear-third show-on-mobile description"
+                    />
+                    <h1
+                      class="appear appear-third hero"
+                    >
+                      Watheia
+                      <br
+                        class="show-on-desktop"
+                      />
+                       Gatekeeper
+                    </h1>
+                    <h2
+                      class="appear appear-third show-on-tablet description"
+                    />
+                    <div
+                      class="appear appear-fourth info"
+                    >
+                      <p>
+                        guest
+                      </p>
+                      <div
+                        class="description-separator"
+                      />
+                      <p
+                        class="offline"
+                      >
+                        offline
+                      </p>
+                    </div>
+                  </div>
+                  <form
+                    class="form appear appear-fifth"
+                  >
+                    <div
+                      class="form-row"
+                    >
+                      <label
+                        class="input-label"
+                        for="email-input-field"
+                      >
+                        <input
+                          aria-label="Your email address"
+                          autocomplete="off"
+                          class="input"
+                          id="email-input-field"
+                          placeholder="Enter email to get login url"
+                          required=""
+                          type="email"
+                          value=""
+                        />
+                      </label>
+                      <button
+                        class="submit login default"
+                        type="submit"
+                      >
+                        Send
+                      </button>
+                    </div>
+                  </form>
+                  <div
+                    class="appear appear-fifth contact"
+                  >
+                    Learn more on
+                     
+                    <a
+                      class="contact-email"
+                      href="https://gitlab.com/watheia/waweb"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      GitHub
+                    </a>
+                    .
+                  </div>
                 </div>
               </div>
             </main>

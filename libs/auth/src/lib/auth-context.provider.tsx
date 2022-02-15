@@ -5,17 +5,17 @@ import {
   UserCredentials,
 } from '@supabase/supabase-js';
 import { useMessage } from '@waweb/message';
-import { AppRole, Principal } from '@waweb/model';
-import supabase, { fetchUserRoles } from '@waweb/supabase';
+import { Principal } from '@waweb/model';
+import supabase from '@waweb/supabase';
 import { FunctionComponent, useEffect, useState } from 'react';
 import { AuthContext } from './auth-context';
 
 export const AuthProvider: FunctionComponent = ({ children }) => {
   const [user, setUser] = useState<Principal | null>(null);
-  const [userRoles, setUserRoles] = useState<AppRole[]>([]);
+  // const [userRoles, setUserRoles] = useState<AppRole[]>([]);
   const [isLoading, setLoading] = useState<boolean>(false);
   const [isUserLoading, setUserLoading] = useState<boolean>(true);
-  const [isLoggedIn, setLoggedin] = useState<boolean>(false);
+  const [isLoggedIn, setLoggedIn] = useState<boolean>(false);
   const { handleMessage } = useMessage();
 
   const signUp = async (payload: UserCredentials) => {
@@ -94,10 +94,10 @@ export const AuthProvider: FunctionComponent = ({ children }) => {
 
     if (user) {
       setUser(user);
-      setLoggedin(true);
-      fetchUserRoles((userRoles) => {
-        setUserRoles(userRoles.map((userRole) => userRole.role));
-      });
+      setLoggedIn(true);
+      // fetchUserRoles((userRoles) => {
+      //   setUserRoles(userRoles.map((userRole) => userRole.role));
+      // });
     }
 
     const { data: authListener } = supabase.auth.onAuthStateChange(
@@ -105,15 +105,9 @@ export const AuthProvider: FunctionComponent = ({ children }) => {
         console.info('Auth State Changed', event, session);
         const user = session?.user ?? null;
         setUserLoading(false);
+        setUser(user);
+        setLoggedIn(!!user);
         await setServerSession(event, session);
-        if (user) {
-          setUser(user);
-          setLoggedin(true);
-          // Router.push(ROUTE_HOME);
-        } else {
-          setUser(null);
-          // Router.push(ROUTE_AUTH);
-        }
       }
     );
 
@@ -131,7 +125,7 @@ export const AuthProvider: FunctionComponent = ({ children }) => {
     isLoggedIn,
     isLoading,
     isUserLoading,
-    userRoles,
+    // userRoles,
   };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

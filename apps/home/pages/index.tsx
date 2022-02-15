@@ -18,31 +18,26 @@ import Dashboard from '@waweb/views.dashboard';
 import Layout from '@waweb/layout';
 import { Page, PageSpinner } from '@waweb/atoms';
 import useConfig from '@waweb/config';
-import { useLoginStatus } from '@waweb/auth';
-import { useCallback } from 'react';
+import { useAuth } from '@waweb/auth';
 import Gatekeeper from '@waweb/views.gatekeeper';
 
 export default function IndexPage() {
   const config = useConfig();
-  const { loginStatus, mutate } = useLoginStatus();
+  const { isUserLoading, isLoggedIn } = useAuth();
   const meta = {
     title: 'Watheia Realtime',
     description: config.metaDescription,
   };
 
-  const loginHandler = useCallback(() => {
-    mutate('/api/auth');
-  }, [mutate]);
-
   return (
     <Page meta={meta} fullViewport>
       <Layout useBackdrop>
-        {loginStatus === 'loading' ? (
+        {isUserLoading ? (
           <PageSpinner />
-        ) : loginStatus === 'loggedIn' ? (
+        ) : isLoggedIn ? (
           <Dashboard />
         ) : (
-          <Gatekeeper onLogin={loginHandler} />
+          <Gatekeeper />
         )}
       </Layout>
     </Page>

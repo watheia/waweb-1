@@ -25,7 +25,7 @@ import clsx from 'clsx';
 import styles from './gatekeeper.module.css';
 
 export interface GatekeeperProps extends DivProps {
-  onLogin: () => void;
+  onLogin?: () => void;
 }
 
 export default function Gatekeeper({
@@ -35,7 +35,7 @@ export default function Gatekeeper({
 }: GatekeeperProps) {
   const { isLoggedIn } = useAuth();
   useEffect(() => {
-    if (isLoggedIn) onLogin();
+    if (isLoggedIn && onLogin) onLogin();
   }, [isLoggedIn, onLogin]);
 
   return (

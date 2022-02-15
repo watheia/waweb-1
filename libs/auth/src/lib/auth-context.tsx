@@ -1,5 +1,5 @@
 import { Provider, UserCredentials } from '@supabase/supabase-js';
-import { AppRole, Principal } from '@waweb/model';
+import { Principal } from '@waweb/model';
 import { createContext } from 'react';
 
 export type AuthModel = {
@@ -11,7 +11,7 @@ export type AuthModel = {
   isLoggedIn: boolean;
   isLoading: boolean;
   isUserLoading: boolean;
-  userRoles: AppRole[];
+  // userRoles: AppRole[];
 };
 
 const todoNotImpl = async () => {
@@ -27,5 +27,5 @@ export const AuthContext = createContext<AuthModel>({
   isLoggedIn: false,
   isLoading: false,
   isUserLoading: false,
-  userRoles: [],
+  // userRoles: [],
 });

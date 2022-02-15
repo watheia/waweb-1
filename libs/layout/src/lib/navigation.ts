@@ -8,12 +8,12 @@ const navigation = [
     route: '/blog',
   },
   {
-    name: 'Support',
-    route: '/support',
-  },
-  {
     name: 'Expo',
     route: '/expo',
+  },
+  {
+    name: 'Contact',
+    route: '/contact',
   },
 ];
 

@@ -14,12 +14,14 @@
  * limitations under the License.
  */
 
-import Dashboard from '@waweb/views.dashboard';
 import Layout from '@waweb/layout';
 import { Page, PageSpinner } from '@waweb/atoms';
 import useConfig from '@waweb/config';
 import { useAuth } from '@waweb/auth';
-import Gatekeeper from '@waweb/views.gatekeeper';
+import { lazy, Suspense } from 'react';
+
+const Dashboard = lazy(() => import('@waweb/views.dashboard'));
+const Gatekeeper = lazy(() => import('@waweb/views.gatekeeper'));
 
 export default function IndexPage() {
   const config = useConfig();
@@ -35,28 +37,15 @@ export default function IndexPage() {
         {isUserLoading ? (
           <PageSpinner />
         ) : isLoggedIn ? (
-          <Dashboard />
+          <Suspense fallback={PageSpinner}>
+            <Dashboard />
+          </Suspense>
         ) : (
-          <Gatekeeper />
+          <Suspense fallback={PageSpinner}>
+            <Gatekeeper />
+          </Suspense>
         )}
       </Layout>
     </Page>
   );
 }
-
-/* /**
- *
- * @param ctx Redirect to home if no principal user is authenticated
- * @returns
- */
-// export const getServerSideProps: GetServerSideProps = async (ctx) => {
-//   const user = supabase.auth.api.getUserByCookie(ctx.req);
-//   return {
-//     redirect: user
-//       ? undefined
-//       : {
-//           permanent: false,
-//           destination: '/home',
-//         },
-//   };
-// };

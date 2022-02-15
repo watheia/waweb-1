@@ -14,11 +14,13 @@
  * limitations under the License.
  */
 
-import { Page } from '@waweb/atoms';
+import { Page, PageSpinner } from '@waweb/atoms';
 import Layout from '@waweb/layout';
-import Profile from '@waweb/views.profile';
+import supabase from '@waweb/supabase';
+import { GetServerSideProps } from 'next';
+import { lazy, Suspense } from 'react';
 
-// const Dashboard = lazy(() => import('@waweb/app.ui.dashboard'));
+const Profile = lazy(() => import('@waweb/views.profile'));
 
 export default function AccountPage() {
   const meta = {
@@ -29,8 +31,28 @@ export default function AccountPage() {
   return (
     <Page meta={meta} fullViewport>
       <Layout usePadding>
-        <Profile />
+        <Suspense fallback={PageSpinner}>
+          <Profile />
+        </Suspense>
       </Layout>
     </Page>
   );
 }
+
+/**
+ * Redirect to root if no principal user found
+ *
+ * @param ctx
+ * @returns
+ */
+export const getServerSideProps: GetServerSideProps = async (ctx) => {
+  const user = supabase.auth.api.getUserByCookie(ctx.req);
+  return {
+    redirect: user
+      ? undefined
+      : {
+          permanent: false,
+          destination: '/',
+        },
+  };
+};

@@ -1,12 +1,18 @@
-import { Page } from '@waweb/atoms';
+import { Page, PageSpinner } from '@waweb/atoms';
 import { getAllPostsWithSlug, getPostAndMore } from '@waweb/datocms';
 import Layout from '@waweb/layout';
-import { BlogPostView } from '@waweb/views.blog';
 import {
   GetStaticPaths,
   GetStaticProps,
   InferGetServerSidePropsType,
 } from 'next';
+import { lazy, Suspense } from 'react';
+
+const BlogPostView = lazy(() =>
+  import('@waweb/views.blog').then(({ BlogPostView }) => ({
+    default: BlogPostView,
+  }))
+);
 
 type Props = InferGetServerSidePropsType<typeof getStaticProps>;
 
@@ -19,7 +25,9 @@ export default function BlogPostPage({ subscription, preview }: Props) {
   return (
     <Page meta={meta} fullViewport>
       <Layout>
-        <BlogPostView subscription={subscription} preview={!!preview} />
+        <Suspense fallback={PageSpinner}>
+          <BlogPostView subscription={subscription} preview={!!preview} />
+        </Suspense>
       </Layout>
     </Page>
   );

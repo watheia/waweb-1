@@ -14,11 +14,18 @@
  * limitations under the License.
  */
 
-import { Page } from '@waweb/atoms';
+import { Page, PageSpinner } from '@waweb/atoms';
 import { getAllPostsForHome } from '@waweb/datocms';
 import Layout from '@waweb/layout';
-import { BlogView } from '@waweb/views.blog';
+// import { BlogView } from '@waweb/views.blog';
 import { GetStaticProps, InferGetServerSidePropsType } from 'next';
+import { lazy, Suspense } from 'react';
+
+const BlogView = lazy(() =>
+  import('@waweb/views.blog').then(({ BlogView }) => ({
+    default: BlogView,
+  }))
+);
 
 type Props = InferGetServerSidePropsType<typeof getStaticProps>;
 
@@ -31,7 +38,9 @@ export default function BlogPage({ subscription, preview }: Props) {
   return (
     <Page meta={meta} fullViewport>
       <Layout>
-        <BlogView subscription={subscription} preview={preview} />
+        <Suspense fallback={PageSpinner}>
+          <BlogView subscription={subscription} preview={preview} />
+        </Suspense>
       </Layout>
     </Page>
   );

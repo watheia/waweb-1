@@ -1,5 +1,4 @@
 import { Category } from './Category';
-import { User } from '@waweb/model';
 export interface Post {
   title: string;
   slug: string;
@@ -9,5 +8,5 @@ export interface Post {
   datetime: string;
   image_url: string;
   reading_time: string;
-  author: User;
+  author: { username: string; slug: string; avatar_url: string };
 }

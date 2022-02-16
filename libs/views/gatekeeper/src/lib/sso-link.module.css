@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-.contact {
+.root {
   text-align: center;
   color: var(--secondary-color);
   margin-bottom: var(--space-12x);
 }
 
-.contact-email {
+.link {
   color: #fff;
 }
 
-.contact-email:hover {
+.link:hover {
   text-decoration: underline;
   color: #fff;
 }

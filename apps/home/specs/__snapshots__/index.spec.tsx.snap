@@ -119,15 +119,15 @@ exports[`waweb.home should render successfully 1`] = `
               </a>
               <a
                 class="tab"
-                href="/support"
-              >
-                Support
-              </a>
-              <a
-                class="tab"
                 href="/expo"
               >
                 Expo
+              </a>
+              <a
+                class="tab"
+                href="/contact"
+              >
+                Contact
               </a>
             </div>
           </header>
@@ -214,17 +214,15 @@ exports[`waweb.home should render successfully 1`] = `
                     </div>
                   </form>
                   <div
-                    class="appear appear-fifth contact"
+                    class="appear appear-fifth root"
                   >
-                    Learn more on
+                    Or login with
                      
                     <a
-                      class="contact-email"
-                      href="https://gitlab.com/watheia/waweb"
-                      rel="noopener noreferrer"
-                      target="_blank"
+                      class="link"
+                      href="/sso"
                     >
-                      GitHub
+                      Gatekeeper Single Sign-On (SSO)
                     </a>
                     .
                   </div>

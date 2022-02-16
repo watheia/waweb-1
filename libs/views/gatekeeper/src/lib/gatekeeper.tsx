@@ -19,7 +19,7 @@ import { DivProps } from '@waweb/model';
 import { useEffect } from 'react';
 import { Container } from '@waweb/atoms';
 import Hero from './hero';
-import LearnMore from './learn-more';
+import SsoLink from './sso-link';
 import LoginForm from './login-form';
 import clsx from 'clsx';
 import styles from './gatekeeper.module.css';
@@ -42,7 +42,7 @@ export default function Gatekeeper({
     <Container className={clsx(styles['root'], className)} {...props}>
       <Hero />
       <LoginForm />
-      <LearnMore />
+      <SsoLink />
     </Container>
   );
 }

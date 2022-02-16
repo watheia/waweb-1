@@ -52,7 +52,7 @@ export default function Layout({
   return (
     <>
       <ViewSource />
-      <div className={cn(useBackdrop && styles['backdrop'])}>
+      <div className={cn(useBackdrop ? styles['backdrop'] : styles['layout'])}>
         {!hideNav && (
           <header className={cn(styles['header'])}>
             <div className={styles['header-logos']}>

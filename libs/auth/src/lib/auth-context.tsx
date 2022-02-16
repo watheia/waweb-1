@@ -4,7 +4,7 @@ import { createContext } from 'react';
 
 export type AuthModel = {
   user: Principal | null;
-  signUp: (payload: UserCredentials) => Promise<void>;
+  // signUp: (payload: UserCredentials) => Promise<void>;
   signIn: (payload: UserCredentials) => Promise<void>;
   signInWithProvider: (provider: Provider) => Promise<void>;
   signOut: () => Promise<void>;
@@ -20,7 +20,7 @@ const todoNotImpl = async () => {
 
 export const AuthContext = createContext<AuthModel>({
   user: null,
-  signUp: todoNotImpl,
+  // signUp: todoNotImpl,
   signIn: todoNotImpl,
   signInWithProvider: todoNotImpl,
   signOut: todoNotImpl,

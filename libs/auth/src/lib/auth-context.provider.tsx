@@ -5,62 +5,38 @@ import {
   UserCredentials,
 } from '@supabase/supabase-js';
 import { useMessage } from '@waweb/message';
-import { Principal } from '@waweb/model';
-import supabase from '@waweb/supabase';
+import { AppRole, Principal } from '@waweb/model';
+import supabase, { fetchUserRoles } from '@waweb/supabase';
 import { FunctionComponent, useEffect, useState } from 'react';
 import { AuthContext } from './auth-context';
 
 export const AuthProvider: FunctionComponent = ({ children }) => {
   const [user, setUser] = useState<Principal | null>(null);
-  // const [userRoles, setUserRoles] = useState<AppRole[]>([]);
+  const [userRoles, setUserRoles] = useState<AppRole[]>([]);
   const [isLoading, setLoading] = useState<boolean>(false);
   const [isUserLoading, setUserLoading] = useState<boolean>(true);
   const [isLoggedIn, setLoggedIn] = useState<boolean>(false);
   const { handleMessage } = useMessage();
 
-  const signUp = async (payload: UserCredentials) => {
-    try {
-      setLoading(true);
-      const { error } = await supabase.auth.signUp(payload);
-      if (error) {
-        handleMessage({ message: error.message, type: 'error' });
-      } else {
-        handleMessage({
-          message:
-            'Signup successful. Please check your inbox for a confirmation email!',
-          type: 'success',
-        });
-      }
-    } catch (error) {
-      handleMessage({
-        message: (error as any).error_description || error,
-        type: 'error',
-      });
-    } finally {
-      setLoading(false);
-    }
-  };
-
   const signIn = async (payload: UserCredentials) => {
     try {
       setLoading(true);
-      const { error, user } = await supabase.auth.signIn(payload);
+      const { error, message } = await fetch('/api/auth', {
+        method: 'POST',
+        headers: new Headers({ 'Content-Type': 'application/json' }),
+        credentials: 'same-origin',
+        body: JSON.stringify(payload),
+      }).then((res) => res.json());
       if (error) {
         handleMessage({ message: error.message, type: 'error' });
-      } else if (user) {
-        handleMessage({
-          message: `Please enjoy your stay`,
-          type: 'success',
-        });
-      } else {
-        handleMessage({
-          message: `Please check your inbox for the login url.`,
-          type: 'success',
-        });
+      } else if (message) {
+        handleMessage({ message, type: 'success' });
       }
     } catch (error) {
+      console.error(error);
       handleMessage({
-        message: (error as any).error_description || error,
+        message:
+          (error as any).message || (error as any).error_description || error,
         type: 'error',
       });
     } finally {
@@ -80,7 +56,7 @@ export const AuthProvider: FunctionComponent = ({ children }) => {
     event: AuthChangeEvent,
     session: Session | null
   ) => {
-    await fetch('/api/auth', {
+    await fetch('/api/session', {
       method: 'POST',
       headers: new Headers({ 'Content-Type': 'application/json' }),
       credentials: 'same-origin',
@@ -95,9 +71,9 @@ export const AuthProvider: FunctionComponent = ({ children }) => {
     if (user) {
       setUser(user);
       setLoggedIn(true);
-      // fetchUserRoles((userRoles) => {
-      //   setUserRoles(userRoles.map((userRole) => userRole.role));
-      // });
+      fetchUserRoles((userRoles) => {
+        setUserRoles(userRoles.map((userRole) => userRole.role));
+      });
     }
 
     const { data: authListener } = supabase.auth.onAuthStateChange(
@@ -107,7 +83,19 @@ export const AuthProvider: FunctionComponent = ({ children }) => {
         setUserLoading(false);
         setUser(user);
         setLoggedIn(!!user);
+
+        // update session in ssr
         await setServerSession(event, session);
+
+        if (user) {
+          // refresh user roles
+          await fetchUserRoles((userRoles) => {
+            setUserRoles(userRoles.map((userRole) => userRole.role));
+          });
+        } else {
+          // reset user roles
+          setUserRoles([]);
+        }
       }
     );
 
@@ -118,14 +106,13 @@ export const AuthProvider: FunctionComponent = ({ children }) => {
 
   const value = {
     user,
-    signUp,
     signIn,
     signInWithProvider,
     signOut,
     isLoggedIn,
     isLoading,
     isUserLoading,
-    // userRoles,
+    userRoles,
   };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

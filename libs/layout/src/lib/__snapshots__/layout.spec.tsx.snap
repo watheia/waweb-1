@@ -30,7 +30,7 @@ exports[`waweb.layout should render successfully 1`] = `
     </a>
   </svg>
   <div
-    class=""
+    class="layout"
   >
     <header
       class="header"
@@ -110,15 +110,15 @@ exports[`waweb.layout should render successfully 1`] = `
         </a>
         <a
           class="tab"
-          href="/support"
-        >
-          Support
-        </a>
-        <a
-          class="tab"
           href="/expo"
         >
           Expo
+        </a>
+        <a
+          class="tab"
+          href="/contact"
+        >
+          Contact
         </a>
       </div>
     </header>

@@ -15,29 +15,24 @@
  */
 
 import cn from 'clsx';
-import styles from './learn-more.module.css';
-import useConfig from '@waweb/config';
+import styles from './sso-link.module.css';
 import styleUtils from '@waweb/theme.styles/utils.module.css';
+import Link from 'next/link';
 
-export default function LearnMore() {
-  const config = useConfig();
+export default function SsoLink() {
   return (
     <div
       className={cn(
         styleUtils['appear'],
         styleUtils['appear-fifth'],
-        styles['contact']
+        styles['root']
       )}
     >
-      Learn more on{' '}
-      <a
-        href={config.repo}
-        className={styles['contact-email']}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GitHub
-      </a>
+      Or login with{' '}
+      <Link href="/sso">
+        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+        <a className={styles['link']}>Gatekeeper Single Sign-On (SSO)</a>
+      </Link>
       .
     </div>
   );

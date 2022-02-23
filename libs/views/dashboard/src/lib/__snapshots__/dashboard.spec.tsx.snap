@@ -402,7 +402,7 @@ exports[`waweb.app/ui/dashboard should render successfully 1`] = `
                 <button
                   aria-expanded="false"
                   aria-haspopup="true"
-                  aria-labelledby="headlessui-listbox-label-1 headlessui-listbox-button-2"
+                  aria-labelledby="headlessui-listbox-label-1 headlessui-listbox-button-undefined"
                   class="relative -m-2.5 flex h-10 w-10 items-center justify-center rounded-full text-gray-400 hover:text-gray-500"
                   id="headlessui-listbox-button-2"
                   type="button"

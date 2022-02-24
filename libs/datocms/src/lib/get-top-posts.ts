@@ -1,25 +1,23 @@
-import { metaTagsFragment, responsiveImageFragment } from './fragments';
+import { responsiveImageFragment } from './fragments';
 import { request } from './request';
+import { PostSummary } from '@waweb/model';
 
-export default async function getAllPostsForHome(preview: boolean) {
-  const data = await request(
+export default async function getTopPosts(
+  preview: boolean,
+  first = 3
+): Promise<PostSummary[]> {
+  const data = await request<{ allPosts?: PostSummary[] }>(
     `
   {
-    site: _site {
-      favicon: faviconMetaTags {
-        ...metaTagsFragment
-      }
-    }
-    blog {
-      seo: _seoMetaTags {
-        ...metaTagsFragment
-      }
-    }
-    allPosts(orderBy: date_DESC, first: 20) {
+    allPosts(orderBy: date_DESC, first: ${first}) {
       title
       slug
       excerpt
       date
+      category {
+        name
+        slug
+      }
       coverImage {
         responsiveImage(imgixParams: {fm: jpg, fit: crop, w: 2000, h: 1000 }) {
           ...responsiveImageFragment
@@ -36,11 +34,10 @@ export default async function getAllPostsForHome(preview: boolean) {
     }
   }
 
-  ${metaTagsFragment}
   ${responsiveImageFragment}
   `,
     { preview }
   );
 
-  return data;
+  return data.allPosts ?? [];
 }

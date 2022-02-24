@@ -1,12 +1,20 @@
+import { SeoTag } from 'react-datocms';
+import { Author } from './Author';
 import { Category } from './Category';
-export interface Post {
+import { Content } from './Content';
+import { OgImage } from './OgImage';
+
+/**
+ * Contains the full blog post content
+ */
+export type Post = {
   title: string;
   slug: string;
-  category: Category;
-  description: string;
   date: string;
-  datetime: string;
-  image_url: string;
-  reading_time: string;
-  author: { username: string; slug: string; avatar_url: string };
-}
+  author: Author;
+  coverImage: Image;
+  ogImage: OgImage;
+  content?: Content;
+  category: Category;
+  seo: Array<SeoTag>;
+};

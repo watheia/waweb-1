@@ -16,6 +16,9 @@ export default async function getPostAndMore(slug: string, preview: boolean) {
       }
       title
       slug
+      category {
+        name
+      }
       content {
         value
         blocks {
@@ -54,6 +57,10 @@ export default async function getPostAndMore(slug: string, preview: boolean) {
       slug
       excerpt
       date
+      category {
+        name
+        slug
+      }
       coverImage {
         responsiveImage(imgixParams: {fm: jpg, fit: crop, w: 2000, h: 1000 }) {
           ...responsiveImageFragment

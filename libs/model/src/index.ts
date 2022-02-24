@@ -16,34 +16,68 @@ export type {
 
 // export model types
 ////
+
 export type MessageType = 'comment' | 'alert';
+
+/**
+ * @deprecated
+ */
 export type MessageModel = Message & {
   channel?: Channel;
   author?: User;
   type?: MessageType;
 };
+
+/**
+ * @deprecated
+ */
 export type ChannelModel = Channel & { user?: User; messages?: MessageModel[] };
+
+/**
+ * @deprecated
+ */
 export type UserModel = User & {
   channels?: Channel[];
   messages?: Message[];
   roles: AppRole[];
 };
 
-// export auth types
+// Principal user
 ////
+
 export type { User as Principal } from '@supabase/supabase-js';
 
-// Misc Types
+// Entity Types
 ////
 
+export type { PostSummary } from './types/PostSummary';
+export type { AllPostsData } from './types/AllPostsData';
+export type { AllPostsResponse } from './types/AllPostsResponse';
+export type { Author } from './types/Author';
+export type { Blocks } from './types/Blocks';
+export type { Blog } from './types/Blog';
 export type { Category } from './types/Category';
+export type { Content } from './types/Content';
+export type { Document } from './types/Document';
+export type { DocumentChildren } from './types/DocumentChildren';
 export type { Image } from './types/Image';
-export type { Link } from './types/Link';
+export type {
+  MakeMaybe,
+  Exact,
+  InputMaybe,
+  MakeOptional,
+  Maybe,
+} from './types/maybe';
+export type { MorePosts } from './types/MorePosts';
+export type { OgImage } from './types/OgImage';
 export type { Post } from './types/Post';
-export type { Project } from './types/Project';
-export type { Stakeholder } from './types/Stakeholder';
-export type { StakeholderLink } from './types/StakeholderLink';
-export type { Task } from './types/Task';
+export type { PostsBySlugData } from './types/PostsBySlugData';
+export type { PostsBySlugResponse } from './types/PostsBySlugResponse';
+export type { Site } from './types/Site';
+export type { Value } from './types/Value';
+
+// Helper Types
+////
 
 export type SignInRequest = {
   email: string;
@@ -70,17 +104,3 @@ export class FormError extends Error {
     super();
   }
 }
-
-// GraphQL Generics
-
-export type Maybe<T> = T | null;
-export type InputMaybe<T> = Maybe<T>;
-export type Exact<T extends { [key: string]: unknown }> = {
-  [K in keyof T]: T[K];
-};
-export type MakeOptional<T, K extends keyof T> = Omit<T, K> & {
-  [SubKey in K]?: Maybe<T[SubKey]>;
-};
-export type MakeMaybe<T, K extends keyof T> = Omit<T, K> & {
-  [SubKey in K]: Maybe<T[SubKey]>;
-};

@@ -1,6 +1,5 @@
+import { Author, Image } from '@waweb/model';
 import Link from 'next/link';
-import { ResponsiveImageType } from 'react-datocms';
-import { Author, Image } from '../types';
 import Avatar from './avatar';
 import CoverImage from './cover-image';
 import Date from './date';

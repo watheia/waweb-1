@@ -23,7 +23,7 @@ const HeroSection = () => (
             </Link>
             <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
               <span className="block">A better way to</span>
-              <span className="block pb-3 text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 bg-clip-text sm:pb-5">
+              <span className="block pb-3 text-transparent bg-gradient-to-r from-teal-200 to-teal-400 bg-clip-text sm:pb-5">
                 ship web apps
               </span>
             </h1>
@@ -43,13 +43,13 @@ const HeroSection = () => (
                       id="email"
                       type="email"
                       placeholder="Enter your email"
-                      className="block w-full px-4 py-3 text-base text-gray-900 placeholder-gray-500 border-0 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-gray-900"
+                      className="block w-full px-4 py-3 text-base text-gray-900 placeholder-gray-500 border-0 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-offset-2 focus:ring-offset-gray-900"
                     />
                   </div>
                   <div className="mt-3 sm:mt-0 sm:ml-3">
                     <button
                       type="submit"
-                      className="block w-full px-4 py-3 font-medium text-white rounded-md shadow bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-gray-900"
+                      className="block w-full px-4 py-3 font-medium text-white rounded-md shadow bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-offset-2 focus:ring-offset-gray-900"
                     >
                       Receive updates
                     </button>

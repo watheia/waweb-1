@@ -11,7 +11,7 @@ const CtaSection = () => (
       />
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-r from-teal-500 to-cyan-600 mix-blend-multiply"
+        className="absolute inset-0 bg-gradient-to-r from-teal-500 to-teal-600 mix-blend-multiply"
       />
     </div>
     <div className="relative mx-auto max-w-md px-4 py-12 sm:max-w-7xl sm:px-6 sm:py-20 md:py-28 lg:px-8 lg:py-32">

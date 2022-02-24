@@ -16,11 +16,12 @@
 
 import { Page } from '@waweb/atoms';
 import useConfig from '@waweb/config';
+import { getTopPosts } from '@waweb/datocms';
 import Layout from '@waweb/layout';
 import Home, { fixtures } from '@waweb/views.home';
-import { GetStaticProps, InferGetServerSidePropsType } from 'next';
+import { GetStaticProps, InferGetStaticPropsType } from 'next';
 
-type Props = InferGetServerSidePropsType<typeof getStaticProps>;
+type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
 export default function HomePage({ features, posts }: Props) {
   const config = useConfig();
@@ -38,10 +39,11 @@ export default function HomePage({ features, posts }: Props) {
   );
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async ({ preview }) => {
   return {
     props: {
-      ...fixtures,
+      features: fixtures.features,
+      posts: await getTopPosts(preview, 3),
     },
   };
 };

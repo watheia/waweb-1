@@ -1,9 +1,8 @@
-import Avatar from './avatar';
-import Date from './date';
-import CoverImage from './cover-image';
 import Link from 'next/link';
-import { ReactChild, ReactFragment, ReactPortal } from 'react';
 import { ResponsiveImageType } from 'react-datocms';
+import Avatar from './avatar';
+import CoverImage from './cover-image';
+import Date from './date';
 
 export interface PostPreviewProps {
   slug: string;

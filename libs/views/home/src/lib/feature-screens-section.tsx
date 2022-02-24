@@ -5,7 +5,7 @@ const FeatureScreenSection = () => (
   <section className="relative pt-16 bg-gray-50 sm:pt-24 lg:pt-32">
     <div className="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
       <div>
-        <h2 className="text-base font-semibold tracking-wider uppercase text-cyan-600">
+        <h2 className="text-base font-semibold tracking-wider uppercase text-teal-600">
           Serverless
         </h2>
         <p className="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">

@@ -1,7 +1,7 @@
-import { DivProps, Post } from '@waweb/model';
+import { DivProps, PostSummary } from '@waweb/model';
 import { HomeFeature } from './HomeFeature';
 
 export interface HomeProps extends DivProps {
   features: HomeFeature[];
-  posts: Post[];
+  posts: PostSummary[];
 }

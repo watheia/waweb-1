@@ -15,7 +15,7 @@
  */
 
 import { Page } from '@waweb/atoms';
-import { getAllPostsForHome } from '@waweb/datocms';
+import { getAllPostsForBlog } from '@waweb/datocms';
 import Layout from '@waweb/layout';
 import { BlogView } from '@waweb/views.blog';
 import { GetStaticProps, InferGetServerSidePropsType } from 'next';
@@ -43,13 +43,13 @@ export const getStaticProps: GetStaticProps = async ({ preview }) => {
       subscription: preview
         ? {
             preview: true,
-            initialData: await getAllPostsForHome(preview),
+            initialData: await getAllPostsForBlog(preview),
             token: process.env['NEXT_DATOCMS_API_TOKEN'],
             environment: process.env['NEXT_DATOCMS_ENVIRONMENT'] || 'main',
           }
         : {
             enabled: false,
-            initialData: await getAllPostsForHome(preview),
+            initialData: await getAllPostsForBlog(preview),
           },
     },
   };

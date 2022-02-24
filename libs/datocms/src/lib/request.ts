@@ -23,7 +23,10 @@ const getEndpoint = (preview: boolean) => {
   return endpoint;
 };
 
-export async function request(query: string, { variables, preview }: any = {}) {
+export async function request<T = any>(
+  query: string,
+  { variables, preview }: any = {}
+): Promise<T> {
   const res = await fetch(getEndpoint(preview), {
     method: 'POST',
     headers: {

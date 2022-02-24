@@ -1,7 +1,7 @@
 import { Node } from 'datocms-structured-text-utils';
 import {
-  StructuredText,
   Image,
+  StructuredText,
   StructuredTextDocument,
   StructuredTextGraphQlResponse,
 } from 'react-datocms';

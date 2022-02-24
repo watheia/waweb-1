@@ -18,15 +18,15 @@ export default function PostHeader(props: PostHeaderProps) {
       <div className="hidden md:mb-12 md:block">
         <Avatar name={props.author.name} picture={props.author.picture} />
       </div>
-      <div className="-mx-5 mb-8 sm:mx-0 md:mb-16">
+      <div className="mb-8 -mx-5 sm:mx-0 md:mb-16">
         <CoverImage
           title={props.title}
           responsiveImage={props.coverImage.responsiveImage}
           slug={props.slug}
         />
       </div>
-      <div className="mx-auto max-w-2xl">
-        <div className="mb-6 block md:hidden">
+      <div className="max-w-2xl mx-auto">
+        <div className="block mb-6 md:hidden">
           <Avatar name={props.author.name} picture={props.author.picture} />
         </div>
         <div className="mb-6 text-lg">

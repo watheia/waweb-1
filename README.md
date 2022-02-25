@@ -1,10 +1,12 @@
-# Watheia Labs Monorepo
+# Waweb - Watheia Labs Monorepo
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/drkstr101/waweb)
 
-This project was generated using [Nx](https://nx.dev).
+This project was created with [Nx](https://nx.dev).
 
-![depgraph](./docs/depgraph.png)
+![project-graph](./docs/depgraph.png)
+
+![preview](./docs/preview.png)
 
 ## Adding capabilities to your workspace
 
@@ -88,3 +90,7 @@ Nx Cloud pairs with Nx in order to enable you to build and test code more rapidl
 Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
 
 Visit [Nx Cloud](https://nx.app/) to learn more.
+
+## Project Contents
+
+![source-graph](./docs/depgraph.svg)

@@ -18,6 +18,7 @@ import cn from 'clsx';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import useConfig from '@waweb/config';
+import { renderMetaTags, TitleMetaLinkTag } from 'react-datocms';
 
 type Meta = {
   title: string | null;
@@ -27,19 +28,26 @@ type Meta = {
 };
 
 type Props = {
-  meta: Meta;
+  meta?: Meta;
+  metaTags?: TitleMetaLinkTag[];
   children: React.ReactNode;
   fullViewport?: boolean;
 };
 
-export default function Page({ meta, children, fullViewport = false }: Props) {
+export default function Page({
+  meta,
+  metaTags,
+  children,
+  fullViewport = false,
+}: Props) {
   const router = useRouter();
   const config = useConfig();
   const path = router?.asPath ?? '/';
-  const image = meta.image || '/twitter-card.png';
-  const title = meta.title || config.siteName;
-  const url = meta.url ?? `${config.baseUrl}${path}`;
-  const description = meta.description ?? config.siteName;
+
+  const image = meta?.image || '/twitter-card.png';
+  const title = meta?.title || config.siteName;
+  const url = meta?.url ?? `${config.baseUrl}${path}`;
+  const description = meta?.description ?? config.siteName;
 
   return (
     <div className={cn('page-container', { full: fullViewport })}>
@@ -81,6 +89,7 @@ export default function Page({ meta, children, fullViewport = false }: Props) {
             }
           />
         )}
+        {metaTags && renderMetaTags(metaTags)}
       </Head>
       {children}
     </div>

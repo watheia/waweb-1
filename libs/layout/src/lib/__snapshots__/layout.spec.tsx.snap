@@ -394,7 +394,7 @@ exports[`waweb.layout should render successfully 1`] = `
               <a
                 class="footer-link"
                 data-testid="waweb.layout/footer:legal"
-                href="#"
+                href="/terms-and-conditions"
                 rel="noopener noreferrer"
                 target="_blank"
               >

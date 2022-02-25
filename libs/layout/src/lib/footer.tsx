@@ -15,6 +15,7 @@
  */
 
 import cn from 'clsx';
+import Link from 'next/link';
 import styles from './footer.module.css';
 
 export default function Footer() {
@@ -48,15 +49,17 @@ export default function Footer() {
           </p>
           <div className={styles['footer-separator']} />
           <p className={styles['footer-paragraph']}>
-            <a
-              data-testid="waweb.layout/footer:legal"
-              href="#"
-              className={styles['footer-link']}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Legal
-            </a>
+            <Link href="/terms-and-conditions">
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+              <a
+                data-testid="waweb.layout/footer:legal"
+                className={styles['footer-link']}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Legal
+              </a>
+            </Link>
           </p>
         </div>
       </div>

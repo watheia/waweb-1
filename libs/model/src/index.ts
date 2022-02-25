@@ -70,6 +70,7 @@ export type {
 } from './types/maybe';
 export type { MorePosts } from './types/MorePosts';
 export type { OgImage } from './types/OgImage';
+export type { Page } from './types/Page';
 export type { Post } from './types/Post';
 export type { PostsBySlugData } from './types/PostsBySlugData';
 export type { PostsBySlugResponse } from './types/PostsBySlugResponse';

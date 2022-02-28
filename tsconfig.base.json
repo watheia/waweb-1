@@ -32,7 +32,8 @@
       "@waweb/views.dashboard": ["libs/views/dashboard/src/index.ts"],
       "@waweb/views.gatekeeper": ["libs/views/gatekeeper/src/index.ts"],
       "@waweb/views.home": ["libs/views/home/src/index.ts"],
-      "@waweb/views.profile": ["libs/views/profile/src/index.ts"]
+      "@waweb/views.profile": ["libs/views/profile/src/index.ts"],
+      "@waweb/views.realtime": ["libs/views/realtime/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

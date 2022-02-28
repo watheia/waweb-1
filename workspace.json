@@ -20,6 +20,7 @@
     "views-dashboard": "libs/views/dashboard",
     "views-gatekeeper": "libs/views/gatekeeper",
     "views-home": "libs/views/home",
-    "views-profile": "libs/views/profile"
+    "views-profile": "libs/views/profile",
+    "views-realtime": "libs/views/realtime"
   }
 }

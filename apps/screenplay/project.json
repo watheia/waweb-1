@@ -5,9 +5,7 @@
   "targets": {
     "build": {
       "executor": "@nrwl/web:webpack",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
         "compiler": "babel",
@@ -22,9 +20,7 @@
           "apps/screenplay/src/favicon.ico",
           "apps/screenplay/src/assets"
         ],
-        "styles": [
-          "apps/screenplay/src/styles.css"
-        ],
+        "styles": ["apps/screenplay/src/styles.css"],
         "scripts": [],
         "webpackConfig": "@nrwl/react/plugins/webpack"
       },
@@ -60,20 +56,14 @@
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
+      "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "apps/screenplay/**/*.{ts,tsx,js,jsx}"
-        ]
+        "lintFilePatterns": ["apps/screenplay/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/apps/screenplay"
-      ],
+      "outputs": ["coverage/apps/screenplay"],
       "options": {
         "jestConfig": "apps/screenplay/jest.config.js",
         "passWithNoTests": true
@@ -96,9 +86,7 @@
     },
     "build-storybook": {
       "executor": "@nrwl/storybook:build",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "uiFramework": "@storybook/react",
         "outputPath": "dist/storybook",

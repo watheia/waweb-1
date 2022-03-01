@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import Dashboard from '@waweb/views.dashboard';
+import Realtime from '@waweb/views.realtime';
 import Layout from '@waweb/layout';
 import { Page, PageSpinner } from '@waweb/atoms';
 import useConfig from '@waweb/config';
@@ -25,7 +25,7 @@ export default function IndexPage() {
   const config = useConfig();
   const { isUserLoading, isLoggedIn } = useAuth();
   const meta = {
-    title: 'Watheia Realtime',
+    title: isLoggedIn ? 'Watheia Realtime' : 'Watheia Gatekeeper',
     description: config.metaDescription,
   };
 
@@ -35,7 +35,7 @@ export default function IndexPage() {
         {isUserLoading ? (
           <PageSpinner />
         ) : isLoggedIn ? (
-          <Dashboard />
+          <Realtime />
         ) : (
           <Gatekeeper />
         )}

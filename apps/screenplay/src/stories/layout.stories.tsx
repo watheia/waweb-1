@@ -1,6 +1,6 @@
 import { Story, Meta } from '@storybook/react';
 import Layout from '@waweb/layout';
-import { MockContent } from '@waweb/atoms';
+import { MockContent } from '@waweb/organisms';
 
 export default {
   component: Layout,

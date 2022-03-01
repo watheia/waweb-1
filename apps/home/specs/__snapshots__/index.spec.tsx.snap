@@ -20,7 +20,7 @@ exports[`waweb.home should render successfully 1`] = `
           xmlns="http://www.w3.org/2000/svg"
         >
           <a
-            href="https://gitlab.com/watheia/waweb"
+            href="https://github.com/drkstr101/waweb"
             rel="noopener noreferrer"
             target="_blank"
             title="View Source"
@@ -88,17 +88,17 @@ exports[`waweb.home should render successfully 1`] = `
                     <img
                       alt=""
                       aria-hidden="true"
-                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2780%27%20height=%27120%27/%3e"
+                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27162%27%20height=%2756%27/%3e"
                       style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
                     />
                   </span>
                   <img
                     data-nimg="intrinsic"
                     decoding="async"
-                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    src="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F63265%2F1644788635-logo.png&w=384&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F63265%2F1644788635-logo.png&w=256&q=75 1x, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F63265%2F1644788635-logo.png&w=384&q=75 2x"
                     style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                   />
-                  <noscript />
                 </span>
               </a>
             </div>
@@ -155,7 +155,9 @@ exports[`waweb.home should render successfully 1`] = `
                   >
                     <h2
                       class="appear appear-third show-on-mobile description"
-                    />
+                    >
+                      Watheia Labs Corporate Homepage
+                    </h2>
                     <h1
                       class="appear appear-third hero"
                     >
@@ -167,7 +169,9 @@ exports[`waweb.home should render successfully 1`] = `
                     </h1>
                     <h2
                       class="appear appear-third show-on-tablet description"
-                    />
+                    >
+                      Watheia Labs Corporate Homepage
+                    </h2>
                     <div
                       class="appear appear-fourth info"
                     >

@@ -12,6 +12,7 @@
     "layout": "libs/layout",
     "message": "libs/message",
     "model": "libs/model",
+    "organisms": "libs/organisms",
     "screenplay": "apps/screenplay",
     "supabase": "libs/supabase",
     "theme": "libs/theme",

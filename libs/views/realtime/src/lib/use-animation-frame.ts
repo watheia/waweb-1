@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useEffect } from 'react';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface UseAnimationFrame {
@@ -9,8 +9,8 @@ export interface UseAnimationFrame {
 const noop = () => void 0;
 
 export function useAnimationFrame(
-  cb?: false | null | (() => never),
-  deps: never[] = []
+  cb?: false | null | (() => unknown),
+  deps: unknown[] = []
 ) {
   useEffect(() => {
     if (!cb) return noop;

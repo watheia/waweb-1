@@ -10,7 +10,7 @@ exports[`waweb.views/realtime should render successfully 1`] = `
     >
       Watheia
       <br
-        class="show-on-desktop"
+        class="show-on-mobile"
       />
        Realtime
     </h1>

@@ -14,23 +14,23 @@
  * limitations under the License.
  */
 
-import useConfig from '@waweb/config';
-import { ComingSoon, Page } from '@waweb/atoms';
+import config from '@waweb/config';
+import { Page } from '@waweb/atoms';
+import { ComingSoon } from '@waweb/organisms';
 import Layout from '@waweb/layout';
 
 // const Dashboard = lazy(() => import('@waweb/app.ui.dashboard'));
 
 export default function IndexPage() {
-  const config = useConfig();
   const meta = {
-    title: 'Watheia Labs | Expo',
+    title: 'Watheia | Exposition',
     description: config.metaDescription,
   };
 
   return (
     <Page meta={meta} fullViewport>
       <Layout usePadding>
-        <ComingSoon />
+        <ComingSoon issueNum="8" />
       </Layout>
     </Page>
   );

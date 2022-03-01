@@ -15,7 +15,7 @@
  */
 
 import { Page } from '@waweb/atoms';
-import useConfig from '@waweb/config';
+import config from '@waweb/config';
 import { getTopPosts } from '@waweb/datocms';
 import Layout from '@waweb/layout';
 import Home, { fixtures } from '@waweb/views.home';
@@ -24,7 +24,6 @@ import { GetStaticProps, InferGetStaticPropsType } from 'next';
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
 export default function HomePage({ features, posts }: Props) {
-  const config = useConfig();
   const meta = {
     title: 'About Watheia Labs',
     description: config.metaDescription,

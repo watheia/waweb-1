@@ -28,7 +28,6 @@ import cn from 'clsx';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useRef } from 'react';
-// import useConfig from '../../../../../ui/src/lib/hooks/use-config';
 import styles from './mobile-menu.module.css';
 import navigation from './navigation';
 
@@ -37,8 +36,6 @@ function ModalDialog(
 ) {
   const router = useRouter();
   const activeRoute = router?.asPath ?? '/';
-
-  // const config = useConfig();
 
   const ref = useRef<HTMLElement | null>(null);
   const { modalProps } = useModal();

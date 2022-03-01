@@ -17,12 +17,11 @@
 import Realtime from '@waweb/views.realtime';
 import Layout from '@waweb/layout';
 import { Page, PageSpinner } from '@waweb/atoms';
-import useConfig from '@waweb/config';
+import config from '@waweb/config';
 import { useAuth } from '@waweb/auth';
 import Gatekeeper from '@waweb/views.gatekeeper';
 
 export default function IndexPage() {
-  const config = useConfig();
   const { isUserLoading, isLoggedIn } = useAuth();
   const meta = {
     title: isLoggedIn ? 'Watheia Realtime' : 'Watheia Gatekeeper',

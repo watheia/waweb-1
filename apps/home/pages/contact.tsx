@@ -14,21 +14,21 @@
  * limitations under the License.
  */
 
-import useConfig from '@waweb/config';
-import { ComingSoon, Page } from '@waweb/atoms';
+import config from '@waweb/config';
+import { Page } from '@waweb/atoms';
+import { ComingSoon } from '@waweb/organisms';
 import Layout from '@waweb/layout';
 
-export default function IndexPage() {
-  const config = useConfig();
+export default function ContactPage() {
   const meta = {
-    title: 'Watheia Labs | Support',
+    title: 'Watheia | Contact Us',
     description: config.metaDescription,
   };
 
   return (
     <Page meta={meta} fullViewport>
       <Layout usePadding>
-        <ComingSoon />
+        <ComingSoon issueNum="9" />
       </Layout>
     </Page>
   );

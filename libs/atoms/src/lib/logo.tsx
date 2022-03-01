@@ -12,6 +12,7 @@ export interface LogoProps extends Omit<ImageProps, 'src'> {
 const Logo = ({
   width = 162,
   height = 56,
+  priority = true,
   alternate = false,
   ...props
 }: LogoProps) => (
@@ -19,7 +20,7 @@ const Logo = ({
   <Image
     width={width}
     height={height}
-    priority
+    priority={priority}
     src={alternate ? logoAlt : logo}
     {...props}
   />

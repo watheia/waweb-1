@@ -17,7 +17,7 @@ export function Realtime({ className, ...props }: RealtimeProps) {
         )}
       >
         Watheia
-        <br className={styleUtils['show-on-desktop']} /> Realtime
+        <br className={styleUtils['show-on-mobile']} /> Realtime
       </h1>
     </div>
   );

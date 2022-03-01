@@ -16,11 +16,10 @@
 
 import cn from 'clsx';
 import styles from './hero.module.css';
-import useConfig from '@waweb/config';
+import config from '@waweb/config';
 import { styleUtils } from '@waweb/atoms';
 
 export default function Hero() {
-  const config = useConfig();
   return (
     <div className={styles['wrapper']}>
       <h2

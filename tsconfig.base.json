@@ -24,6 +24,7 @@
       "@waweb/layout": ["libs/layout/src/index.ts"],
       "@waweb/message": ["libs/message/src/index.ts"],
       "@waweb/model": ["libs/model/src/index.ts"],
+      "@waweb/organisms": ["libs/organisms/src/index.ts"],
       "@waweb/supabase": ["libs/supabase/src/index.ts"],
       "@waweb/theme": ["libs/theme/src/index.ts"],
       "@waweb/theme.styles/*": ["libs/theme/src/styles/*"],

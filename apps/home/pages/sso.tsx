@@ -24,8 +24,9 @@ import { GetServerSideProps } from 'next';
 
 export default function AuthPage() {
   const meta = {
-    title: 'Watheia Labs | Single Sign On (SSO)',
-    description: 'Login with a 3rd party provider or Gatekeeper account',
+    title: 'Watheia Gatekeeper | SSO',
+    description:
+      'Login with a 3rd party provider or with your Watheia Gatekeeper account',
   };
 
   return (

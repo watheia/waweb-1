@@ -19,8 +19,7 @@ import { DivProps, FormState } from '@waweb/model';
 import cn from 'clsx';
 import { useCallback, useEffect, useState } from 'react';
 import styles from './login-form.module.css';
-import { LoadingDots } from '@waweb/atoms';
-import styleUtils from '@waweb/theme.styles/utils.module.css';
+import { LoadingDots, styleUtils } from '@waweb/atoms';
 
 export interface LoginFormProps extends DivProps {
   sharePage?: boolean;

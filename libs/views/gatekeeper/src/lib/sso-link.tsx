@@ -16,7 +16,7 @@
 
 import cn from 'clsx';
 import styles from './sso-link.module.css';
-import styleUtils from '@waweb/theme.styles/utils.module.css';
+import { styleUtils } from '@waweb/atoms';
 import Link from 'next/link';
 
 export default function SsoLink() {

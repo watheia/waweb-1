@@ -182,5 +182,9 @@
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
   },
-  "packageManager": "yarn@3.1.1"
+  "packageManager": "yarn@3.1.1",
+  "browserlist": [
+    "> 0.5%",
+    "not IE 11"
+  ]
 }

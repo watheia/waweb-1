@@ -4,26 +4,22 @@
   "legalName": "Watheia Labs, LLC",
   "metaDescription": "Watheia Labs, LLC is a modern software development and digital design agency located in Washington state",
   "repo": "https://github.com/drkstr101/waweb",
-  "siteDescription": "Watheia Labs Corporate Homepage",
-  "siteName": "Watheia Labs",
+  "siteDescription": "A tech demo by Watheia Labs.",
+  "siteName": "Watheia Realtime Expo",
   "twitterCard": "https://www.datocms-assets.com/63265/1646113424-wa-card.png",
   "legalUrl": "https://watheia.io/terms-and-conditions",
   "navigation": [
     {
-      "name": "Home",
-      "slug": "/home"
-    },
-    {
       "name": "Blog",
-      "slug": "/blog"
-    },
-    {
-      "name": "Support",
-      "slug": "/support"
+      "route": "/blog"
     },
     {
       "name": "Expo",
-      "slug": "/expo"
+      "route": "/expo"
+    },
+    {
+      "name": "Contact",
+      "route": "/contact"
     }
   ]
 }

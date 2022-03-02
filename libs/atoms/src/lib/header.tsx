@@ -14,18 +14,44 @@
  * limitations under the License.
  */
 
+import { DivProps } from '@waweb/model';
+import clsx from 'clsx';
 import styles from './header.module.css';
 
-type Props = {
-  hero: React.ReactNode;
-  description: React.ReactNode;
-};
+/**
+ * Base Component types
+ */
+export type HeaderElement = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'p' | 'span';
 
-export default function Header({ hero, description }: Props) {
+export type HeaderVariant = 'title' | 'subtitle' | 'header1' | 'header2';
+
+export interface HeaderProps extends DivProps {
+  element?: HeaderElement;
+  variant?: HeaderVariant;
+  alternate?: boolean;
+}
+
+export default function Header({
+  className,
+  children,
+  element = 'p',
+  variant = 'header1',
+  alternate = false,
+  ...props
+}: HeaderProps) {
+  const Tag = element;
+  console.log(styles);
   return (
-    <>
-      <h1 className={styles['hero']}>{hero}</h1>
-      <p className={styles['description']}>{description}</p>
-    </>
+    <Tag
+      className={clsx(
+        styles['base'],
+        styles[variant],
+        alternate && styles['alt'],
+        className
+      )}
+      {...props}
+    >
+      {children}
+    </Tag>
   );
 }

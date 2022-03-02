@@ -2,7 +2,7 @@ import { HomeProps } from '../types/HomeProps';
 import BlogSection from './blog-section';
 import CtaSection from './cta-section';
 import FeatureGridSection from './feature-grid-section';
-import FeatureScreenSection from './feature-screens-section';
+import FeatureScreenSection from './about-section';
 import HeroSection from './hero-section';
 import TestimonialSection from './testimonial-section';
 

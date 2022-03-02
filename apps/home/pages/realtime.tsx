@@ -14,35 +14,31 @@
  * limitations under the License.
  */
 
-import { Page } from '@waweb/atoms';
-import config from '@waweb/config';
-import { getTopPosts } from '@waweb/datocms';
+import Realtime from '@waweb/views.realtime';
 import Layout from '@waweb/layout';
-import Home, { fixtures } from '@waweb/views.home';
-import { GetStaticProps, InferGetStaticPropsType } from 'next';
+import { Page, PageSpinner } from '@waweb/atoms';
+import config from '@waweb/config';
+import { useAuth } from '@waweb/auth';
+import Gatekeeper from '@waweb/views.gatekeeper';
 
-type Props = InferGetStaticPropsType<typeof getStaticProps>;
-
-export default function HomePage({ features, posts }: Props) {
+export default function IndexPage() {
+  const { isUserLoading, isLoggedIn } = useAuth();
   const meta = {
-    title: 'About Watheia Labs',
+    title: isLoggedIn ? 'Watheia Realtime' : 'Watheia Gatekeeper',
     description: config.metaDescription,
   };
 
   return (
     <Page meta={meta} fullViewport>
-      <Layout>
-        <Home features={features} posts={posts} />
+      <Layout useBackdrop>
+        {isUserLoading ? (
+          <PageSpinner />
+        ) : isLoggedIn ? (
+          <Realtime />
+        ) : (
+          <Gatekeeper />
+        )}
       </Layout>
     </Page>
   );
 }
-
-export const getStaticProps: GetStaticProps = async ({ preview }) => {
-  return {
-    props: {
-      features: fixtures.features,
-      posts: await getTopPosts(preview, 3),
-    },
-  };
-};

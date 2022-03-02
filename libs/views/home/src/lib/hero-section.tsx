@@ -1,22 +1,24 @@
 import { ChevronRightIcon } from '@heroicons/react/solid';
+import { Text } from '@waweb/atoms';
 import Link from 'next/link';
 import CloudIllustration from './cloud-illustration';
-import config from '@waweb/config';
-import { Text } from '@waweb/atoms';
 
 const HeroSection = () => (
-  <section className="pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14">
+  <section
+    id="intro"
+    className="pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14"
+  >
     <div className="mx-auto max-w-7xl lg:px-8">
       <div className="lg:grid lg:grid-cols-2 lg:gap-8">
         <div className="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 sm:text-center lg:flex lg:items-center lg:px-0 lg:text-left">
           <div className="lg:py-24">
-            <Link href="/blog/posts/we-build-micro-frontends">
+            <Link href="#about">
               {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
               <a className="inline-flex items-center p-1 pr-2 text-gray-300 bg-black rounded-full hover:bg-slate-900 hover:text-white sm:text-base lg:text-sm xl:text-base">
-                <span className="rounded-full bg-gradient-to-r from-teal-500 to-teal-600 px-3 py-0.5 text-lg font-bold uppercase leading-5 tracking-wide text-white">
-                  ?
+                <span className="rounded-full bg-gradient-to-r from-teal-500 to-teal-600 px-3 py-0.5 text-xs font-bold uppercase leading-5 tracking-wide text-white">
+                  what is this?
                 </span>
-                <span className="ml-4 text-sm">Find out more!</span>
+                <span className="ml-4 text-sm">Find out more</span>
                 <ChevronRightIcon
                   className="w-5 h-5 ml-2 text-gray-500"
                   aria-hidden="true"

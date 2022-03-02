@@ -8,6 +8,7 @@ exports[`waweb.views/home should render successfully 1`] = `
   >
     <section
       class="pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14"
+      id="intro"
     >
       <div
         class="mx-auto max-w-7xl lg:px-8"
@@ -23,17 +24,17 @@ exports[`waweb.views/home should render successfully 1`] = `
             >
               <a
                 class="inline-flex items-center p-1 pr-2 text-gray-300 bg-black rounded-full hover:bg-slate-900 hover:text-white sm:text-base lg:text-sm xl:text-base"
-                href="/blog/posts/we-build-micro-frontends"
+                href="/#about"
               >
                 <span
-                  class="rounded-full bg-gradient-to-r from-teal-500 to-teal-600 px-3 py-0.5 text-lg font-bold uppercase leading-5 tracking-wide text-white"
+                  class="rounded-full bg-gradient-to-r from-teal-500 to-teal-600 px-3 py-0.5 text-xs font-bold uppercase leading-5 tracking-wide text-white"
                 >
-                  ?
+                  what is this?
                 </span>
                 <span
                   class="ml-4 text-sm"
                 >
-                  Find out more!
+                  Find out more
                 </span>
                 <svg
                   aria-hidden="true"
@@ -503,6 +504,7 @@ exports[`waweb.views/home should render successfully 1`] = `
     </section>
     <section
       class="relative pt-16 sm:pt-24 lg:pt-32"
+      id="about"
     >
       <div
         class="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"
@@ -511,17 +513,17 @@ exports[`waweb.views/home should render successfully 1`] = `
           <h2
             class="base subtitle"
           >
-            Serverless
+            What is this?
           </h2>
           <p
             class="base title"
           >
-            No server? No problem.
+            A capabilities test of the modern web
           </p>
           <p
-            class="base lead mx-auto mt-5"
+            class="base lead"
           >
-            Deploy directly to the edge using JAMStack and a headless CMS. Enjoy all the benefits of a modern micro frontend architecture using interoperable components. Perform authentication and authorization logic directly on the edge with stateless sessions using signed and encrypted cookies to store data.
+            There is more to this site than meets the eye. Beyond serving as a sleek minimalist design system for our homepage, Watheia Labs is an open-source showcase of best practices on developing modern, real-time serverless web applications. For security reasons, we require an account to enable real-time multi-tenant mode. This process intends to be as seamless as possible without sacrificing security. Please enjoy your stay.
           </p>
         </div>
         <div

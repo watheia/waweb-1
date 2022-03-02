@@ -1,7 +1,7 @@
 import { HomeProps } from '../types/HomeProps';
 import BlogSection from './blog-section';
 import CtaSection from './cta-section';
-import FeatureGridSection from './feature-grid-section';
+import FeaturesSection from './features-section';
 import AboutSection from './about-section';
 import HeroSection from './hero-section';
 import TestimonialSection from './testimonial-section';
@@ -15,7 +15,7 @@ export default function Home({
     <div className={className} data-testid="waweb.views/home">
       <HeroSection />
       <AboutSection />
-      <FeatureGridSection features={features} />
+      <FeaturesSection features={features} />
       <TestimonialSection />
       <BlogSection posts={posts} />
       <CtaSection />

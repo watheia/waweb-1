@@ -6,7 +6,7 @@ import CloudIllustration from './cloud-illustration';
 const HeroSection = () => (
   <section
     id="intro"
-    className="pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14"
+    className="min-h-screen pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14"
   >
     <div className="mx-auto max-w-7xl lg:px-8">
       <div className="lg:grid lg:grid-cols-2 lg:gap-8">
@@ -74,8 +74,8 @@ const HeroSection = () => (
           </div>
         </div>
         <div className="mt-12 -mb-16 sm:-mb-48 lg:relative lg:m-0">
-          <div className="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
-            <CloudIllustration />
+          <div className="max-w-md px-4 mx-auto overflow-hidden sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
+            <CloudIllustration className="hidden lg:block" />
           </div>
         </div>
       </div>

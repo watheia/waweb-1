@@ -1,6 +1,6 @@
-import { Image } from './Image';
+import { ResponsiveImage } from './ResponsiveImage';
 
 export type Author = {
   name: string;
-  picture: Image;
+  picture: ResponsiveImage;
 };

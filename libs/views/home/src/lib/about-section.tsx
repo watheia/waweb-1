@@ -1,31 +1,50 @@
-import { Text, Header } from '@waweb/atoms';
-const appScreenshot =
-  'https://www.datocms-assets.com/62247/1644448694-green-project-app-screenshot.jpg';
+import { Header, Text } from '@waweb/atoms';
+import { DivProps, ImageModel } from '@waweb/model';
+import Image from 'next/image';
 
-const AboutSection = () => (
-  <section id="about" className="relative pt-16 sm:pt-24 lg:pt-32">
+export interface AboutModel {
+  title: string;
+  subTitle: string;
+  lead: string;
+  image: ImageModel;
+}
+
+export interface AboutSectionProps extends DivProps {
+  model?: AboutModel;
+}
+
+const fixtures: AboutModel = {
+  title: 'What is this?',
+  subTitle: 'A capabilities test of the modern web',
+  lead: `There is more to this site than meets the eye. Beyond serving as a
+         sleek minimalist design system for our homepage, Watheia Labs is an
+         open-source showcase of best practices on developing modern, real-time
+         serverless web applications.`,
+  image: {
+    width: 1216,
+    height: 880,
+    uri: 'https://www.datocms-assets.com/63265/1646248817-1644448694-green-project-app-screenshot.jpg',
+  },
+};
+
+const AboutSection = ({ model = fixtures, ...props }: AboutSectionProps) => (
+  <section id="about" className="relative" {...props}>
     <div className="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
       <div>
         <Header element="h2" variant="subtitle">
-          What is this?
+          {model.title}
         </Header>
         <Header element="p" variant="title">
-          A capabilities test of the modern web
+          {model.subTitle}
         </Header>
-        <Text variant="lead">
-          There is more to this site than meets the eye. Beyond serving as a
-          sleek minimalist design system for our homepage, Watheia Labs is an
-          open-source showcase of best practices on developing modern, real-time
-          serverless web applications. For security reasons, we require an
-          account to enable real-time multi-tenant mode. This process intends to
-          be as seamless as possible without sacrificing security. Please enjoy
-          your stay.
-        </Text>
+        <Text variant="lead">{model.lead}</Text>
       </div>
-      <div className="mt-12 -mb-10 sm:-mb-24 lg:-mb-80">
-        <img
+      <div className="mt-12">
+        <Image
+          width={model.image.width}
+          height={model.image.height}
           className="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5"
-          src={appScreenshot}
+          src={model.image.uri}
           alt=""
         />
       </div>

@@ -1,6 +1,6 @@
 import { Author } from './Author';
 import { Category } from './Category';
-import { Image } from './Image';
+import { ResponsiveImage } from './ResponsiveImage';
 
 /**
  * Used as the response type on individual blog post
@@ -12,5 +12,5 @@ export type MorePosts = {
   date: string;
   author: Author;
   category: Category;
-  coverImage: Image;
+  coverImage: ResponsiveImage;
 };

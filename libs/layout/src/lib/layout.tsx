@@ -21,7 +21,7 @@ import cn from 'clsx';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Footer from './footer';
-import config from '@waweb/config';
+import config, { NavZone } from '@waweb/config';
 import styles from './layout.module.css';
 import MobileMenu from './mobile-menu';
 import { Logo, ViewSource } from '@waweb/atoms';
@@ -65,7 +65,7 @@ export default function Layout({
               </Link>
             </div>
             <div className={styles['tabs']}>
-              {config.navigation.map(({ name, route }) => (
+              {config.navigation.map(({ name, route }: NavZone) => (
                 <Link key={name} href={route}>
                   {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                   <a

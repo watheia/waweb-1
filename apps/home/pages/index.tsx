@@ -18,20 +18,14 @@ import { Page } from '@waweb/atoms';
 import config from '@waweb/config';
 import { getTopPosts } from '@waweb/datocms';
 import Layout from '@waweb/layout';
-import supabase from '@waweb/supabase';
 import Home, { fixtures } from '@waweb/views.home';
-import {
-  GetServerSideProps,
-  GetStaticProps,
-  InferGetServerSidePropsType,
-  InferGetStaticPropsType,
-} from 'next';
+import { GetStaticProps, InferGetStaticPropsType } from 'next';
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
 export default function HomePage({ features, posts }: Props) {
   const meta = {
-    title: config.siteName,
+    title: 'Watheia Labs | A capabilities test of the modern web',
     description: config.metaDescription,
   };
 

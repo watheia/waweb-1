@@ -49,14 +49,15 @@ const FeatureItem = ({
   );
 };
 
-export interface FeatureGridSectionProps extends DivProps {
+export interface FeaturesSectionProps extends DivProps {
   features: HomeFeature[];
 }
-const FeatureGridSection = ({
-  features,
-  ...props
-}: FeatureGridSectionProps) => (
-  <section className="relative py-16 sm:py-24 lg:py-32" {...props}>
+const FeaturesSection = ({ features, ...props }: FeaturesSectionProps) => (
+  <section
+    id="features"
+    className="relative py-16 sm:py-24 lg:py-32"
+    {...props}
+  >
     <div className="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
       <Header element="h2" variant="subtitle">
         Deploy faster
@@ -80,4 +81,4 @@ const FeatureGridSection = ({
   </section>
 );
 
-export default FeatureGridSection;
+export default FeaturesSection;

@@ -1,4 +1,4 @@
-import { Author, Image } from '@waweb/model';
+import { Author, ResponsiveImage } from '@waweb/model';
 import Link from 'next/link';
 import Avatar from './avatar';
 import CoverImage from './cover-image';
@@ -6,7 +6,7 @@ import Date from './date';
 
 export interface HeroPostProps {
   title: string;
-  coverImage: Image;
+  coverImage: ResponsiveImage;
   slug: string;
   date: string;
   excerpt: string;

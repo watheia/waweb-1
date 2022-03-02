@@ -1,3 +1,3 @@
-export type Image = {
+export type ResponsiveImage = {
   responsiveImage: ResponsiveImageType;
 };

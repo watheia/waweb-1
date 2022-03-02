@@ -1,14 +1,13 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-
-import Index, { getStaticProps } from '../pages/index';
-import { SSRProvider } from '@react-aria/ssr';
 import { OverlayProvider } from '@react-aria/overlays';
-import { Theme } from '@waweb/theme';
-import { MessageProvider } from '@waweb/message';
-import { AuthProvider } from '@waweb/auth';
+import { SSRProvider } from '@react-aria/ssr';
+import { render } from '@testing-library/react';
 import { NProgress, ResizeHandler } from '@waweb/atoms';
-import Home, { fixtures } from '@waweb/views.home';
+import { AuthProvider } from '@waweb/auth';
+import { MessageProvider } from '@waweb/message';
+import { Theme } from '@waweb/theme';
+import { fixtures } from '@waweb/views.home';
+import React from 'react';
+import Index from '../pages/index';
 
 describe('waweb.home', () => {
   it('should render successfully', () => {

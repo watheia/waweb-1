@@ -40,7 +40,6 @@ export default function Header({
   ...props
 }: HeaderProps) {
   const Tag = element;
-  console.log(styles);
   return (
     <Tag
       className={clsx(

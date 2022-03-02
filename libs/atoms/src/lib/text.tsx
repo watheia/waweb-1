@@ -24,7 +24,6 @@ export default function Text({
   ...props
 }: TextProps) {
   const Tag = element;
-  console.log(styles);
   return (
     <Tag
       className={clsx(

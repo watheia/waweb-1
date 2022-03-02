@@ -40,7 +40,7 @@ export default function Hero() {
         )}
       >
         {config.brandName}
-        <br className={styleUtils['show-on-desktop']} /> Gatekeeper
+        <br className={styleUtils['show-on-desktop']} /> Realtime
       </h1>
       <h2
         className={cn(

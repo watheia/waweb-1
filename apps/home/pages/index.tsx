@@ -14,48 +14,41 @@
  * limitations under the License.
  */
 
-import Realtime from '@waweb/views.realtime';
-import Layout from '@waweb/layout';
-import { Page, PageSpinner } from '@waweb/atoms';
+import { Page } from '@waweb/atoms';
 import config from '@waweb/config';
-import { useAuth } from '@waweb/auth';
-import Gatekeeper from '@waweb/views.gatekeeper';
+import { getTopPosts } from '@waweb/datocms';
+import Layout from '@waweb/layout';
+import supabase from '@waweb/supabase';
+import Home, { fixtures } from '@waweb/views.home';
+import {
+  GetServerSideProps,
+  GetStaticProps,
+  InferGetServerSidePropsType,
+  InferGetStaticPropsType,
+} from 'next';
 
-export default function IndexPage() {
-  const { isUserLoading, isLoggedIn } = useAuth();
+type Props = InferGetStaticPropsType<typeof getStaticProps>;
+
+export default function HomePage({ features, posts }: Props) {
   const meta = {
-    title: isLoggedIn ? 'Watheia Realtime' : 'Watheia Gatekeeper',
+    title: config.siteName,
     description: config.metaDescription,
   };
 
   return (
     <Page meta={meta} fullViewport>
       <Layout useBackdrop>
-        {isUserLoading ? (
-          <PageSpinner />
-        ) : isLoggedIn ? (
-          <Realtime />
-        ) : (
-          <Gatekeeper />
-        )}
+        <Home features={features} posts={posts} />
       </Layout>
     </Page>
   );
 }
 
-/* /**
- *
- * @param ctx Redirect to home if no principal user is authenticated
- * @returns
- */
-// export const getServerSideProps: GetServerSideProps = async (ctx) => {
-//   const user = supabase.auth.api.getUserByCookie(ctx.req);
-//   return {
-//     redirect: user
-//       ? undefined
-//       : {
-//           permanent: false,
-//           destination: '/home',
-//         },
-//   };
-// };
+export const getStaticProps: GetStaticProps = async ({ preview }) => {
+  return {
+    props: {
+      features: fixtures.features,
+      posts: await getTopPosts(preview, 3),
+    },
+  };
+};

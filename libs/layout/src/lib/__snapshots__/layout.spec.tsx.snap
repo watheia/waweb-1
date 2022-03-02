@@ -98,12 +98,6 @@ exports[`waweb.layout should render successfully 1`] = `
       >
         <a
           class="tab"
-          href="/home"
-        >
-          Home
-        </a>
-        <a
-          class="tab"
           href="/blog"
         >
           Blog

@@ -1,0 +1,30 @@
+.base {
+  @apply text-base max-w-prose lg:text-lg xl:text-xl;
+}
+
+.lead {
+  @apply text-slate-300 text-lg lg:text-xl xl:text-xl mx-auto;
+}
+.lead.alt {
+  @apply text-slate-700;
+}
+
+.body1 {
+  @apply text-slate-300;
+}
+
+.body1.alt {
+  @apply text-slate-600;
+}
+
+.body2 {
+  @apply text-slate-400 tracking-tight;
+}
+
+.body2.alt {
+  @apply text-slate-800;
+}
+
+.muted {
+  @apply text-slate-500;
+}

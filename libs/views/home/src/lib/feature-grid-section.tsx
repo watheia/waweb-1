@@ -2,6 +2,7 @@ import { DivProps } from '@waweb/model';
 import { ReactChild, ReactFragment, ReactPortal } from 'react';
 import { HomeFeature } from '../types/HomeFeature';
 import iconsByName, { IconName } from './icons-by-name';
+import { Text, Header } from '@waweb/atoms';
 
 type FeatureItemProps = {
   name: string;
@@ -29,17 +30,19 @@ const FeatureItem = ({
   }
   return (
     <div className="pt-6" {...props}>
-      <div className="flow-root px-6 pb-8 rounded-lg bg-gray-50">
+      <div className="flow-root px-6 pb-8 rounded-lg">
         <div className="-mt-6">
           <div>
             <span className="inline-flex items-center justify-center p-3 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-teal-700">
               <Icon className="w-6 h-6 text-white" aria-hidden="true" />
             </span>
           </div>
-          <h3 className="mt-8 text-lg font-medium tracking-tight text-gray-900">
+          <Header element="h3" variant="header2">
             {name}
-          </h3>
-          <p className="mt-5 text-base text-gray-500">{description}</p>
+          </Header>
+          <Text variant="body2" className="mt-5">
+            {description}
+          </Text>
         </div>
       </div>
     </div>
@@ -53,19 +56,19 @@ const FeatureGridSection = ({
   features,
   ...props
 }: FeatureGridSectionProps) => (
-  <section className="relative py-16 bg-white sm:py-24 lg:py-32" {...props}>
+  <section className="relative py-16 sm:py-24 lg:py-32" {...props}>
     <div className="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-      <h2 className="text-base font-semibold tracking-wider uppercase text-teal-600">
+      <Header element="h2" variant="subtitle">
         Deploy faster
-      </h2>
-      <p className="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+      </Header>
+      <Header element="p" variant="title">
         Everything you need to deploy your app
-      </p>
-      <p className="mx-auto mt-5 text-xl text-gray-500 max-w-prose">
+      </Header>
+      <Text variant="lead">
         Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan
         in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id
         viverra nulla.
-      </p>
+      </Text>
       <div className="mt-12">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature) => (

@@ -33,8 +33,8 @@ const FeatureItem = ({
       <div className="flow-root px-6 pb-8 rounded-lg">
         <div className="-mt-6">
           <div>
-            <span className="inline-flex items-center justify-center p-3 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-teal-700">
-              <Icon className="w-6 h-6 text-white" aria-hidden="true" />
+            <span className="inline-flex items-center justify-center p-4 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-teal-700">
+              <Icon color="white" className="h-6 w-6" aria-hidden="true" />
             </span>
           </div>
           <Header element="h3" variant="header2">

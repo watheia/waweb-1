@@ -4,13 +4,8 @@ import { SVGProps } from 'react';
 export interface CloudUploadProps extends SVGProps<SVGSVGElement> {
   color?: string;
 }
-const CloudUpload = ({
-  color = '#6e6e6e',
-  width = 24,
-  height = 24,
-  ...props
-}: CloudUploadProps) => (
-  <svg xmlns="http://www.w3.org/2000/svg" height={18} width={18} {...props}>
+const CloudUpload = ({ color = '#6e6e6e', ...props }: CloudUploadProps) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" {...props}>
     <defs>
       <style>{`.a{fill:${color}}`}</style>
     </defs>

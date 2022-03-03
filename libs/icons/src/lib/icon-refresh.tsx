@@ -5,18 +5,8 @@ export interface RefreshProps extends SVGProps<SVGSVGElement> {
   color?: string;
 }
 
-const Refresh = ({
-  color = '#6e6e6e',
-  width = 24,
-  height = 24,
-  ...props
-}: RefreshProps) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    height={height}
-    width={width}
-    {...props}
-  >
+const Refresh = ({ color = '#6e6e6e', ...props }: RefreshProps) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" {...props}>
     <defs>
       <style>{'.a{fill:#6e6e6e}'}</style>
     </defs>

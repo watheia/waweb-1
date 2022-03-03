@@ -5,18 +5,8 @@ export interface DataRefreshProps extends SVGProps<SVGSVGElement> {
   color?: string;
 }
 
-const DataRefresh = ({
-  color = '#6e6e6e',
-  width = 24,
-  height = 24,
-  ...props
-}: DataRefreshProps) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    height={height}
-    width={width}
-    {...props}
-  >
+const DataRefresh = ({ color = '#6e6e6e', ...props }: DataRefreshProps) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" {...props}>
     <defs>
       <style>{`.a{fill:${color}}`}</style>
     </defs>

@@ -15,7 +15,7 @@ setup:
 	$(MAKE) dato-dump
 
 dato-dump:
-	dato dump --token=${DATO_API_TOKEN}
+	dato dump --token=${NEXT_DATOCMS_API_TOKEN}
 
 build:
 	@echo "~~~> Build home bundle..."

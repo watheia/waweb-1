@@ -44,7 +44,7 @@ export const getStaticProps: GetStaticProps = async ({ preview }) => {
         ? {
             preview: true,
             initialData: await getAllPostsForBlog(preview),
-            token: process.env['DATO_API_TOKEN'],
+            token: process.env['NEXT_DATOCMS_API_TOKEN'],
             environment: process.env['NEXT_DATOCMS_ENVIRONMENT'] || 'main'
           }
         : {

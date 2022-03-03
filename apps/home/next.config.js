@@ -49,7 +49,7 @@ const nextConfig = {
     svgr: true
   },
   env: {
-    DATO_API_TOKEN: process.env.DATO_API_TOKEN
+    NEXT_DATOCMS_API_TOKEN: process.env.NEXT_DATOCMS_API_TOKEN
   },
   images: {
     domains: [

@@ -42,7 +42,7 @@ export const getStaticProps: GetStaticProps = async ({ params, preview }) => {
             preview: true,
             variables: { slug },
             initialData: await getPostAndMore(slug as string, !!preview),
-            token: process.env.DATO_API_TOKEN
+            token: process.env.NEXT_DATOCMS_API_TOKEN
           }
         : {
             enabled: false,

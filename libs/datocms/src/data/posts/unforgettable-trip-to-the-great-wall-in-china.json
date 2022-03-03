@@ -446,9 +446,7 @@
               },
               {
                 "type": "span",
-                "marks": [
-                  "strong"
-                ],
+                "marks": ["strong"],
                 "value": "Aperiendum est igitur, quid sit voluptas;"
               },
               {
@@ -480,9 +478,7 @@
             "children": [
               {
                 "type": "span",
-                "marks": [
-                  "strong"
-                ],
+                "marks": ["strong"],
                 "value": "Si longus, levis dictata sunt."
               },
               {
@@ -533,9 +529,7 @@
               },
               {
                 "type": "span",
-                "marks": [
-                  "emphasis"
-                ],
+                "marks": ["emphasis"],
                 "value": "Quo tandem modo?"
               },
               {
@@ -544,9 +538,7 @@
               },
               {
                 "type": "span",
-                "marks": [
-                  "emphasis"
-                ],
+                "marks": ["emphasis"],
                 "value": "Vestri haec verecundius, illi fortasse constantius."
               }
             ]
@@ -844,10 +836,7 @@
       "focalPoint": null,
       "copyright": null,
       "tags": [],
-      "smartTags": [
-        "hand",
-        "stencil"
-      ],
+      "smartTags": ["hand", "stencil"],
       "filename": null,
       "basename": null,
       "isImage": true,

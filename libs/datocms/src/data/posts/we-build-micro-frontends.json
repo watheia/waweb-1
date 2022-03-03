@@ -125,9 +125,7 @@
               },
               {
                 "type": "span",
-                "marks": [
-                  "strong"
-                ],
+                "marks": ["strong"],
                 "value": ","
               },
               {
@@ -155,9 +153,7 @@
               },
               {
                 "type": "span",
-                "marks": [
-                  "code"
-                ],
+                "marks": ["code"],
                 "value": "yarn"
               },
               {
@@ -302,9 +298,7 @@
               },
               {
                 "type": "span",
-                "marks": [
-                  "code"
-                ],
+                "marks": ["code"],
                 "value": "next.js"
               },
               {
@@ -350,11 +344,7 @@
           },
           "copyright": null,
           "tags": [],
-          "smartTags": [
-            "text",
-            "file",
-            "menu"
-          ],
+          "smartTags": ["text", "file", "menu"],
           "filename": null,
           "basename": null,
           "isImage": true,
@@ -457,14 +447,7 @@
       },
       "copyright": null,
       "tags": [],
-      "smartTags": [
-        "head",
-        "face",
-        "person",
-        "human",
-        "smile",
-        "skin"
-      ],
+      "smartTags": ["head", "face", "person", "human", "smile", "skin"],
       "filename": null,
       "basename": null,
       "isImage": true,
@@ -555,9 +538,7 @@
     "focalPoint": null,
     "copyright": null,
     "tags": [],
-    "smartTags": [
-      "text"
-    ],
+    "smartTags": ["text"],
     "filename": null,
     "basename": null,
     "isImage": true,

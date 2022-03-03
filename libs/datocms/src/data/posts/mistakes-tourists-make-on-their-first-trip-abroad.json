@@ -191,9 +191,7 @@
               },
               {
                 "type": "span",
-                "marks": [
-                  "emphasis"
-                ],
+                "marks": ["emphasis"],
                 "value": "Si enim ad populum me vocas, eum."
               },
               {
@@ -288,9 +286,7 @@
               },
               {
                 "type": "span",
-                "marks": [
-                  "strong"
-                ],
+                "marks": ["strong"],
                 "value": "Efficiens dici potest."
               },
               {
@@ -299,9 +295,7 @@
               },
               {
                 "type": "span",
-                "marks": [
-                  "emphasis"
-                ],
+                "marks": ["emphasis"],
                 "value": "Cur iustitia laudatur?"
               },
               {
@@ -436,9 +430,7 @@
               },
               {
                 "type": "span",
-                "marks": [
-                  "strong"
-                ],
+                "marks": ["strong"],
                 "value": "Et quod est munus, quod opus sapientiae?"
               },
               {
@@ -456,9 +448,7 @@
             "children": [
               {
                 "type": "span",
-                "marks": [
-                  "emphasis"
-                ],
+                "marks": ["emphasis"],
                 "value": "Honesta oratio, Socratica, Platonis etiam."
               },
               {
@@ -467,9 +457,7 @@
               },
               {
                 "type": "span",
-                "marks": [
-                  "strong"
-                ],
+                "marks": ["strong"],
                 "value": "In schola desinis."
               },
               {
@@ -478,9 +466,7 @@
               },
               {
                 "type": "span",
-                "marks": [
-                  "strong"
-                ],
+                "marks": ["strong"],
                 "value": "Ostendit pedes et pectus."
               },
               {
@@ -489,9 +475,7 @@
               },
               {
                 "type": "span",
-                "marks": [
-                  "emphasis"
-                ],
+                "marks": ["emphasis"],
                 "value": "Ut proverbia non nulla veriora sint quam vestra dogmata."
               },
               {
@@ -523,9 +507,7 @@
               },
               {
                 "type": "span",
-                "marks": [
-                  "emphasis"
-                ],
+                "marks": ["emphasis"],
                 "value": "Quod autem ratione actum est, id officium appellamus."
               },
               {
@@ -534,9 +516,7 @@
               },
               {
                 "type": "span",
-                "marks": [
-                  "strong"
-                ],
+                "marks": ["strong"],
                 "value": "Quis est tam dissimile homini."
               },
               {
@@ -870,10 +850,7 @@
       "focalPoint": null,
       "copyright": null,
       "tags": [],
-      "smartTags": [
-        "hand",
-        "stencil"
-      ],
+      "smartTags": ["hand", "stencil"],
       "filename": null,
       "basename": null,
       "isImage": true,

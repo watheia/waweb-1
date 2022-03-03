@@ -281,9 +281,7 @@
               },
               {
                 "type": "span",
-                "marks": [
-                  "strong"
-                ],
+                "marks": ["strong"],
                 "value": "Esse enim, nisi eris, non potes."
               },
               {
@@ -467,9 +465,7 @@
             "children": [
               {
                 "type": "span",
-                "marks": [
-                  "emphasis"
-                ],
+                "marks": ["emphasis"],
                 "value": "Bonum patria: miserum exilium."
               },
               {
@@ -478,9 +474,7 @@
               },
               {
                 "type": "span",
-                "marks": [
-                  "strong"
-                ],
+                "marks": ["strong"],
                 "value": "Non est igitur voluptas bonum."
               },
               {
@@ -489,9 +483,7 @@
               },
               {
                 "type": "span",
-                "marks": [
-                  "emphasis"
-                ],
+                "marks": ["emphasis"],
                 "value": "Sed quod proximum fuit non vidit."
               },
               {
@@ -556,9 +548,7 @@
             "children": [
               {
                 "type": "span",
-                "marks": [
-                  "emphasis"
-                ],
+                "marks": ["emphasis"],
                 "value": "Hoc mihi cum tuo fratre convenit."
               },
               {
@@ -567,9 +557,7 @@
               },
               {
                 "type": "span",
-                "marks": [
-                  "strong"
-                ],
+                "marks": ["strong"],
                 "value": "Murenam te accusante defenderem."
               },
               {
@@ -649,9 +637,7 @@
               },
               {
                 "type": "span",
-                "marks": [
-                  "emphasis"
-                ],
+                "marks": ["emphasis"],
                 "value": "Quaerimus enim finem bonorum."
               },
               {
@@ -683,9 +669,7 @@
               },
               {
                 "type": "span",
-                "marks": [
-                  "strong"
-                ],
+                "marks": ["strong"],
                 "value": "Sed vos squalidius, illorum vides quam niteat oratio."
               },
               {
@@ -717,9 +701,7 @@
               },
               {
                 "type": "span",
-                "marks": [
-                  "emphasis"
-                ],
+                "marks": ["emphasis"],
                 "value": "Ille enim occurrentia nescio quae comminiscebatur;"
               },
               {
@@ -749,13 +731,7 @@
           "focalPoint": null,
           "copyright": null,
           "tags": [],
-          "smartTags": [
-            "person",
-            "human",
-            "fire",
-            "flame",
-            "bonfire"
-          ],
+          "smartTags": ["person", "human", "fire", "flame", "bonfire"],
           "filename": null,
           "basename": null,
           "isImage": true,
@@ -931,10 +907,7 @@
       "focalPoint": null,
       "copyright": null,
       "tags": [],
-      "smartTags": [
-        "hand",
-        "stencil"
-      ],
+      "smartTags": ["hand", "stencil"],
       "filename": null,
       "basename": null,
       "isImage": true,

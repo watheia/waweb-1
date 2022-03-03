@@ -1,35 +1,23 @@
-import { DivProps } from '@waweb/model';
-import { ReactChild, ReactFragment, ReactPortal } from 'react';
-import { HomeFeature } from '../types/HomeFeature';
+import { Header, Text } from '@waweb/atoms';
 import icons, { IconName } from '@waweb/icons';
-import { Text, Header } from '@waweb/atoms';
+import { DivProps } from '@waweb/model';
+import model from '../fixtures/features.json';
 
-type FeatureItemProps = {
+type FeatureItem = {
   name: string;
   icon: IconName;
-  description:
-    | boolean
-    | ReactChild
-    | ReactFragment
-    | ReactPortal
-    | null
-    | undefined;
+  description: string;
 };
 
-const FeatureItem = ({
-  name,
-  description,
-  icon,
-  ...props
-}: FeatureItemProps) => {
-  const Icon = icons[icon];
+const FeatureItem = ({ model }: { model: FeatureItem }) => {
+  const Icon = icons[model.icon];
   if (!Icon) {
     throw new Error(
-      `Invalid icon name (${icon}) provided to features-grid-section`
+      `Invalid icon name (${model.icon}) provided to features-grid-section`
     );
   }
   return (
-    <div className="pt-6" {...props}>
+    <div className="pt-6">
       <div className="flow-root px-6 pb-8 rounded-lg">
         <div className="-mt-6">
           <div>
@@ -38,10 +26,10 @@ const FeatureItem = ({
             </span>
           </div>
           <Header element="h3" variant="header2">
-            {name}
+            {model.name}
           </Header>
           <Text variant="body2" className="mt-5">
-            {description}
+            {model.description}
           </Text>
         </div>
       </div>
@@ -49,10 +37,7 @@ const FeatureItem = ({
   );
 };
 
-export interface FeaturesSectionProps extends DivProps {
-  features: HomeFeature[];
-}
-const FeaturesSection = ({ features, ...props }: FeaturesSectionProps) => (
+const FeaturesSection = (props: DivProps) => (
   <section
     id="features"
     className="relative py-16 sm:py-24 lg:py-32"
@@ -60,20 +45,16 @@ const FeaturesSection = ({ features, ...props }: FeaturesSectionProps) => (
   >
     <div className="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
       <Header element="h2" variant="subtitle">
-        Deploy faster
+        {model.title}
       </Header>
       <Header element="p" variant="title">
-        Everything you need to deploy your app
+        {model.subTitle}
       </Header>
-      <Text variant="lead">
-        Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan
-        in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id
-        viverra nulla.
-      </Text>
+      <Text variant="lead">{model.content}</Text>
       <div className="mt-12">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {features.map((feature) => (
-            <FeatureItem key={feature.name} {...feature} />
+          {model.features.map((it) => (
+            <FeatureItem key={it.name} model={it as FeatureItem} />
           ))}
         </div>
       </div>

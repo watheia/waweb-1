@@ -134,9 +134,7 @@
             "children": [
               {
                 "type": "span",
-                "marks": [
-                  "emphasis"
-                ],
+                "marks": ["emphasis"],
                 "value": "Haeret in salebra."
               },
               {
@@ -182,9 +180,7 @@
             "children": [
               {
                 "type": "span",
-                "marks": [
-                  "strong"
-                ],
+                "marks": ["strong"],
                 "value": "Nulla erit controversia."
               },
               {
@@ -193,9 +189,7 @@
               },
               {
                 "type": "span",
-                "marks": [
-                  "strong"
-                ],
+                "marks": ["strong"],
                 "value": "Ac tamen hic mallet non dolere."
               },
               {
@@ -261,9 +255,7 @@
               },
               {
                 "type": "span",
-                "marks": [
-                  "emphasis"
-                ],
+                "marks": ["emphasis"],
                 "value": "Summus dolor plures dies manere non potest?"
               }
             ]
@@ -325,9 +317,7 @@
               },
               {
                 "type": "span",
-                "marks": [
-                  "emphasis"
-                ],
+                "marks": ["emphasis"],
                 "value": "Qui ita affectus, beatum esse numquam probabis;"
               },
               {
@@ -355,9 +345,7 @@
               },
               {
                 "type": "span",
-                "marks": [
-                  "strong"
-                ],
+                "marks": ["strong"],
                 "value": "Quo igitur, inquit, modo?"
               },
               {
@@ -408,9 +396,7 @@
             "children": [
               {
                 "type": "span",
-                "marks": [
-                  "strong"
-                ],
+                "marks": ["strong"],
                 "value": "Sed in rebus apertissimis nimium longi sumus."
               },
               {
@@ -441,9 +427,7 @@
               },
               {
                 "type": "span",
-                "marks": [
-                  "strong"
-                ],
+                "marks": ["strong"],
                 "value": "Quid enim possumus hoc agere divinius?"
               },
               {
@@ -809,10 +793,7 @@
       "focalPoint": null,
       "copyright": null,
       "tags": [],
-      "smartTags": [
-        "hand",
-        "stencil"
-      ],
+      "smartTags": ["hand", "stencil"],
       "filename": null,
       "basename": null,
       "isImage": true,

@@ -140,9 +140,7 @@
             "children": [
               {
                 "type": "span",
-                "marks": [
-                  "strong"
-                ],
+                "marks": ["strong"],
                 "value": "Tools"
               },
               {
@@ -156,9 +154,7 @@
             "children": [
               {
                 "type": "span",
-                "marks": [
-                  "strong"
-                ],
+                "marks": ["strong"],
                 "value": "Libraries"
               },
               {
@@ -172,9 +168,7 @@
             "children": [
               {
                 "type": "span",
-                "marks": [
-                  "strong"
-                ],
+                "marks": ["strong"],
                 "value": "Applications"
               },
               {
@@ -446,14 +440,7 @@
       },
       "copyright": null,
       "tags": [],
-      "smartTags": [
-        "head",
-        "face",
-        "person",
-        "human",
-        "smile",
-        "skin"
-      ],
+      "smartTags": ["head", "face", "person", "human", "smile", "skin"],
       "filename": null,
       "basename": null,
       "isImage": true,

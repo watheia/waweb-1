@@ -25,7 +25,7 @@ export default function IndexPage() {
   const { isUserLoading, isLoggedIn } = useAuth();
   const meta = {
     title: isLoggedIn ? 'Watheia Realtime' : 'Watheia Gatekeeper',
-    description: config.metaDescription,
+    description: config.metaDescription
   };
 
   return (

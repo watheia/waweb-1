@@ -21,7 +21,7 @@ import {
   OverlayContainer,
   useModal,
   useOverlay,
-  usePreventScroll,
+  usePreventScroll
 } from '@react-aria/overlays';
 import { useOverlayTriggerState } from '@react-stately/overlays';
 import cn from 'clsx';
@@ -60,7 +60,7 @@ function ModalDialog(
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                 <a
                   className={cn(styles['nav-item'], {
-                    [styles['nav-active']]: activeRoute.startsWith(route),
+                    [styles['nav-active']]: activeRoute.startsWith(route)
                   })}
                 >
                   {name}
@@ -79,7 +79,7 @@ export default function MobileMenu() {
   const ref = useRef<HTMLButtonElement | null>(null);
   const { buttonProps } = useButton(
     {
-      onPress: () => (state.isOpen ? state.close() : state.open()),
+      onPress: () => (state.isOpen ? state.close() : state.open())
     },
     ref
   );

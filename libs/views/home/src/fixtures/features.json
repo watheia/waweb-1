@@ -1,32 +1,32 @@
 [
   {
-    "name": "Push to Deploy",
-    "description": "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi vitae lobortis.",
+    "name": "CI/CD Pipeline",
+    "description": "Fully integrated DevOps pipeline to production, with preview builds and historical build reports",
     "icon": "cloud-upload"
   },
   {
-    "name": "SSL Certificates",
+    "name": "Serverless Architecture",
+    "description": "Completely serverless architecture with support for realtime data synchronization and multi-tenant session persistence",
+    "icon": "refresh"
+  },
+  {
+    "name": "Stateless Sessions",
     "description": "Qui aut temporibus nesciunt vitae dicta repellat sit dolores pariatur. Temporibus qui illum aut.",
     "icon": "lock-closed"
   },
   {
-    "name": "Simple Queues",
-    "description": "Rerum quas incidunt deleniti quaerat suscipit mollitia. Amet repellendus ut odit dolores qui.",
-    "icon": "refresh"
-  },
-  {
-    "name": "Advanced Security",
+    "name": "Headless CMS",
     "description": "Ullam laboriosam est voluptatem maxime ut mollitia commodi. Et dignissimos suscipit perspiciatis.",
-    "icon": "shield-check"
+    "icon": "article"
   },
   {
-    "name": "Powerful API",
+    "name": "Realtime Database",
     "description": "Ab a facere voluptatem in quia corrupti veritatis aliquam. Veritatis labore quaerat ipsum quaerat id.",
-    "icon": "cog"
+    "icon": "data-refresh"
   },
   {
-    "name": "Database Backups",
+    "name": "Progressive Web App",
     "description": "Quia qui et est officia cupiditate qui consectetur. Ratione similique et impedit ea ipsum et.",
-    "icon": "server"
+    "icon": "devices"
   }
 ]

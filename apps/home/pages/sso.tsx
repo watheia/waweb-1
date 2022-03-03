@@ -26,7 +26,7 @@ export default function AuthPage() {
   const meta = {
     title: 'Watheia Gatekeeper | SSO',
     description:
-      'Login with a 3rd party provider or with your Watheia Gatekeeper account',
+      'Login with a 3rd party provider or with your Watheia Gatekeeper account'
   };
 
   return (
@@ -43,6 +43,6 @@ export const getServerSideProps: GetServerSideProps = async ({ req }) => {
   const { user } = await supabase.auth.api.getUserByCookie(req);
   return {
     redirect: user ? { destination: '/', permanent: false } : undefined,
-    props: {},
+    props: {}
   };
 };

@@ -23,8 +23,8 @@ const fixtures: AboutModel = {
   image: {
     width: 1216,
     height: 880,
-    uri: 'https://www.datocms-assets.com/63265/1646248817-1644448694-green-project-app-screenshot.jpg',
-  },
+    uri: 'https://www.datocms-assets.com/63265/1646248817-1644448694-green-project-app-screenshot.jpg'
+  }
 };
 
 const AboutSection = ({ model = fixtures, ...props }: AboutSectionProps) => (

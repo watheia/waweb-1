@@ -38,7 +38,7 @@ export default function Page({
   meta,
   metaTags,
   children,
-  fullViewport = false,
+  fullViewport = false
 }: Props) {
   const router = useRouter();
   const path = router?.asPath ?? '/';

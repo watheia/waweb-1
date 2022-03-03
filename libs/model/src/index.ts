@@ -11,7 +11,7 @@ export type {
   Message,
   RolePermission,
   User,
-  UserRole,
+  UserRole
 } from '@prisma/client';
 
 // export model types
@@ -66,7 +66,7 @@ export type {
   Exact,
   InputMaybe,
   MakeOptional,
-  Maybe,
+  Maybe
 } from './types/maybe';
 export type { MorePosts } from './types/MorePosts';
 export type { OgImage } from './types/OgImage';

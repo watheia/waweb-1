@@ -42,7 +42,7 @@ export default function Layout({
   hideNav,
   layoutStyles,
   usePadding = false,
-  useBackdrop = false,
+  useBackdrop = false
 }: LayoutProps) {
   const router = useRouter();
   const activeRoute = router?.asPath ?? '/';
@@ -70,7 +70,7 @@ export default function Layout({
                   {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                   <a
                     className={cn(styles['tab'], {
-                      [styles['tab-active']]: activeRoute.startsWith(route),
+                      [styles['tab-active']]: activeRoute.startsWith(route)
                     })}
                   >
                     {name}

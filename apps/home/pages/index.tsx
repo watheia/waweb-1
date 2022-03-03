@@ -26,7 +26,7 @@ type Props = InferGetStaticPropsType<typeof getStaticProps>;
 export default function HomePage({ features, posts }: Props) {
   const meta = {
     title: 'Watheia Labs | A capabilities test of the modern web',
-    description: config.metaDescription,
+    description: config.metaDescription
   };
 
   return (
@@ -42,7 +42,7 @@ export const getStaticProps: GetStaticProps = async ({ preview }) => {
   return {
     props: {
       features: fixtures.features,
-      posts: await getTopPosts(preview, 3),
-    },
+      posts: await getTopPosts(preview, 3)
+    }
   };
 };

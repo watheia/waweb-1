@@ -24,7 +24,7 @@ import Layout from '@waweb/layout';
 export default function IndexPage() {
   const meta = {
     title: 'Watheia | Exposition',
-    description: config.metaDescription,
+    description: config.metaDescription
   };
 
   return (

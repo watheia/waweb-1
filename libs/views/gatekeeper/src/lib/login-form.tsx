@@ -64,7 +64,7 @@ export default function LoginForm({ sharePage = false }: LoginFormProps) {
   return formState === 'error' ? (
     <div
       className={cn(styles['form'], {
-        [styles['share-page']]: sharePage,
+        [styles['share-page']]: sharePage
       })}
     >
       <div className={styles['form-row']}>
@@ -88,7 +88,7 @@ export default function LoginForm({ sharePage = false }: LoginFormProps) {
         [styles['share-page']]: sharePage,
         [styleUtils['appear']]: !errorTryAgain,
         [styleUtils['appear-fifth']]: !errorTryAgain && !sharePage,
-        [styleUtils['appear-third']]: !errorTryAgain && sharePage,
+        [styleUtils['appear-third']]: !errorTryAgain && sharePage
       })}
       onSubmit={onSubmit}
     >
@@ -96,7 +96,7 @@ export default function LoginForm({ sharePage = false }: LoginFormProps) {
         <label
           htmlFor="email-input-field"
           className={cn(styles['input-label'], {
-            [styles['focused']]: focused,
+            [styles['focused']]: focused
           })}
         >
           <input

@@ -9,19 +9,19 @@ module.exports = {
       {
         autoprefixer: {
           flexbox: 'no-2009',
-          grid: 'autoplace',
+          grid: 'autoplace'
         },
         stage: 3,
         features: {
-          'custom-properties': false,
-        },
-      },
+          'custom-properties': false
+        }
+      }
     ],
     [
       'tailwindcss',
       {
-        config: join(__dirname, 'tailwind.config.js'),
-      },
-    ],
-  ],
+        config: join(__dirname, 'tailwind.config.js')
+      }
+    ]
+  ]
 };

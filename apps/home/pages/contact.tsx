@@ -22,7 +22,7 @@ import Layout from '@waweb/layout';
 export default function ContactPage() {
   const meta = {
     title: 'Watheia | Contact Us',
-    description: config.metaDescription,
+    description: config.metaDescription
   };
 
   return (

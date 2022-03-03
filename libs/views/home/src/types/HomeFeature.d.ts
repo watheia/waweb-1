@@ -1,4 +1,4 @@
-import type { IconName } from '../lib/icons-by-name';
+import type { IconName } from '@waweb/icons';
 
 export interface HomeFeature {
   name: string;

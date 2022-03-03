@@ -7,6 +7,6 @@ module.exports = {
   presets: [require('../../tailwind-presets.config.js')],
   content: [
     join(__dirname, 'pages/**/*.{js,ts,jsx,tsx}'),
-    ...createGlobPatternsForDependencies(__dirname),
-  ],
+    ...createGlobPatternsForDependencies(__dirname)
+  ]
 };

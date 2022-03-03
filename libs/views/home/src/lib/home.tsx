@@ -9,7 +9,7 @@ import TestimonialSection from './testimonial-section';
 export default function Home({
   className = 'w-full h-full',
   features,
-  posts,
+  posts
 }: HomeProps) {
   return (
     <div className={className} data-testid="waweb.views/home">

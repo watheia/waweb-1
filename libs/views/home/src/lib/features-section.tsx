@@ -1,7 +1,7 @@
 import { DivProps } from '@waweb/model';
 import { ReactChild, ReactFragment, ReactPortal } from 'react';
 import { HomeFeature } from '../types/HomeFeature';
-import iconsByName, { IconName } from './icons-by-name';
+import icons, { IconName } from '@waweb/icons';
 import { Text, Header } from '@waweb/atoms';
 
 type FeatureItemProps = {
@@ -22,7 +22,7 @@ const FeatureItem = ({
   icon,
   ...props
 }: FeatureItemProps) => {
-  const Icon = iconsByName[icon];
+  const Icon = icons[icon];
   if (!Icon) {
     throw new Error(
       `Invalid icon name (${icon}) provided to features-grid-section`

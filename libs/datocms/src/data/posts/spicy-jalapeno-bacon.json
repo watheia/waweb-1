@@ -1,0 +1,1079 @@
+{
+  "id": "107602105",
+  "itemType": "post",
+  "updatedAt": "2021-02-05T05:35:14.529Z",
+  "createdAt": "2020-03-10T13:41:13.175Z",
+  "seoMetaTags": [
+    {
+      "tagName": "title",
+      "content": "How to Spend a Perfect Weekend Together"
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "property": "og:title",
+        "content": "How to Spend a Perfect Weekend Together"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "name": "twitter:title",
+        "content": "How to Spend a Perfect Weekend Together"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "name": "description",
+        "content": "A statically generated blog example using Next.js and DatoCMS"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "property": "og:description",
+        "content": "A statically generated blog example using Next.js and DatoCMS"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "name": "twitter:description",
+        "content": "A statically generated blog example using Next.js and DatoCMS"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "name": "twitter:card",
+        "content": "summary"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "property": "article:modified_time",
+        "content": "2021-02-05T05:35:14Z"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "property": "article:published_time",
+        "content": "2020-03-10T13:41:23Z"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "property": "og:locale",
+        "content": "en_EN"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "property": "og:type",
+        "content": "article"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "property": "og:site_name",
+        "content": "Blog Example"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "property": "og:image",
+        "content": "https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?w=1000&fit=max&fm=jpg"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "name": "twitter:image",
+        "content": "https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg?w=1000&fit=max&fm=jpg"
+      }
+    }
+  ],
+  "content": {
+    "value": {
+      "schema": "dast",
+      "document": {
+        "type": "root",
+        "children": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "span",
+                "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Videamus animi partes, quarum est conspectus illustrior; Ratio quidem vestra sic cogit. Hoc Hieronymus summum bonum esse dixit. Sed plane dicit quod intellegit. Deinde dolorem quem maximum? Conferam tecum, quam cuique verso rem subicias;"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "url": "http://loripsum.net/",
+                "type": "link",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "Expressa vero in iis aetatibus, quae iam confirmatae sunt."
+                  }
+                ]
+              },
+              {
+                "type": "span",
+                "value": " Qui non moveatur et offensione turpitudinis et comprobatione honestatis?"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "style": "bulleted",
+            "children": [
+              {
+                "type": "listItem",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Non quam nostram quidem, inquit Pomponius iocans;"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Istam voluptatem, inquit, Epicurus ignorat?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Quid est, quod ab ea absolvi et perfici debeat?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Causa autem fuit huc veniendi ut quosdam hinc libros promerem."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "span",
+                "value": "Tria genera bonorum; Quod cum dixissent, ille contra. Nec vero alia sunt quaerenda contra Carneadeam illam sententiam."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "style": "bulleted",
+            "children": [
+              {
+                "type": "listItem",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Nihil sane."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Est igitur officium eius generis, quod nec in bonis ponatur nec in contrariis."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Ut scias me intellegere, primum idem esse dico voluptatem, quod ille don."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "span",
+                "value": "Haec dicuntur fortasse ieiunius; Audeo dicere, inquit. Et quidem, inquit, vehementer errat; Non est igitur summum malum dolor."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 5,
+            "children": [
+              {
+                "type": "span",
+                "value": "Nobis aliter videtur, recte secusne, postea;"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "span",
+                "value": "Hic nihil fuit, quod quaereremus. At multis malis affectus. "
+              },
+              {
+                "type": "span",
+                "marks": [
+                  "strong"
+                ],
+                "value": "Esse enim, nisi eris, non potes."
+              },
+              {
+                "type": "span",
+                "value": " "
+              },
+              {
+                "url": "http://loripsum.net/",
+                "type": "link",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "Praeteritis, inquit, gaudeo."
+                  }
+                ]
+              },
+              {
+                "type": "span",
+                "value": " "
+              },
+              {
+                "url": "http://loripsum.net/",
+                "type": "link",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "Equidem, sed audistine modo de Carneade?"
+                  }
+                ]
+              },
+              {
+                "type": "span",
+                "value": " Audeo dicere, inquit. Haec para/doca illi, nos admirabilia dicamus."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "span",
+                "value": "Duo Reges: constructio interrete. Aliter enim explicari, quod quaeritur, non potest. Restinguet citius, si ardentem acceperit. Quaerimus enim finem bonorum. "
+              },
+              {
+                "url": "http://loripsum.net/",
+                "type": "link",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "Quae cum essent dicta, discessimus."
+                  }
+                ]
+              },
+              {
+                "type": "span",
+                "value": " At enim hic etiam dolore."
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "Studet enim meus is audire Cicero quaenam sit istius veteris, quam commemoras, Academiae de finibus bonorum Peripateticorumque sententia."
+                  }
+                ]
+              }
+            ],
+            "attribution": "Sed haec omittamus"
+          },
+          {
+            "type": "list",
+            "style": "bulleted",
+            "children": [
+              {
+                "type": "listItem",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Si qua in iis corrigere voluit, deteriora fecit."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Idem fecisset Epicurus, si sententiam hanc, quae nunc Hieronymi est, coniunxisset cum Aristippi vetere sententia."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Restincta enim sitis stabilitatem voluptatis habet, inquit, illa autem voluptas ipsius restinctionis in motu est."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Illud mihi a te nimium festinanter dictum videtur, sapientis omnis esse semper beatos;"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Sin ea non neglegemus neque tamen ad finem summi boni referemus, non multum ab Erilli levitate aberrabimus."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Quid turpius quam sapientis vitam ex insipientium sermone pendere?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Ita ne hoc quidem modo paria peccata sunt."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "span",
+                "marks": [
+                  "emphasis"
+                ],
+                "value": "Bonum patria: miserum exilium."
+              },
+              {
+                "type": "span",
+                "value": " Sed haec omittamus; Maximus dolor, inquit, brevis est. "
+              },
+              {
+                "type": "span",
+                "marks": [
+                  "strong"
+                ],
+                "value": "Non est igitur voluptas bonum."
+              },
+              {
+                "type": "span",
+                "value": " "
+              },
+              {
+                "type": "span",
+                "marks": [
+                  "emphasis"
+                ],
+                "value": "Sed quod proximum fuit non vidit."
+              },
+              {
+                "type": "span",
+                "value": " Utinam quidem dicerent alium alio beatiorem! Iam ruinas videres."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "span",
+                "value": "Quid est enim aliud esse versutum? Sed tu istuc dixti bene Latine, parum plane. Tuo vero id quidem, inquam, arbitratu."
+              }
+            ]
+          },
+          {
+            "item": "107602116",
+            "type": "block"
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "span",
+                "value": "Quid ad utilitatem tantae pecuniae?"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "span",
+                "value": "Vestri haec verecundius, illi fortasse constantius. At certe gravius. Nihilo beatiorem esse Metellum quam Regulum. Haec dicuntur fortasse ieiunius; Sed residamus, inquit, si placet. Summum ením bonum exposuit vacuitatem doloris;"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "children": [
+              {
+                "type": "span",
+                "value": "Compensabatur, inquit, cum summis doloribus laetitia."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "span",
+                "value": "Hoc Hieronymus summum bonum esse dixit. Et nemo nimium beatus est; Sed ad rem redeamus; Multoque hoc melius nos veriusque quam Stoici."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "span",
+                "marks": [
+                  "emphasis"
+                ],
+                "value": "Hoc mihi cum tuo fratre convenit."
+              },
+              {
+                "type": "span",
+                "value": " "
+              },
+              {
+                "type": "span",
+                "marks": [
+                  "strong"
+                ],
+                "value": "Murenam te accusante defenderem."
+              },
+              {
+                "type": "span",
+                "value": " Sed plane dicit quod intellegit."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "style": "bulleted",
+            "children": [
+              {
+                "type": "listItem",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Maximas vero virtutes iacere omnis necesse est voluptate dominante."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Satisne vobis videor pro meo iure in vestris auribus commentatus?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Est, ut dicis, inquit;"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Verba tu fingas et ea dicas, quae non sentias?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "span",
+                "value": "Tubulo putas dicere? "
+              },
+              {
+                "type": "span",
+                "marks": [
+                  "emphasis"
+                ],
+                "value": "Quaerimus enim finem bonorum."
+              },
+              {
+                "type": "span",
+                "value": " Non potes, nisi retexueris illa. Tenent mordicus."
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "Sic, quod est extremum omnium appetendorum atque ductum a prima commendatione naturae, multis gradibus adscendit, ut ad summum perveniret, quod cumulatur ex integritate corporis et ex mentis ratione perfecta."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "span",
+                "value": "In schola desinis. Quae contraria sunt his, malane? Sed potestne rerum maior esse dissensio? "
+              },
+              {
+                "type": "span",
+                "marks": [
+                  "strong"
+                ],
+                "value": "Sed vos squalidius, illorum vides quam niteat oratio."
+              },
+              {
+                "type": "span",
+                "value": " Causa autem fuit huc veniendi ut quosdam hinc libros promerem. Non igitur bene."
+              }
+            ]
+          },
+          {
+            "item": "107602117",
+            "type": "block"
+          },
+          {
+            "type": "heading",
+            "level": 4,
+            "children": [
+              {
+                "type": "span",
+                "value": "Quid enim de amicitia statueris utilitatis causa expetenda vides."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "span",
+                "value": "Sed tamen intellego quid velit. Itaque contra est, ac dicitis; Urgent tamen et nihil remittunt. Istam voluptatem perpetuam quis potest praestare sapienti? Sullae consulatum? Hos contra singulos dici est melius. "
+              },
+              {
+                "type": "span",
+                "marks": [
+                  "emphasis"
+                ],
+                "value": "Ille enim occurrentia nescio quae comminiscebatur;"
+              },
+              {
+                "type": "span",
+                "value": " Conferam tecum, quam cuique verso rem subicias;"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "blocks": [
+      {
+        "id": "107602116",
+        "itemType": "image_block",
+        "updatedAt": "2021-02-05T05:34:47.694Z",
+        "createdAt": "2021-02-05T05:34:47.691Z",
+        "image": {
+          "format": "jpg",
+          "size": 3425299,
+          "width": 4240,
+          "height": 2832,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/63265/1612503265-manuel-meurisse-eucll-f5ati-unsplash.jpg",
+          "customData": {},
+          "focalPoint": null,
+          "copyright": null,
+          "tags": [],
+          "smartTags": [
+            "person",
+            "human",
+            "fire",
+            "flame",
+            "bonfire"
+          ],
+          "filename": null,
+          "basename": null,
+          "isImage": true,
+          "exifInfo": {},
+          "mimeType": "image/jpeg",
+          "colors": [
+            {
+              "red": 225,
+              "green": 107,
+              "blue": 51,
+              "rgb": "rgb(225, 107, 51)",
+              "alpha": 1,
+              "hex": "#e16b33"
+            },
+            {
+              "red": 164,
+              "green": 173,
+              "blue": 164,
+              "rgb": "rgb(164, 173, 164)",
+              "alpha": 1,
+              "hex": "#a4ada4"
+            },
+            {
+              "red": 115,
+              "green": 140,
+              "blue": 130,
+              "rgb": "rgb(115, 140, 130)",
+              "alpha": 1,
+              "hex": "#738c82"
+            },
+            {
+              "red": 106,
+              "green": 48,
+              "blue": 28,
+              "rgb": "rgb(106, 48, 28)",
+              "alpha": 1,
+              "hex": "#6a301c"
+            },
+            {
+              "red": 250,
+              "green": 185,
+              "blue": 136,
+              "rgb": "rgb(250, 185, 136)",
+              "alpha": 1,
+              "hex": "#fab988"
+            },
+            {
+              "red": 80,
+              "green": 49,
+              "blue": 47,
+              "rgb": "rgb(80, 49, 47)",
+              "alpha": 1,
+              "hex": "#50312f"
+            }
+          ],
+          "blurhash": "LF9Zivj[0gkB1MbH=_j[I;ayxafR",
+          "video": {
+            "muxPlaybackId": null,
+            "framerate": null,
+            "duration": null,
+            "streamingUrl": "https://stream.mux.com/null.m3u8",
+            "thumbnailUrl": "https://image.mux.com/null/thumbnail.jpg",
+            "mp4Url": null
+          }
+        }
+      },
+      {
+        "id": "107602117",
+        "itemType": "image_block",
+        "updatedAt": "2021-02-05T05:34:47.706Z",
+        "createdAt": "2021-02-05T05:34:47.704Z",
+        "image": {
+          "format": "jpg",
+          "size": 129362,
+          "width": 2074,
+          "height": 1383,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/63265/1612503277-mayur-gala-2podhmrvlik-unsplash.jpg",
+          "customData": {},
+          "focalPoint": null,
+          "copyright": null,
+          "tags": [],
+          "smartTags": [
+            "flare",
+            "light",
+            "sun",
+            "outdoors",
+            "nature",
+            "sky",
+            "sunlight",
+            "hand",
+            "person",
+            "human"
+          ],
+          "filename": null,
+          "basename": null,
+          "isImage": true,
+          "exifInfo": {},
+          "mimeType": "image/jpeg",
+          "colors": [
+            {
+              "red": 253,
+              "green": 201,
+              "blue": 60,
+              "rgb": "rgb(253, 201, 60)",
+              "alpha": 1,
+              "hex": "#fdc93c"
+            },
+            {
+              "red": 167,
+              "green": 121,
+              "blue": 83,
+              "rgb": "rgb(167, 121, 83)",
+              "alpha": 1,
+              "hex": "#a77953"
+            },
+            {
+              "red": 144,
+              "green": 67,
+              "blue": 61,
+              "rgb": "rgb(144, 67, 61)",
+              "alpha": 1,
+              "hex": "#90433d"
+            },
+            {
+              "red": 253,
+              "green": 188,
+              "blue": 98,
+              "rgb": "rgb(253, 188, 98)",
+              "alpha": 1,
+              "hex": "#fdbc62"
+            },
+            {
+              "red": 57,
+              "green": 53,
+              "blue": 67,
+              "rgb": "rgb(57, 53, 67)",
+              "alpha": 1,
+              "hex": "#393543"
+            }
+          ],
+          "blurhash": "LlJ6l]s.9caf};oKIrjuNbjtNwW;",
+          "video": {
+            "muxPlaybackId": null,
+            "framerate": null,
+            "duration": null,
+            "streamingUrl": "https://stream.mux.com/null.m3u8",
+            "thumbnailUrl": "https://image.mux.com/null/thumbnail.jpg",
+            "mp4Url": null
+          }
+        }
+      }
+    ],
+    "links": []
+  },
+  "seoSettings": null,
+  "slug": "spicy-jalapeno-bacon",
+  "author": {
+    "id": "107602109",
+    "itemType": "author",
+    "updatedAt": "2022-02-13T22:13:13.950Z",
+    "createdAt": "2020-03-10T12:54:29.968Z",
+    "picture": {
+      "format": "png",
+      "size": 66900,
+      "width": 512,
+      "height": 512,
+      "title": "Supabot avatar",
+      "alt": "Supabot",
+      "url": "https://www.datocms-assets.com/63265/1644788631-icon.png",
+      "customData": {},
+      "focalPoint": null,
+      "copyright": null,
+      "tags": [],
+      "smartTags": [
+        "hand",
+        "stencil"
+      ],
+      "filename": null,
+      "basename": null,
+      "isImage": true,
+      "exifInfo": {},
+      "mimeType": "image/png",
+      "colors": [
+        {
+          "red": 187,
+          "green": 187,
+          "blue": 187,
+          "rgb": "rgb(187, 187, 187)",
+          "alpha": 1,
+          "hex": "#bbbbbb"
+        },
+        {
+          "red": 68,
+          "green": 64,
+          "blue": 65,
+          "rgb": "rgb(68, 64, 65)",
+          "alpha": 1,
+          "hex": "#444041"
+        },
+        {
+          "red": 128,
+          "green": 126,
+          "blue": 127,
+          "rgb": "rgb(128, 126, 127)",
+          "alpha": 1,
+          "hex": "#807e7f"
+        }
+      ],
+      "blurhash": "LZN^e:%M~qxu?bofRjWBxuWBt7j[",
+      "video": {
+        "muxPlaybackId": null,
+        "framerate": null,
+        "duration": null,
+        "streamingUrl": "https://stream.mux.com/null.m3u8",
+        "thumbnailUrl": "https://image.mux.com/null/thumbnail.jpg",
+        "mp4Url": null
+      }
+    },
+    "name": "Supabot"
+  },
+  "date": "2020-03-10",
+  "excerpt": "Essential things you need to know when planning a vacation abroad",
+  "title": "How to Spend a Perfect Weekend Together",
+  "category": {
+    "id": "107602111",
+    "itemType": "category",
+    "updatedAt": "2022-02-14T20:47:32.976Z",
+    "createdAt": "2020-03-26T07:23:11.120Z",
+    "slug": "engineering",
+    "name": "Engineering"
+  },
+  "coverImage": {
+    "format": "jpg",
+    "size": 375290,
+    "width": 1920,
+    "height": 1080,
+    "title": null,
+    "alt": null,
+    "url": "https://www.datocms-assets.com/63265/1585207160-image-5-copyright.jpg",
+    "customData": {},
+    "focalPoint": null,
+    "copyright": "www.peopleimages.com",
+    "tags": [],
+    "smartTags": [
+      "clothing",
+      "apparel",
+      "human",
+      "person",
+      "face",
+      "beanie",
+      "cap",
+      "hat"
+    ],
+    "filename": null,
+    "basename": null,
+    "isImage": true,
+    "exifInfo": {},
+    "mimeType": "image/jpeg",
+    "colors": [
+      {
+        "red": 194,
+        "green": 173,
+        "blue": 95,
+        "rgb": "rgb(194, 173, 95)",
+        "alpha": 1,
+        "hex": "#c2ad5f"
+      },
+      {
+        "red": 209,
+        "green": 211,
+        "blue": 174,
+        "rgb": "rgb(209, 211, 174)",
+        "alpha": 1,
+        "hex": "#d1d3ae"
+      },
+      {
+        "red": 169,
+        "green": 151,
+        "blue": 95,
+        "rgb": "rgb(169, 151, 95)",
+        "alpha": 1,
+        "hex": "#a9975f"
+      },
+      {
+        "red": 121,
+        "green": 101,
+        "blue": 58,
+        "rgb": "rgb(121, 101, 58)",
+        "alpha": 1,
+        "hex": "#79653a"
+      },
+      {
+        "red": 229,
+        "green": 202,
+        "blue": 149,
+        "rgb": "rgb(229, 202, 149)",
+        "alpha": 1,
+        "hex": "#e5ca95"
+      },
+      {
+        "red": 78,
+        "green": 51,
+        "blue": 46,
+        "rgb": "rgb(78, 51, 46)",
+        "alpha": 1,
+        "hex": "#4e332e"
+      }
+    ],
+    "blurhash": "LTH-#x={4:NH~p?FaJNGx]xZoINH",
+    "video": {
+      "muxPlaybackId": null,
+      "framerate": null,
+      "duration": null,
+      "streamingUrl": "https://stream.mux.com/null.m3u8",
+      "thumbnailUrl": "https://image.mux.com/null/thumbnail.jpg",
+      "mp4Url": null
+    }
+  }
+}

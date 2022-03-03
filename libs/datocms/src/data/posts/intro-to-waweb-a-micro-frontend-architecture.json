@@ -1,0 +1,661 @@
+{
+  "id": "108142425",
+  "itemType": "post",
+  "updatedAt": "2022-02-14T22:52:32.749Z",
+  "createdAt": "2022-02-14T22:37:35.702Z",
+  "seoMetaTags": [
+    {
+      "tagName": "title",
+      "content": "Intro to waweb, a micro frontend architecture "
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "property": "og:title",
+        "content": "Intro to waweb, a micro frontend architecture "
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "name": "twitter:title",
+        "content": "Intro to waweb, a micro frontend architecture "
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "name": "description",
+        "content": "A statically generated blog example using Next.js and DatoCMS"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "property": "og:description",
+        "content": "A statically generated blog example using Next.js and DatoCMS"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "name": "twitter:description",
+        "content": "A statically generated blog example using Next.js and DatoCMS"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "name": "twitter:card",
+        "content": "summary"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "property": "article:modified_time",
+        "content": "2022-02-14T22:52:32Z"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "property": "article:published_time",
+        "content": "2022-02-14T22:52:48Z"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "property": "og:locale",
+        "content": "en_EN"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "property": "og:type",
+        "content": "article"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "property": "og:site_name",
+        "content": "Blog Example"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "property": "og:image",
+        "content": "https://www.datocms-assets.com/63265/1644874622-adobestock_434934439.jpeg?w=1000&fit=max&fm=jpg"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "name": "twitter:image",
+        "content": "https://www.datocms-assets.com/63265/1644874622-adobestock_434934439.jpeg?w=1000&fit=max&fm=jpg"
+      }
+    }
+  ],
+  "content": {
+    "value": {
+      "schema": "dast",
+      "document": {
+        "type": "root",
+        "children": [
+          {
+            "type": "heading",
+            "level": 1,
+            "children": [
+              {
+                "type": "span",
+                "value": "Terminology"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "span",
+                "value": "Applications, Libraries, & Tools"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "span",
+                "value": "The topmost categorization in code is separated into applications, libraries, and tools."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "span",
+                "marks": [
+                  "strong"
+                ],
+                "value": "Tools"
+              },
+              {
+                "type": "span",
+                "value": " - Developer tooling and custom build commands, generator templates, etc. These should ideally be kept to a minimum, opting to prefer standard tooling where possible."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "span",
+                "marks": [
+                  "strong"
+                ],
+                "value": "Libraries"
+              },
+              {
+                "type": "span",
+                "value": " - Libraries contain all of the business logic and feature code. The majority of a codebase should consist of domain-specific libraries."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "span",
+                "marks": [
+                  "strong"
+                ],
+                "value": "Applications"
+              },
+              {
+                "type": "span",
+                "value": " - Applications contain little code, and are mostly responsible for providing a runtime with some type of configuration."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "span",
+                "value": "Monorepo"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "span",
+                "value": "Not to be confused with a monolith, a monorepo is a collection of libraries, applications, and tools that share a single source repository. Together they represent a single domain or bounded context."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "span",
+                "value": "Atomic Design"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "span",
+                "value": "Atomic design is a methodology for creating design systems. There are five distinct levels in atomic design:"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "style": "numbered",
+            "children": [
+              {
+                "type": "listItem",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Atoms"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Molecules"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Organisms"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Views"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "span",
+                        "value": "Pages"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "item": "108142584",
+            "type": "block"
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "span",
+                "value": "Read [the excellent blog post by bradfrost]("
+              },
+              {
+                "url": "https://bradfrost.com/blog/post/atomic-web-design/",
+                "type": "link",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "https://bradfrost.com/blog/post/atomic-web-design/"
+                  }
+                ]
+              },
+              {
+                "type": "span",
+                "value": ") for more info. "
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "blocks": [
+      {
+        "id": "108142584",
+        "itemType": "image_block",
+        "updatedAt": "2022-02-14T22:52:32.728Z",
+        "createdAt": "2022-02-14T22:52:32.726Z",
+        "image": {
+          "format": "png",
+          "size": 222443,
+          "width": 1047,
+          "height": 736,
+          "title": "Periodic Table of the Elements",
+          "alt": "figure",
+          "url": "https://www.datocms-assets.com/63265/1644878274-periodic-table-of-elements.png",
+          "customData": {},
+          "focalPoint": null,
+          "copyright": null,
+          "tags": [],
+          "smartTags": [
+            "computer keyboard",
+            "computer",
+            "hardware",
+            "keyboard",
+            "computer hardware",
+            "electronics",
+            "word",
+            "text"
+          ],
+          "filename": null,
+          "basename": null,
+          "isImage": true,
+          "exifInfo": {},
+          "mimeType": "image/png",
+          "colors": [
+            {
+              "red": 238,
+              "green": 238,
+              "blue": 59,
+              "rgb": "rgb(238, 238, 59)",
+              "alpha": 1,
+              "hex": "#eeee3b"
+            },
+            {
+              "red": 206,
+              "green": 155,
+              "blue": 207,
+              "rgb": "rgb(206, 155, 207)",
+              "alpha": 1,
+              "hex": "#ce9bcf"
+            },
+            {
+              "red": 85,
+              "green": 96,
+              "blue": 166,
+              "rgb": "rgb(85, 96, 166)",
+              "alpha": 1,
+              "hex": "#5560a6"
+            },
+            {
+              "red": 142,
+              "green": 142,
+              "blue": 51,
+              "rgb": "rgb(142, 142, 51)",
+              "alpha": 1,
+              "hex": "#8e8e33"
+            },
+            {
+              "red": 238,
+              "green": 238,
+              "blue": 59,
+              "rgb": "rgb(238, 238, 59)",
+              "alpha": 1,
+              "hex": "#eeee3b"
+            },
+            {
+              "red": 43,
+              "green": 43,
+              "blue": 52,
+              "rgb": "rgb(43, 43, 52)",
+              "alpha": 1,
+              "hex": "#2b2b34"
+            }
+          ],
+          "blurhash": "LHB3vZk6IaOtx?a{sXbu03RpxnxB",
+          "video": {
+            "muxPlaybackId": null,
+            "framerate": null,
+            "duration": null,
+            "streamingUrl": "https://stream.mux.com/null.m3u8",
+            "thumbnailUrl": "https://image.mux.com/null/thumbnail.jpg",
+            "mp4Url": null
+          }
+        }
+      }
+    ],
+    "links": []
+  },
+  "seoSettings": null,
+  "slug": "intro-to-waweb-a-micro-frontend-architecture",
+  "author": {
+    "id": "108139619",
+    "itemType": "author",
+    "updatedAt": "2022-02-14T20:46:36.078Z",
+    "createdAt": "2022-02-14T20:46:36.074Z",
+    "picture": {
+      "format": "jpg",
+      "size": 16860,
+      "width": 320,
+      "height": 439,
+      "title": "Aaron R Miller",
+      "alt": "amiller",
+      "url": "https://www.datocms-assets.com/63265/1644871523-aaron-r-miller.jpg",
+      "customData": {},
+      "focalPoint": {
+        "x": 0.53,
+        "y": 0.48
+      },
+      "copyright": null,
+      "tags": [],
+      "smartTags": [
+        "head",
+        "face",
+        "person",
+        "human",
+        "smile",
+        "skin"
+      ],
+      "filename": null,
+      "basename": null,
+      "isImage": true,
+      "exifInfo": {},
+      "mimeType": "image/jpeg",
+      "colors": [
+        {
+          "red": 22,
+          "green": 84,
+          "blue": 141,
+          "rgb": "rgb(22, 84, 141)",
+          "alpha": 1,
+          "hex": "#16548d"
+        },
+        {
+          "red": 209,
+          "green": 172,
+          "blue": 170,
+          "rgb": "rgb(209, 172, 170)",
+          "alpha": 1,
+          "hex": "#d1acaa"
+        },
+        {
+          "red": 131,
+          "green": 133,
+          "blue": 123,
+          "rgb": "rgb(131, 133, 123)",
+          "alpha": 1,
+          "hex": "#83857b"
+        },
+        {
+          "red": 12,
+          "green": 56,
+          "blue": 109,
+          "rgb": "rgb(12, 56, 109)",
+          "alpha": 1,
+          "hex": "#0c386d"
+        },
+        {
+          "red": 230,
+          "green": 182,
+          "blue": 172,
+          "rgb": "rgb(230, 182, 172)",
+          "alpha": 1,
+          "hex": "#e6b6ac"
+        },
+        {
+          "red": 39,
+          "green": 52,
+          "blue": 81,
+          "rgb": "rgb(39, 52, 81)",
+          "alpha": 1,
+          "hex": "#273451"
+        }
+      ],
+      "blurhash": "LIEL:BSv0z~W~8o}bts+5So3$+Io",
+      "video": {
+        "muxPlaybackId": null,
+        "framerate": null,
+        "duration": null,
+        "streamingUrl": "https://stream.mux.com/null.m3u8",
+        "thumbnailUrl": "https://image.mux.com/null/thumbnail.jpg",
+        "mp4Url": null
+      }
+    },
+    "name": "Aaron R Miller"
+  },
+  "date": "2022-02-14",
+  "excerpt": "This is the first in a series of articles in modern web development. The end result is this site; A statically generated real-time blog that lives on the edge.",
+  "title": "Intro to waweb, a micro frontend architecture ",
+  "category": {
+    "id": "107602111",
+    "itemType": "category",
+    "updatedAt": "2022-02-14T20:47:32.976Z",
+    "createdAt": "2020-03-26T07:23:11.120Z",
+    "slug": "engineering",
+    "name": "Engineering"
+  },
+  "coverImage": {
+    "format": "jpeg",
+    "size": 2084721,
+    "width": 7000,
+    "height": 2771,
+    "title": null,
+    "alt": null,
+    "url": "https://www.datocms-assets.com/63265/1644874622-adobestock_434934439.jpeg",
+    "customData": {},
+    "focalPoint": null,
+    "copyright": "©Murrstock - stock.adobe.com",
+    "tags": [],
+    "smartTags": [
+      "business",
+      "analytics",
+      "intelligence",
+      "bi",
+      "management",
+      "success",
+      "marketing",
+      "ba",
+      "financial",
+      "computer",
+      "digital",
+      "technology",
+      "business analytics",
+      "growth",
+      "chart",
+      "graph",
+      "finance",
+      "kpi",
+      "connected",
+      "key performance indicator",
+      "internet",
+      "system",
+      "business intelligence",
+      "connection",
+      "analysis",
+      "data",
+      "indicator",
+      "analyze",
+      "strategy",
+      "return on investment",
+      "business process",
+      "consulting",
+      "innovation",
+      "insight",
+      "infographic",
+      "analyst",
+      "finger",
+      "pointing",
+      "interface",
+      "virtual",
+      "screen",
+      "button",
+      "pressing",
+      "hands",
+      "arm",
+      "person",
+      "human"
+    ],
+    "filename": null,
+    "basename": null,
+    "isImage": true,
+    "exifInfo": {},
+    "mimeType": "image/jpeg",
+    "colors": [
+      {
+        "red": 54,
+        "green": 113,
+        "blue": 199,
+        "rgb": "rgb(54, 113, 199)",
+        "alpha": 1,
+        "hex": "#3671c7"
+      },
+      {
+        "red": 148,
+        "green": 157,
+        "blue": 173,
+        "rgb": "rgb(148, 157, 173)",
+        "alpha": 1,
+        "hex": "#949dad"
+      },
+      {
+        "red": 82,
+        "green": 117,
+        "blue": 165,
+        "rgb": "rgb(82, 117, 165)",
+        "alpha": 1,
+        "hex": "#5275a5"
+      },
+      {
+        "red": 10,
+        "green": 40,
+        "blue": 102,
+        "rgb": "rgb(10, 40, 102)",
+        "alpha": 1,
+        "hex": "#0a2866"
+      },
+      {
+        "red": 157,
+        "green": 199,
+        "blue": 232,
+        "rgb": "rgb(157, 199, 232)",
+        "alpha": 1,
+        "hex": "#9dc7e8"
+      },
+      {
+        "red": 36,
+        "green": 49,
+        "blue": 84,
+        "rgb": "rgb(36, 49, 84)",
+        "alpha": 1,
+        "hex": "#243154"
+      }
+    ],
+    "blurhash": "L93JJ;p1RKV=o$V?aeohROV=o#p0",
+    "video": {
+      "muxPlaybackId": null,
+      "framerate": null,
+      "duration": null,
+      "streamingUrl": "https://stream.mux.com/null.m3u8",
+      "thumbnailUrl": "https://image.mux.com/null/thumbnail.jpg",
+      "mp4Url": null
+    }
+  }
+}

@@ -12,9 +12,10 @@ clean:
 setup:
 	yarn install
 	prisma generate
-#	echo "[production]" > .browserslistrc
-#	npx browserslist '> 0.5%, not IE 11' >> .browserslistrc
+	$(MAKE) dato-dump
 
+dato-dump:
+	dato dump --token=${DATO_API_TOKEN}
 
 build:
 	@echo "~~~> Build home bundle..."

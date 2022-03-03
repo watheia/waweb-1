@@ -25,7 +25,7 @@ type Props = InferGetServerSidePropsType<typeof getStaticProps>;
 export default function BlogPage({ subscription, preview }: Props) {
   const meta = {
     title: 'Watheia Blog',
-    description: 'Musings on technology, design, business and more.',
+    description: 'Musings on technology, design, business and more.'
   };
 
   return (
@@ -44,13 +44,13 @@ export const getStaticProps: GetStaticProps = async ({ preview }) => {
         ? {
             preview: true,
             initialData: await getAllPostsForBlog(preview),
-            token: process.env['NEXT_DATOCMS_API_TOKEN'],
-            environment: process.env['NEXT_DATOCMS_ENVIRONMENT'] || 'main',
+            token: process.env['DATO_API_TOKEN'],
+            environment: process.env['NEXT_DATOCMS_ENVIRONMENT'] || 'main'
           }
         : {
             enabled: false,
-            initialData: await getAllPostsForBlog(preview),
-          },
-    },
+            initialData: await getAllPostsForBlog(preview)
+          }
+    }
   };
 };

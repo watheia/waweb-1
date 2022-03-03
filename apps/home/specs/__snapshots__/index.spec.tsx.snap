@@ -1048,7 +1048,7 @@ exports[`waweb.home should render successfully 1`] = `
                       >
                         <div
                           aria-hidden="true"
-                          class="absolute inset-x-0 top-0 bg-sidebar h-1/2 lg:hidden"
+                          class="absolute inset-x-0 top-0 bg-[#111] h-1/2 lg:hidden"
                         />
                         <div
                           class="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:h-full lg:p-0"
@@ -1056,11 +1056,19 @@ exports[`waweb.home should render successfully 1`] = `
                           <div
                             class="overflow-hidden shadow-xl aspect-w-10 aspect-h-6 sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none rounded-xl lg:h-full"
                           >
-                            <img
-                              alt=""
-                              class="object-cover lg:h-full lg:w-full"
-                              src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
-                            />
+                            <span
+                              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+                            >
+                              <img
+                                alt=""
+                                class="object-cover lg:h-full lg:w-full"
+                                data-nimg="fill"
+                                decoding="async"
+                                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                              />
+                              <noscript />
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -1085,7 +1093,9 @@ exports[`waweb.home should render successfully 1`] = `
                               <p
                                 class="mt-6 text-2xl font-medium text-white"
                               >
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            urna nulla vitae laoreet augue. Amet feugiat est integer dolor
+            auctor adipiscing nunc urna, sit.
                               </p>
                             </div>
                             <footer

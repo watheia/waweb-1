@@ -28,7 +28,7 @@ const fixtures: AboutModel = {
 };
 
 const AboutSection = ({ model = fixtures, ...props }: AboutSectionProps) => (
-  <section id="about" className="relative" {...props}>
+  <section className="relative" {...props}>
     <div className="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
       <div>
         <Header element="h2" variant="subtitle">

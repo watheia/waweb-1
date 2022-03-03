@@ -13,12 +13,12 @@ export default function Home({
 }: HomeProps) {
   return (
     <div className={className} data-testid="waweb.views/home">
-      <HeroSection />
-      <AboutSection />
-      <FeaturesSection features={features} />
-      <TestimonialSection />
-      <BlogSection posts={posts} />
-      <CtaSection />
+      <HeroSection id="intro" />
+      <AboutSection id="about" />
+      <FeaturesSection id="features" features={features} />
+      <TestimonialSection id="testimonial" />
+      <BlogSection id="firehose" posts={posts} />
+      <CtaSection id="cta" />
     </div>
   );
 }

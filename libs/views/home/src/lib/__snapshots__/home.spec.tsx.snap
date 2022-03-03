@@ -899,6 +899,7 @@ exports[`waweb.views/home should render successfully 1`] = `
     </section>
     <section
       class="pb-16 bg-gradient-to-r from-teal-500 to-teal-600 lg:relative lg:z-10 lg:pb-0"
+      id="testimonial"
     >
       <div
         class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8"
@@ -969,6 +970,7 @@ exports[`waweb.views/home should render successfully 1`] = `
     </section>
     <section
       class="relative py-16 sm:py-24 lg:py-32"
+      id="firehose"
     >
       <div
         class="relative"
@@ -999,6 +1001,7 @@ exports[`waweb.views/home should render successfully 1`] = `
     </section>
     <section
       class="relative bg-slate-900"
+      id="cta"
     >
       <div
         class="relative h-56 bg-teal-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2"

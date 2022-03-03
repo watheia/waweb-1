@@ -20,7 +20,7 @@ exports[`waweb.home should render successfully 1`] = `
           xmlns="http://www.w3.org/2000/svg"
         >
           <a
-            href="https://gitlab.com/watheia/waweb"
+            href="https://github.com/drkstr101/waweb"
             rel="noopener noreferrer"
             target="_blank"
             title="View Source"
@@ -88,29 +88,23 @@ exports[`waweb.home should render successfully 1`] = `
                     <img
                       alt=""
                       aria-hidden="true"
-                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2780%27%20height=%2728%27/%3e"
+                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27162%27%20height=%2756%27/%3e"
                       style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
                     />
                   </span>
                   <img
                     data-nimg="intrinsic"
                     decoding="async"
-                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    src="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F63265%2F1644788635-logo.png&w=384&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F63265%2F1644788635-logo.png&w=256&q=75 1x, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F63265%2F1644788635-logo.png&w=384&q=75 2x"
                     style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                   />
-                  <noscript />
                 </span>
               </a>
             </div>
             <div
               class="tabs"
             >
-              <a
-                class="tab"
-                href="/home"
-              >
-                Home
-              </a>
               <a
                 class="tab"
                 href="/blog"
@@ -148,84 +142,1279 @@ exports[`waweb.home should render successfully 1`] = `
                 class="full"
               >
                 <div
-                  class="container mx-auto sm:px-6 lg:px-8 root"
+                  class="w-full h-full"
+                  data-testid="waweb.views/home"
                 >
-                  <div
-                    class="wrapper"
+                  <section
+                    class="min-h-screen pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14"
+                    id="intro"
                   >
-                    <h2
-                      class="appear appear-third show-on-mobile description"
-                    />
-                    <h1
-                      class="appear appear-third hero"
-                    >
-                      Watheia
-                      <br
-                        class="show-on-desktop"
-                      />
-                       Gatekeeper
-                    </h1>
-                    <h2
-                      class="appear appear-third show-on-tablet description"
-                    />
                     <div
-                      class="appear appear-fourth info"
+                      class="mx-auto max-w-7xl lg:px-8"
                     >
-                      <p>
-                        guest
+                      <div
+                        class="lg:grid lg:grid-cols-2 lg:gap-8"
+                      >
+                        <div
+                          class="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 sm:text-center lg:flex lg:items-center lg:px-0 lg:text-left"
+                        >
+                          <div
+                            class="lg:py-24"
+                          >
+                            <a
+                              class="inline-flex items-center p-1 pr-2 text-gray-300 bg-black rounded-full hover:bg-slate-900 hover:text-white sm:text-base lg:text-sm xl:text-base"
+                              href="/#about"
+                            >
+                              <span
+                                class="rounded-full bg-gradient-to-r from-teal-500 to-teal-600 px-3 py-0.5 text-xs font-bold uppercase leading-5 tracking-wide text-white"
+                              >
+                                what is this?
+                              </span>
+                              <span
+                                class="ml-4 text-sm"
+                              >
+                                Find out more
+                              </span>
+                              <svg
+                                aria-hidden="true"
+                                class="w-5 h-5 ml-2 text-gray-500"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  clip-rule="evenodd"
+                                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                  fill-rule="evenodd"
+                                />
+                              </svg>
+                            </a>
+                            <h1
+                              class="mt-4 text-6xl font-extrabold tracking-tight text-white sm:mt-5 sm:text-7xl lg:mt-6 xl:text-6xl"
+                            >
+                              <span
+                                class="block"
+                              >
+                                A better way to
+                              </span>
+                              <span
+                                class="block pb-3 text-transparent bg-gradient-to-r from-teal-200 to-teal-400 bg-clip-text sm:pb-5"
+                              >
+                                ship web apps
+                              </span>
+                            </h1>
+                            <p
+                              class="base body1"
+                            >
+                              Let your components drive web application delivery at global scale. Enjoy world-class performance, security and support every step of the way.
+                            </p>
+                            <div
+                              class="mt-10 sm:mt-12"
+                            >
+                              <form
+                                action="#"
+                                class="sm:mx-auto sm:max-w-xl lg:mx-0"
+                              >
+                                <div
+                                  class="sm:flex"
+                                >
+                                  <div
+                                    class="flex-1 min-w-0"
+                                  >
+                                    <label
+                                      class="sr-only"
+                                      for="email"
+                                    >
+                                      Email address
+                                    </label>
+                                    <input
+                                      class="block w-full px-4 py-3 text-base text-gray-900 placeholder-gray-500 border-0 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-offset-2 focus:ring-offset-gray-900"
+                                      id="email"
+                                      placeholder="Enter your email"
+                                      type="email"
+                                    />
+                                  </div>
+                                  <div
+                                    class="mt-3 sm:mt-0 sm:ml-3"
+                                  >
+                                    <button
+                                      class="block w-full px-4 py-3 font-medium text-white rounded-md shadow bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-offset-2 focus:ring-offset-gray-900"
+                                      type="submit"
+                                    >
+                                      Receive updates
+                                    </button>
+                                  </div>
+                                </div>
+                                <p
+                                  class="base muted mt-3 sm:mt-4"
+                                >
+                                  Your privacy is important to us, read our
+                                   
+                                  <a
+                                    class="font-medium text-white hover:underline"
+                                    href="/terms-and-conditions"
+                                  >
+                                    terms of service
+                                  </a>
+                                   
+                                  for more information. .
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="mt-12 -mb-16 sm:-mb-48 lg:relative lg:m-0"
+                        >
+                          <div
+                            class="max-w-md px-4 mx-auto overflow-hidden sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0"
+                          >
+                            <svg
+                              class="hidden lg:block"
+                              fill="none"
+                              height="600"
+                              width="601"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M546.232 252.902c0 3.258-.072 6.516-.289 9.557C577.053 286.135 601 336.889 601 381.561c0 48.655-28.433 71.606-63.522 51.334-.072-.073-.145-.073-.217-.145L316.815 305.539c-.073-.073-.145-.073-.29-.145-39.43-22.807-71.408-85.58-71.408-140.244 0-51.189 28.071-77.181 64.029-61.47 4.413-35.115 27.926-50.247 56.287-33.812 13.602 7.892 26.118 21.721 35.885 38.374 14.18-21.07 38.345-26.427 65.692-10.644 43.771 25.197 79.222 94.775 79.222 155.304Z"
+                                fill="url(#a)"
+                                opacity="0.07"
+                              />
+                              <path
+                                d="M510.058 287.655c0 3.258-.072 6.517-.289 9.557 31.11 23.676 55.057 74.43 55.057 119.103 0 48.654-28.433 71.606-63.522 51.333-.072-.072-.145-.072-.217-.145L280.641 340.292c-.072-.072-.145-.072-.29-.145-39.43-22.807-71.408-85.58-71.408-140.244 0-51.188 28.072-77.181 64.029-61.469 4.413-35.116 27.926-50.248 56.287-33.812 13.602 7.892 26.118 21.72 35.885 38.373 14.18-21.069 38.345-26.427 65.693-10.643 43.771 25.196 79.221 94.775 79.221 155.303Z"
+                                fill="url(#b)"
+                                opacity="0.4"
+                              />
+                              <path
+                                d="m161.048 349.632-33.569-19.404v-11.367l33.569 19.404c2.75 1.593 6.729 4.778 10.129 9.702 3.69 5.285 6.294 11.946 6.294 19.186 0 7.965-2.025 12.526-5.932 13.829-3.618 1.231-7.886-.869-10.563-2.389l-13.819-7.964-.072-.073c-1.158-.724-3.039-1.375-4.558-.941-1.23.362-2.605 1.593-2.605 6.009 0 4.417 1.375 7.168 2.533 8.761 1.447 2.027 3.328 3.475 4.485 4.055l.145.072 42.179 24.4v11.367l-41.962-24.255c-2.894-1.52-7.018-4.706-10.635-9.774-3.907-5.503-6.656-12.526-6.584-20.345 0-7.747 2.677-11.73 6.584-12.816 3.617-1.013 7.741.435 10.635 2.245l13.674 7.892c1.953 1.158 3.473 1.665 4.413 1.303.724-.217 2.171-1.303 2.171-7.095 0-3.693-1.23-6.155-2.315-7.82-1.303-1.882-3.111-3.33-4.197-3.982Z"
+                                fill="#fff"
+                                opacity="0.2"
+                              />
+                              <path
+                                d="M134.714 327.404c0 9.34-5.499 13.757-12.227 9.919-6.729-3.909-12.227-14.625-12.227-24.037 0-9.34 5.498-13.757 12.227-9.919 6.728 3.909 12.227 14.697 12.227 24.037Z"
+                                fill="url(#c)"
+                              />
+                              <path
+                                d="M206.339 428.044c0 9.34-5.499 13.756-12.227 9.919-6.729-3.91-12.227-14.625-12.227-24.038 0-9.34 5.498-13.756 12.227-9.919 6.728 3.91 12.227 14.698 12.227 24.038Z"
+                                fill="url(#d)"
+                              />
+                              <path
+                                d="m264.145 187.522 216.973 125.329v114.903L264.072 302.425l.073-114.903Z"
+                                fill="url(#e)"
+                                opacity="0.07"
+                              />
+                              <path
+                                d="m235.133 202.003 216.973 125.329v114.903L235.133 316.906V202.003Z"
+                                fill="url(#f)"
+                                opacity="0.3"
+                              />
+                              <path
+                                d="M254.594 270.424c0 9.267 5.498 19.911 12.227 23.82 6.728 3.91 12.227-.434 12.227-9.702 0-9.267-5.499-19.91-12.227-23.82-6.729-3.91-12.227.434-12.227 9.702Z"
+                                fill="url(#g)"
+                              />
+                              <path
+                                d="M285.199 288.307c0 4.272 2.532 9.268 5.716 11.078 3.111 1.81 5.643-.217 5.643-4.489s-2.532-9.268-5.716-11.078c-3.111-1.81-5.643.217-5.643 4.489ZM302.635 298.371c0 4.271 2.532 9.267 5.715 11.077 3.111 1.81 5.644-.217 5.644-4.489 0-4.271-2.533-9.267-5.716-11.077-3.111-1.81-5.643.217-5.643 4.489ZM397.338 317.919v65.38l-8.537-4.923v-65.38l8.537 4.923ZM416.004 328.78v65.379l-8.537-4.923v-65.38l8.537 4.924ZM434.742 339.64v65.38l-8.537-4.924v-65.379l8.537 4.923Z"
+                                fill="#fff"
+                                opacity="0.15"
+                              />
+                              <path
+                                d="m264.072 344.563 216.974 125.329v114.903L264.072 459.466V344.563Z"
+                                fill="url(#h)"
+                                opacity="0.07"
+                              />
+                              <path
+                                d="m235.133 359.768 216.973 125.329V600L235.133 474.671V359.768Z"
+                                fill="url(#i)"
+                                opacity="0.3"
+                              />
+                              <path
+                                d="M254.594 428.188c0 9.268 5.498 19.911 12.227 23.821 6.728 3.91 12.227-.435 12.227-9.702 0-9.268-5.499-19.911-12.227-23.82-6.729-3.91-12.227.434-12.227 9.701Z"
+                                fill="url(#j)"
+                              />
+                              <path
+                                d="M285.199 446.145c0 4.271 2.532 9.267 5.716 11.077 3.111 1.81 5.643-.217 5.643-4.489s-2.532-9.267-5.716-11.077c-3.111-1.81-5.643.144-5.643 4.489ZM302.562 456.208c0 4.272 2.533 9.268 5.716 11.078 3.111 1.81 5.643-.217 5.643-4.489s-2.532-9.267-5.715-11.078c-3.111-1.882-5.644.145-5.644 4.489ZM397.338 477.929v65.38l-8.537-4.924v-65.379l8.537 4.923ZM416.004 488.79v65.379l-8.537-4.923v-65.38l8.537 4.924ZM434.742 499.65v65.379l-8.537-4.923v-65.379l8.537 4.923Z"
+                                fill="#fff"
+                                opacity="0.15"
+                              />
+                              <path
+                                d="m42.469 31.785 135.219 78.122v250.73l-135.22-78.195V31.785Z"
+                                fill="url(#k)"
+                                opacity="0.3"
+                              />
+                              <path
+                                d="M125.959 122.577c0 12.526-7.235 18.463-16.134 13.25-8.899-5.213-16.134-19.549-16.134-32.074 0-12.526 7.235-18.463 16.134-13.25 8.899 5.213 16.134 19.549 16.134 32.074Z"
+                                fill="url(#l)"
+                              />
+                              <path
+                                d="M109.825 145.891c-14.398-8.398-26.263-.507-28.36 17.594-.363 3.113 2.025 7.313 4.919 8.978l46.954 27.441c2.894 1.665 5.282.362 4.92-3.259-2.171-20.634-14.108-42.355-28.433-50.754Z"
+                                fill="url(#m)"
+                              />
+                              <path
+                                d="m69.6 194.401 80.596 46.555v9.846L69.6 204.248v-9.847ZM77.775 218.656l63.884 36.853v9.846l-63.884-36.853v-9.846Z"
+                                fill="#fff"
+                                opacity="0.15"
+                              />
+                              <path
+                                d="M94.053 260.07 0 205.696v28.02l94.053 54.374v-28.02Z"
+                                fill="url(#n)"
+                              />
+                              <path
+                                d="m206.845 0 20.113 39.532c2.749 5.43 2.315 10.86-1.013 12.163-3.328 1.304-8.247-2.1-10.997-7.53l-.217-.506v43.876c0 4.996-3.472 7.023-7.813 4.561-4.341-2.534-7.814-8.544-7.814-13.54V34.682l-.217.217c-2.749 2.244-7.741-.072-10.997-5.213-3.328-5.14-3.762-11.077-1.013-13.322L206.845 0Z"
+                                fill="url(#o)"
+                                opacity="0.2"
+                              />
+                              <path
+                                d="m206.845 583.709-20.112-39.532c-2.75-5.43-2.316-10.86 1.012-12.163 3.328-1.303 8.248 2.099 10.997 7.53l.217.506v-43.876c0-4.995 3.473-7.023 7.814-4.561 4.341 2.534 7.814 8.544 7.814 13.539v43.876l.217-.217c2.749-2.244 7.741.073 10.997 5.213 3.328 5.141 3.762 11.078 1.013 13.322l-19.969 16.363Z"
+                                fill="url(#p)"
+                                opacity="0.2"
+                              />
+                              <defs>
+                                <lineargradient
+                                  gradientUnits="userSpaceOnUse"
+                                  id="a"
+                                  x1="588.058"
+                                  x2="364.033"
+                                  y1="114.638"
+                                  y2="326.972"
+                                >
+                                  <stop
+                                    stop-color="#fff"
+                                  />
+                                  <stop
+                                    offset="1"
+                                    stop-color="#fff"
+                                    stop-opacity="0"
+                                  />
+                                </lineargradient>
+                                <lineargradient
+                                  gradientUnits="userSpaceOnUse"
+                                  id="b"
+                                  x1="551.876"
+                                  x2="327.852"
+                                  y1="149.392"
+                                  y2="361.726"
+                                >
+                                  <stop
+                                    stop-color="#fff"
+                                  />
+                                  <stop
+                                    offset="1"
+                                    stop-color="#fff"
+                                    stop-opacity="0"
+                                  />
+                                </lineargradient>
+                                <lineargradient
+                                  gradientUnits="userSpaceOnUse"
+                                  id="c"
+                                  x1="134.714"
+                                  x2="110.26"
+                                  y1="320.566"
+                                  y2="320.566"
+                                >
+                                  <stop
+                                    stop-color="#22D3EE"
+                                  />
+                                  <stop
+                                    offset="1"
+                                    stop-color="#99F6E4"
+                                  />
+                                </lineargradient>
+                                <lineargradient
+                                  gradientUnits="userSpaceOnUse"
+                                  id="d"
+                                  x1="206.339"
+                                  x2="181.885"
+                                  y1="421.206"
+                                  y2="421.206"
+                                >
+                                  <stop
+                                    stop-color="#22D3EE"
+                                  />
+                                  <stop
+                                    offset="1"
+                                    stop-color="#99F6E4"
+                                  />
+                                </lineargradient>
+                                <lineargradient
+                                  gradientUnits="userSpaceOnUse"
+                                  id="e"
+                                  x1="368.16"
+                                  x2="376.256"
+                                  y1="196.711"
+                                  y2="399.958"
+                                >
+                                  <stop
+                                    stop-color="#fff"
+                                  />
+                                  <stop
+                                    offset="1"
+                                    stop-color="#fff"
+                                    stop-opacity="0"
+                                  />
+                                </lineargradient>
+                                <lineargradient
+                                  gradientUnits="userSpaceOnUse"
+                                  id="f"
+                                  x1="339.219"
+                                  x2="347.315"
+                                  y1="211.191"
+                                  y2="414.438"
+                                >
+                                  <stop
+                                    stop-color="#fff"
+                                  />
+                                  <stop
+                                    offset="1"
+                                    stop-color="#fff"
+                                    stop-opacity="0"
+                                  />
+                                </lineargradient>
+                                <lineargradient
+                                  gradientUnits="userSpaceOnUse"
+                                  id="g"
+                                  x1="279.048"
+                                  x2="254.594"
+                                  y1="277.702"
+                                  y2="277.702"
+                                >
+                                  <stop
+                                    stop-color="#22D3EE"
+                                  />
+                                  <stop
+                                    offset="1"
+                                    stop-color="#99F6E4"
+                                  />
+                                </lineargradient>
+                                <lineargradient
+                                  gradientUnits="userSpaceOnUse"
+                                  id="h"
+                                  x1="368.144"
+                                  x2="376.24"
+                                  y1="353.776"
+                                  y2="557.023"
+                                >
+                                  <stop
+                                    stop-color="#fff"
+                                  />
+                                  <stop
+                                    offset="1"
+                                    stop-color="#fff"
+                                    stop-opacity="0"
+                                  />
+                                </lineargradient>
+                                <lineargradient
+                                  gradientUnits="userSpaceOnUse"
+                                  id="i"
+                                  x1="339.204"
+                                  x2="347.3"
+                                  y1="368.981"
+                                  y2="572.227"
+                                >
+                                  <stop
+                                    stop-color="#fff"
+                                  />
+                                  <stop
+                                    offset="1"
+                                    stop-color="#fff"
+                                    stop-opacity="0"
+                                  />
+                                </lineargradient>
+                                <lineargradient
+                                  gradientUnits="userSpaceOnUse"
+                                  id="j"
+                                  x1="279.048"
+                                  x2="254.594"
+                                  y1="435.467"
+                                  y2="435.467"
+                                >
+                                  <stop
+                                    stop-color="#22D3EE"
+                                  />
+                                  <stop
+                                    offset="1"
+                                    stop-color="#99F6E4"
+                                  />
+                                </lineargradient>
+                                <lineargradient
+                                  gradientUnits="userSpaceOnUse"
+                                  id="k"
+                                  x1="192.18"
+                                  x2="72.012"
+                                  y1="53.821"
+                                  y2="261.857"
+                                >
+                                  <stop
+                                    stop-color="#fff"
+                                  />
+                                  <stop
+                                    offset="1"
+                                    stop-color="#fff"
+                                    stop-opacity="0"
+                                  />
+                                </lineargradient>
+                                <lineargradient
+                                  gradientUnits="userSpaceOnUse"
+                                  id="l"
+                                  x1="125.959"
+                                  x2="93.691"
+                                  y1="113.461"
+                                  y2="113.461"
+                                >
+                                  <stop
+                                    stop-color="#22D3EE"
+                                  />
+                                  <stop
+                                    offset="1"
+                                    stop-color="#99F6E4"
+                                  />
+                                </lineargradient>
+                                <lineargradient
+                                  gradientUnits="userSpaceOnUse"
+                                  id="m"
+                                  x1="138.294"
+                                  x2="81.428"
+                                  y1="171.925"
+                                  y2="171.925"
+                                >
+                                  <stop
+                                    stop-color="#22D3EE"
+                                  />
+                                  <stop
+                                    offset="1"
+                                    stop-color="#99F6E4"
+                                  />
+                                </lineargradient>
+                                <lineargradient
+                                  gradientUnits="userSpaceOnUse"
+                                  id="n"
+                                  x1="94.053"
+                                  x2="0"
+                                  y1="247.389"
+                                  y2="247.389"
+                                >
+                                  <stop
+                                    stop-color="#22D3EE"
+                                  />
+                                  <stop
+                                    offset="1"
+                                    stop-color="#99F6E4"
+                                  />
+                                </lineargradient>
+                                <lineargradient
+                                  gradientUnits="userSpaceOnUse"
+                                  id="o"
+                                  x1="221.158"
+                                  x2="184.449"
+                                  y1="39.876"
+                                  y2="60.324"
+                                >
+                                  <stop
+                                    stop-color="#fff"
+                                  />
+                                  <stop
+                                    offset="1"
+                                    stop-color="#fff"
+                                    stop-opacity="0"
+                                  />
+                                </lineargradient>
+                                <lineargradient
+                                  gradientUnits="userSpaceOnUse"
+                                  id="p"
+                                  x1="192.494"
+                                  x2="229.203"
+                                  y1="543.86"
+                                  y2="523.412"
+                                >
+                                  <stop
+                                    stop-color="#fff"
+                                  />
+                                  <stop
+                                    offset="1"
+                                    stop-color="#fff"
+                                    stop-opacity="0"
+                                  />
+                                </lineargradient>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section
+                    class="relative"
+                    id="about"
+                  >
+                    <div
+                      class="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"
+                    >
+                      <div>
+                        <h2
+                          class="base subtitle"
+                        >
+                          What is this?
+                        </h2>
+                        <p
+                          class="base title"
+                        >
+                          A capabilities test of the modern web
+                        </p>
+                        <p
+                          class="base lead"
+                        >
+                          There is more to this site than meets the eye. Beyond serving as a
+         sleek minimalist design system for our homepage, Watheia Labs is an
+         open-source showcase of best practices on developing modern, real-time
+         serverless web applications.
+                        </p>
+                      </div>
+                      <div
+                        class="mt-12"
+                      >
+                        <span
+                          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+                        >
+                          <span
+                            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                          >
+                            <img
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%271216%27%20height=%27880%27/%3e"
+                              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                            />
+                          </span>
+                          <img
+                            alt=""
+                            class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5"
+                            data-nimg="intrinsic"
+                            decoding="async"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                          />
+                          <noscript />
+                        </span>
+                      </div>
+                    </div>
+                  </section>
+                  <section
+                    class="relative py-16 sm:py-24 lg:py-32"
+                    id="features"
+                  >
+                    <div
+                      class="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"
+                    >
+                      <h2
+                        class="base subtitle"
+                      >
+                        Deploy faster
+                      </h2>
+                      <p
+                        class="base title"
+                      >
+                        Everything you need to deploy your app
+                      </p>
+                      <p
+                        class="base lead"
+                      >
+                        Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
                       </p>
                       <div
-                        class="description-separator"
-                      />
-                      <p
-                        class="offline"
+                        class="mt-12"
                       >
-                        offline
-                      </p>
+                        <div
+                          class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
+                        >
+                          <div
+                            class="pt-6"
+                          >
+                            <div
+                              class="flow-root px-6 pb-8 rounded-lg"
+                            >
+                              <div
+                                class="-mt-6"
+                              >
+                                <div>
+                                  <span
+                                    class="inline-flex items-center justify-center p-3 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-teal-700"
+                                  >
+                                    <svg
+                                      aria-hidden="true"
+                                      class="w-6 h-6 text-white"
+                                      height="18"
+                                      width="18"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <defs>
+                                        <style>
+                                          .a{fill:#6e6e6e}
+                                        </style>
+                                      </defs>
+                                      <title>
+                                        S UploadToCloud 18 N
+                                      </title>
+                                      <path
+                                        class="a"
+                                        d="M8 16.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V12H8Z"
+                                      />
+                                      <path
+                                        class="a"
+                                        d="M14.786 5.572a3.223 3.223 0 0 0-.363.02 4.072 4.072 0 1 0-7.961-1.618 3.431 3.431 0 0 0-4.204 4.197A1.929 1.929 0 1 0 1.928 12H8V9H5.85a.35.35 0 0 1-.35-.35.343.343 0 0 1 .103-.245l3.235-2.842a.25.25 0 0 1 .325 0l3.233 2.842a.343.343 0 0 1 .104.245.35.35 0 0 1-.35.35H10v3h4.786a3.215 3.215 0 0 0 0-6.428Z"
+                                      />
+                                    </svg>
+                                  </span>
+                                </div>
+                                <h3
+                                  class="base header2"
+                                >
+                                  CI/CD Pipeline
+                                </h3>
+                                <p
+                                  class="base body2 mt-5"
+                                >
+                                  Fully integrated DevOps pipeline to production, with preview builds and historical build reports
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="pt-6"
+                          >
+                            <div
+                              class="flow-root px-6 pb-8 rounded-lg"
+                            >
+                              <div
+                                class="-mt-6"
+                              >
+                                <div>
+                                  <span
+                                    class="inline-flex items-center justify-center p-3 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-teal-700"
+                                  >
+                                    <svg
+                                      aria-hidden="true"
+                                      class="w-6 h-6 text-white"
+                                      height="24"
+                                      width="24"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <defs>
+                                        <style>
+                                          .a{fill:#6e6e6e}
+                                        </style>
+                                      </defs>
+                                      <title>
+                                        S Refresh 18 N
+                                      </title>
+                                      <path
+                                        class="a"
+                                        d="M16.337 10h-.947a.608.608 0 0 0-.581.469 5.723 5.723 0 0 1-9.559 2.537l-.346-.346 1.978-1.978A.392.392 0 0 0 7 10.4a.4.4 0 0 0-.377-.4H1.25a.25.25 0 0 0-.25.25v5.375a.4.4 0 0 0 .4.375.39.39 0 0 0 .28-.118l1.808-1.808.179.178a8.09 8.09 0 0 0 3.642 2.165 7.715 7.715 0 0 0 9.437-5.474q.048-.178.087-.358a.5.5 0 0 0-.496-.585ZM16.6 2a.39.39 0 0 0-.28.118l-1.81 1.808-.179-.176a8.09 8.09 0 0 0-3.642-2.166 7.715 7.715 0 0 0-9.436 5.477q-.047.176-.086.354A.5.5 0 0 0 1.663 8h.947a.608.608 0 0 0 .581-.469 5.723 5.723 0 0 1 9.559-2.537l.346.346-1.978 1.978A.392.392 0 0 0 11 7.6a.4.4 0 0 0 .377.4h5.373a.25.25 0 0 0 .25-.25V2.377A.4.4 0 0 0 16.6 2Z"
+                                      />
+                                    </svg>
+                                  </span>
+                                </div>
+                                <h3
+                                  class="base header2"
+                                >
+                                  Serverless Architecture
+                                </h3>
+                                <p
+                                  class="base body2 mt-5"
+                                >
+                                  Completely serverless architecture with support for realtime data synchronization and multi-tenant session persistence
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="pt-6"
+                          >
+                            <div
+                              class="flow-root px-6 pb-8 rounded-lg"
+                            >
+                              <div
+                                class="-mt-6"
+                              >
+                                <div>
+                                  <span
+                                    class="inline-flex items-center justify-center p-3 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-teal-700"
+                                  >
+                                    <svg
+                                      aria-hidden="true"
+                                      class="w-6 h-6 text-white"
+                                      height="24"
+                                      width="24"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <title>
+                                        S LockClosed 18 N
+                                      </title>
+                                      <path
+                                        d="M14.5 8H14V7A5 5 0 0 0 4 7v1h-.5a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5ZM6 7a3 3 0 0 1 6 0v1H6Zm4 6.111V14.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1.389a1.5 1.5 0 1 1 2 0Z"
+                                        style="fill: #6e6e6e;"
+                                      />
+                                    </svg>
+                                  </span>
+                                </div>
+                                <h3
+                                  class="base header2"
+                                >
+                                  Stateless Sessions
+                                </h3>
+                                <p
+                                  class="base body2 mt-5"
+                                >
+                                  Qui aut temporibus nesciunt vitae dicta repellat sit dolores pariatur. Temporibus qui illum aut.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="pt-6"
+                          >
+                            <div
+                              class="flow-root px-6 pb-8 rounded-lg"
+                            >
+                              <div
+                                class="-mt-6"
+                              >
+                                <div>
+                                  <span
+                                    class="inline-flex items-center justify-center p-3 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-teal-700"
+                                  >
+                                    <svg
+                                      aria-hidden="true"
+                                      class="w-6 h-6 text-white"
+                                      height="24"
+                                      width="24"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <defs>
+                                        <style>
+                                          .a{fill:#6e6e6e}
+                                        </style>
+                                      </defs>
+                                      <title>
+                                        S Article 18 N
+                                      </title>
+                                      <path
+                                        class="a"
+                                        d="M10 5h5v1h-5zM10 9h5v1h-5zM3 11h6v1H3zM10 7h5v1h-5zM10 11h5v1h-5zM3 5h6v5H3z"
+                                      />
+                                      <path
+                                        class="a"
+                                        d="M16.5 2h-15a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5ZM2 14V3h14v11Z"
+                                      />
+                                    </svg>
+                                  </span>
+                                </div>
+                                <h3
+                                  class="base header2"
+                                >
+                                  Headless CMS
+                                </h3>
+                                <p
+                                  class="base body2 mt-5"
+                                >
+                                  Ullam laboriosam est voluptatem maxime ut mollitia commodi. Et dignissimos suscipit perspiciatis.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="pt-6"
+                          >
+                            <div
+                              class="flow-root px-6 pb-8 rounded-lg"
+                            >
+                              <div
+                                class="-mt-6"
+                              >
+                                <div>
+                                  <span
+                                    class="inline-flex items-center justify-center p-3 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-teal-700"
+                                  >
+                                    <svg
+                                      aria-hidden="true"
+                                      class="w-6 h-6 text-white"
+                                      height="24"
+                                      width="24"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <defs>
+                                        <style>
+                                          .a{fill:#6e6e6e}
+                                        </style>
+                                      </defs>
+                                      <title>
+                                        S DataRefresh 18 N
+                                      </title>
+                                      <ellipse
+                                        class="a"
+                                        cx="9"
+                                        cy="3.5"
+                                        rx="8"
+                                        ry="2.5"
+                                      />
+                                      <path
+                                        class="a"
+                                        d="M7.4 15.1v-1.65a4.81 4.81 0 0 1 .058-.55 6.538 6.538 0 0 1 .185-.812C5.118 11.923 1.75 11.322 1 10.135V14.5c0 1.21 2.75 2.218 6.4 2.45ZM13.5 7.4a6.057 6.057 0 0 1 3.15.925l.207-.212.143-.146V5.135c-1.224 1.548-5.532 2-8 2s-7.106-.584-8-2V8.5c0 1.28 3.079 2.333 7.047 2.48A6.086 6.086 0 0 1 13.5 7.4ZM13.5 16.718a3.106 3.106 0 0 1-2.385-1.062l1.153-1.156H9v3.275l1.25-1.254A4.372 4.372 0 0 0 13.5 18a4.65 4.65 0 0 0 4.5-4.5h-1.14a3.445 3.445 0 0 1-3.36 3.218Z"
+                                      />
+                                      <path
+                                        class="a"
+                                        d="M16.779 10.479A4.607 4.607 0 0 0 13.5 9 4.65 4.65 0 0 0 9 13.5h1.14a3.445 3.445 0 0 1 3.36-3.217 3.142 3.142 0 0 1 2.436 1.058L14.8 12.5H18V9.232Z"
+                                      />
+                                    </svg>
+                                  </span>
+                                </div>
+                                <h3
+                                  class="base header2"
+                                >
+                                  Realtime Database
+                                </h3>
+                                <p
+                                  class="base body2 mt-5"
+                                >
+                                  Ab a facere voluptatem in quia corrupti veritatis aliquam. Veritatis labore quaerat ipsum quaerat id.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="pt-6"
+                          >
+                            <div
+                              class="flow-root px-6 pb-8 rounded-lg"
+                            >
+                              <div
+                                class="-mt-6"
+                              >
+                                <div>
+                                  <span
+                                    class="inline-flex items-center justify-center p-3 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-teal-700"
+                                  >
+                                    <svg
+                                      aria-hidden="true"
+                                      class="w-6 h-6 text-white"
+                                      height="24"
+                                      width="24"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <defs>
+                                        <style>
+                                          .a{fill:#6e6e6e}
+                                        </style>
+                                      </defs>
+                                      <title>
+                                        S DesktopAndMobile 18 N
+                                      </title>
+                                      <path
+                                        class="a"
+                                        d="M5.5 15h-1a.49.49 0 0 0-.5.479V16h5v-5H2V2h12v1h2V.5a.5.5 0 0 0-.5-.5H.5a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5H6v1.5a.5.5 0 0 1-.5.5Z"
+                                      />
+                                      <path
+                                        class="a"
+                                        d="M17 4h-6a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1Zm-3.5 1h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1 0-1Zm.5 12.55a1.05 1.05 0 1 1 1.05-1.05A1.05 1.05 0 0 1 14 17.55ZM17 15h-6V7h6Z"
+                                      />
+                                    </svg>
+                                  </span>
+                                </div>
+                                <h3
+                                  class="base header2"
+                                >
+                                  Progressive Web App
+                                </h3>
+                                <p
+                                  class="base body2 mt-5"
+                                >
+                                  Quia qui et est officia cupiditate qui consectetur. Ratione similique et impedit ea ipsum et.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <form
-                    class="form appear appear-fifth"
+                  </section>
+                  <section
+                    class="pb-16 bg-gradient-to-r from-teal-500 to-teal-600 lg:relative lg:z-10 lg:pb-0"
                   >
                     <div
-                      class="form-row"
+                      class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8"
                     >
-                      <label
-                        class="input-label"
-                        for="email-input-field"
+                      <div
+                        class="relative lg:-my-8"
                       >
-                        <input
-                          aria-label="Your email address"
-                          autocomplete="off"
-                          class="input"
-                          id="email-input-field"
-                          placeholder="Enter email to get login url"
-                          required=""
-                          type="email"
-                          value=""
+                        <div
+                          aria-hidden="true"
+                          class="absolute inset-x-0 top-0 bg-sidebar h-1/2 lg:hidden"
                         />
-                      </label>
-                      <button
-                        class="submit login default"
-                        type="submit"
+                        <div
+                          class="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:h-full lg:p-0"
+                        >
+                          <div
+                            class="overflow-hidden shadow-xl aspect-w-10 aspect-h-6 sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none rounded-xl lg:h-full"
+                          >
+                            <img
+                              alt=""
+                              class="object-cover lg:h-full lg:w-full"
+                              src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="mt-12 lg:col-span-2 lg:m-0 lg:pl-8"
                       >
-                        Send
-                      </button>
+                        <div
+                          class="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0 lg:py-20"
+                        >
+                          <blockquote>
+                            <div>
+                              <svg
+                                aria-hidden="true"
+                                class="w-12 h-12 text-white opacity-25"
+                                fill="currentColor"
+                                viewBox="0 0 32 32"
+                              >
+                                <path
+                                  d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"
+                                />
+                              </svg>
+                              <p
+                                class="mt-6 text-2xl font-medium text-white"
+                              >
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit.
+                              </p>
+                            </div>
+                            <footer
+                              class="mt-6"
+                            >
+                              <p
+                                class="text-base font-medium text-white"
+                              >
+                                Judith Black
+                              </p>
+                              <p
+                                class="text-base font-medium text-teal-100"
+                              >
+                                CEO at PureInsights
+                              </p>
+                            </footer>
+                          </blockquote>
+                        </div>
+                      </div>
                     </div>
-                  </form>
-                  <div
-                    class="appear appear-fifth root"
+                  </section>
+                  <section
+                    class="relative py-16 sm:py-24 lg:py-32"
                   >
-                    Or login with
-                     
-                    <a
-                      class="link"
-                      href="/sso"
+                    <div
+                      class="relative"
                     >
-                      Gatekeeper Single Sign-On (SSO)
-                    </a>
-                    .
-                  </div>
+                      <div
+                        class="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"
+                      >
+                        <h2
+                          class="base subtitle"
+                        >
+                          Firehose
+                        </h2>
+                        <p
+                          class="base title"
+                        >
+                          Top blog posts
+                        </p>
+                        <p
+                          class="base lead"
+                        >
+                          Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
+                        </p>
+                      </div>
+                      <div
+                        class="grid max-w-md gap-8 px-4 mx-auto mt-12 sm:max-w-lg sm:px-6 lg:max-w-7xl lg:grid-cols-3 lg:px-8"
+                      >
+                        <div
+                          class="flex flex-col overflow-hidden rounded-lg shadow-lg"
+                        >
+                          <div
+                            class="flex-shrink-0"
+                          />
+                          <div
+                            class="flex flex-col justify-between flex-1 p-6 bg-white"
+                          >
+                            <div
+                              class="flex-1"
+                            >
+                              <p
+                                class="text-sm font-medium text-teal-600"
+                              >
+                                <a
+                                  class="hover:underline"
+                                  href="/blog/category/engineering"
+                                >
+                                  Engineering
+                                </a>
+                              </p>
+                              <a
+                                class="block mt-2"
+                                href="/blog/posts/boost-your-conversion-rate"
+                              >
+                                <p
+                                  class="text-xl font-semibold text-gray-900"
+                                >
+                                  Boost your conversion rate
+                                </p>
+                                <p
+                                  class="mt-3 text-base text-gray-500"
+                                />
+                              </a>
+                            </div>
+                            <div
+                              class="flex items-center mt-6"
+                            >
+                              <div
+                                class="flex-shrink-0"
+                              />
+                              <div
+                                class="ml-3"
+                              >
+                                <p
+                                  class="text-sm font-medium text-gray-900"
+                                >
+                                  <a
+                                    class="hover:underline"
+                                    href="/user/undefined"
+                                  />
+                                </p>
+                                <div
+                                  class="flex space-x-1 text-sm text-gray-500"
+                                >
+                                  <time
+                                    class="text-gray-400"
+                                    datetime="2020-03-16"
+                                  >
+                                    March	16, 2020
+                                  </time>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="flex flex-col overflow-hidden rounded-lg shadow-lg"
+                        >
+                          <div
+                            class="flex-shrink-0"
+                          />
+                          <div
+                            class="flex flex-col justify-between flex-1 p-6 bg-white"
+                          >
+                            <div
+                              class="flex-1"
+                            >
+                              <p
+                                class="text-sm font-medium text-teal-600"
+                              >
+                                <a
+                                  class="hover:underline"
+                                  href="/blog/category/dev-ops"
+                                >
+                                  DevOps
+                                </a>
+                              </p>
+                              <a
+                                class="block mt-2"
+                                href="/blog/posts/how-to-use-search-engine-optimization-to-drive-sales"
+                              >
+                                <p
+                                  class="text-xl font-semibold text-gray-900"
+                                >
+                                  How to use search engine optimization to drive sales
+                                </p>
+                                <p
+                                  class="mt-3 text-base text-gray-500"
+                                />
+                              </a>
+                            </div>
+                            <div
+                              class="flex items-center mt-6"
+                            >
+                              <div
+                                class="flex-shrink-0"
+                              />
+                              <div
+                                class="ml-3"
+                              >
+                                <p
+                                  class="text-sm font-medium text-gray-900"
+                                >
+                                  <a
+                                    class="hover:underline"
+                                    href="/user/undefined"
+                                  />
+                                </p>
+                                <div
+                                  class="flex space-x-1 text-sm text-gray-500"
+                                >
+                                  <time
+                                    class="text-gray-400"
+                                    datetime="2020-03-10"
+                                  >
+                                    March	10, 2020
+                                  </time>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="flex flex-col overflow-hidden rounded-lg shadow-lg"
+                        >
+                          <div
+                            class="flex-shrink-0"
+                          />
+                          <div
+                            class="flex flex-col justify-between flex-1 p-6 bg-white"
+                          >
+                            <div
+                              class="flex-1"
+                            >
+                              <p
+                                class="text-sm font-medium text-teal-600"
+                              >
+                                <a
+                                  class="hover:underline"
+                                  href="/blog/category/misc"
+                                >
+                                  Miscellaneous
+                                </a>
+                              </p>
+                              <a
+                                class="block mt-2"
+                                href="/blog/posts/improve-your-customer-experience"
+                              >
+                                <p
+                                  class="text-xl font-semibold text-gray-900"
+                                >
+                                  Improve your customer experience
+                                </p>
+                                <p
+                                  class="mt-3 text-base text-gray-500"
+                                />
+                              </a>
+                            </div>
+                            <div
+                              class="flex items-center mt-6"
+                            >
+                              <div
+                                class="flex-shrink-0"
+                              />
+                              <div
+                                class="ml-3"
+                              >
+                                <p
+                                  class="text-sm font-medium text-gray-900"
+                                >
+                                  <a
+                                    class="hover:underline"
+                                    href="/user/undefined"
+                                  />
+                                </p>
+                                <div
+                                  class="flex space-x-1 text-sm text-gray-500"
+                                >
+                                  <time
+                                    class="text-gray-400"
+                                    datetime="2020-02-12"
+                                  >
+                                    February	12, 2020
+                                  </time>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section
+                    class="relative bg-slate-900"
+                  >
+                    <div
+                      class="relative h-56 bg-teal-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2"
+                    >
+                      <span
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+                      >
+                        <img
+                          alt=""
+                          class="object-cover w-full h-full"
+                          data-nimg="fill"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </span>
+                      <div
+                        aria-hidden="true"
+                        class="absolute inset-0 bg-gradient-to-r from-teal-500 to-teal-600 mix-blend-multiply"
+                      />
+                    </div>
+                    <div
+                      class="relative max-w-md px-4 py-12 mx-auto sm:max-w-7xl sm:px-6 sm:py-20 md:py-28 lg:px-8 lg:py-32"
+                    >
+                      <div
+                        class="md:ml-auto md:w-1/2 md:pl-10"
+                      >
+                        <h2
+                          class="base subtitle text-slate-50"
+                        >
+                          Award winning support
+                        </h2>
+                        <p
+                          class="base title"
+                        >
+                          We're here to help
+                        </p>
+                        <p
+                          class="base body1"
+                        >
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat quisque ut interdum tincidunt duis.
+                        </p>
+                        <div
+                          class="mt-8"
+                        >
+                          <div
+                            class="inline-flex rounded-md shadow"
+                          >
+                            <a
+                              class="inline-flex items-center justify-center px-5 py-3 text-base font-medium bg-white border border-transparent rounded-md text-slate-900 hover:bg-gray-50"
+                              href="/contact"
+                            >
+                              Get in touch
+                              <svg
+                                aria-hidden="true"
+                                class="w-5 h-5 ml-3 -mr-1 text-slate-700"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                />
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
               </div>
             </main>

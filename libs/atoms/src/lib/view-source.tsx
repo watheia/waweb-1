@@ -14,11 +14,10 @@
  * limitations under the License.
  */
 
-// import useConfig from '@waweb/app.config';
+import config from '@waweb/config';
 import styles from './view-source.module.css';
 
 export default function ViewSource() {
-  // const config = useConfig();
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +29,7 @@ export default function ViewSource() {
     >
       <a
         title="View Source"
-        href="https://gitlab.com/watheia/waweb"
+        href={config.repo}
         target="_blank"
         rel="noopener noreferrer"
       >

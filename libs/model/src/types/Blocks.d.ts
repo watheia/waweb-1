@@ -1,6 +1,6 @@
-import { Image } from './Image';
+import { ResponsiveImage } from './ResponsiveImage';
 
 export type Blocks = {
   id: string;
-  image: Image;
+  image: ResponsiveImage;
 };

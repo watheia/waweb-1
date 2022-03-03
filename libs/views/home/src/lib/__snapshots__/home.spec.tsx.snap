@@ -7,7 +7,8 @@ exports[`waweb.views/home should render successfully 1`] = `
     data-testid="waweb.views/home"
   >
     <section
-      class="pt-10 bg-gray-900 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14"
+      class="min-h-screen pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14"
+      id="intro"
     >
       <div
         class="mx-auto max-w-7xl lg:px-8"
@@ -22,18 +23,18 @@ exports[`waweb.views/home should render successfully 1`] = `
               class="lg:py-24"
             >
               <a
-                class="inline-flex items-center p-1 pr-2 text-white bg-black rounded-full hover:text-gray-200 sm:text-base lg:text-sm xl:text-base"
-                href="/blog/posts/we-build-micro-frontends"
+                class="inline-flex items-center p-1 pr-2 text-gray-300 bg-black rounded-full hover:bg-slate-900 hover:text-white sm:text-base lg:text-sm xl:text-base"
+                href="/#about"
               >
                 <span
-                  class="rounded-full bg-gradient-to-r from-teal-500 to-teal-600 px-3 py-0.5 text-xs font-semibold uppercase leading-5 tracking-wide text-white"
+                  class="rounded-full bg-gradient-to-r from-teal-500 to-teal-600 px-3 py-0.5 text-xs font-bold uppercase leading-5 tracking-wide text-white"
                 >
-                  We build micro frontends!
+                  what is this?
                 </span>
                 <span
                   class="ml-4 text-sm"
                 >
-                  Read our case study.
+                  Find out more
                 </span>
                 <svg
                   aria-hidden="true"
@@ -50,7 +51,7 @@ exports[`waweb.views/home should render successfully 1`] = `
                 </svg>
               </a>
               <h1
-                class="mt-4 text-4xl font-extrabold tracking-tight text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl"
+                class="mt-4 text-6xl font-extrabold tracking-tight text-white sm:mt-5 sm:text-7xl lg:mt-6 xl:text-6xl"
               >
                 <span
                   class="block"
@@ -64,7 +65,7 @@ exports[`waweb.views/home should render successfully 1`] = `
                 </span>
               </h1>
               <p
-                class="text-base text-gray-300 sm:text-xl lg:text-lg xl:text-xl"
+                class="base body1"
               >
                 Let your components drive web application delivery at global scale. Enjoy world-class performance, security and support every step of the way.
               </p>
@@ -106,12 +107,12 @@ exports[`waweb.views/home should render successfully 1`] = `
                     </div>
                   </div>
                   <p
-                    class="mt-3 text-sm text-gray-300 sm:mt-4"
+                    class="base muted mt-3 sm:mt-4"
                   >
                     Your privacy is important to us, read our
                      
                     <a
-                      class="font-medium text-white"
+                      class="font-medium text-white hover:underline"
                       href="/terms-and-conditions"
                     >
                       terms of service
@@ -127,9 +128,10 @@ exports[`waweb.views/home should render successfully 1`] = `
             class="mt-12 -mb-16 sm:-mb-48 lg:relative lg:m-0"
           >
             <div
-              class="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0"
+              class="max-w-md px-4 mx-auto overflow-hidden sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0"
             >
               <svg
+                class="hidden lg:block"
                 fill="none"
                 height="600"
                 width="601"
@@ -502,57 +504,80 @@ exports[`waweb.views/home should render successfully 1`] = `
       </div>
     </section>
     <section
-      class="relative pt-16 bg-gray-50 sm:pt-24 lg:pt-32"
+      class="relative"
+      id="about"
     >
       <div
         class="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"
       >
         <div>
           <h2
-            class="text-base font-semibold tracking-wider uppercase text-teal-600"
+            class="base subtitle"
           >
-            Serverless
+            What is this?
           </h2>
           <p
-            class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"
+            class="base title"
           >
-            No server? No problem.
+            A capabilities test of the modern web
           </p>
           <p
-            class="mx-auto mt-5 text-xl text-gray-500 max-w-prose"
+            class="base lead"
           >
-            Deploy directly to the edge using JAMStack and a headless CMS. Enjoy all the benefits of a modern micro frontend architecture using interoperable components. Perform authentication and authorization logic directly on the edge with stateless sessions using signed and encrypted cookies to store data.
+            There is more to this site than meets the eye. Beyond serving as a
+         sleek minimalist design system for our homepage, Watheia Labs is an
+         open-source showcase of best practices on developing modern, real-time
+         serverless web applications.
           </p>
         </div>
         <div
-          class="mt-12 -mb-10 sm:-mb-24 lg:-mb-80"
+          class="mt-12"
         >
-          <img
-            alt=""
-            class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5"
-            src="https://www.datocms-assets.com/62247/1644448694-green-project-app-screenshot.jpg"
-          />
+          <span
+            style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+            >
+              <img
+                alt=""
+                aria-hidden="true"
+                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%271216%27%20height=%27880%27/%3e"
+                style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+              />
+            </span>
+            <img
+              alt=""
+              class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5"
+              data-nimg="intrinsic"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+            <noscript />
+          </span>
         </div>
       </div>
     </section>
     <section
-      class="relative py-16 bg-white sm:py-24 lg:py-32"
+      class="relative py-16 sm:py-24 lg:py-32"
+      id="features"
     >
       <div
         class="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"
       >
         <h2
-          class="text-base font-semibold tracking-wider uppercase text-teal-600"
+          class="base subtitle"
         >
           Deploy faster
         </h2>
         <p
-          class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"
+          class="base title"
         >
           Everything you need to deploy your app
         </p>
         <p
-          class="mx-auto mt-5 text-xl text-gray-500 max-w-prose"
+          class="base lead"
         >
           Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
         </p>
@@ -566,7 +591,7 @@ exports[`waweb.views/home should render successfully 1`] = `
               class="pt-6"
             >
               <div
-                class="flow-root px-6 pb-8 rounded-lg bg-gray-50"
+                class="flow-root px-6 pb-8 rounded-lg"
               >
                 <div
                   class="-mt-6"
@@ -578,29 +603,38 @@ exports[`waweb.views/home should render successfully 1`] = `
                       <svg
                         aria-hidden="true"
                         class="w-6 h-6 text-white"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
+                        height="18"
+                        width="18"
                         xmlns="http://www.w3.org/2000/svg"
                       >
+                        <defs>
+                          <style>
+                            .a{fill:#6e6e6e}
+                          </style>
+                        </defs>
+                        <title>
+                          S UploadToCloud 18 N
+                        </title>
                         <path
-                          d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          class="a"
+                          d="M8 16.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V12H8Z"
+                        />
+                        <path
+                          class="a"
+                          d="M14.786 5.572a3.223 3.223 0 0 0-.363.02 4.072 4.072 0 1 0-7.961-1.618 3.431 3.431 0 0 0-4.204 4.197A1.929 1.929 0 1 0 1.928 12H8V9H5.85a.35.35 0 0 1-.35-.35.343.343 0 0 1 .103-.245l3.235-2.842a.25.25 0 0 1 .325 0l3.233 2.842a.343.343 0 0 1 .104.245.35.35 0 0 1-.35.35H10v3h4.786a3.215 3.215 0 0 0 0-6.428Z"
                         />
                       </svg>
                     </span>
                   </div>
                   <h3
-                    class="mt-8 text-lg font-medium tracking-tight text-gray-900"
+                    class="base header2"
                   >
-                    Push to Deploy
+                    CI/CD Pipeline
                   </h3>
                   <p
-                    class="mt-5 text-base text-gray-500"
+                    class="base body2 mt-5"
                   >
-                    Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi vitae lobortis.
+                    Fully integrated DevOps pipeline to production, with preview builds and historical build reports
                   </p>
                 </div>
               </div>
@@ -609,7 +643,7 @@ exports[`waweb.views/home should render successfully 1`] = `
               class="pt-6"
             >
               <div
-                class="flow-root px-6 pb-8 rounded-lg bg-gray-50"
+                class="flow-root px-6 pb-8 rounded-lg"
               >
                 <div
                   class="-mt-6"
@@ -621,27 +655,75 @@ exports[`waweb.views/home should render successfully 1`] = `
                       <svg
                         aria-hidden="true"
                         class="w-6 h-6 text-white"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
+                        height="24"
+                        width="24"
                         xmlns="http://www.w3.org/2000/svg"
                       >
+                        <defs>
+                          <style>
+                            .a{fill:#6e6e6e}
+                          </style>
+                        </defs>
+                        <title>
+                          S Refresh 18 N
+                        </title>
                         <path
-                          d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          class="a"
+                          d="M16.337 10h-.947a.608.608 0 0 0-.581.469 5.723 5.723 0 0 1-9.559 2.537l-.346-.346 1.978-1.978A.392.392 0 0 0 7 10.4a.4.4 0 0 0-.377-.4H1.25a.25.25 0 0 0-.25.25v5.375a.4.4 0 0 0 .4.375.39.39 0 0 0 .28-.118l1.808-1.808.179.178a8.09 8.09 0 0 0 3.642 2.165 7.715 7.715 0 0 0 9.437-5.474q.048-.178.087-.358a.5.5 0 0 0-.496-.585ZM16.6 2a.39.39 0 0 0-.28.118l-1.81 1.808-.179-.176a8.09 8.09 0 0 0-3.642-2.166 7.715 7.715 0 0 0-9.436 5.477q-.047.176-.086.354A.5.5 0 0 0 1.663 8h.947a.608.608 0 0 0 .581-.469 5.723 5.723 0 0 1 9.559-2.537l.346.346-1.978 1.978A.392.392 0 0 0 11 7.6a.4.4 0 0 0 .377.4h5.373a.25.25 0 0 0 .25-.25V2.377A.4.4 0 0 0 16.6 2Z"
                         />
                       </svg>
                     </span>
                   </div>
                   <h3
-                    class="mt-8 text-lg font-medium tracking-tight text-gray-900"
+                    class="base header2"
                   >
-                    SSL Certificates
+                    Serverless Architecture
                   </h3>
                   <p
-                    class="mt-5 text-base text-gray-500"
+                    class="base body2 mt-5"
+                  >
+                    Completely serverless architecture with support for realtime data synchronization and multi-tenant session persistence
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="pt-6"
+            >
+              <div
+                class="flow-root px-6 pb-8 rounded-lg"
+              >
+                <div
+                  class="-mt-6"
+                >
+                  <div>
+                    <span
+                      class="inline-flex items-center justify-center p-3 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-teal-700"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="w-6 h-6 text-white"
+                        height="24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title>
+                          S LockClosed 18 N
+                        </title>
+                        <path
+                          d="M14.5 8H14V7A5 5 0 0 0 4 7v1h-.5a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5ZM6 7a3 3 0 0 1 6 0v1H6Zm4 6.111V14.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1.389a1.5 1.5 0 1 1 2 0Z"
+                          style="fill: #6e6e6e;"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <h3
+                    class="base header2"
+                  >
+                    Stateless Sessions
+                  </h3>
+                  <p
+                    class="base body2 mt-5"
                   >
                     Qui aut temporibus nesciunt vitae dicta repellat sit dolores pariatur. Temporibus qui illum aut.
                   </p>
@@ -652,7 +734,7 @@ exports[`waweb.views/home should render successfully 1`] = `
               class="pt-6"
             >
               <div
-                class="flow-root px-6 pb-8 rounded-lg bg-gray-50"
+                class="flow-root px-6 pb-8 rounded-lg"
               >
                 <div
                   class="-mt-6"
@@ -664,70 +746,36 @@ exports[`waweb.views/home should render successfully 1`] = `
                       <svg
                         aria-hidden="true"
                         class="w-6 h-6 text-white"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
+                        height="24"
+                        width="24"
                         xmlns="http://www.w3.org/2000/svg"
                       >
+                        <defs>
+                          <style>
+                            .a{fill:#6e6e6e}
+                          </style>
+                        </defs>
+                        <title>
+                          S Article 18 N
+                        </title>
                         <path
-                          d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          class="a"
+                          d="M10 5h5v1h-5zM10 9h5v1h-5zM3 11h6v1H3zM10 7h5v1h-5zM10 11h5v1h-5zM3 5h6v5H3z"
+                        />
+                        <path
+                          class="a"
+                          d="M16.5 2h-15a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5ZM2 14V3h14v11Z"
                         />
                       </svg>
                     </span>
                   </div>
                   <h3
-                    class="mt-8 text-lg font-medium tracking-tight text-gray-900"
+                    class="base header2"
                   >
-                    Simple Queues
+                    Headless CMS
                   </h3>
                   <p
-                    class="mt-5 text-base text-gray-500"
-                  >
-                    Rerum quas incidunt deleniti quaerat suscipit mollitia. Amet repellendus ut odit dolores qui.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="pt-6"
-            >
-              <div
-                class="flow-root px-6 pb-8 rounded-lg bg-gray-50"
-              >
-                <div
-                  class="-mt-6"
-                >
-                  <div>
-                    <span
-                      class="inline-flex items-center justify-center p-3 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-teal-700"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="w-6 h-6 text-white"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                        />
-                      </svg>
-                    </span>
-                  </div>
-                  <h3
-                    class="mt-8 text-lg font-medium tracking-tight text-gray-900"
-                  >
-                    Advanced Security
-                  </h3>
-                  <p
-                    class="mt-5 text-base text-gray-500"
+                    class="base body2 mt-5"
                   >
                     Ullam laboriosam est voluptatem maxime ut mollitia commodi. Et dignissimos suscipit perspiciatis.
                   </p>
@@ -738,7 +786,7 @@ exports[`waweb.views/home should render successfully 1`] = `
               class="pt-6"
             >
               <div
-                class="flow-root px-6 pb-8 rounded-lg bg-gray-50"
+                class="flow-root px-6 pb-8 rounded-lg"
               >
                 <div
                   class="-mt-6"
@@ -750,33 +798,43 @@ exports[`waweb.views/home should render successfully 1`] = `
                       <svg
                         aria-hidden="true"
                         class="w-6 h-6 text-white"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
+                        height="24"
+                        width="24"
                         xmlns="http://www.w3.org/2000/svg"
                       >
-                        <path
-                          d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                        <defs>
+                          <style>
+                            .a{fill:#6e6e6e}
+                          </style>
+                        </defs>
+                        <title>
+                          S DataRefresh 18 N
+                        </title>
+                        <ellipse
+                          class="a"
+                          cx="9"
+                          cy="3.5"
+                          rx="8"
+                          ry="2.5"
                         />
                         <path
-                          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          class="a"
+                          d="M7.4 15.1v-1.65a4.81 4.81 0 0 1 .058-.55 6.538 6.538 0 0 1 .185-.812C5.118 11.923 1.75 11.322 1 10.135V14.5c0 1.21 2.75 2.218 6.4 2.45ZM13.5 7.4a6.057 6.057 0 0 1 3.15.925l.207-.212.143-.146V5.135c-1.224 1.548-5.532 2-8 2s-7.106-.584-8-2V8.5c0 1.28 3.079 2.333 7.047 2.48A6.086 6.086 0 0 1 13.5 7.4ZM13.5 16.718a3.106 3.106 0 0 1-2.385-1.062l1.153-1.156H9v3.275l1.25-1.254A4.372 4.372 0 0 0 13.5 18a4.65 4.65 0 0 0 4.5-4.5h-1.14a3.445 3.445 0 0 1-3.36 3.218Z"
+                        />
+                        <path
+                          class="a"
+                          d="M16.779 10.479A4.607 4.607 0 0 0 13.5 9 4.65 4.65 0 0 0 9 13.5h1.14a3.445 3.445 0 0 1 3.36-3.217 3.142 3.142 0 0 1 2.436 1.058L14.8 12.5H18V9.232Z"
                         />
                       </svg>
                     </span>
                   </div>
                   <h3
-                    class="mt-8 text-lg font-medium tracking-tight text-gray-900"
+                    class="base header2"
                   >
-                    Powerful API
+                    Realtime Database
                   </h3>
                   <p
-                    class="mt-5 text-base text-gray-500"
+                    class="base body2 mt-5"
                   >
                     Ab a facere voluptatem in quia corrupti veritatis aliquam. Veritatis labore quaerat ipsum quaerat id.
                   </p>
@@ -787,7 +845,7 @@ exports[`waweb.views/home should render successfully 1`] = `
               class="pt-6"
             >
               <div
-                class="flow-root px-6 pb-8 rounded-lg bg-gray-50"
+                class="flow-root px-6 pb-8 rounded-lg"
               >
                 <div
                   class="-mt-6"
@@ -799,27 +857,36 @@ exports[`waweb.views/home should render successfully 1`] = `
                       <svg
                         aria-hidden="true"
                         class="w-6 h-6 text-white"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
+                        height="24"
+                        width="24"
                         xmlns="http://www.w3.org/2000/svg"
                       >
+                        <defs>
+                          <style>
+                            .a{fill:#6e6e6e}
+                          </style>
+                        </defs>
+                        <title>
+                          S DesktopAndMobile 18 N
+                        </title>
                         <path
-                          d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          class="a"
+                          d="M5.5 15h-1a.49.49 0 0 0-.5.479V16h5v-5H2V2h12v1h2V.5a.5.5 0 0 0-.5-.5H.5a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5H6v1.5a.5.5 0 0 1-.5.5Z"
+                        />
+                        <path
+                          class="a"
+                          d="M17 4h-6a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1Zm-3.5 1h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1 0-1Zm.5 12.55a1.05 1.05 0 1 1 1.05-1.05A1.05 1.05 0 0 1 14 17.55ZM17 15h-6V7h6Z"
                         />
                       </svg>
                     </span>
                   </div>
                   <h3
-                    class="mt-8 text-lg font-medium tracking-tight text-gray-900"
+                    class="base header2"
                   >
-                    Database Backups
+                    Progressive Web App
                   </h3>
                   <p
-                    class="mt-5 text-base text-gray-500"
+                    class="base body2 mt-5"
                   >
                     Quia qui et est officia cupiditate qui consectetur. Ratione similique et impedit ea ipsum et.
                   </p>
@@ -841,7 +908,7 @@ exports[`waweb.views/home should render successfully 1`] = `
         >
           <div
             aria-hidden="true"
-            class="absolute inset-x-0 top-0 bg-white h-1/2 lg:hidden"
+            class="absolute inset-x-0 top-0 bg-sidebar h-1/2 lg:hidden"
           />
           <div
             class="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:h-full lg:p-0"
@@ -901,7 +968,7 @@ exports[`waweb.views/home should render successfully 1`] = `
       </div>
     </section>
     <section
-      class="relative py-16 bg-gray-50 sm:py-24 lg:py-32"
+      class="relative py-16 sm:py-24 lg:py-32"
     >
       <div
         class="relative"
@@ -910,17 +977,17 @@ exports[`waweb.views/home should render successfully 1`] = `
           class="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"
         >
           <h2
-            class="text-base font-semibold tracking-wider text-teal-600 uppercase"
+            class="base subtitle"
           >
-            Learn
+            Firehose
           </h2>
           <p
-            class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"
+            class="base title"
           >
-            Helpful Resources
+            Top blog posts
           </p>
           <p
-            class="mx-auto mt-5 text-xl text-gray-500 max-w-prose"
+            class="base lead"
           >
             Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
           </p>
@@ -931,39 +998,47 @@ exports[`waweb.views/home should render successfully 1`] = `
       </div>
     </section>
     <section
-      class="relative bg-gray-900"
+      class="relative bg-slate-900"
     >
       <div
-        class="relative h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2"
+        class="relative h-56 bg-teal-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2"
       >
-        <img
-          alt=""
-          class="h-full w-full object-cover"
-          src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&sat=-100"
-        />
+        <span
+          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+        >
+          <img
+            alt=""
+            class="object-cover w-full h-full"
+            data-nimg="fill"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+          <noscript />
+        </span>
         <div
           aria-hidden="true"
           class="absolute inset-0 bg-gradient-to-r from-teal-500 to-teal-600 mix-blend-multiply"
         />
       </div>
       <div
-        class="relative mx-auto max-w-md px-4 py-12 sm:max-w-7xl sm:px-6 sm:py-20 md:py-28 lg:px-8 lg:py-32"
+        class="relative max-w-md px-4 py-12 mx-auto sm:max-w-7xl sm:px-6 sm:py-20 md:py-28 lg:px-8 lg:py-32"
       >
         <div
           class="md:ml-auto md:w-1/2 md:pl-10"
         >
           <h2
-            class="text-base font-semibold uppercase tracking-wider text-gray-300"
+            class="base subtitle text-slate-50"
           >
             Award winning support
           </h2>
           <p
-            class="mt-2 text-3xl font-extrabold tracking-tight text-white sm:text-4xl"
+            class="base title"
           >
             We're here to help
           </p>
           <p
-            class="mt-3 text-lg text-gray-300"
+            class="base body1"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat quisque ut interdum tincidunt duis.
           </p>
@@ -974,13 +1049,13 @@ exports[`waweb.views/home should render successfully 1`] = `
               class="inline-flex rounded-md shadow"
             >
               <a
-                class="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-gray-900 hover:bg-gray-50"
-                href="/support/help-center"
+                class="inline-flex items-center justify-center px-5 py-3 text-base font-medium bg-white border border-transparent rounded-md text-slate-900 hover:bg-gray-50"
+                href="/contact"
               >
-                Visit the help center
+                Get in touch
                 <svg
                   aria-hidden="true"
-                  class="ml-3 -mr-1 h-5 w-5 text-gray-400"
+                  class="w-5 h-5 ml-3 -mr-1 text-slate-700"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

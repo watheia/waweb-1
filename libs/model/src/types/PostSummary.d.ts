@@ -1,6 +1,6 @@
 import { Author } from './Author';
 import { Category } from './Category';
-import { Image } from './Image';
+import { ResponsiveImage } from './ResponsiveImage';
 
 export type PostSummary = {
   title: string;
@@ -9,5 +9,5 @@ export type PostSummary = {
   date: string;
   category: Category;
   author: Author;
-  coverImage: Image;
+  coverImage: ResponsiveImage;
 };

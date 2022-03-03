@@ -24,6 +24,7 @@
       "@waweb/layout": ["libs/layout/src/index.ts"],
       "@waweb/message": ["libs/message/src/index.ts"],
       "@waweb/model": ["libs/model/src/index.ts"],
+      "@waweb/organisms": ["libs/organisms/src/index.ts"],
       "@waweb/supabase": ["libs/supabase/src/index.ts"],
       "@waweb/theme": ["libs/theme/src/index.ts"],
       "@waweb/theme.styles/*": ["libs/theme/src/styles/*"],
@@ -32,7 +33,8 @@
       "@waweb/views.dashboard": ["libs/views/dashboard/src/index.ts"],
       "@waweb/views.gatekeeper": ["libs/views/gatekeeper/src/index.ts"],
       "@waweb/views.home": ["libs/views/home/src/index.ts"],
-      "@waweb/views.profile": ["libs/views/profile/src/index.ts"]
+      "@waweb/views.profile": ["libs/views/profile/src/index.ts"],
+      "@waweb/views.realtime": ["libs/views/realtime/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

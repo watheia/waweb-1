@@ -10,7 +10,9 @@ exports[`waweb.views/gatekeeper should render successfully 1`] = `
     >
       <h2
         class="appear appear-third show-on-mobile description"
-      />
+      >
+        A tech demo by Watheia Labs.
+      </h2>
       <h1
         class="appear appear-third hero"
       >
@@ -18,11 +20,13 @@ exports[`waweb.views/gatekeeper should render successfully 1`] = `
         <br
           class="show-on-desktop"
         />
-         Gatekeeper
+         Realtime
       </h1>
       <h2
         class="appear appear-third show-on-tablet description"
-      />
+      >
+        A tech demo by Watheia Labs.
+      </h2>
       <div
         class="appear appear-fourth info"
       >

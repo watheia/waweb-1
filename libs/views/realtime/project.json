@@ -1,0 +1,43 @@
+{
+  "root": "libs/views/realtime",
+  "sourceRoot": "libs/views/realtime/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/views/realtime",
+        "tsConfig": "libs/views/realtime/tsconfig.lib.json",
+        "project": "libs/views/realtime/package.json",
+        "entryFile": "libs/views/realtime/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "rollup.config.js",
+        "compiler": "babel",
+        "assets": [
+          {
+            "glob": "libs/views/realtime/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/views/realtime/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/views/realtime"],
+      "options": {
+        "jestConfig": "libs/views/realtime/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

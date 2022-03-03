@@ -11,7 +11,7 @@ export type {
   Message,
   RolePermission,
   User,
-  UserRole,
+  UserRole
 } from '@prisma/client';
 
 // export model types
@@ -60,13 +60,13 @@ export type { Category } from './types/Category';
 export type { Content } from './types/Content';
 export type { Document } from './types/Document';
 export type { DocumentChildren } from './types/DocumentChildren';
-export type { Image } from './types/Image';
+export type { ImageModel } from './types/ImageModel';
 export type {
   MakeMaybe,
   Exact,
   InputMaybe,
   MakeOptional,
-  Maybe,
+  Maybe
 } from './types/maybe';
 export type { MorePosts } from './types/MorePosts';
 export type { OgImage } from './types/OgImage';
@@ -74,6 +74,7 @@ export type { Page } from './types/Page';
 export type { Post } from './types/Post';
 export type { PostsBySlugData } from './types/PostsBySlugData';
 export type { PostsBySlugResponse } from './types/PostsBySlugResponse';
+export type { ResponsiveImage } from './types/ResponsiveImage';
 export type { Site } from './types/Site';
 export type { Value } from './types/Value';
 

@@ -17,7 +17,7 @@
 import cn from 'clsx';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import useConfig from '@waweb/config';
+import config from '@waweb/config';
 import { renderMetaTags, TitleMetaLinkTag } from 'react-datocms';
 
 type Meta = {
@@ -38,14 +38,13 @@ export default function Page({
   meta,
   metaTags,
   children,
-  fullViewport = false,
+  fullViewport = false
 }: Props) {
   const router = useRouter();
-  const config = useConfig();
   const path = router?.asPath ?? '/';
 
-  const image = meta?.image || '/twitter-card.png';
-  const title = meta?.title || config.siteName;
+  const image = meta?.image ?? config.twitterCard;
+  const title = meta?.title ?? config.siteName;
   const url = meta?.url ?? `${config.baseUrl}${path}`;
   const description = meta?.description ?? config.siteName;
 

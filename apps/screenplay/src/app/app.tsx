@@ -1,36 +1,33 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.css';
 import NxWelcome from './nx-welcome';
 
-import { Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import ProfileView from '@waweb/views.profile';
+import Realtime from '@waweb/views.realtime';
 
 export function App() {
   return (
-    <>
-      <NxWelcome title="screenplay" />
-      <div />
-
-      {/* START: routes */}
-      {/* These routes and navigation have been generated for you */}
-      {/* Feel free to move and update them to fit your needs */}
-      <br />
-      <hr />
-      <br />
+    <BrowserRouter>
       <div role="navigation">
         <ul>
-          <li>
+          <li className="text-white">
             <Link to="/">Home</Link>
           </li>
-          <li>
-            <Link to="/profile">ProfileView</Link>
+          <li className="text-white">
+            <Link to="/profile">Profile</Link>
           </li>
-          <li>
-            <Link to="/page-2">Page 2</Link>
+          <li className="text-white">
+            <Link to="/realtime">Realtime</Link>
           </li>
         </ul>
+        <hr />
       </div>
-    </>
+      <Routes>
+        <Route path="/" element={<NxWelcome title={'screenplay'} />} />
+        <Route path="/profile" element={<ProfileView />} />
+        <Route path="/realtime" element={<Realtime />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

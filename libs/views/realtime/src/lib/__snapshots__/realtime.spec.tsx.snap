@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`waweb.views/realtime should render successfully 1`] = `
+<div>
+  <div
+    class="root"
+  >
+    <h1
+      class="appear appear-third hero"
+    >
+      Watheia
+      <br
+        class="show-on-mobile"
+      />
+       Realtime
+    </h1>
+  </div>
+</div>
+`;

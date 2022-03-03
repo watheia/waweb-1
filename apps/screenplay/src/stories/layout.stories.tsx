@@ -1,10 +1,10 @@
 import { Story, Meta } from '@storybook/react';
 import Layout from '@waweb/layout';
-import { MockContent } from '@waweb/atoms';
+import { MockContent } from '@waweb/organisms';
 
 export default {
   component: Layout,
-  title: 'waweb.layout',
+  title: 'waweb.layout'
 } as Meta;
 
 const Template: Story = (args) => (
@@ -18,15 +18,15 @@ Defaults.args = {};
 
 export const WithBackdrop = Template.bind({});
 WithBackdrop.args = {
-  useBackdrop: true,
+  useBackdrop: true
 };
 
 export const WithPadding = Template.bind({});
 WithPadding.args = {
-  usePadding: true,
+  usePadding: true
 };
 
 export const WithoutHeader = Template.bind({});
 WithoutHeader.args = {
-  hideNav: true,
+  hideNav: true
 };

@@ -12,6 +12,8 @@ clean:
 setup:
 	yarn install
 	prisma generate
+#	echo "[production]" > .browserslistrc
+#	npx browserslist '> 0.5%, not IE 11' >> .browserslistrc
 
 
 build:

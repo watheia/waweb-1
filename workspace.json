@@ -12,14 +12,15 @@
     "layout": "libs/layout",
     "message": "libs/message",
     "model": "libs/model",
+    "organisms": "libs/organisms",
     "screenplay": "apps/screenplay",
     "supabase": "libs/supabase",
     "theme": "libs/theme",
     "utils": "libs/utils",
     "views-blog": "libs/views/blog",
-    "views-dashboard": "libs/views/dashboard",
     "views-gatekeeper": "libs/views/gatekeeper",
     "views-home": "libs/views/home",
-    "views-profile": "libs/views/profile"
+    "views-profile": "libs/views/profile",
+    "views-realtime": "libs/views/realtime"
   }
 }

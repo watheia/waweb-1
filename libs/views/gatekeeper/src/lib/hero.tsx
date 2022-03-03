@@ -16,11 +16,10 @@
 
 import cn from 'clsx';
 import styles from './hero.module.css';
-import useConfig from '@waweb/config';
-import styleUtils from '@waweb/theme.styles/utils.module.css';
+import config from '@waweb/config';
+import { styleUtils } from '@waweb/atoms';
 
 export default function Hero() {
-  const config = useConfig();
   return (
     <div className={styles['wrapper']}>
       <h2
@@ -41,7 +40,7 @@ export default function Hero() {
         )}
       >
         {config.brandName}
-        <br className={styleUtils['show-on-desktop']} /> Gatekeeper
+        <br className={styleUtils['show-on-desktop']} /> Realtime
       </h1>
       <h2
         className={cn(

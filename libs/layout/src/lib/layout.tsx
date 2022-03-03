@@ -21,7 +21,7 @@ import cn from 'clsx';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Footer from './footer';
-import navigation from './navigation';
+import config, { NavZone } from '@waweb/config';
 import styles from './layout.module.css';
 import MobileMenu from './mobile-menu';
 import { Logo, ViewSource } from '@waweb/atoms';
@@ -42,7 +42,7 @@ export default function Layout({
   hideNav,
   layoutStyles,
   usePadding = false,
-  useBackdrop = false,
+  useBackdrop = false
 }: LayoutProps) {
   const router = useRouter();
   const activeRoute = router?.asPath ?? '/';
@@ -65,12 +65,12 @@ export default function Layout({
               </Link>
             </div>
             <div className={styles['tabs']}>
-              {navigation.map(({ name, route }) => (
+              {config.navigation.map(({ name, route }: NavZone) => (
                 <Link key={name} href={route}>
                   {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                   <a
                     className={cn(styles['tab'], {
-                      [styles['tab-active']]: activeRoute.startsWith(route),
+                      [styles['tab-active']]: activeRoute.startsWith(route)
                     })}
                   >
                     {name}
@@ -79,13 +79,13 @@ export default function Layout({
               ))}
             </div>
             {isLoggedIn && (
-              <div className="ml-4 mr-16 flex items-center md:ml-6">
+              <div className="flex items-center ml-4 mr-16 md:ml-6">
                 <button
                   type="button"
-                  className="rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+                  className="p-1 text-gray-400 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
                 >
                   <span className="sr-only">View notifications</span>
-                  <BellIcon className="h-6 w-6" aria-hidden="true" />
+                  <BellIcon className="w-6 h-6" aria-hidden="true" />
                 </button>
 
                 <UserMenu />

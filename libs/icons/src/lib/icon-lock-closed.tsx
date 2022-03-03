@@ -1,0 +1,29 @@
+import * as React from 'react';
+import { SVGProps } from 'react';
+
+export interface LockClosedProps extends SVGProps<SVGSVGElement> {
+  color?: string;
+}
+const LockClosed = ({
+  color = '#6e6e6e',
+  width = 24,
+  height = 24,
+  ...props
+}: LockClosedProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    height={height}
+    width={width}
+    {...props}
+  >
+    <title>{'S LockClosed 18 N'}</title>
+    <path
+      d="M14.5 8H14V7A5 5 0 0 0 4 7v1h-.5a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5ZM6 7a3 3 0 0 1 6 0v1H6Zm4 6.111V14.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1.389a1.5 1.5 0 1 1 2 0Z"
+      style={{
+        fill: color
+      }}
+    />
+  </svg>
+);
+
+export default LockClosed;

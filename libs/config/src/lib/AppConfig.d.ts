@@ -9,5 +9,6 @@ export interface AppConfig {
   siteDescription: string;
   siteName: string;
   legalUrl: string;
+  twitterCard: string;
   navigation: NavZone[];
 }

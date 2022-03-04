@@ -5,7 +5,7 @@ import { BlogPostView } from '@waweb/views.blog';
 import {
   GetStaticPaths,
   GetStaticProps,
-  InferGetServerSidePropsType,
+  InferGetServerSidePropsType
 } from 'next';
 
 type Props = InferGetServerSidePropsType<typeof getStaticProps>;
@@ -13,7 +13,7 @@ type Props = InferGetServerSidePropsType<typeof getStaticProps>;
 export default function BlogPostPage({ subscription, preview }: Props) {
   const meta = {
     title: 'Watheia Blog',
-    description: 'Musings on technology, design, business and more.',
+    description: 'Musings on technology, design, business and more.'
   };
 
   return (
@@ -29,7 +29,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const allPosts = await getAllPostsWithSlug();
   return {
     paths: allPosts.map(({ slug }) => `/blog/posts/${slug}`),
-    fallback: false,
+    fallback: false
   };
 };
 
@@ -42,12 +42,12 @@ export const getStaticProps: GetStaticProps = async ({ params, preview }) => {
             preview: true,
             variables: { slug },
             initialData: await getPostAndMore(slug as string, !!preview),
-            token: process.env.NEXT_DATOCMS_API_TOKEN,
+            token: process.env.NEXT_DATOCMS_API_TOKEN
           }
         : {
             enabled: false,
-            initialData: await getPostAndMore(slug as string, !!preview),
-          },
-    },
+            initialData: await getPostAndMore(slug as string, !!preview)
+          }
+    }
   };
 };

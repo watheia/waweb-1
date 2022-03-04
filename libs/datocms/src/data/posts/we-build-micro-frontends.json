@@ -1,0 +1,599 @@
+{
+  "id": "109629196",
+  "itemType": "post",
+  "updatedAt": "2022-02-19T21:59:55.250Z",
+  "createdAt": "2022-02-19T21:33:03.986Z",
+  "seoMetaTags": [
+    {
+      "tagName": "title",
+      "content": "Watheia Labs | We build micro frontends"
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "property": "og:title",
+        "content": "Watheia Labs | We build micro frontends"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "name": "twitter:title",
+        "content": "Watheia Labs | We build micro frontends"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "name": "description",
+        "content": "Techniques, strategies, and recipes for building a modern web app with multiple teams that can ship features independently."
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "property": "og:description",
+        "content": "Techniques, strategies, and recipes for building a modern web app with multiple teams that can ship features independently."
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "name": "twitter:description",
+        "content": "Techniques, strategies, and recipes for building a modern web app with multiple teams that can ship features independently."
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "name": "twitter:card",
+        "content": "summary"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "property": "article:modified_time",
+        "content": "2022-02-19T21:59:55Z"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "property": "article:published_time",
+        "content": "2022-02-19T22:20:21Z"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "property": "og:locale",
+        "content": "en_EN"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "property": "og:type",
+        "content": "article"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "property": "og:site_name",
+        "content": "Blog Example"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "property": "og:image",
+        "content": "https://www.datocms-assets.com/63265/1645304910-ferenc-almasi-ayjnmg4oux4-unsplash.jpg?w=1000&fit=max&fm=jpg"
+      }
+    },
+    {
+      "tagName": "meta",
+      "attributes": {
+        "name": "twitter:image",
+        "content": "https://www.datocms-assets.com/63265/1645304910-ferenc-almasi-ayjnmg4oux4-unsplash.jpg?w=1000&fit=max&fm=jpg"
+      }
+    }
+  ],
+  "content": {
+    "value": {
+      "schema": "dast",
+      "document": {
+        "type": "root",
+        "children": [
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "span",
+                "value": "What are Micro Frontends?"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "span",
+                "value": "Micro frontends extend the concept of microservices to the frontend world. The idea behind Micro Frontends is to think about a website or web app as a composition of features owned by independent teams. When combined with domain-driven design, each team has a distinct subdomain or bounded context. These cross-functional teams develop features end-to-end"
+              },
+              {
+                "type": "span",
+                "marks": ["strong"],
+                "value": ","
+              },
+              {
+                "type": "span",
+                "value": " from database to user interface.  In this post, we will explore a practical implementation of a micro frontend using an Nx monorepo, \"a next-generation build system with first-class monorepo support and powerful integrations.\""
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "span",
+                "value": "Initial Setup"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "span",
+                "value": "First, we create a new monorepo workspace using "
+              },
+              {
+                "type": "span",
+                "marks": ["code"],
+                "value": "yarn"
+              },
+              {
+                "type": "span",
+                "value": " as a package manager (optional)"
+              }
+            ]
+          },
+          {
+            "code": "npx create-nx-workspace mfe-zones --package-manager yarn",
+            "type": "code",
+            "language": "bash"
+          },
+          {
+            "type": "blockquote",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "? What to create in the new workspace ..."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "apps              [an empty workspace with no plugins with a layout that works best for building apps]"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "  core              [an empty workspace with no plugins set up to publish npm packages (similar to yarn workspaces)]"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "  ts                [an empty workspace with the JS/TS plugin preinstalled]"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "  react             [a workspace with a single React application]"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "  angular           [a workspace with a single Angular application]"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": " > next.js           [a workspace with a single Next.js application]"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "  nest              [a workspace with a single Nest application]"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "  express           [a workspace with a single Express application]"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "  web components    [a workspace with a single app built using web components]"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "  react-native      [a workspace with a single React Native application]"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "  react-express     [a workspace with a full stack application (React + Express)]"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "span",
+                    "value": "  angular-nest      [a workspace with a full stack application (Angular + Nest)]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "span",
+                "value": "When prompted, select "
+              },
+              {
+                "type": "span",
+                "marks": ["code"],
+                "value": "next.js"
+              },
+              {
+                "type": "span",
+                "value": " and call the application \"home\", then select \"CSS\", and either Y/N depending on if you want to use nx-cloud."
+              }
+            ]
+          },
+          {
+            "item": "109629221",
+            "type": "block"
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "span",
+                "value": ""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "blocks": [
+      {
+        "id": "109629221",
+        "itemType": "image_block",
+        "updatedAt": "2022-02-19T21:59:55.220Z",
+        "createdAt": "2022-02-19T21:59:55.217Z",
+        "image": {
+          "format": "jpg",
+          "size": 130060,
+          "width": 1115,
+          "height": 624,
+          "title": "create-nx-workspace",
+          "alt": "Screenshot",
+          "url": "https://www.datocms-assets.com/63265/1645307827-create-nx-workspacejpg.jpg",
+          "customData": {},
+          "focalPoint": {
+            "x": 0.23,
+            "y": 0.28
+          },
+          "copyright": null,
+          "tags": [],
+          "smartTags": ["text", "file", "menu"],
+          "filename": null,
+          "basename": null,
+          "isImage": true,
+          "exifInfo": {},
+          "mimeType": "image/jpeg",
+          "colors": [
+            {
+              "red": 232,
+              "green": 158,
+              "blue": 15,
+              "rgb": "rgb(232, 158, 15)",
+              "alpha": 1,
+              "hex": "#e89e0f"
+            },
+            {
+              "red": 182,
+              "green": 196,
+              "blue": 199,
+              "rgb": "rgb(182, 196, 199)",
+              "alpha": 1,
+              "hex": "#b6c4c7"
+            },
+            {
+              "red": 79,
+              "green": 150,
+              "blue": 154,
+              "rgb": "rgb(79, 150, 154)",
+              "alpha": 1,
+              "hex": "#4f969a"
+            },
+            {
+              "red": 105,
+              "green": 82,
+              "blue": 28,
+              "rgb": "rgb(105, 82, 28)",
+              "alpha": 1,
+              "hex": "#69521c"
+            },
+            {
+              "red": 104,
+              "green": 216,
+              "blue": 217,
+              "rgb": "rgb(104, 216, 217)",
+              "alpha": 1,
+              "hex": "#68d8d9"
+            },
+            {
+              "red": 43,
+              "green": 69,
+              "blue": 90,
+              "rgb": "rgb(43, 69, 90)",
+              "alpha": 1,
+              "hex": "#2b455a"
+            }
+          ],
+          "blurhash": "L02$W__2%fxu_NtRt7W=.mMxRjae",
+          "video": {
+            "muxPlaybackId": null,
+            "framerate": null,
+            "duration": null,
+            "streamingUrl": "https://stream.mux.com/null.m3u8",
+            "thumbnailUrl": "https://image.mux.com/null/thumbnail.jpg",
+            "mp4Url": null
+          }
+        }
+      }
+    ],
+    "links": []
+  },
+  "seoSettings": {
+    "title": "Watheia Labs | We build micro frontends",
+    "description": "Techniques, strategies, and recipes for building a modern web app with multiple teams that can ship features independently.",
+    "twitterCard": null,
+    "image": {
+      "format": "jpg",
+      "size": 604666,
+      "width": 5081,
+      "height": 3456,
+      "url": "https://www.datocms-assets.com/63265/1645304910-ferenc-almasi-ayjnmg4oux4-unsplash.jpg"
+    }
+  },
+  "slug": "we-build-micro-frontends",
+  "author": {
+    "id": "108139619",
+    "itemType": "author",
+    "updatedAt": "2022-02-14T20:46:36.078Z",
+    "createdAt": "2022-02-14T20:46:36.074Z",
+    "picture": {
+      "format": "jpg",
+      "size": 16860,
+      "width": 320,
+      "height": 439,
+      "title": "Aaron R Miller",
+      "alt": "amiller",
+      "url": "https://www.datocms-assets.com/63265/1644871523-aaron-r-miller.jpg",
+      "customData": {},
+      "focalPoint": {
+        "x": 0.53,
+        "y": 0.48
+      },
+      "copyright": null,
+      "tags": [],
+      "smartTags": ["head", "face", "person", "human", "smile", "skin"],
+      "filename": null,
+      "basename": null,
+      "isImage": true,
+      "exifInfo": {},
+      "mimeType": "image/jpeg",
+      "colors": [
+        {
+          "red": 22,
+          "green": 84,
+          "blue": 141,
+          "rgb": "rgb(22, 84, 141)",
+          "alpha": 1,
+          "hex": "#16548d"
+        },
+        {
+          "red": 209,
+          "green": 172,
+          "blue": 170,
+          "rgb": "rgb(209, 172, 170)",
+          "alpha": 1,
+          "hex": "#d1acaa"
+        },
+        {
+          "red": 131,
+          "green": 133,
+          "blue": 123,
+          "rgb": "rgb(131, 133, 123)",
+          "alpha": 1,
+          "hex": "#83857b"
+        },
+        {
+          "red": 12,
+          "green": 56,
+          "blue": 109,
+          "rgb": "rgb(12, 56, 109)",
+          "alpha": 1,
+          "hex": "#0c386d"
+        },
+        {
+          "red": 230,
+          "green": 182,
+          "blue": 172,
+          "rgb": "rgb(230, 182, 172)",
+          "alpha": 1,
+          "hex": "#e6b6ac"
+        },
+        {
+          "red": 39,
+          "green": 52,
+          "blue": 81,
+          "rgb": "rgb(39, 52, 81)",
+          "alpha": 1,
+          "hex": "#273451"
+        }
+      ],
+      "blurhash": "LIEL:BSv0z~W~8o}bts+5So3$+Io",
+      "video": {
+        "muxPlaybackId": null,
+        "framerate": null,
+        "duration": null,
+        "streamingUrl": "https://stream.mux.com/null.m3u8",
+        "thumbnailUrl": "https://image.mux.com/null/thumbnail.jpg",
+        "mp4Url": null
+      }
+    },
+    "name": "Aaron R Miller"
+  },
+  "date": "2022-02-19",
+  "excerpt": "Techniques, strategies and recipes for building a modern web app with multiple teams that can ship features independently.",
+  "title": "We build micro frontends!",
+  "category": {
+    "id": "107602111",
+    "itemType": "category",
+    "updatedAt": "2022-02-14T20:47:32.976Z",
+    "createdAt": "2020-03-26T07:23:11.120Z",
+    "slug": "engineering",
+    "name": "Engineering"
+  },
+  "coverImage": {
+    "format": "jpg",
+    "size": 604666,
+    "width": 5081,
+    "height": 3456,
+    "title": null,
+    "alt": null,
+    "url": "https://www.datocms-assets.com/63265/1645304910-ferenc-almasi-ayjnmg4oux4-unsplash.jpg",
+    "customData": {},
+    "focalPoint": null,
+    "copyright": null,
+    "tags": [],
+    "smartTags": ["text"],
+    "filename": null,
+    "basename": null,
+    "isImage": true,
+    "exifInfo": {},
+    "mimeType": "image/jpeg",
+    "colors": [
+      {
+        "red": 142,
+        "green": 70,
+        "blue": 22,
+        "rgb": "rgb(142, 70, 22)",
+        "alpha": 1,
+        "hex": "#8e4616"
+      },
+      {
+        "red": 169,
+        "green": 145,
+        "blue": 183,
+        "rgb": "rgb(169, 145, 183)",
+        "alpha": 1,
+        "hex": "#a991b7"
+      },
+      {
+        "red": 111,
+        "green": 91,
+        "blue": 145,
+        "rgb": "rgb(111, 91, 145)",
+        "alpha": 1,
+        "hex": "#6f5b91"
+      },
+      {
+        "red": 91,
+        "green": 42,
+        "blue": 84,
+        "rgb": "rgb(91, 42, 84)",
+        "alpha": 1,
+        "hex": "#5b2a54"
+      },
+      {
+        "red": 2,
+        "green": 55,
+        "blue": 108,
+        "rgb": "rgb(2, 55, 108)",
+        "alpha": 1,
+        "hex": "#02376c"
+      }
+    ],
+    "blurhash": "L01yX%.Tk=Xfk7WTxGxH#-wcs8sA",
+    "video": {
+      "muxPlaybackId": null,
+      "framerate": null,
+      "duration": null,
+      "streamingUrl": "https://stream.mux.com/null.m3u8",
+      "thumbnailUrl": "https://image.mux.com/null/thumbnail.jpg",
+      "mp4Url": null
+    }
+  }
+}

@@ -12,9 +12,9 @@ clean:
 setup:
 	yarn install
 	prisma generate
-#	echo "[production]" > .browserslistrc
-#	npx browserslist '> 0.5%, not IE 11' >> .browserslistrc
 
+dato-dump:
+	dato dump --token=${NEXT_DATOCMS_API_TOKEN}
 
 build:
 	@echo "~~~> Build home bundle..."

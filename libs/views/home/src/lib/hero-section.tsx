@@ -1,12 +1,13 @@
 import { ChevronRightIcon } from '@heroicons/react/solid';
 import { Text } from '@waweb/atoms';
+import { DivProps } from '@waweb/model';
 import Link from 'next/link';
 import CloudIllustration from './cloud-illustration';
 
-const HeroSection = () => (
+const HeroSection = (props: DivProps) => (
   <section
-    id="intro"
     className="min-h-screen pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14"
+    {...props}
   >
     <div className="mx-auto max-w-7xl lg:px-8">
       <div className="lg:grid lg:grid-cols-2 lg:gap-8">

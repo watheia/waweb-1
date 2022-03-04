@@ -569,17 +569,17 @@ exports[`waweb.views/home should render successfully 1`] = `
         <h2
           class="base subtitle"
         >
-          Deploy faster
+          Features
         </h2>
         <p
           class="base title"
         >
-          Everything you need to deploy your app
+          Key areas of research
         </p>
         <p
           class="base lead"
         >
-          Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
+          This experiment focuses on a few primary research areas, all of which fit the theme of "scalability." Scalability in regards to both development costs and service provider fees.
         </p>
         <div
           class="mt-12"
@@ -598,18 +598,17 @@ exports[`waweb.views/home should render successfully 1`] = `
                 >
                   <div>
                     <span
-                      class="inline-flex items-center justify-center p-3 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-teal-700"
+                      class="inline-flex items-center justify-center p-4 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-teal-700"
                     >
                       <svg
                         aria-hidden="true"
-                        class="w-6 h-6 text-white"
-                        height="18"
-                        width="18"
+                        class="h-6 w-6"
+                        viewBox="0 0 18 18"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <defs>
                           <style>
-                            .a{fill:#6e6e6e}
+                            .a{fill:white}
                           </style>
                         </defs>
                         <title>
@@ -650,13 +649,12 @@ exports[`waweb.views/home should render successfully 1`] = `
                 >
                   <div>
                     <span
-                      class="inline-flex items-center justify-center p-3 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-teal-700"
+                      class="inline-flex items-center justify-center p-4 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-teal-700"
                     >
                       <svg
                         aria-hidden="true"
-                        class="w-6 h-6 text-white"
-                        height="24"
-                        width="24"
+                        class="h-6 w-6"
+                        viewBox="0 0 18 18"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <defs>
@@ -682,7 +680,7 @@ exports[`waweb.views/home should render successfully 1`] = `
                   <p
                     class="base body2 mt-5"
                   >
-                    Completely serverless architecture with support for realtime data synchronization and multi-tenant session persistence
+                    Completely serverless architecture with support for real-time data synchronization and multi-tenant session persistence
                   </p>
                 </div>
               </div>
@@ -698,13 +696,12 @@ exports[`waweb.views/home should render successfully 1`] = `
                 >
                   <div>
                     <span
-                      class="inline-flex items-center justify-center p-3 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-teal-700"
+                      class="inline-flex items-center justify-center p-4 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-teal-700"
                     >
                       <svg
                         aria-hidden="true"
-                        class="w-6 h-6 text-white"
-                        height="24"
-                        width="24"
+                        class="h-6 w-6"
+                        viewBox="0 0 18 18"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <title>
@@ -712,7 +709,7 @@ exports[`waweb.views/home should render successfully 1`] = `
                         </title>
                         <path
                           d="M14.5 8H14V7A5 5 0 0 0 4 7v1h-.5a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5ZM6 7a3 3 0 0 1 6 0v1H6Zm4 6.111V14.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1.389a1.5 1.5 0 1 1 2 0Z"
-                          style="fill: #6e6e6e;"
+                          style="fill: white;"
                         />
                       </svg>
                     </span>
@@ -725,7 +722,7 @@ exports[`waweb.views/home should render successfully 1`] = `
                   <p
                     class="base body2 mt-5"
                   >
-                    Qui aut temporibus nesciunt vitae dicta repellat sit dolores pariatur. Temporibus qui illum aut.
+                    Signed and secured sessions validatable at all levels of the request, without leaking sensitive data to 3rd parties microservices.
                   </p>
                 </div>
               </div>
@@ -741,18 +738,17 @@ exports[`waweb.views/home should render successfully 1`] = `
                 >
                   <div>
                     <span
-                      class="inline-flex items-center justify-center p-3 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-teal-700"
+                      class="inline-flex items-center justify-center p-4 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-teal-700"
                     >
                       <svg
                         aria-hidden="true"
-                        class="w-6 h-6 text-white"
-                        height="24"
-                        width="24"
+                        class="h-6 w-6"
+                        viewBox="0 0 18 18"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <defs>
                           <style>
-                            .a{fill:#6e6e6e}
+                            .a{fill:white}
                           </style>
                         </defs>
                         <title>
@@ -777,7 +773,7 @@ exports[`waweb.views/home should render successfully 1`] = `
                   <p
                     class="base body2 mt-5"
                   >
-                    Ullam laboriosam est voluptatem maxime ut mollitia commodi. Et dignissimos suscipit perspiciatis.
+                    Externally managed content by non-technical users exposed behind a GraphQL API for use in static site generators or server-side rendering
                   </p>
                 </div>
               </div>
@@ -793,18 +789,17 @@ exports[`waweb.views/home should render successfully 1`] = `
                 >
                   <div>
                     <span
-                      class="inline-flex items-center justify-center p-3 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-teal-700"
+                      class="inline-flex items-center justify-center p-4 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-teal-700"
                     >
                       <svg
                         aria-hidden="true"
-                        class="w-6 h-6 text-white"
-                        height="24"
-                        width="24"
+                        class="h-6 w-6"
+                        viewBox="0 0 18 18"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <defs>
                           <style>
-                            .a{fill:#6e6e6e}
+                            .a{fill:white}
                           </style>
                         </defs>
                         <title>
@@ -831,12 +826,12 @@ exports[`waweb.views/home should render successfully 1`] = `
                   <h3
                     class="base header2"
                   >
-                    Realtime Database
+                    Realtime Data
                   </h3>
                   <p
                     class="base body2 mt-5"
                   >
-                    Ab a facere voluptatem in quia corrupti veritatis aliquam. Veritatis labore quaerat ipsum quaerat id.
+                    Remote database accessible through REST, GraphQL, and Real-time APIs, including advanced features such as stored procedures, row-level security policies, and more
                   </p>
                 </div>
               </div>
@@ -852,18 +847,17 @@ exports[`waweb.views/home should render successfully 1`] = `
                 >
                   <div>
                     <span
-                      class="inline-flex items-center justify-center p-3 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-teal-700"
+                      class="inline-flex items-center justify-center p-4 rounded-md shadow-lg bg-gradient-to-r from-teal-500 to-teal-700"
                     >
                       <svg
                         aria-hidden="true"
-                        class="w-6 h-6 text-white"
-                        height="24"
-                        width="24"
+                        class="h-6 w-6"
+                        viewBox="0 0 18 18"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <defs>
                           <style>
-                            .a{fill:#6e6e6e}
+                            .a{fill:white}
                           </style>
                         </defs>
                         <title>
@@ -888,7 +882,7 @@ exports[`waweb.views/home should render successfully 1`] = `
                   <p
                     class="base body2 mt-5"
                   >
-                    Quia qui et est officia cupiditate qui consectetur. Ratione similique et impedit ea ipsum et.
+                    Get the most value from modern web APIs by serving static content with progressive client-side enhancements and offline support
                   </p>
                 </div>
               </div>
@@ -899,6 +893,7 @@ exports[`waweb.views/home should render successfully 1`] = `
     </section>
     <section
       class="pb-16 bg-gradient-to-r from-teal-500 to-teal-600 lg:relative lg:z-10 lg:pb-0"
+      id="testimonial"
     >
       <div
         class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8"
@@ -908,7 +903,7 @@ exports[`waweb.views/home should render successfully 1`] = `
         >
           <div
             aria-hidden="true"
-            class="absolute inset-x-0 top-0 bg-sidebar h-1/2 lg:hidden"
+            class="absolute inset-x-0 top-0 bg-[#111] h-1/2 lg:hidden"
           />
           <div
             class="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:h-full lg:p-0"
@@ -916,11 +911,19 @@ exports[`waweb.views/home should render successfully 1`] = `
             <div
               class="overflow-hidden shadow-xl aspect-w-10 aspect-h-6 sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none rounded-xl lg:h-full"
             >
-              <img
-                alt=""
-                class="object-cover lg:h-full lg:w-full"
-                src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
-              />
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt=""
+                  class="object-cover lg:h-full lg:w-full"
+                  data-nimg="fill"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                />
+                <noscript />
+              </span>
             </div>
           </div>
         </div>
@@ -945,7 +948,9 @@ exports[`waweb.views/home should render successfully 1`] = `
                 <p
                   class="mt-6 text-2xl font-medium text-white"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            urna nulla vitae laoreet augue. Amet feugiat est integer dolor
+            auctor adipiscing nunc urna, sit.
                 </p>
               </div>
               <footer
@@ -969,6 +974,7 @@ exports[`waweb.views/home should render successfully 1`] = `
     </section>
     <section
       class="relative py-16 sm:py-24 lg:py-32"
+      id="firehose"
     >
       <div
         class="relative"
@@ -999,6 +1005,7 @@ exports[`waweb.views/home should render successfully 1`] = `
     </section>
     <section
       class="relative bg-slate-900"
+      id="cta"
     >
       <div
         class="relative h-56 bg-teal-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2"
@@ -1007,7 +1014,7 @@ exports[`waweb.views/home should render successfully 1`] = `
           style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
         >
           <img
-            alt=""
+            alt="Cover"
             class="object-cover w-full h-full"
             data-nimg="fill"
             decoding="async"

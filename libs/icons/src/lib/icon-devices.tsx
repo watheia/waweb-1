@@ -4,18 +4,8 @@ import { SVGProps } from 'react';
 export interface DevicesProps extends SVGProps<SVGSVGElement> {
   color?: string;
 }
-const Devices = ({
-  color = '#6e6e6e',
-  width = 24,
-  height = 24,
-  ...props
-}: DevicesProps) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    height={height}
-    width={width}
-    {...props}
-  >
+const Devices = ({ color = '#6e6e6e', ...props }: DevicesProps) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" {...props}>
     <defs>
       <style>{`.a{fill:${color}}`}</style>
     </defs>

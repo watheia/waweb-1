@@ -23,7 +23,7 @@ const CtaSection = ({
         layout="fill"
         className="object-cover w-full h-full"
         src={coverImage}
-        alt=""
+        alt="Cover"
       />
       <div
         aria-hidden="true"

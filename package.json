@@ -149,6 +149,7 @@
     "chromatic": "^6.5.1",
     "cross-env": "^7.0.3",
     "cypress": "^9.5.1",
+    "datocms-client": "^3.5.14",
     "dependency-cruiser": "^11.3.1",
     "dotenv": "^16.0.0",
     "eslint": "8.10.0",

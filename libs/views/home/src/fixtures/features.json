@@ -1,32 +1,37 @@
-[
-  {
-    "name": "CI/CD Pipeline",
-    "description": "Fully integrated DevOps pipeline to production, with preview builds and historical build reports",
-    "icon": "cloud-upload"
-  },
-  {
-    "name": "Serverless Architecture",
-    "description": "Completely serverless architecture with support for realtime data synchronization and multi-tenant session persistence",
-    "icon": "refresh"
-  },
-  {
-    "name": "Stateless Sessions",
-    "description": "Qui aut temporibus nesciunt vitae dicta repellat sit dolores pariatur. Temporibus qui illum aut.",
-    "icon": "lock-closed"
-  },
-  {
-    "name": "Headless CMS",
-    "description": "Ullam laboriosam est voluptatem maxime ut mollitia commodi. Et dignissimos suscipit perspiciatis.",
-    "icon": "article"
-  },
-  {
-    "name": "Realtime Database",
-    "description": "Ab a facere voluptatem in quia corrupti veritatis aliquam. Veritatis labore quaerat ipsum quaerat id.",
-    "icon": "data-refresh"
-  },
-  {
-    "name": "Progressive Web App",
-    "description": "Quia qui et est officia cupiditate qui consectetur. Ratione similique et impedit ea ipsum et.",
-    "icon": "devices"
-  }
-]
+{
+  "title": "Features",
+  "subTitle": "Key areas of research",
+  "content": "This experiment focuses on a few primary research areas, all of which fit the theme of \"scalability.\" Scalability in regards to both development costs and service provider fees.",
+  "features": [
+    {
+      "name": "CI/CD Pipeline",
+      "description": "Fully integrated DevOps pipeline to production, with preview builds and historical build reports",
+      "icon": "cloud-upload"
+    },
+    {
+      "name": "Serverless Architecture",
+      "description": "Completely serverless architecture with support for real-time data synchronization and multi-tenant session persistence",
+      "icon": "refresh"
+    },
+    {
+      "name": "Stateless Sessions",
+      "description": "Signed and secured sessions validatable at all levels of the request, without leaking sensitive data to 3rd parties microservices.",
+      "icon": "lock-closed"
+    },
+    {
+      "name": "Headless CMS",
+      "description": "Externally managed content by non-technical users exposed behind a GraphQL API for use in static site generators or server-side rendering",
+      "icon": "article"
+    },
+    {
+      "name": "Realtime Data",
+      "description": "Remote database accessible through REST, GraphQL, and Real-time APIs, including advanced features such as stored procedures, row-level security policies, and more",
+      "icon": "data-refresh"
+    },
+    {
+      "name": "Progressive Web App",
+      "description": "Get the most value from modern web APIs by serving static content with progressive client-side enhancements and offline support",
+      "icon": "devices"
+    }
+  ]
+}

@@ -18,12 +18,12 @@ import { Page } from '@waweb/atoms';
 import config from '@waweb/config';
 import { getTopPosts } from '@waweb/datocms';
 import Layout from '@waweb/layout';
-import Home, { fixtures } from '@waweb/views.home';
+import Home from '@waweb/views.home';
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
-export default function HomePage({ features, posts }: Props) {
+export default function HomePage({ posts }: Props) {
   const meta = {
     title: 'Watheia Labs | A capabilities test of the modern web',
     description: config.metaDescription
@@ -32,7 +32,7 @@ export default function HomePage({ features, posts }: Props) {
   return (
     <Page meta={meta} fullViewport>
       <Layout useBackdrop>
-        <Home features={features} posts={posts} />
+        <Home posts={posts} />
       </Layout>
     </Page>
   );
@@ -41,7 +41,6 @@ export default function HomePage({ features, posts }: Props) {
 export const getStaticProps: GetStaticProps = async ({ preview }) => {
   return {
     props: {
-      features: fixtures.features,
       posts: await getTopPosts(preview, 3)
     }
   };

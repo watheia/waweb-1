@@ -2,7 +2,7 @@ const withNx = require('@nrwl/next/plugins/with-nx');
 const withPlugins = require('next-compose-plugins');
 const withPWA = require('next-pwa');
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
+  enabled: process.env.ANALYZE === 'true'
 });
 
 // /**
@@ -36,7 +36,7 @@ const nextConfig = {
   // Prefer loading of ES Modules over CommonJS
   experimental: {
     // concurrentFeatures: true,
-    esmExternals: true,
+    esmExternals: true
   },
   // Support MDX files as pages:
   pageExtensions: ['md', 'mdx', 'tsx', 'ts', 'jsx', 'js'],
@@ -46,10 +46,10 @@ const nextConfig = {
   nx: {
     // Set this to true if you would like to to use SVGR
     // See: https://github.com/gregberge/svgr
-    svgr: true,
+    svgr: true
   },
   env: {
-    NEXT_DATOCMS_API_TOKEN: process.env.NEXT_DATOCMS_API_TOKEN,
+    NEXT_DATOCMS_API_TOKEN: process.env.NEXT_DATOCMS_API_TOKEN
   },
   images: {
     domains: [
@@ -58,10 +58,10 @@ const nextConfig = {
       'images.ctfassets.net',
       'images.prismic.io',
       'cdn.aglty.io',
-      'localhost', // For Strapi
+      'localhost' // For Strapi
     ],
-    imageSizes: [24, 64, 300],
-  },
+    imageSizes: [24, 64, 300]
+  }
 };
 
 const pwaConfig = {};

@@ -12,7 +12,6 @@ clean:
 setup:
 	yarn install
 	prisma generate
-	$(MAKE) dato-dump
 
 dato-dump:
 	dato dump --token=${NEXT_DATOCMS_API_TOKEN}
